@@ -1,0 +1,23 @@
+<ul class="ldse-makeCols collection-modal-list ldse-rowfix sortable">
+	{{#each this}}
+	<li class="ldse-clearfix collection-item">
+		<section class="ldse-block">
+			<header class="ldse-clearfix">
+				{{#if image}}
+					<a href="#d" class="ldse-icon-ko-tri-right ldse-icon ldse-block-toggle collection-search-result">Toggle Full View</a>
+				{{/if}}
+				<h3>{{title}}</h3>
+                {{#if uri}}
+                    <h3>{{uri}}</h3>
+                {{/if}}
+				<button data-id="{{id}}" data-title="{{title}}" class="ldse-collection-button add ldse-icon-plus addFromSearch ldse-icon"></button>
+			</header>
+			<div class="ldse-block--body">
+				{{#if image}}
+					<img src="{{image.src}}"/>
+				{{/if}}
+            </div>
+        </section>
+	</li>
+	{{/each}}
+</ul>

@@ -1,0 +1,12 @@
+/* Not really critical for initial display for user, but lighthouse scores are complaining about element click targets overlapping without specific styling */
+[data-type="thumbnail-slider"] {
+  --gallery-item-width-sm: var(--spacing-separate-1a);
+  --gallery-item-width-lg: var(--spacing-separate-2);
+}
+.galleryItem {
+  margin-inline-end: var(--spacing-unite-2);
+}
+.thumbnail {
+  height: var(--gallery-item-width-sm);
+  width: var(--gallery-item-width-sm);
+}

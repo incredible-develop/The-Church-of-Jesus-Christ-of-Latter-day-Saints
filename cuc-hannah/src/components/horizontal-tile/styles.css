@@ -1,0 +1,91 @@
+.horizontalTile {
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  gap: var(--spacing-unite-3) var(--spacing-relate);
+  grid-template-columns: 100%;
+  /* when tiles are stacked vertically, border bottom of last tile is removed */
+  /* the last child element is actually a resize element so we need to use nth-last-child(2) to grab the second to last item */
+  & .tile:nth-last-child(2)::after {
+    border-bottom: none;
+  }
+  &[min-width~="632px"] {
+    grid-template-columns: 1fr 1fr;
+    & .tile:nth-last-child(2)::after {
+      border-bottom: var(--border-2);
+    }
+  }
+  &[min-width~="955px"] {
+    grid-template-columns: repeat(2, calc(100% / 3));
+  }
+}
+
+.tile {
+  position: relative;
+  display: grid;
+  grid-template: auto / var(--spacing-separate-1) auto;
+  column-gap: var(--spacing-unite-3);
+  &::after {
+    content: "";
+    position: relative;
+    bottom: 0;
+    grid-column: 2;
+    width: 100%;
+    min-height: var(--spacing-unite-3);
+    border-bottom: var(--border-2);
+  }
+}
+
+.invertTextColor .primaryMeta {
+  color: var(--white);
+  &::after {
+    border-color: var(--white);
+  }
+}
+
+.contentContainer {
+  display: flex;
+  & .verticalAlignSelf {
+    align-self: start;
+    &[max-height~="50px"] {
+      /* 48px is the height of one line of heading plus one line of content when 1rem = 16px and default line spacing */
+      align-self: center;
+    }
+  }
+}
+
+.headline,
+.content,
+.meta {
+  margin: 0;
+}
+
+.meta {
+  font: var(--typography-citation);
+  padding-bottom: var(--spacing-unite-1);
+  display: flex;
+}
+
+.primaryMeta {
+  color: var(--link);
+}
+
+.pipe {
+  margin: 0 var(--spacing-unite-1);
+}
+
+.headline {
+  & + .content {
+    margin-top: var(--spacing-unite-1);
+  }
+}
+
+.content {
+  font: var(--typography-description);
+}

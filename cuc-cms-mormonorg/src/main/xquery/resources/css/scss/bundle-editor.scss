@@ -1,0 +1,20 @@
+@import "vars";
+
+.ldse-table td.translation-flag-cell {
+	width: 40px;
+	padding: 0px;
+}
+.translation-flag {
+	font-size: 20px;
+	width: 40px;
+	padding: 10px;
+	position: relative;
+	overflow: visible;
+	display: none;
+	&:before {
+		color: $orange;
+	}
+}
+.needs-translation .translation-flag {
+	display: inline-block;
+}

@@ -1,0 +1,26 @@
+.enhancedUiSlider {
+  overflow: hidden;
+}
+.flktyWrapper {
+  margin: 0 auto;
+}
+
+/* For when there are 3 cells and wrapAround is true so it doesn't break */
+.limitWidth {
+  max-width: 1280px;
+}
+
+@media (max-width: 480px) {
+  .enhancedUiSlider {
+    & .flktyWrapper [limitMobileWidth] > div[class][class] {
+      width: 100%;
+    }
+  }
+}
+
+/* This centers the slider content quickly before the JS downloads and runs */
+[data-type="enhanced-ui-slider-flickity"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

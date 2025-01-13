@@ -1,0 +1,145 @@
+input.ldse-form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    min-height: 40px;
+    line-height: 100%;
+    padding: 6px 10px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+/*#ui-datepicker-div {
+    z-index: 3 !important;
+}*/
+.ldse-modal .ldse-section {
+    margin-bottom: 0px;
+    border: none;
+}
+dl span.select {
+    max-width: 830px;
+}
+#ice-overlay-header {
+    color: #735005;
+    font-size: 130%;
+    font-weight: bold;
+    height: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+.iceForm input.required.error,
+.iceForm textarea.required.error {
+    border: 1px solid red;
+    border-bottom: 1px solid red;
+    display: inline;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 2px 3px;
+    text-align: left;
+}
+.iceForm label.error,
+.iceForm label.existing,
+label.uri-error-duplicated {
+    background: #efe7df;
+    border: 1px solid #e0aca6;
+    color: #c23232;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    text-align: center;
+}
+.iceForm .repeated-item {
+    list-style: none;
+    margin: 5px 0px 5px 0px;
+    cursor: move;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #ddd;
+}
+
+.iceForm .repeated-item .teaserManager {
+    width: 130px;
+    height: 230px;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.iceForm .repeated-item.teaserManager li p {
+    font: 12px/14px Georgia, arial;
+}
+
+.iceForm .teaserManager button {
+    font-size: 10px;
+    padding: 1px !important;
+    margin: 0 0 5px 3px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.iceForm .repeated-item dl a.delete {
+    float: right;
+    background-position: -1274px -263px;
+    margin: 5px 10px 0px 0px;
+}
+
+.iceForm .teaserManager button:first-child {
+    margin: 0 0 5px 0;
+}
+
+.valid + label.error {
+    display: none !important;
+}
+
+.error + label.error,
+.error + label.existing {
+    display: block !important;
+}
+
+.editResourceForm .ldse-buttons {
+    margin-top: 20px;
+    float: right;
+}
+
+.editResourceForm .iceEditor {
+    width: 700px;
+}
+
+.editResourceForm td {
+    padding: 10px;
+}
+
+.editResourceForm td.header {
+    font-weight: bold;
+}
+
+a.edit-resourceForm {
+    margin-left: 5px;
+}
+
+.saving div {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.iceForm label.warning {
+    background: #fea;
+    border: 1px solid #fc0;
+    color: #f40;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    text-align: center;
+    white-space: normal; /* overrides it being set elsewhere when used in a titan image warning. white-space:nowrap is rarely the right answer to something so hopefully this isolated override doesn't break something else */
+}

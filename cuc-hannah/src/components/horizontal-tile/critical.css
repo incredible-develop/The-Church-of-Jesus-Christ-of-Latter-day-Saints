@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  justify-content: center;
+  gap: var(--spacing-unite-3) var(--spacing-relate);
+  grid-template-columns: 100%;
+  /* when tiles are stacked vertically, border bottom of last tile is removed */
+  /* the last child element is actually a resize element so we need to use nth-last-child(2) to grab the second to last item */
+  & .tile:nth-last-child(2)::after {
+    border-bottom: none;
+  }
+  &[min-width~="632px"] {
+    grid-template-columns: 1fr 1fr;
+    & .tile:nth-last-child(2)::after {
+      border-bottom: var(--border-2);
+    }
+  }
+  &[min-width~="955px"] {
+    grid-template-columns: repeat(2, calc(100% / 3));
+  }
+  &.invertText,
+  &.invertText .primaryMeta {
+    color: var(--white);
+    &::after {
+      border-color: var(--white);
+    }
+  }
+}

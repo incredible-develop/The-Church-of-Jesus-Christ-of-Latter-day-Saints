@@ -1,0 +1,127 @@
+
+
+#resultsBox{
+    width:715px; 
+    border:2px solid;
+    border-color:#666;
+    border-radius:8px;
+}
+
+#resultsHeader{
+    padding:10px;
+    background-color:#789;
+    color:#fff;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    text-align:center;
+}
+
+#resultsHeader a.failText{
+    position:relative;
+    left:25px;
+    color:#f66;
+    font-weight:400;
+    text-shadow: 1px 1px 0px #600;
+
+    
+}
+
+#resultsHeader a.warnText{
+    position:relative;
+    left:50px;
+    color:#f93;
+    font-weight:400;
+    text-shadow: 1px 1px 0px #630;
+
+    
+}
+
+
+#resultsHeader a.failText:hover{    
+    color:#f33;
+}
+
+#resultsHeader a.warnText:hover{    
+    color:#fb3;
+}
+
+
+#resultsContent{
+    margin:10px;
+}
+
+#xmlContainer{
+     overflow:auto;   
+     background-color:#333;
+     font-weight:800;
+     text-shadow: 1px 1px 0px #000;
+     width:800px;  
+     height:600px;
+     color:#fff;
+}
+
+.failText{
+    color:#944;
+}
+
+.warnText{
+    color:#974;
+}
+
+.failMsg{
+    font-weight:800;
+    text-align:center;
+    color:#333;
+}
+
+
+.failRule{
+    font-size:13px;
+    
+     position:relative;
+    left:5px;
+    color:#f66; 
+    cursor:pointer;
+    text-shadow: 1px 1px 0px #600;
+}
+
+.failRuleWarn{
+    font-size:13px;
+    
+     position:relative;
+     color:#f93;
+    text-shadow: 1px 1px 0px #630;
+    left:5px;
+    cursor:pointer;
+   
+}
+
+
+.failErrorDescription{
+    border : 1px double;
+    border-color : #900;
+    padding : 3px;
+}
+
+.failWarnDescription{
+    border : 1px double;
+    border-color : #a60;
+    padding : 3px;
+}
+
+/* Prett print styles */
+
+.element { color:#99f }
+        .attr { color:#f66;
+        margin-left: 5px; }
+        .attr .value { color:#ff6}
+        .attr .namespace { color:#f6f }
+        .comment { color:#fff }
+        .element-wrapper { margin-left: 10px }
+        .highlight { 
+        margin : 3px;
+        padding : 5px;
+        background-color: #633; 
+        border : 3px double;
+        border-color : #f00}
+

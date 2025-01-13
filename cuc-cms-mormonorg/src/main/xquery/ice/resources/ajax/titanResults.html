@@ -1,0 +1,17 @@
+<div>
+<!--    <style scoped="scoped">@import url('{{$ctrl.sharedPrefix}}/resources/css/search-modal.css')</style>-->
+    <ul class="ldse-makeCols collection-modal-list ldse-rowfix sortable">
+        <div ng-show="$ctrl.results.length === 0">No Results</div>
+        <li class="ldse-clearfix collection-item titan-item" ng-repeat="result in $ctrl.results" data-id="{{result.result.id}}" ng-click="$ctrl.setSelected(result.result);" ng-class="result.result.id == $ctrl.selected.id ? 'selected' : ''">
+            <section class="ldse-block">
+                <header class="ldse-clearfix">
+                    <h3>{{result.result.title}}</h3>
+    <!--                <button data-id="{{id}}" data-title="{{title}}" class="ldse-collection-button add ldse-icon-plus addFromSearch ldse-icon">Add</button>-->
+                </header>
+                <div class="">
+                    <img src="{{result.result.image}}"/>
+                </div>
+            </section>
+        </li>
+    </ul>
+</div>

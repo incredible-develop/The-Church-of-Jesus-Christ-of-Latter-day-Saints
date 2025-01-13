@@ -1,0 +1,554 @@
+#night-mode-toggle {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	a {
+		margin-top: 15px;
+		margin-left: 15px;
+		font-size: 20px;
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;	
+		color: $lightText;
+		text-decoration: none;
+	}
+}
+.night-mode #night-mode-toggle a {
+	color: $nightYellow;
+	box-shadow: 0 0 15px $nightYellowShadow, inset 0 0 5px $nightYellowShadow;
+	&:before {
+		content: "\e054";
+	}
+}
+.night-mode .ldse-page {
+	background-color: $nightBackground;
+	@include linearGradient(top, $nightBackgroundDark, $nightBackground 50px);
+	[class^="ldse-icon-"] {
+		color: $nightText;
+	}
+}
+.night-mode body {
+	color: $nightText;
+	background-color: $nightBackgroundDark;
+}
+.night-mode h1 {
+	color: $nightText;
+	text-shadow:  0 1px 1px rgba(255, 255, 255, 0.12);
+}
+.night-mode .ldse-section,
+.night-mode .ldse-section section,
+.night-mode .ldse-block,
+.night-mode dl.imageWrapper,
+.night-mode hr,
+.night-mode .ldse-table,
+.night-mode .ldse-table tr,
+.night-mode .ldse-history-entry,
+.night-mode .ldse-history-entry-details .ldse-history-entry-info span,
+.night-mode tr {
+	border-color: $nightBorder;
+}
+.night-mode .ldse-section--header,
+.night-mode .ldse-block header {
+	background-color: $nightHeader;
+	border-color: $nightBorder;
+	border-radius: 5px 5px 0px 0px;
+	h2, h2 a, h2 a[class^="ldse-icon-"], h3 {
+		color: $nightTextDark;
+		text-shadow:  0 1px 1px rgba(255, 255, 255, 0.1);
+	}
+}
+.night-mode .ldse-section section .ldse-section--header {
+	border-radius: 0px;
+}
+.night-mode .ldse-block dt,
+.night-mode .ldse-block dd,
+.night-mode .ldse-tab-down dt,
+.night-mode .ldse-tab-down dd,
+.night-mode .ldse-history-entry-details .ldse-history-entry-info {
+	color: $nightText;
+}
+.night-mode .ldse-table thead,
+.night-mode .ldse-box {
+	background-color: $nightHeader;
+	border-color: $nightBorder;
+}
+.night-mode .ldse-table th.sort {
+	@include linearGradient(top, $nightText, $nightHeader);
+}
+.night-mode .ldse-table th a,
+.night-mode .ldse-pagination,
+.night-mode .ldse-table thead,
+.night-mode .ldse-section--header .subtext {
+	color: $nightTextDark;
+	text-shadow:  0 1px 1px rgba(255, 255, 255, 0.1);
+}
+.night-mode .ldse-page table a[class^="ldse-icon-"].big {
+	color: $linkBlue;
+}
+.night-mode .ldse-pagination--shownum {
+	a {
+		color: $nightText;
+	}
+	a[href] {
+		color: $linkBlue;
+	}
+	&:after {
+		color: $nightText;
+	}
+}
+.night-mode .ldse-form input,
+.night-mode .ldse-form textarea,
+.night-mode .ldse-form .select {
+	border-color: $nightBorder;
+	color: $nightTextLight;
+	@include linearGradient(#262627, #2d2d2e);
+	box-shadow: inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), inset 0px 0px 5px 2px #111; 
+	&:focus, &.focus {
+		outline: none;
+		color: $nightBlue;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightBlueShadow;
+		box-shadow: inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), inset 0px 0px 5px 2px #111, 0 0 20px rgba(95, 205, 217, 0.12), 0 0 30px rgba(95, 205, 217, 0.12);
+	}
+	&[disabled] {
+		background: $nightBackground;
+		box-shadow: none;
+		color: $nightText;
+	}
+}
+.night-mode .ldse-form input::-webkit-input-placeholder,
+.night-mode .ldse-form textarea::-webkit-input-placeholder{
+  color: $nightTextDark;
+}
+.night-mode .ldse-form input:-moz-placeholder,
+.night-mode .ldse-form textarea::-moz-input-placeholder {
+  color: $nightTextDark;
+}
+.night-mode .ldse-form .select .arrow {
+	@include linearGradient(#444444, #373738);
+	border-color: #111;
+	box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 4px rgba(0, 0, 0, 0.3);
+	color: #0e0e0e;
+	&:after {
+		text-shadow: none;
+	}
+}
+.night-mode img {
+	opacity: $nightOpacity;
+}
+
+.night-mode .ldse-footer {
+	@include linearGradient(top, $nightBackground, $nightBackgroundDark);
+}
+.night-mode .ldse-logo-image {
+	color: $nightText;
+}
+.night-mode .ldse-logo-text-first {
+	color: $nightText;
+}
+.night-mode .ldse-logo-text-last {
+	color: $nightTextDark;
+}
+
+.night-mode .ldse-info-banner {
+	opacity: $nightOpacity;
+	border-color: $nightBlue;
+	color: $nightBlue;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightBlueShadow;
+	box-shadow: inset 0 0 15px rgba(95, 205, 217, 0.4), 0 0 15px rgba(95, 205, 217, 0.4);
+}
+.night-mode .ldse-info-banner .ldse-info-banner-icon {
+	overflow: visible;
+	text-shadow: 0 0 15px rgba(95, 205, 217, 0.4);
+	&:before {
+		color: $nightBlue;
+	}
+}
+.night-mode .ldse-info-banner.warning {
+	border-color: $nightOrange;
+	color: $nightOrange;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightOrangeShadow;
+	box-shadow: inset 0 0 15px rgba(242, 174, 48, 0.4), 0 0 15px $nightOrangeShadow;
+}
+.night-mode .ldse-info-banner.warning .ldse-info-banner-icon {
+	text-shadow: 0 0 15px rgba(242, 174, 48, 0.4);
+	&:before {
+		color: $nightOrange;
+	}
+}
+.night-mode .ldse-info-button {
+	color: $nightBlue;
+	opacity: $nightOpacity;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0 20px $nightBlueShadow, 0 0px 30px $nightBlueShadow;
+	overflow: visible;
+	&.ldse-show-info:after {
+		border-bottom-color: $nightBlue;
+	}
+}
+.night-mode .ldse-info-text {
+	opacity: $nightOpacity;
+	background-color: $nightBlue;
+	color: $nightTextDark;
+	box-shadow: 0 0 15px rgba(95, 205, 217, 0.4);
+
+}
+.night-mode .ldse-section--header .ldse-icon.remove {
+	overflow: visible;
+	opacity: $nightOpacity;
+	color: $nightRed;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0 20px $nightRedShadow;
+}
+
+/* Radio buttons and checkboxes */
+.night-mode input[type="checkbox"]:not(x) + label,
+.night-mode input[type="radio"]:not(x) + label {
+	color: $nightText;
+}
+.night-mode input[type="checkbox"]:not(x),
+.night-mode input[type="radio"]:not(x),
+.night-mode input[type="checkbox"]:not(x) + label::before,
+.night-mode input[type="radio"]:not(x) + label::before {
+	border-color: $nightBorder;
+	@include linearGradient(top, $nightBackground, $nightText);
+}
+.night-mode input[type=checkbox]:not(x) + label:hover:before,
+.night-mode input[type=checkbox]:not(x):focus + label:before,
+.night-mode input[type=checkbox]:not(x):hover + label:before,
+.night-mode input[type=radio]:not(x) + label:hover:before,
+.night-mode input[type=radio]:not(x):focus + label:before,
+.night-mode input[type=radio]:not(x):hover + label:before {
+	box-shadow: 0 0 5px #111;
+}
+.night-mode input[type=checkbox]:not(x) + label:after,
+.night-mode input[type=radio]:not(x) + label:after {
+	text-shadow: none;
+}
+.night-mode input[type=checkbox]:not(x):active + label:before,
+.night-mode input[type=radio]:not(x):active + label:before{
+	@include linearGradient(bottom, $nightBackground, $nightText);
+}
+
+/* Buttons */
+/* Tile Buttons */
+.night-mode .ldse-button.tile {
+	@include linearGradient(#444444, #373738);
+	border: 5px solid #111;
+	box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 4px rgba(0, 0, 0, 0.3);
+	color: #0e0e0e;
+	border-radius: 10px;
+}
+.night-mode .ldse-block.tile:hover .ldse-button.tile {
+	color: #AEAEAE;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	@include linearGradient(#545454, #373738);
+	box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.night-mode .ldse-block.tile:active .ldse-button.tile,
+.night-mode .ldse-block.tile.depressed:hover .ldse-button.tile,
+.night-mode .ldse-block.tile.depressed .ldse-button.tile {
+	@include linearGradient(#262627, #2D2D2E);
+	color: $nightBlue;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightBlueShadow;
+	box-shadow: inset 0 5px 6px rgba(0, 0, 0, 0.3), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black, 0 -1px 0 $nightBlueSoftShadow, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 20px rgba(95, 205, 217, 0.1), 0 0 30px rgba(95, 205, 217, 0.1);
+}
+.night-mode .ldse-information {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding-top: 0px;
+	color: #0e0e0e;
+	bottom: 3px;
+	@media screen and (min-width: $mobile) {
+		bottom: 0;
+	}
+}
+.night-mode .ldse-block.tile:hover .ldse-information {
+	color: #AEAEAE;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+.night-mode .ldse-block.tile:active .ldse-information,
+.night-mode .ldse-block.tile:hover .ldse-information.active,
+.night-mode .ldse-block.tile.depressed .ldse-information {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: $nightBlue;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightBlueShadow;
+}
+.night-mode .ldse-notification {
+	border: none;
+	background-color: $nightBackground;
+	@include linearGradient ($nightRed, $nightRed);
+	color: $nightTextDark;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+	padding-top: 3px;
+	box-shadow: inset 1px 1px 1px rgba(255,255,255,0.2), inset -1px -1px 1px rgba(0,0,0,0.2), 0px 0px 20px rgba(217, 52, 37, 0.5), 0px 0px 30px rgba(217, 52, 37, 0.5);
+}
+.night-mode .ldse-notification.orange {
+	@include linearGradient ($nightOrange, $nightOrange);
+	box-shadow: inset 1px 1px 1px rgba(255,255,255,0.2), inset -1px -1px 1px rgba(0,0,0,0.2), 0px 0px 20px rgba(242, 174, 48, 0.4), 0px 0px 30px rgba(242, 174, 48, 0.4);
+}
+.night-mode .ldse-notification.blue {
+	@include linearGradient ($nightBlue, $nightBlue);
+	box-shadow: inset 1px 1px 1px rgba(255,255,255,0.2), inset -1px -1px 1px rgba(0,0,0,0.2), 0px 0px 20px $nightBlueShadow, 0px 0px 30px $nightBlueShadow;
+}
+.night-mode .ldse-notification.green {
+	@include linearGradient ($nightGreen, $nightGreen);
+	box-shadow: inset 1px 1px 1px rgba(255,255,255,0.2), inset -1px -1px 1px rgba(0,0,0,0.2), 0px 0px 20px $nightGreenShadow, 0px 0px 30px $nightGreenShadow;
+}
+
+/* Other buttons */
+.night-mode .ldse-button,
+.night-mode #ldse-toolbar-container .ldse-button {
+	background-color: #424748;
+	@include linearGradient(#2e3537, #424748);
+	color: #0e0e0e;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4);
+	border: 3px solid $lightGrey;
+	&:hover {
+		color: #AEAEAE;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+		@include linearGradient(#545454, #373738);
+		box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $lightGreySoftShadow, 0 0 20px $lightGreySoftShadow, inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4)
+	}
+	&:active, &.depressed {
+		background: #333;
+		color: $lightGrey;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $lightGreyShadow;
+		box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black;
+	}
+	&:active:hover, &.depressed:hover {
+		box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black, 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $lightGreySoftShadow, 0 0 20px $lightGreySoftShadow;
+	}
+}
+.night-mode a.ldse-button,
+.night-mode #ldse-toolbar-container a.ldse-button {
+	padding-top: 9px;
+	text-decoration: none;
+}
+.night-mode .ldse-button.secondary,
+.night-mode #ldse-toolbar-container .ldse-button.secondary {
+	border-color: $nightBlue;
+	&:hover {
+		box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightBlueSoftShadow, 0 0 20px $nightBlueSoftShadow, inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4)		
+	}
+	&:active, &.depressed {
+		background: #333;
+		color: $nightBlue;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightBlueShadow;
+	}
+	&:active:hover, &.depressed:hover {
+		box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black, 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightBlueSoftShadow, 0 0 20px $nightBlueSoftShadow;
+	}
+}
+.night-mode .ldse-button.primary,
+.night-mode #ldse-toolbar-container .ldse-button.primary {
+	border-color: $nightGreen;
+	&:hover {
+		box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightGreenSoftShadow, 0 0 20px $nightGreenSoftShadow, inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4)		
+	}
+	&:active, &.depressed {
+		background: #333;
+		color: $nightGreen;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightGreenShadow;
+	}
+	&:active:hover, &.depressed:hover {
+		box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black, 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightGreenSoftShadow, 0 0 20px $nightGreenSoftShadow;
+	}
+}
+.night-mode .ldse-button.destructive,
+.night-mode #ldse-toolbar-container .ldse-button.destructive {
+	border-color: $nightRed;
+	&:hover {
+		box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightRedSoftShadow, 0 0 20px $nightRedSoftShadow, inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4)		
+	}
+	&:active, &.depressed {
+		background: #333;
+		color: $nightRed;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightRedShadow;
+	}
+	&:active:hover, &.depressed:hover {
+		box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black, 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightRedSoftShadow, 0 0 20px $nightRedSoftShadow;
+	}
+}
+.night-mode .ldse-button.special,
+.night-mode #ldse-toolbar-container .ldse-button.special {
+	border-color: $nightOrange;
+	&:hover {
+		box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightOrangeSoftShadow, 0 0 20px $nightOrangeSoftShadow, inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4)		
+	}
+	&:active, &.depressed {
+		background: #333;
+		color: $nightOrange;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightOrangeShadow;
+	}
+	&:active:hover, &.depressed:hover {
+		box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black, 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px $nightOrangeSoftShadow, 0 0 20px $nightOrangeSoftShadow;
+	}
+}
+@media screen and (min-width: $tablet) {
+	.night-mode #ldse-toolbar-container .ldse-button.dropdown-right {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.night-mode #ldse-toolbar-container .ldse-button.dropdown-left {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}
+.night-mode .ldse-button.ldse-icon:before {
+	margin-left: -10px;
+}
+.night-mode .ldse-search input[type=button] {
+	@include linearGradient(#444444, #373738);
+	border-color: #111;
+	box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.3);
+	color: #0e0e0e;
+	&:active {
+	}
+}
+
+/* Alert */
+.night-mode .ldse-alert {
+	border-color: $nightBorder;
+	background-color: $nightBackground;
+	color: $nightBlue;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightBlueShadow;
+	box-shadow: 0 0 20px $nightBlueShadow, 0 0 30px $nightBlueShadow;
+}
+.night-mode .ldse-alert-close {
+	background-color: $nightBackgroundDark;
+	border-color: $nightTextDark;
+	color: $nightTextLight;
+	text-shadow: none;
+}
+
+/* Error */
+.night-mode .ldse-form .error label {
+	color: $nightRed;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0 20px $nightRedShadow;
+}
+.night-mode .ldse-form .error label:after {content: ' - Error';}
+.night-mode .ldse-form .error input,
+.night-mode .ldse-form .error textarea,
+.night-mode .ldse-form .error span.cke_skin_mn,
+.night-mode .ldse-form .error span.ldse-option,
+.night-mode .ldse-form .error .ui-multiSelect .select:nth-of-type(1) {border: 2px solid $nightRed !important;}
+
+/* ckeditor (Kama skin only) */
+.night-mode span.cke_skin_kama {
+	border-color: $nightBorder;
+}
+.night-mode .cke_contents iframe {
+	border-color: $nightBorder;
+	@include linearGradient(#555, #333);
+	box-shadow: inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), inset 0px 0px 5px 2px #111; 
+	&:focus {
+		outline: none;
+		color: $nightBlue;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightBlueShadow;
+		box-shadow: inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), inset 0px 0px 5px 2px #111, 0 0 20px rgba(95, 205, 217, 0.12), 0 0 30px rgba(95, 205, 217, 0.12);
+	}
+}
+.night-mode .cke_skin_kama .cke_wrapper,
+.night-mode .cke_1 .cke_wrapper,
+.night-mode .cke_1_dialog .cke_dialog_contents,
+.night-mode .cke_1_dialog a.cke_dialog_tab,
+.night-mode .cke_1_dialog .cke_dialog_footer {
+	background: $nightBackgroundDark !important;
+}
+.night-mode .cke_skin_kama .cke_toolgroup,
+.night-mode .cke_skin_kama a.cke_toolbox_collapser,
+.night-mode .cke_skin_kama a:hover.cke_toolbox_collapser {
+	background: -webkit-linear-gradient(bottom, #666, #7A7A7A);
+	background: -moz-linear-gradient(bottom, #666, #7A7A7A);
+	background: -ms-linear-gradient(bottom, #666, #7A7A7A);
+	background: -o-linear-gradient(bottom, #666, #7A7A7A);
+	border-color: #111;
+	box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.3);
+	color: #0e0e0e;
+}
+.night-mode .cke_skin_kama .cke_button a:hover,
+.night-mode .cke_skin_kama .cke_button a:focus,
+.night-mode .cke_skin_kama .cke_button a:active {
+	background-color: #BBB;
+}
+.night-mode .cke_skin_kama a.cke_toolbox_collapser:after,
+.night-mode .cke_skin_kama a:hover.cke_toolbox_collapser:after {
+	font-family: $iconFont;
+	content: $ldse-icon-tri-up;
+	font-size: 12px;
+	margin-left: -1px;
+}
+.night-mode .cke_skin_kama a.cke_toolbox_collapser.cke_toolbox_collapser_min:after,
+.night-mode .cke_skin_kama a:hover.cke_toolbox_collapser.cke_toolbox_collapser_min:after {
+	content: $ldse-icon-tri-down;
+}
+.night-mode .cke_skin_kama .cke_button a.cke_on {
+	background-color: $nightBlue;
+	box-shadow: 0 0 10px $nightBlueShadow, 0 0 20px $nightBlueShadow;
+}
+.night-mode .cke_skin_kama .cke_rcombo a,
+.night-mode .cke_skin_kama .cke_rcombo a:active,
+.night-mode .cke_skin_kama .cke_rcombo a:hover {
+	background: -webkit-linear-gradient(bottom, #666, #7A7A7A);
+	background: -moz-linear-gradient(bottom, #666, #7A7A7A);
+	background: -ms-linear-gradient(bottom, #666, #7A7A7A);
+	background: -o-linear-gradient(bottom, #666, #7A7A7A);
+	border-color: #111;
+	box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.3);
+	&:after {
+		font-family: $iconFont;
+		content: $ldse-icon-tri-down;
+		font-size: 16px;
+	}
+}
+.night-mode .cke_skin_kama .cke_rcombo .cke_inline_label {
+	color: #0e0e0e;
+}
+.night-mode .cke_skin_kama .cke_rcombo .cke_openbutton {
+	display: none !important;
+}
+.night-mode .cke_skin_kama .cke_focus,
+.night-mode .cke_skin_kama:focus {
+	outline: none;
+}
+.night-mode td.needs-translation:before {
+	color: $nightOrange;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px $nightOrangeShadow;
+}
+.night-mode td.needs-translation:after {
+	background: $nightOrange;
+	color: $nightText;
+	box-shadow: 0 0 20px $nightOrangeShadow, 0 0 30px $nightOrangeShadow;
+}
+.night-mode .ldse-comment-author,
+.night-mode .ldse-comment-contents {
+	color: $nightText;
+	text-shadow: none;	
+}
+.night-mode .ldse-comment-contents {
+	opacity: .4;
+}
+.night-mode .ldse-comment:nth-child(odd) {
+	.ldse-comment-contents {
+		background-color: $nightOrange;
+		box-shadow: 0 0 20px $nightOrangeShadow, 0 0 30px $nightOrangeShadow;
+		&:before {
+			border-bottom-color: $nightOrange;
+		}
+	}
+}
+.night-mode .ldse-comment:nth-child(even) {
+	.ldse-comment-contents {
+		background-color: $nightBlue;		
+		box-shadow: 0 0 20px $nightBlueShadow, 0 0 30px $nightBlueShadow;
+		&:before {
+			border-bottom-color: $nightBlue;
+		}
+	}	
+}

@@ -1,0 +1,100 @@
+.captionBlock {
+  color: var(--grey-40);
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 100%;
+  &.limitWidth {
+    width: 60%;
+  }
+}
+
+.button {
+  display: flex;
+  margin-block-start: var(--spacing-unite-3);
+}
+
+.heading {
+  & ~ .caption {
+    padding-block-start: var(--spacing-unite-2);
+  }
+}
+
+.caption {
+  font: var(--typography-description);
+}
+
+.citation {
+  font: var(--typography-legal);
+  padding-block-start: var(--spacing-unite-2);
+}
+
+.carouselCell {
+  & .captionBlock {
+    padding: var(--spacing-unite-2) 0 0 0;
+    display: none;
+    transition: display 0.2s linear;
+    background-color: var(--white);
+    @media (min-width: 480px) {
+      display: flex;
+    }
+  }
+}
+
+.download {
+  display: inline-flex;
+  font-size: var(--font-size-14);
+  color: var(--interactive);
+  align-items: center;
+  font-weight: unset;
+  margin-inline-start: var(--font-size-16);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+
+  & svg {
+    width: var(--icon-size-medium);
+    height: var(--icon-size-medium);
+    margin-inline-start: var(--spacing-unite-1);
+    margin-block-start: calc(var(--spacing-unite-1) * -1);
+    fill: var(--interactive);
+  }
+
+  & [data-icon-name="loading-spinner"] {
+    justify-content: center;
+    & svg {
+      width: var(--font-size-20);
+      height: var(--font-size-20);
+      margin-inline-start: var(--spacing-unite-2);
+    }
+  }
+}
+
+.alignLeft {
+  & .heading,
+  & .caption,
+  & .citation {
+    text-align: start;
+  }
+  & .button {
+    justify-content: start;
+  }
+}
+.alignCenter {
+  & .heading,
+  & .caption,
+  & .citation {
+    text-align: center;
+  }
+  & .button {
+    justify-content: center;
+  }
+}

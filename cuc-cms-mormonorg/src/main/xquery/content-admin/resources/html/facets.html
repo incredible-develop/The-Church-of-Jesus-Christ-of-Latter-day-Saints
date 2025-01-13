@@ -1,0 +1,4 @@
+<div ng-repeat="section in $ctrl.facetSections.facets" class="facet-section">
+    <h2>{{section.sectionTitle}}</h2>
+    <facet facet-section="section" update-facets="$ctrl.update(selected, $index)"></facet>
+</div>

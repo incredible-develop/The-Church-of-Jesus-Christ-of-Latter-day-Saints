@@ -1,0 +1,17 @@
+html, body, .ldse-page{
+}
+.CodeMirror {
+    margin-bottom: 10px;
+    border: 1px solid;
+    width: 1000px;
+}
+@media screen and (max-width: 600px) {
+    .CodeMirror {
+        width:500px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .CodeMirror {
+        width:500px;
+    }
+}

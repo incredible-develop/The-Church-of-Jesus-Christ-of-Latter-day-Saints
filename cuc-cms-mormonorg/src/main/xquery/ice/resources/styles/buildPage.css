@@ -1,0 +1,29 @@
+.readonly {
+	background: lightgray;
+	line-height: 2em;
+	width: 604px;
+	color: black;
+}
+
+#templateList .ixf-container {
+    background-color: #EBE4D9;
+    float: left;
+    margin: 0 25px 25px 0;
+    overflow: hidden;
+    padding: 15px 20px;
+    width: 40%;
+}
+
+#templateList .ixf-option {
+    float: left;
+}
+
+#templateList img {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+    display: block;
+    float: right;
+    height: 100px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+}

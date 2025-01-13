@@ -1,0 +1,20 @@
+.pageFooter {
+  color: var(--grey-60);
+  @nest [consolidate] & {
+    background-color: #f1f1f3; /* custom color from global footer */
+    max-width: 100%;
+    /* global footer is 100% wide, so need the SSU to go that wide too. May need to hack additional children to do this in the future */
+    & [data-type="simple-sign-up"] {
+      max-width: 100%;
+    }
+  }
+}
+.pageFooterInner {
+  @nest [consolidate] & {
+    max-width: 100%;
+  }
+}
+/* A tracking pixel causes a gap in the footer. This prevents that and shouldn't affect any other images since it is specific to images that are direct children of the body, which shouldn't ever happen for the main site as they will be wrapped in at least a div */
+body > img {
+  position: absolute;
+}

@@ -1,0 +1,57 @@
+.link {
+  font: var(--typography-formInput);
+  font-family: var(--font-families--sans-serif);
+  &:before {
+    width: 0;
+    border-bottom: 1px solid currentColor;
+    position: absolute;
+    inset-block-end: -1px;
+    content: "";
+  }
+}
+
+.link:hover {
+  text-decoration: none;
+  position: relative;
+  &:before {
+    width: calc(100% - 7px);
+  }
+}
+
+/* This is the code for the arrow that follows a link. */
+/*
+  TODO: this could be better implemented to match the eden component
+  see https://eden-internal.churchofjesuschrist.org/?path=/story/eden-emphasized-link--demo
+*/
+.link::after {
+  content: "";
+  border: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-block-end-width: 1px;
+  display: inline-block;
+  padding: 3px;
+  transform: translate(4px, -25%) rotate(-45deg);
+  &:dir(rtl) {
+    transform: translate(-4px, -25%) rotate(45deg);
+  }
+}
+
+.button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.whiteText {
+  color: var(--white);
+}
+
+.defaultText {
+  color: var(--link);
+}
+
+.withMargin {
+  margin-block-end: 24px;
+}

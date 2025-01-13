@@ -1,0 +1,155 @@
+/* Styling of button and menu in toolbar */
+/* Classes for Check Links Button and List */
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button {
+  width: 56px;
+  &:before {
+    font-size: 18px;
+    margin-top: 2px;
+    padding-left: 30px;
+  }
+  &.ldse-seo-good {
+    color: $white;
+    border: 1px solid $greenBorder;
+    background: $green;
+    &.depressed, &:hover {
+      background: $darkGreen;
+      background-image: -webkit-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+      background-image: -o-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+      background-image: linear-gradient(to top, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+    }
+  }
+  &.ldse-seo-warning {
+    color: $white;
+    border: 1px solid $orangeBorder;
+    background: $orange;
+    &.depressed {
+        background: $darkOrange;
+        box-shadow: inset 1px 1px 3px $darkShadow;
+    }
+  }
+  &.ldse-seo-bad {
+    color: $white;
+    border: 1px solid $redBorder;
+    background: $red;
+
+    &.depressed, &:hover {
+        background-image: -webkit-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+        background-image: -o-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+        background-image: linear-gradient(to top, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+    }
+
+  }
+}
+
+#ldse-toolbar-container.front .ldse-check-seo-status {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  &:before {
+    text-indent: 0;
+    float: left;
+    font-size: 24px;
+  }
+}
+
+#ldse-toolbar-container.front .ldse-seo-rank {
+  display: block;
+  vertical-align: middle;
+  color: #999999;
+  font-size: 16px;
+  margin-bottom: 15px;
+  .ldse-seo-score {
+    float: right;
+    font-weight: bold;
+    .ldse-seo-out-of {
+      font-weight: normal;
+    }
+  }
+
+}
+
+#ldse-toolbar-container.front .ldse-seo-total {
+  .ldse-seo-rank {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #999999;
+    padding-top: 10px;
+  }
+}
+#ldse-toolbar-container.front .ldse-seo-ranking {
+  .ldse-seo-rank {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+#ldse-toolbar-container.front #ldse-seo-checker ul.ldse-button-subgroup {
+  width: 350px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: 15px;
+  .ldse-seo-scoring {
+    display: none;
+    margin-left: 20px;
+  }
+}
+
+#ldse-toolbar-container.front #ldse-seo-search {
+  border-top: 1px solid #999999;
+  width: 320px;
+  margin-left: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  .ldse-seo-rank {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #ldse-seo-keyword {
+    width: 65%;
+    padding: 0px 0px 0px 10px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  #ldse-seo-rank-page {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+#ldse-toolbar-container.front #ldse-seo-page-score {
+
+  .ldse-seo-rank {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .ldse-seo-scored {
+    text-transform:uppercase;
+    font-size: 16px;
+    font-weight: normal;
+
+      &.ldse-seo-good {
+        color: $green;
+      }
+      &.ldse-seo-warning {
+        color: $orange;
+      }
+      &.ldse-seo-bad {
+        color: $red;
+      }
+  }
+}
+
+#ldse-toolbar-container.front .ldse-seo-page-scoring {
+  color: #999999;
+  font-size: 16px;
+  margin-left: 20px;
+}

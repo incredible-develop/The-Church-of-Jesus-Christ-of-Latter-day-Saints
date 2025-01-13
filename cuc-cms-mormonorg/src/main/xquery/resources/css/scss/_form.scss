@@ -1,0 +1,389 @@
+span.select{
+    margin-right: $mobileSpace;
+}
+input[type=file]{
+    border: none !important;
+}
+.content-table input[type=select],
+.content-table input[type=text],
+.content-table input[type=password],
+.content-table input[type=permalink],
+.content-table textarea[type=wysiwyg],
+.content-table textarea,
+.content-table ul.sortable,
+.publishing-table{
+    max-width:830px;
+}
+form.form-data fieldset dl dd ul.sortable {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content-table #image-upload {
+    border: none;
+}
+span#cke_textarea1{
+    max-width: 830px;
+}
+.ldse-form p {
+    padding-left: $desktopSpace;
+}
+#translate-checkbox{
+    padding-left: 0px;
+}
+form.content-table{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.iceForm .ldse-icon-ko-remove{
+    color: $red;
+}
+.iceForm .ldse-icon-ko-add{
+    color: $linkBlue;
+}
+.iceForm .ldse-button.ldse-icon-ko-remove, .iceForm .ldse-button.ldse-icon-ko-add{
+    color: #fff;
+}
+.content-section-heading{
+    padding-bottom: 10px;
+}
+.ldse-form fieldset.margin-bottom-sm{
+    width: auto;
+}
+.sortable input[type=hidden].child a{
+    float: right !important;
+}
+.repeated-item {
+    list-style: none !important;
+    border: 1px solid $border;
+    border-radius: $borderRadius;
+    margin-bottom: 10px;
+    background: $lightGrey;
+}
+.sortable dl a.delete {
+    float: right;
+    margin: 11px 10px 0px 0px;
+}
+.sortable dl a.help {
+    float: none;
+    margin: 0;
+}
+.iceForm em {
+  font-weight: bold;
+  padding-right: .5em;
+  vertical-align: top;
+  font-size: 96%;
+  font-style: normal;
+  color: red;
+}
+dl.imageWrapper, .sectionWrapper {
+  padding: $mobileSpace;
+  border: 1px solid $border;
+  border-radius: $borderRadius;
+  @media screen and (min-width: $mobile) {
+    padding: $desktopSpace;
+  }
+  margin-bottom: 5px;
+}
+.sectionWrapper .wrapperTitle{
+  display: block;
+  margin: -12px -12px 5px -12px;
+  background: #ddd;
+  padding: 4px;
+}
+dl img {
+  max-width: 200px;
+}
+.ldse-form fieldset{
+    border: none;
+}
+.ldse-form fieldset input[type=text],
+.ldse-form input[type=password],
+.ldse-form input[type=email]{
+    width: 100% !important;
+}
+.ldse-form .table dl{
+    display: block !important;
+    &.hidden {
+      display: none !important;
+    }
+}
+
+.ldse-form .table dt, .ldse-form .table dd{
+    display: block !important;
+}
+.ldse-form input,
+.ldse-form textarea {
+  border: 1px solid $border;
+  border-radius: $borderRadius;
+  font-size: 16px;
+  min-height: $height;
+  line-height: 100%;
+  padding: 6px 10px;
+  color: $darkText;
+}
+
+.ldse-form input {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ldse-form input.sm,
+.ldse-form textarea.sm {
+  max-width: 233px;
+}
+.ldse-form input + div {
+  margin-top: $mobileSpace;
+  @media screen and (min-width: $mobile) {
+    margin-top: $desktopSpace;
+  }
+}
+.ldse-form ul.not-list {
+  list-style: none;
+  padding: 10px;
+}
+/*.ldse-form input.med,
+.ldse-form textarea.med {
+}
+.ldse-form input.lg,
+.ldse-form textarea.lg {
+}
+.ldse-form input.xl,
+.ldse-form textarea.xl {
+}
+.ldse-form input.xxl,
+.ldse-form textarea.xxl {
+}
+.ldse-form input.xxxl,
+.ldse-form textarea.xxxl {
+}
+.ldse-form input.xxxxl,
+.ldse-form textarea.xxxxl {
+}
+*/
+.ldse-form select,
+.ldse-form input[type=text],
+.ldse-form textarea {
+  width: 100%;
+}
+.ldse-form textarea {
+  height: 150px;
+}
+.ldse-form table textarea {
+  height: auto;
+}
+.ldse-form input::-webkit-input-placeholder,
+.ldse-form textarea::-webkit-input-placeholder {
+  color: #8a9497;
+  font-style: italic;
+  padding-top: 2px;
+}
+.ldse-form input:-moz-placeholder,
+.ldse-form textarea::-moz-input-placeholder {
+  color: #8a9497;
+  font-style: italic;
+  padding-top: 2px;
+}
+
+.ldse-form .error label {color: #A51620;}
+.ldse-form .error label:after {content: ' - Error';}
+.ldse-form .error input,
+.ldse-form .error textarea,
+.ldse-form .error span.cke_skin_mn,
+.ldse-form .error span.ldse-option,
+.ldse-form .error .ui-multiSelect .select:nth-of-type(1) {border: 1px solid #A51620 !important;}
+.ldse-form .error dd {
+    border: 1px solid #A51620;
+    &:after{
+      clear: both;
+      content: ' ';
+      display: block;
+    }
+  }
+.ldse-form .warning {
+  margin-top: 5px;
+  /*-webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;*/
+}
+.ldse-form dt,
+.ldse-form dd {
+  padding: 0;
+  margin: 0;
+}
+.ldse-form dt {
+  margin-bottom: 10px;
+}
+.ldse-form .table {
+  display: table;
+  table-layout: fixed;
+  width: auto;
+}
+.ldse-form .table dl {
+  display: table-row;
+  margin-bottom: 5px;
+}
+.ldse-form .table dt,
+.ldse-form .table dd {
+  display: table-cell;
+  margin: 0;
+  float: none;
+  padding-bottom: 5px;
+}
+.ldse-form .repeater.table dt,
+.ldse-form .repeater.table dd,
+.ldse-form .ng-repeater.table dt,
+.ldse-form .ng-repeater.table dd {
+  display: table-cell !important;
+}
+/* CHANGED BN */
+.ldse-form b.ldse-icon-calendar:before {
+  position: absolute;
+  left: -21px;
+  top: -12px;
+}
+.ldse-form input.ldse-has-ldse-icon {
+  padding-right: 24px;
+}
+.repeat-this {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+.repeat-this dt {
+  width: auto;
+}
+.repeat-this .ldse-icon {
+  height: 30px;
+  width: 30px;
+  display: block !important;
+  color: #910000;
+  font-size: 18px;
+  top: 8px;
+}
+.repeat-this .ldse-icon:after {
+  color: #AA1C1C;
+  font-size: 30px;
+  top: 2px;
+}
+.repeat-this .ldse-icon.disabled {
+  position: absolute;
+  left: -999em;
+  display: none !important;
+}
+/* Added */
+.ldse-admin-page .ui-datepicker-prev:before,  .ldse-admin-page .ui-datepicker-next:before{
+      font-family: $iconFont;
+      font-size:22px;
+      position:absolute;
+      top:1px;
+      color : #666;
+
+  }
+ .ldse-admin-page #ui-datepicker-div { display: none; }
+ .ldse-admin-page .ui-datepicker-prev:before{
+     content: $ldse-icon-ko-tri-left;
+      left:2px;
+ }
+
+ .ldse-admin-page .ui-datepicker-next:before{
+     content: $ldse-icon-ko-tri-right;
+      right:2px;
+ }
+
+ .fake-ck-editor{
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: #F3F3F3;
+  color: #666666;
+ }
+
+.ldse-form select{
+  width: 100% !important;
+}
+
+.ldse-form input.xxxs,
+.ldse-form textarea.xxxs{
+  max-width: 50px;
+}
+.ldse-form input.xxs,
+.ldse-form textarea.xxs{
+  max-width: 83px;
+}
+.ldse-form input.xs,
+.ldse-form textarea.xs{
+  max-width: 133px;
+}
+.ldse-form input.sm,
+.ldse-form textarea.sm{
+  max-width: 233px;
+  width: 233px;
+}
+.ldse-form input.med,
+.ldse-form textarea.med{
+  max-width: 283px;
+}
+.ldse-form input.lg,
+.ldse-form textarea.lg{
+  max-width: 333px;
+}
+.ldse-form input.xl,
+.ldse-form textarea.xl{
+  max-width: 400px;
+}
+.ldse-form input.xxl,
+.ldse-form textarea.xxl{
+  max-width: 500px;
+}
+.ldse-form input.xxxl,
+.ldse-form textarea.xxxl{
+  max-width: 600px;
+}
+.dynamic-xml-header {
+    margin-top: 10px;
+}
+.dynamic-xml-header a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+.dynamic-xml-header h3 {
+    display: inline;
+}
+.dynamic-xml-header a {
+    font-size: 18px;
+}
+.repeated-item a {
+    font-size: 18px;
+    color: #999999;
+}
+.ldse-icon-flag {
+    color: #999;
+}
+.ldse-follow-content {
+    float:right;
+    font-family: OpenSansRegular, Arial, Helvetica, "Lucida Grande", sans-serif;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+}
+span.ldse-following-content {
+    color: #00BAD3 !important;
+}
+.ldse-publish-clock {
+    color: #00BAD3;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+.ldse-unpublish-clock {
+    color: #910000;
+    font-size: 16px !important;
+}
+.ldse-form input[type="submit"]{
+  background: #00BAD3;
+  color: #FFF;
+  border: 1px solid $darkBlue;
+}
+

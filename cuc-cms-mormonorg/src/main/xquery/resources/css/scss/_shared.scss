@@ -1,0 +1,146 @@
+@import "vars";
+
+@import "mixins";
+
+@import "fonts";
+
+@import "toolbar";
+
+@import "menu";
+
+@import "buttons";
+
+@import "toolbarButtons";
+
+@import "buttonGroups";
+
+@import "clearfix";
+
+@import "alert";
+
+@import "modal";
+
+@import "section";
+
+@import "form";
+
+.ldse-push-right {
+  float: right;
+}
+
+.ldse-hidden {
+  display: none;
+}
+
+.ldse-first {
+  clear: left;
+}
+.ldse-last {
+  margin-right: 0 !important;
+}
+.ldse-fullbleed {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+/* 900px/16px=56.25em */
+@media screen and (min-width: 56.25em) {
+  .grid-33 {
+    width: 32%;
+    float: left; }
+
+  .grid-33 + .grid-33,  .grid-33 + .grid-25,  .grid-33 + .grid-15 {
+    margin-left: 2%; }
+
+  .grid-25 {
+    width: 22%;
+    float: left; }
+
+  .grid-25 + .grid-25,  .grid-25 + .grid-33,  .grid-25 + .grid-15{
+    margin-left: 2%; }
+
+  .grid-15 {
+    width: 13%;
+    float: left; }
+
+  .grid-15 + .grid-15,  .grid-15 + .grid-25,  .grid-15 + .grid-33 {
+    margin-left: 2%; }
+
+  .grid-50 {
+    width: 48.5%;
+    float: left; }
+
+  .grid-50 + .grid-50 {
+    margin-left: 3%; }
+
+  .grid-50 + .grid-50 + .grid-50 {
+    margin-left: 0%; }
+
+  .grid-50 + .grid-50 + .grid-50 + .grid-50 {
+    margin-left: 3%; }
+}
+
+
+.ldse-admin-page .ui-datepicker-header{
+    height:35px;
+    background: $pageBackground;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+  border: 1px solid $lightGrey;
+  background: $pageBackground;
+  color: $lightCharcoal;
+
+}
+
+.ldse-admin-page div.ui-datepicker-title .dropDownBtn{
+    pointer-events:none;
+    position:relative;
+    border-left:solid #555 1px;
+    margin-left:-25px;
+    padding:3px;
+    font-family:'ldsedit';
+    top : -1px;
+
+}
+
+.ldse-admin-page div.ui-datepicker-title .dropDownBtn.month{
+    left:-3px;
+}
+
+
+.ldse-admin-page div.ui-datepicker-title .dropDownBtn.year{
+    left:85px;
+}
+
+
+.ldse-admin-page div.ui-datepicker-title select:after{
+    font-family:"ldsedit";
+    content : "\e057";
+}
+
+.ldse-admin-page div.ui-datepicker-title select{
+    padding: 5px 0 5px 10px;
+    margin: 0;
+
+    background: $blue;
+    color:$white;
+    border: $darkBlue;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    &:hover {
+      background: $darkBlue;
+    }
+}
+
+.clearfix{}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

@@ -1,0 +1,63 @@
+.enhancedUiSlider {
+  & .btmNav {
+    margin: var(--spacing-relate) auto 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    & .navLabel {
+      margin: 0 var(--spacing-relate);
+    }
+    & button {
+      position: relative; /* so they don't get covered by invisible divs */
+      padding: 0;
+      border: none;
+      line-height: 0;
+      cursor: pointer;
+      background: transparent;
+      &:focus {
+        border-radius: 5px;
+      }
+      &[disabled] {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+      &:dir(ltr) {
+        &:last-of-type {
+          transform: rotateY(180deg);
+        }
+      }
+      &:dir(rtl) {
+        &:first-of-type {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+}
+/* TODO: the below has been moved into critical.css but removing it causes a conflict. Remove the below ones 6366 is in release */
+
+.flktyWrapper {
+  margin: 0 auto;
+}
+
+/* For when there are 3 cells and wrapAround is true so it doesn't break */
+/* If this class name is updated, it needs to be updated in browser.js */
+.limitWidth {
+  max-width: 1280px;
+}
+
+[data-type="enhanced-ui-slider-flickity"] {
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+  @nest [used-keyboard] & {
+    &:focus {
+      outline: auto;
+    }
+  }
+}

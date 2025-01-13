@@ -1,0 +1,250 @@
+/* GENERIC BUTTON STYLES */
+
+.button {
+  font: var(--typography-button);
+  padding: 0 var(--spacing-unite-3);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  text-align: center;
+  cursor: pointer;
+  transition: all 50ms ease-in;
+  min-height: 40px;
+  border: 0px solid transparent;
+  justify-content: center;
+  position: relative;
+  min-width: 88px;
+  z-index: 1;
+}
+
+.icon {
+  &:not(.icon-only) {
+    &.before {
+      padding-inline: 13px var(--spacing-unite-3);
+    }
+    &.after {
+      padding-inline: var(--spacing-unite-3) 13px;
+    }
+  }
+  & svg path {
+    fill: currentColor;
+  }
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.button[disabled] {
+  background-color: #eff0f0;
+  cursor: not-allowed;
+  color: #878a8c;
+}
+
+/* BUTTON ALIGNMENTS */
+
+.center {
+  margin: 0 auto;
+}
+
+.right {
+  margin: 0;
+  margin-inline-start: auto;
+}
+
+.left {
+  margin: 0;
+}
+
+/* BUTTON SIZES */
+
+.small {
+  min-height: var(--spacing-relate);
+
+  &.button {
+    font-size: var(--font-size-14);
+  }
+}
+
+.big {
+  min-height: 40px;
+  &.button {
+    font-size: var(--font-size-16);
+  }
+}
+
+/* GVL Variants */
+
+.primary-color-background {
+  --opacity: 0.4;
+  --percentage: 50%;
+  color: var(--theme-opposed);
+
+  &:focus {
+    outline-offset: 2px;
+  }
+}
+
+.primary-white-background {
+  --opacity: 0.15;
+  color: var(--interactive);
+  background-color: var(--white);
+
+  @media (hover: hover) {
+    &:hover {
+      --opacity: 0;
+      background-color: var(--blue-40);
+      color: var(--white);
+    }
+  }
+}
+
+.secondary-color-text {
+  color: #177c9c;
+  border: 1px solid currentColor;
+  @media (hover: hover) {
+    &:hover {
+      border: var(--border-radius) solid currentColor;
+    }
+  }
+}
+
+.secondary-white-text {
+  color: white;
+  border: 1px solid currentColor;
+  background: transparent;
+  @media (hover: hover) {
+    &:hover {
+      border: var(--border-radius) solid currentColor;
+    }
+  }
+}
+
+.ghost-color-text {
+  color: #177c9c;
+  background-color: transparent;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba(239, 240, 240, 0.6);
+    }
+  }
+
+  &:active:hover {
+    background-color: #eff0f0;
+  }
+}
+
+.text-link {
+  color: var(--link);
+  font: var(--typography-formInput);
+  font-family: var(--font-families--sans-serif);
+  min-width: auto;
+  min-height: auto;
+  background-color: transparent;
+  padding: 0px;
+  & .textLinkArrow {
+    height: var(--icon-size-medium);
+    width: var(--icon-size-medium);
+    & span[class][class] {
+      margin: 0px;
+    }
+    & svg {
+      fill: currentColor;
+      transition: transform 200ms linear 0s;
+      height: var(--icon-size-medium);
+      &:dir(rtl) {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    --translate-distance: 3px;
+    &:hover {
+      text-decoration-line: underline;
+      & .textLinkArrow {
+        & svg {
+          transform: translate(var(--translate-distance));
+          &:dir(rtl) {
+            transform: translate(calc(-1 * var(--translate-distance)))
+              rotate(180deg);
+          }
+        }
+        &.invertArrowDirection svg {
+          transform: translate(calc(-1 * var(--translate-distance)));
+          &:dir(rtl) {
+            transform: translate(var(--translate-distance)) rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.ghost-white-text {
+  color: white;
+  background-color: transparent;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba(83, 87, 91, 0.6);
+    }
+  }
+
+  &:active:focus {
+    background-color: #53565b;
+  }
+}
+
+.aHero {
+  & a {
+    font-weight: normal;
+  }
+}
+
+.white-background-color-text {
+  color: currentColor;
+  background-color: var(--white-500);
+  font-weight: normal;
+}
+
+.basicCTA {
+  & .button {
+    margin: 0.5em auto;
+  }
+}
+
+.icon-only {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: currentColor;
+  color: var(--white-500);
+  & [data-icon-name][class] {
+    fill: currentColor;
+    margin-inline-end: 0px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba(239, 240, 240, 0.6);
+    }
+  }
+  &:active {
+    background-color: var(--grey-3);
+    box-shadow: none;
+  }
+}
+
+/* Mobile only styling */
+@media (max-width: 600px) {
+  .fullWidthButton {
+    padding: var(--spacing-unite-2) var(--spacing-unite-3);
+    width: 100%;
+    min-height: 52px !important;
+  }
+}

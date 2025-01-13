@@ -1,0 +1,10 @@
+.horizontalLine {
+  width: 100%;
+  height: 3px;
+  border: none;
+  background-color: var(--link);
+}
+
+* + .horizontalLine {
+  margin: var(--spacing) 0;
+}

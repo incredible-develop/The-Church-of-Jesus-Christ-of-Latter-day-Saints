@@ -1,0 +1,200 @@
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status {
+  padding: 4px 0px 0px 4px;
+  width: 40px;
+  height: 26px;
+  border-radius: $borderRadius;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 16px;
+  text-indent: -99em;
+  color: $buttonGreyText;
+  text-shadow: 1px 1px 1px $darkShadow;
+  background: $buttonGrey;
+  border: 1px solid $buttonGreyBorder;
+  box-shadow: inset 1px 1px 1px $buttonGreyBoxShadow;
+  z-index: 998;
+  @include boxSizing();
+}
+#ldse-show-ice .ldse-ice-menu-container[class*="ldse-status-"] .ldse-ice-status {
+  color: $white;
+  
+}
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open .ldse-ice-status {
+  background: $buttonGreyDarker;
+  box-shadow: inset 1px 1px 3px $darkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-open .ldse-ice-status {
+  border-radius: $borderRadius $borderRadius 0px 0px;
+}
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status:before {
+  font-family: $iconFont;
+  content: $ldse-icon-paper;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  text-indent: 0;
+}
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status:after {
+  font-family: $iconFont;
+  content: $ldse-icon-tri-down;
+  position: absolute;
+  top: 3px;
+  right: 1px;
+  text-indent: 0;
+}
+#ldse-show-ice #ldse-ice-menu-clone.ldse-ice-menu-container .ldse-ice-status:before,
+#ldse-show-ice #ldse-ice-menu-clone.ldse-ice-menu-container .ldse-ice-status:after {
+  top: 4px;
+}
+
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-published .ldse-ice-status {
+  border: 1px solid $greenBorder;
+  background: $green;
+  box-shadow: inset 1px 1px 1px $lightShadow;
+  &:before {
+    content: $ldse-icon-check2;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-published .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-published .ldse-ice-status {
+  background: $darkGreen;
+  box-shadow: inset 1px 1px 3px $darkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-not-published .ldse-ice-status,
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-unpublished .ldse-ice-status {
+  border: 1px solid $redBorder;
+  background: $red;
+  box-shadow: inset 1px 1px 1px $lightRed;
+  &:before {
+    content: $ldse-icon-edit;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-unpublished .ldse-ice-status:before {
+  content: $ldse-icon-unpublish;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-not-published .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-not-published .ldse-ice-status,
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-unpublished .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-unpublished .ldse-ice-status {
+  background: $darkRed;
+  box-shadow: inset 1px 1px 3px $heavyDarkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-modified .ldse-ice-status {
+  border: 1px solid $orangeBorder;
+  background: $orange;
+  box-shadow: inset 1px 1px 1px $lightShadow;
+  &:before {
+    content: $ldse-icon-ko-warning;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-modified .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-modified .ldse-ice-status {
+  background: $darkOrange;
+  box-shadow: inset 1px 1px 3px $darkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-scheduled .ldse-ice-status {
+  border: 1px solid $blueBorder;
+  background: $blue;
+  box-shadow: inset 1px 1px 1px $blueBoxShadow;
+  &:before {
+    content: $ldse-icon-clock;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-scheduled .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-scheduled .ldse-ice-status {
+  background: $darkBlue;
+  box-shadow: inset 1px 1px 3px $darkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container > a > span {
+  position: absolute;
+  right: 39px;
+  background-color: $charcoal;
+  z-index: -1;
+  color: $lightText;
+  text-shadow: none;
+  padding: 3px 4px 3px 5px;
+  margin-top: -1px;
+  text-indent: 0;
+  font-size: 12px;
+  line-height: 100%;
+  border-radius: $borderRadius 0px 0px $borderRadius;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-published-component .ldse-ice-status {
+  border: 1px solid $greenBorder;
+  background: $green;
+  box-shadow: inset 1px 1px 1px $lightShadow;
+  &:before {
+    content: $ldse-icon-puzzle;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-published-component .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-published-component .ldse-ice-status {
+  background: $darkGreen;
+  box-shadow: inset 1px 1px 3px $darkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-not-published-component .ldse-ice-status,
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-unpublished-component .ldse-ice-status {
+  border: 1px solid $redBorder;
+  background: $red;
+  box-shadow: inset 1px 1px 1px $lightRed;
+  &:before {
+    content: $ldse-icon-puzzle;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-unpublished-component .ldse-ice-status:before {
+  content: $ldse-icon-puzzle;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-not-published-component .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-not-published-component .ldse-ice-status,
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-unpublished-component .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-unpublished-component .ldse-ice-status {
+  background: $darkRed;
+  box-shadow: inset 1px 1px 3px $heavyDarkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-modified-component .ldse-ice-status {
+  border: 1px solid $orangeBorder;
+  background: $orange;
+  box-shadow: inset 1px 1px 1px $lightShadow;
+  &:before {
+    content: $ldse-icon-puzzle;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-modified-component .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-modified-component .ldse-ice-status {
+  background: $darkOrange;
+  box-shadow: inset 1px 1px 3px $darkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-scheduled-component .ldse-ice-status {
+  border: 1px solid $blueBorder;
+  background: $blue;
+  box-shadow: inset 1px 1px 1px $blueBoxShadow;
+  &:before {
+    content: $ldse-icon-puzzle;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-scheduled-component .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-scheduled-component .ldse-ice-status {
+  background: $darkBlue;
+  box-shadow: inset 1px 1px 3px $buttonGreyBoxShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-component .ldse-ice-status {
+  border: 1px solid $buttonGreyBorder;
+  background: $buttonGrey;
+  box-shadow: inset 1px 1px 1px $buttonGreyBoxShadow;
+  text-shadow: 1px 1px 1px $darkShadow;
+  &:before {
+    content: $ldse-icon-puzzle;
+  }
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-component .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open.ldse-status-component .ldse-ice-status {
+  background: $buttonGrey;
+  border: 1px solid $buttonGreyBorder;
+  box-shadow: inset 1px 1px 3px $buttonGreyBoxShadow;
+  text-shadow: 1px 1px 1px $darkShadow;
+}
+#ldse-show-ice .ldse-ice-menu-container ul.ldse-menu li {
+  cursor: pointer;
+}

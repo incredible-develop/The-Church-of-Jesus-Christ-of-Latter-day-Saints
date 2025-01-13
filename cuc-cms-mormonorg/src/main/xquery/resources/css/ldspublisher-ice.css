@@ -1,0 +1,4955 @@
+/* Styles that are used on the preview sites and on the admin pages */
+/* Font Variables */
+/* Media Query Sizes */
+/* Icons */
+/* Sizes */
+/* Colors */
+/* -red-ui-500 */
+/* -red-ui-600 */
+/* -red-ui-700 */
+/* -red-ui-400 */
+/* --green */
+/* --green-600 */
+/* --green-400 */
+/* --green-600 */
+/* orange-A700 */
+/* ORANGE-A800 */
+/* ORANGE-500 */
+/* ORANGE-A600 */
+/* ORANGE-500 */
+/* blue-A500 */
+/* blue-A600 */
+/* blue-A700 */
+/* blue-A400 */
+/* blue-A700 */
+/* orange-300 */
+/* onyx-text */
+/* gray-A800 */
+/* onyx */
+/* gray-A200 */
+/* gray-300 */
+/* gray-A100 */
+@font-face {
+    font-family: ldsPublisherIcons;
+    src: url("../fonts/ldscms.eot");
+    src: url("../fonts/ldscms.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ldscms.svg#ldsedit") format("svg"),
+        url("../fonts/ldscms.woff") format("woff"),
+        url("../fonts/ldscms.ttf") format("truetype");
+    /* This should make the font use the normal weight for bold as well */
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* line 14, scss/_fonts.scss */
+[class^="ldse-icon-"],
+[class*=" ldse-icon-"] {
+    display: inline-block;
+    /*  line-height:100%;
+  */
+    position: relative;
+}
+
+/* line 22, scss/_fonts.scss */
+[class^="ldse-icon-"]:before,
+[class*=" ldse-icon-"]:before,
+.ldse-table th.sort.desc a:before,
+.ldse-table th.sort.asc a:before {
+    font-family: ldsPublisherIcons;
+    display: inline-block;
+    margin-right: 0.5em;
+    vertical-align: -19%;
+    line-height: 100%;
+    /*border:1px solid red;*/
+}
+
+/* line 31, scss/_fonts.scss */
+[class^="ldse-icon-"].above,
+[class*=" ldse-icon-"].above {
+    text-align: center;
+}
+
+/* line 34, scss/_fonts.scss */
+.ldse-icon {
+    /*indent can't be 100% thanks to IE*/
+    text-indent: -999em;
+    overflow: hidden;
+    width: 1em;
+    font-family: ldsPublisherIcons;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*height:25px;*/
+}
+
+/* line 43, scss/_fonts.scss */
+.ldse-icon.big {
+    font-size: 26px;
+}
+
+/* line 46, scss/_fonts.scss */
+.ldse-icon:before {
+    position: static;
+    float: left;
+    text-indent: 0;
+    margin-right: 0;
+    padding: 0;
+    margin: 0;
+    left: auto !important;
+}
+
+/*target firefox only, the only one to have problems*/
+@-moz-document url-prefix() {
+    /* line 58, scss/_fonts.scss */
+    [class^="ldse-icon-"]:before,
+    [class*=" ldse-icon-"]:before {
+        vertical-align: -19%;
+    }
+
+    /* line 61, scss/_fonts.scss */
+    .ldse-icon {
+        vertical-align: middle;
+    }
+}
+
+/* line 65, scss/_fonts.scss */
+.ldse-icon-ko-search:before {
+    content: "\e40a";
+}
+
+/* line 68, scss/_fonts.scss */
+.ldse-icon-ko-tri-left:before {
+    content: "\e416";
+}
+
+/* line 71, scss/_fonts.scss */
+.ldse-icon-ko-tri-up:before {
+    content: "\e419";
+}
+
+/* line 74, scss/_fonts.scss */
+.ldse-icon-ko-tri-down:before {
+    content: "\e414";
+}
+
+/* line 77, scss/_fonts.scss */
+.ldse-icon-ko-tri-right:before {
+    content: "\e418";
+}
+
+/* line 80, scss/_fonts.scss */
+.ldse-icon-download:before {
+    content: "\e407";
+}
+
+/* line 83, scss/_fonts.scss */
+.ldse-icon-zip:before {
+    content: "\e019";
+}
+
+/* line 86, scss/_fonts.scss */
+.ldse-icon-calendar:before {
+    content: "\e400";
+}
+
+/* line 89, scss/_fonts.scss */
+.ldse-icon-trash:before {
+    content: "\e405";
+}
+
+/* line 92, scss/_fonts.scss */
+.ldse-icon-puzzle:before {
+    content: "\e02e";
+}
+
+/* line 95, scss/_fonts.scss */
+.ldse-icon-list:before {
+    content: "\e424";
+}
+
+/* line 98, scss/_fonts.scss */
+.ldse-icon-globe:before {
+    content: "\e439";
+}
+
+/* line 101, scss/_fonts.scss */
+.ldse-icon-ko-warning:before {
+    content: "\e410";
+}
+
+/* line 104, scss/_fonts.scss */
+.ldse-icon-ko-add:before {
+    content: "\e403";
+}
+
+/* line 107, scss/_fonts.scss */
+.ldse-icon-ko-remove:before {
+    content: "\e03e";
+}
+
+/* line 110, scss/_fonts.scss */
+.ldse-icon-ko-x:before {
+    content: "\e93c";
+}
+
+/* line 113, scss/_fonts.scss */
+.ldse-icon-check1:before {
+    content: "\e406";
+}
+
+/* line 116, scss/_fonts.scss */
+.ldse-icon-check2:before {
+    content: "\e406";
+}
+
+/* line 119, scss/_fonts.scss */
+.ldse-icon-x:before {
+    content: "\e93c";
+}
+
+/* line 122, scss/_fonts.scss */
+.ldse-icon-share:before {
+    content: "\e40c";
+}
+
+/* line 125, scss/_fonts.scss */
+.ldse-icon-ko-gplus:before {
+    content: "\e43f1";
+}
+
+/* line 128, scss/_fonts.scss */
+.ldse-icon-ko-facebook:before {
+    content: "\e3f2";
+}
+
+/* line 131, scss/_fonts.scss */
+.ldse-icon-youtube:before {
+    content: "\e436";
+}
+
+/* line 134, scss/_fonts.scss */
+.ldse-icon-home:before {
+    content: "\e422";
+}
+
+/* line 137, scss/_fonts.scss */
+.ldse-icon-page:before {
+    content: "\e41d";
+}
+
+/* line 140, scss/_fonts.scss */
+.ldse-icon-edit:before {
+    content: "\e409";
+}
+
+/* line 143, scss/_fonts.scss */
+.ldse-icon-picture:before {
+    content: "\e012";
+}
+
+/* line 146, scss/_fonts.scss */
+.ldse-icon-movie:before {
+    content: "\e426";
+}
+
+/* line 149, scss/_fonts.scss */
+.ldse-icon-audio:before {
+    content: "\e942";
+}
+
+/* line 152, scss/_fonts.scss */
+.ldse-icon-paper:before {
+    content: "\e428";
+}
+
+/* line 155, scss/_fonts.scss */
+.ldse-icon-tag:before {
+    content: "\e4437";
+}
+
+/* line 158, scss/_fonts.scss */
+.ldse-icon-tools:before {
+    content: "\e42c";
+}
+
+/* line 161, scss/_fonts.scss */
+.ldse-icon-settings:before {
+    content: "\e42a";
+}
+
+/* line 164, scss/_fonts.scss */
+.ldse-icon-chart:before {
+    content: "\e93b";
+}
+
+/* line 167, scss/_fonts.scss */
+.ldse-icon-upload:before {
+    content: "\e93b";
+}
+
+/* line 170, scss/_fonts.scss */
+.ldse-icon-ko-twitter:before {
+    content: "\e434";
+}
+
+/* line 173, scss/_fonts.scss */
+.ldse-icon-dashboard:before {
+    content: "\e414";
+}
+
+/* line 176, scss/_fonts.scss */
+.ldse-icon-open-menu:before {
+    content: "\e414";
+}
+
+/* line 179, scss/_fonts.scss */
+.ldse-icon-close-menu:before {
+    content: "\e414";
+}
+
+/* line 182, scss/_fonts.scss */
+.ldse-icon-tri-up:before {
+    content: "\e419";
+}
+
+/* line 185, scss/_fonts.scss */
+.ldse-icon-tri-down:before {
+    content: "\e414";
+}
+
+/* line 188, scss/_fonts.scss */
+.ldse-icon-map:before {
+    content: "\e022";
+}
+
+/* line 191, scss/_fonts.scss */
+.ldse-icon-legal:before {
+    content: "\e023";
+}
+
+/* line 194, scss/_fonts.scss */
+.ldse-icon-versions:before {
+    content: "\e024";
+}
+
+/* line 197, scss/_fonts.scss */
+.ldse-icon-history:before {
+    content: "\e420";
+}
+
+/* line 200, scss/_fonts.scss */
+.ldse-icon-linkedin:before {
+    content: "\e028";
+}
+
+/* line 203, scss/_fonts.scss */
+.ldse-icon-pinterest:before {
+    content: "\e43";
+}
+
+/* line 206, scss/_fonts.scss */
+.ldse-icon-pin:before {
+    content: "\e02c";
+}
+
+/* line 209, scss/_fonts.scss */
+.ldse-icon-save:before {
+    content: "\e030";
+}
+
+/* line 212, scss/_fonts.scss */
+.ldse-icon-preview:before {
+    content: "\e40e";
+}
+
+/* line 215, scss/_fonts.scss */
+.ldse-icon-share2:before {
+    content: "\e40c";
+}
+
+/* line 218, scss/_fonts.scss */
+.ldse-icon-quote:before {
+    content: "\e039";
+}
+
+/* line 221, scss/_fonts.scss */
+.ldse-icon-quote2:before {
+    content: "\e033";
+}
+
+/* line 224, scss/_fonts.scss */
+.ldse-icon-text:before {
+    content: "\e034";
+}
+
+/* line 227, scss/_fonts.scss */
+.ldse-icon-folder:before {
+    content: "\e940";
+}
+
+/* line 230, scss/_fonts.scss */
+.ldse-icon-cogs:before {
+    content: "\e42c";
+}
+
+/* line 233, scss/_fonts.scss */
+.ldse-icon-grid-view:before {
+    content: "\e037";
+}
+
+/* line 236, scss/_fonts.scss */
+.ldse-icon-list-2:before {
+    content: "\e900";
+}
+
+/* line 239, scss/_fonts.scss */
+.ldse-icon-comments:before {
+    content: "\e03a";
+}
+
+/* line 242, scss/_fonts.scss */
+.ldse-icon-comments-2:before {
+    content: "\e03b";
+}
+
+/* line 245, scss/_fonts.scss */
+.ldse-icon-ko-info:before {
+    content: "\e03c";
+}
+
+/* line 248, scss/_fonts.scss */
+.ldse-icon-plus:before {
+    content: "\e403";
+}
+
+/* line 251, scss/_fonts.scss */
+.ldse-icon-minus:before {
+    content: "\e03e";
+}
+
+/* line 254, scss/_fonts.scss */
+.ldse-icon-user:before {
+    content: "\e03f";
+}
+
+/* line 257, scss/_fonts.scss */
+.ldse-icon-exit:before {
+    content: "\e040";
+}
+
+/* line 260, scss/_fonts.scss */
+.ldse-icon-logo:before {
+    content: "\e041";
+}
+
+/* line 263, scss/_fonts.scss */
+.ldse-icon-loop:before {
+    content: "\e042";
+}
+
+/* line 266, scss/_fonts.scss */
+.ldse-icon-send:before {
+    content: "\e043";
+}
+
+/* line 269, scss/_fonts.scss */
+.ldse-icon-clock:before {
+    content: "\e420";
+}
+
+/* line 272, scss/_fonts.scss */
+.ldse-icon-search:before {
+    content: "\e40a";
+}
+
+/* line 275, scss/_fonts.scss */
+.ldse-icon-graph:before {
+    content: "\e93b";
+}
+
+/* line 278, scss/_fonts.scss */
+.ldse-icon-copy:before {
+    content: "\e047";
+}
+
+/* line 281, scss/_fonts.scss */
+.ldse-icon-review:before {
+    content: "\e048";
+}
+
+/* line 284, scss/_fonts.scss */
+.ldse-icon-unpublish:before {
+    content: "\e412";
+}
+
+/* line 287, scss/_fonts.scss */
+.ldse-icon-ship:before {
+    content: "\e049";
+}
+
+/* line 290, scss/_fonts.scss */
+.ldse-icon-happy:before {
+    content: "\e04b";
+}
+
+/* line 293, scss/_fonts.scss */
+.ldse-icon-sad:before {
+    content: "\e04c";
+}
+
+/* line 296, scss/_fonts.scss */
+.ldse-icon-wink:before {
+    content: "\e04d";
+}
+
+/* line 299, scss/_fonts.scss */
+.ldse-icon-link:before {
+    content: "\e04e";
+}
+
+/* line 302, scss/_fonts.scss */
+.ldse-icon-remove-user:before {
+    content: "\e04f";
+}
+
+/* line 305, scss/_fonts.scss */
+.ldse-icon-add-user:before {
+    content: "\e050";
+}
+
+/* line 308, scss/_fonts.scss */
+.ldse-icon-broken-link:before {
+    content: "\e051";
+}
+
+/* line 311, scss/_fonts.scss */
+.ldse-icon-loading:before {
+    content: "\e052";
+}
+
+/* line 314, scss/_fonts.scss */
+.ldse-icon-moon:before {
+    content: "\e053";
+}
+
+/* line 317, scss/_fonts.scss */
+.ldse-icon-sun:before {
+    content: "\e054";
+}
+
+/* line 320, scss/_fonts.scss */
+.ldse-icon-drop:before {
+    content: "\e055";
+}
+
+/* line 323, scss/_fonts.scss */
+.ldse-icon-revert:before {
+    content: "\e056";
+}
+
+/* line 326, scss/_fonts.scss */
+.ldse-icon-star:before {
+    content: "\e057";
+}
+
+/* line 329, scss/_fonts.scss */
+.ldse-icon-star-2:before {
+    content: "\e058";
+}
+
+/* line 332, scss/_fonts.scss */
+.ldse-icon-rev-tri-up:before {
+    content: "\e059";
+}
+
+/* line 335, scss/_fonts.scss */
+.ldse-icon-rev-tri-down:before {
+    content: "\e05c";
+}
+
+/* line 338, scss/_fonts.scss */
+.ldse-icon-rev-tri-right:before {
+    content: "\e05a";
+}
+
+/* line 341, scss/_fonts.scss */
+.ldse-icon-rev-tri-left:before {
+    content: "\e05b";
+}
+
+/* line 344, scss/_fonts.scss */
+.ldse-icon-binoculars:before {
+    content: "\e05d";
+}
+
+/* line 347, scss/_fonts.scss */
+.ldse-icon-flag:before {
+    content: "\e05e";
+}
+
+/* line 350, scss/_fonts.scss */
+.ldse-icon-target:before {
+    content: "\e05f";
+}
+
+/* line 353, scss/_fonts.scss */
+.ldse-icon-alarm:before {
+    content: "\e060";
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.eot");
+    src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.eot?#iefix")
+            format("embedded-opentype"),
+        url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.woff")
+            format("woff"),
+        url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.ttf")
+            format("truetype"),
+        url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.svg#OpenSansRegular")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.eot");
+    src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.eot?#iefix")
+            format("embedded-opentype"),
+        url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.woff")
+            format("woff"),
+        url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.ttf")
+            format("truetype"),
+        url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.svg#OpenSansLight")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* line 2, scss/_toolbar.scss */
+#ldse-toolbar-container div,
+#ldse-toolbar-container span,
+#ldse-toolbar-container applet,
+#ldse-toolbar-container object,
+#ldse-toolbar-container iframe,
+#ldse-toolbar-container h1,
+#ldse-toolbar-container h2,
+#ldse-toolbar-container h3,
+#ldse-toolbar-container h4,
+#ldse-toolbar-container h5,
+#ldse-toolbar-container h6,
+#ldse-toolbar-container p,
+#ldse-toolbar-container blockquote,
+#ldse-toolbar-container pre,
+#ldse-toolbar-container a,
+#ldse-toolbar-container abbr,
+#ldse-toolbar-container acronym,
+#ldse-toolbar-container address,
+#ldse-toolbar-container big,
+#ldse-toolbar-container cite,
+#ldse-toolbar-container code,
+#ldse-toolbar-container del,
+#ldse-toolbar-container dfn,
+#ldse-toolbar-container em,
+#ldse-toolbar-container font,
+#ldse-toolbar-container img,
+#ldse-toolbar-container ins,
+#ldse-toolbar-container kbd,
+#ldse-toolbar-container q,
+#ldse-toolbar-container s,
+#ldse-toolbar-container samp,
+#ldse-toolbar-container small,
+#ldse-toolbar-container strike,
+#ldse-toolbar-container strong,
+#ldse-toolbar-container sub,
+#ldse-toolbar-container sup,
+#ldse-toolbar-container tt,
+#ldse-toolbar-container var,
+#ldse-toolbar-container b,
+#ldse-toolbar-container u,
+#ldse-toolbar-container i,
+#ldse-toolbar-container center,
+#ldse-toolbar-container dl,
+#ldse-toolbar-container dt,
+#ldse-toolbar-container dd,
+#ldse-toolbar-container ol,
+#ldse-toolbar-container ul,
+#ldse-toolbar-container li,
+#ldse-toolbar-container fieldset,
+#ldse-toolbar-container form,
+#ldse-toolbar-container label,
+#ldse-toolbar-container legend,
+#ldse-toolbar-container table,
+#ldse-toolbar-container caption,
+#ldse-toolbar-container tbody,
+#ldse-toolbar-container tfoot,
+#ldse-toolbar-container thead,
+#ldse-toolbar-container tr,
+#ldse-toolbar-container th,
+#ldse-toolbar-container td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* line 12, scss/_toolbar.scss */
+#ldse-toolbar-container.ldse-toolbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 50px;
+    min-width: 310px;
+}
+
+/* line 21, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding-right: 40px;
+    font-family: OpenSansRegular, Arial, Helvetica, "Lucida Grande", sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 0.3s linear 0s;
+    -moz-transition: top 0.3s linear 0s;
+    -o-transition: top 0.3s linear 0s;
+    -ms-transition: top 0.3s linear 0s;
+    transition: top 0.3s linear 0s;
+    /* Textured background with dots */
+    background-color: #e0e0e1;
+    /*@include radialGradient(center center, circle contain, #292929 20%, #1F1F1F 25%, rgba(0,0,0,0) 40%);*/
+    /* background-size: 3px 3px; */
+    /* Textured background with diamonds */
+    /*  background-color: #27272B;
+    background-image: -webkit-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -webkit-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+    background-image: -moz-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -moz-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+    background-image: -ms-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -ms-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -o-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+    background-size: 30px 30px;
+  */
+}
+
+/* line 44, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-dropdownMenu-trigger {
+    padding: 0 10px;
+    min-height: 50px;
+    margin: 0;
+}
+
+/* line 49, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-toolbar-item {
+    margin: 0;
+    font-size: 18px;
+    color: #37393e;
+    float: left;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* line 58, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-toolbar-item:hover,
+#ldse-toolbar-container .ldse-toolbar-item.ldse-open {
+    /* Textured background with dots */
+    background-color: #00bad3;
+    color: #e0e0e1;
+    /*@include radialGradient(center center, circle contain, #333 20%, #2F2F2F 25%, rgba(0,0,0,0) 40%);*/
+    /* background-size: 3px 3px; */
+}
+
+/* line 65, scss/_toolbar.scss */
+#ldse-toolbar-container .with-submenu {
+    color: #53565a;
+}
+
+/* line 68, scss/_toolbar.scss */
+#ldse-toolbar-container
+    #ldse-preview-button.ldse-preview-button.ldse-toolbar-item:hover {
+    background-color: transparent;
+}
+/* line 70, scss/_toolbar.scss */
+#ldse-toolbar-container
+    #ldse-preview-button.ldse-preview-button.ldse-toolbar-item:hover
+    button:hover {
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: linear-gradient(
+        to top,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    text-shadow: 1px 1px 2px #37393e;
+}
+
+/* line 77, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-toolbar-item .ldse-icon {
+    font-size: 24px;
+}
+
+/* line 80, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-toolbar-item [class^="ldse-icon-"] {
+    margin-top: 4px;
+}
+
+/* line 83, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-toolbar-item [class^="ldse-icon-"]:before {
+    font-size: 24px;
+    margin-top: 6px;
+}
+
+/* line 87, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-menu-logo {
+    position: relative;
+}
+
+/* line 90, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-brand {
+    text-indent: -100em;
+    font-family: OpenSansRegular, Arial, Helvetica, "Lucida Grande";
+    opacity: 0;
+    font-size: 10px;
+    line-height: 14px;
+    position: absolute;
+    top: 9px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    -webkit-transition: all 0s ease-in-out 0s;
+    -moz-transition: all 0s ease-in-out 0s;
+    -o-transition: all 0s ease-in-out 0s;
+    -ms-transition: all 0s ease-in-out 0s;
+    transition: all 0s ease-in-out 0s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+@media screen and (min-width: 480px) {
+    /* line 90, scss/_toolbar.scss */
+    #ldse-toolbar-container .ldse-brand {
+        text-indent: 0;
+        opacity: 1;
+        -webkit-transition: text-indent 0.3s ease-in-out,
+            opacity 0.3s ease-in-out 1s;
+        -moz-transition: text-indent 0.3s ease-in-out,
+            opacity 0.3s ease-in-out 1s;
+        -o-transition: text-indent 0.3s ease-in-out, opacity 0.3s ease-in-out 1s;
+        -ms-transition: text-indent 0.3s ease-in-out,
+            opacity 0.3s ease-in-out 1s;
+        transition: text-indent 0.3s ease-in-out, opacity 0.3s ease-in-out 1s;
+    }
+}
+
+/* line 108, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-site-name {
+    text-indent: -100em;
+    opacity: 0;
+    font-family: OpenSansRegular, Arial, Helvetica, "Lucida Grande";
+    line-height: 24px;
+    font-size: 18px;
+    /*color: #F6D687;*/
+    padding-left: 9px;
+    position: absolute;
+    top: 19px;
+    width: 161px;
+    padding-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-transition: all 0s ease-in-out 0s;
+    -moz-transition: all 0s ease-in-out 0s;
+    -o-transition: all 0s ease-in-out 0s;
+    -ms-transition: all 0s ease-in-out 0s;
+    transition: all 0s ease-in-out 0s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+@media screen and (min-width: 480px) {
+    /* line 108, scss/_toolbar.scss */
+    #ldse-toolbar-container .ldse-site-name {
+        text-indent: 0;
+        opacity: 1;
+        -webkit-transition: text-indent 0.3s ease-in-out,
+            opacity 0.3s ease-in-out 1s;
+        -moz-transition: text-indent 0.3s ease-in-out,
+            opacity 0.3s ease-in-out 1s;
+        -o-transition: text-indent 0.3s ease-in-out, opacity 0.3s ease-in-out 1s;
+        -ms-transition: text-indent 0.3s ease-in-out,
+            opacity 0.3s ease-in-out 1s;
+        transition: text-indent 0.3s ease-in-out, opacity 0.3s ease-in-out 1s;
+    }
+}
+
+/* line 131, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-logo-text-first {
+    color: #b1b1b1;
+}
+
+/* line 134, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-logo-text-last {
+    color: #908f8f;
+}
+
+/* line 137, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-hidden {
+    display: none;
+}
+
+/* line 140, scss/_toolbar.scss */
+#ldse-toolbar-container.ldse-toolbar-container.ldse-collapsed {
+    top: -50px;
+}
+
+/* line 143, scss/_toolbar.scss */
+#ldse-toolbar-container.ldse-collapsed .ldse-toolbar {
+    top: -50px;
+    -webkit-transition: top 0.3s linear;
+    -moz-transition: top 0.3s linear;
+    -o-transition: top 0.3s linear;
+    -ms-transition: top 0.3s linear;
+    transition: top 0.3s linear;
+}
+
+/* line 151, scss/_toolbar.scss */
+#ldse-toolbar-container .ldse-toolbar-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 40px;
+    padding: 0 6px;
+    border-right: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Textured background with dots */
+    background-color: #e0e0e1;
+    /* @include radialGradient(center center, circle contain, #292929 20%, #1F1F1F 25%, rgba(0,0,0,0) 40%); */
+    /* background-size: 3px 3px; */
+    box-shadow: none;
+    -webkit-transition: box-shadow 0s linear 0.3s,
+        border-bottom-left-radius 0s linear 0.3s, border-left-color 0.3s linear;
+    -moz-transition: box-shadow 0s linear 0.3s,
+        border-bottom-left-radius 0s linear 0.3s, border-left-color 0.3s linear;
+    -o-transition: box-shadow 0s linear 0.3s,
+        border-bottom-left-radius 0s linear 0.3s, border-left-color 0.3s linear;
+    -ms-transition: box-shadow 0s linear 0.3s,
+        border-bottom-left-radius 0s linear 0.3s, border-left-color 0.3s linear;
+    transition: box-shadow 0s linear 0.3s,
+        border-bottom-left-radius 0s linear 0.3s, border-left-color 0.3s linear;
+}
+
+/* line 168, scss/_toolbar.scss */
+#ldse-toolbar-container.ldse-collapsed .ldse-toolbar-toggle {
+    border-left-color: rgba(68, 68, 68, 0);
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: border-bottom-left-radius 0s linear,
+        border-left-color 0.3s linear;
+    -moz-transition: border-bottom-left-radius 0s linear,
+        border-left-color 0.3s linear;
+    -o-transition: border-bottom-left-radius 0s linear,
+        border-left-color 0.3s linear;
+    -ms-transition: border-bottom-left-radius 0s linear,
+        border-left-color 0.3s linear;
+    transition: border-bottom-left-radius 0s linear,
+        border-left-color 0.3s linear;
+}
+
+/* line 175, scss/_toolbar.scss */
+#ldse-toolbar-container.ldse-collapsed .ldse-toolbar-toggle span:before {
+    content: "";
+}
+
+/* line 2, scss/_menu.scss */
+#ldse-show-ice .ldse-menu ul [class^="ldse-icon-"],
+#ldse-toolbar-container .ldse-menu ul [class^="ldse-icon-"] {
+    margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+    /* line 7, scss/_menu.scss */
+    #ldse-show-ice .ldse-main-menu,
+    #ldse-toolbar-container .ldse-main-menu {
+        width: 200px;
+        -webkit-transition: width 1s ease-in-out, padding 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out, padding 1s ease-in-out;
+        -o-transition: width 1s ease-in-out, padding 1s ease-in-out;
+        -ms-transition: width 1s ease-in-out, padding 1s ease-in-out;
+        transition: width 1s ease-in-out, padding 1s ease-in-out;
+    }
+}
+
+/* line 16, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu,
+#ldse-toolbar-container ul.ldse-menu {
+    display: none;
+    padding: 8px;
+    margin: 0;
+    width: 200px;
+    position: absolute;
+    /* Positioning for ICE Menu */
+    top: 26px;
+    right: 0px;
+    /* Textured background with dots */
+    background-color: #e0e0e1;
+    /* @include radialGradient(center center, circle contain, #333 20%, #2F2F2F 25%, rgba(0,0,0,0) 40%); */
+    /* background-size: 3px 3px; */
+    border-radius: 3px 0px 3px 3px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    list-style-image: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* line 37, scss/_menu.scss */
+#ldse-show-ice .ldse-menu-left ul.ldse-menu,
+#ldse-toolbar-container .ldse-menu-left ul.ldse-menu {
+    left: -40px;
+    border-radius: 0px 3px 3px 3px;
+}
+
+/* line 44, scss/_menu.scss */
+#ldse-show-ice .ldse-open ul.ldse-menu,
+#ldse-toolbar-container .ldse-open ul.ldse-menu,
+#ldse-show-ice ul.ldse-menu .ldse-open,
+#ldse-toolbar-container ul.ldse-menu .ldse-open {
+    display: block;
+}
+
+/* line 48, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu li,
+#ldse-toolbar-container ul.ldse-menu li {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #333333;
+    display: block;
+    position: relative;
+}
+/* line 54, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu li:last-child,
+#ldse-toolbar-container ul.ldse-menu li:last-child {
+    border-bottom: none;
+}
+
+/* line 59, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu [class^="ldse-icon-"],
+#ldse-toolbar-container ul.ldse-menu [class^="ldse-icon-"] {
+    margin-top: 0px;
+}
+
+/* line 65, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu a,
+#ldse-show-ice ul.ldse-menu span,
+#ldse-toolbar-container ul.ldse-menu a,
+#ldse-toolbar-container ul.ldse-menu span {
+    color: #53565a;
+    background-color: #e0e0e1;
+    text-decoration: none;
+    width: 184px;
+    font-size: 14px;
+    line-height: normal;
+    height: 40px;
+    padding: 4px 8px 4px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* line 81, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu > li:first-child a,
+#ldse-show-ice ul.ldse-menu > li.ldse-first-menu-item a,
+#ldse-toolbar-container ul.ldse-menu > li:first-child a,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-first-menu-item a {
+    border-radius: 3px 3px 0px 0px;
+}
+
+/* line 85, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu > li:last-child a,
+#ldse-toolbar-container ul.ldse-menu > li:last-child a {
+    border-radius: 0px 0px 3px 3px;
+}
+
+/* line 89, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu a:hover,
+#ldse-toolbar-container ul.ldse-menu a:hover {
+    color: #00bad3;
+}
+
+/* line 95, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu a:before,
+#ldse-show-ice ul.ldse-menu span:before,
+#ldse-toolbar-container ul.ldse-menu a:before,
+#ldse-toolbar-container ul.ldse-menu span:before {
+    font-size: 16px;
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+/* line 102, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu > li.ldse-status-item,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-status-item {
+    border-bottom: none;
+    margin-bottom: 1px;
+}
+
+/* line 107, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu > li.ldse-status-item span,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-status-item span {
+    padding-top: 0px;
+    height: 40px;
+    background-color: transparent;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* line 113, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu > li.ldse-status-item span:hover,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-status-item span:hover {
+    color: #999999;
+}
+/* line 116, scss/_menu.scss */
+#ldse-show-ice ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-status-item span:before {
+    font-family: ldsPublisherIcons;
+    content: "\e428";
+    font-size: 16px;
+    line-height: 16px;
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px 0px 6px;
+    border-radius: 3px;
+    color: #58585d;
+    background: #e0e0e0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* line 133, scss/_menu.scss */
+ul.ldse-menu > li.ldse-status-item span:before {
+    margin: 0 0.5em 0 0;
+}
+
+/* line 138, scss/_menu.scss */
+#ldse-show-ice
+    [class*="ldse-status-"]
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    [class*="ldse-status-"]
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    color: white;
+}
+
+/* line 143, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-published
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-published
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e406";
+    background: #2f8e27;
+}
+
+/* line 148, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-not-published
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-not-published
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e409";
+    background: #f22c2b;
+}
+
+/* line 153, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-unpublished
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-unpublished
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e03e";
+    background: #f22c2b;
+}
+
+/* line 158, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-modified
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-modified
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e410";
+    background: #ff9430;
+}
+
+/* line 163, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-scheduled
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-scheduled
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e420";
+    background: #177c9c;
+}
+
+/* line 168, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-published-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-published-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e406";
+    background: #2f8e27;
+}
+
+/* line 173, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-not-published-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-not-published-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e409";
+    background: #f22c2b;
+}
+
+/* line 178, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-unpublished-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-unpublished-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e03e";
+    background: #f22c2b;
+}
+
+/* line 183, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-modified-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-modified-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e410";
+    background: #ff9430;
+}
+
+/* line 188, scss/_menu.scss */
+#ldse-show-ice
+    .ldse-status-scheduled-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before,
+#ldse-toolbar-container
+    .ldse-status-scheduled-component
+    ul.ldse-menu
+    > li.ldse-status-item
+    span:before {
+    content: "\e420";
+    background: #177c9c;
+}
+
+/* Classes specific to main menu in toolbar */
+/* line 193, scss/_menu.scss */
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu {
+    top: 50px;
+    left: 0px;
+    width: 280px;
+    padding: 0px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+/* line 201, scss/_menu.scss */
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu a,
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu span {
+    height: 50px;
+    font-size: 16px;
+    padding: 4px 24px 4px 24px;
+    width: 260px;
+}
+
+/* line 208, scss/_menu.scss */
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu a:before,
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu span:before {
+    font-size: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+@-moz-document url-prefix() {
+    /* line 216, scss/_menu.scss */
+    #ldse-toolbar-container .ldse-main-menu ul.ldse-menu a:before,
+    #ldse-toolbar-container .ldse-main-menu ul.ldse-menu span:before {
+        top: 10px;
+        margin-top: 0px;
+    }
+}
+
+/* line 221, scss/_menu.scss */
+#ldse-toolbar-container
+    .ldse-main-menu
+    ul.ldse-menu
+    > li.ldse-status-item
+    span {
+    height: 50px;
+}
+
+/* line 224, scss/_menu.scss */
+#ldse-toolbar-container .ldse-button:hover {
+    background: #00bad3;
+    color: white;
+    cursor: pointer;
+    cursor: hand;
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: linear-gradient(
+        to top,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+}
+
+/* Change size on tile icons */
+/* line 3, scss/_buttons.scss */
+[class^="ldse-icon-"].above:before,
+[class*=" ldse-icon-"].above:before {
+    font-size: 42px;
+    padding-bottom: 6px;
+    width: 100%;
+}
+@media screen and (min-width: 500px) {
+    /* line 3, scss/_buttons.scss */
+    [class^="ldse-icon-"].above:before,
+    [class*=" ldse-icon-"].above:before {
+        font-size: 52px;
+    }
+}
+
+@-moz-document url-prefix() {
+    /* line 13, scss/_buttons.scss */
+    [class^="ldse-icon-"].above:before,
+    [class*=" ldse-icon-"].above:before {
+        padding-top: 8px;
+    }
+}
+
+/* line 17, scss/_buttons.scss */
+.ldse-button[class*="ldse-icon-"]:before {
+    vertical-align: -10%;
+    margin-left: -8px;
+}
+
+/* line 21, scss/_buttons.scss */
+.ldse-button.ldse-icon {
+    width: 40px;
+}
+
+/* line 24, scss/_buttons.scss */
+.ldse-button.ldse-icon[class*="ldse-icon-"] {
+    padding-right: 5px;
+}
+/* line 26, scss/_buttons.scss */
+.ldse-button.ldse-icon[class*="ldse-icon-"]:before {
+    padding-left: 1px;
+}
+
+/* line 32, scss/_buttons.scss */
+.ldse-button,
+#ldse-toolbar-container .ldse-button {
+    font-size: 16px;
+    border-radius: 3px;
+    background: #e0e0e0;
+    border: 1px solid #a7a7a7;
+    color: #58585d;
+    text-shadow: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 4px 18px 1px;
+    min-height: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* line 47, scss/_buttons.scss */
+.ldse-button.depressed,
+#ldse-toolbar-container .ldse-button.depressed {
+    background: lightgrey;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 51, scss/_buttons.scss */
+.ldse-button:active,
+#ldse-toolbar-container .ldse-button:active {
+    background: #cccccc;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@-moz-document url-prefix() {
+    /* line 57, scss/_buttons.scss */
+    .ldse-button,
+    #ldse-toolbar-container .ldse-button {
+        padding-top: 12px;
+    }
+    @media screen and (min-width: 500px) {
+        /* line 57, scss/_buttons.scss */
+        .ldse-button,
+        #ldse-toolbar-container .ldse-button {
+            padding-top: 10px;
+        }
+    }
+}
+
+/* line 65, scss/_buttons.scss */
+a.ldse-button,
+#ldse-toolbar-container a.ldse-button {
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+/* line 71, scss/_buttons.scss */
+#alert-ok,
+#alert-cancel {
+    width: inherit;
+}
+
+/* line 77, scss/_buttons.scss */
+.ldse-button.primary,
+.ldse-button.primary:hover,
+#ldse-toolbar-container .ldse-button.primary,
+#ldse-toolbar-container .ldse-button.primary:hover,
+.ldse-button.ldse-primary,
+.ldse-button.ldse-primary:hover,
+#ldse-toolbar-container .ldse-button.ldse-primary,
+#ldse-toolbar-container .ldse-button.ldse-primary:hover {
+    color: white;
+    border: 1px solid transparent;
+    background: #2f8e27;
+}
+/* line 83, scss/_buttons.scss */
+.ldse-button.primary.depressed,
+.ldse-button.primary:hover.depressed,
+#ldse-toolbar-container .ldse-button.primary.depressed,
+#ldse-toolbar-container .ldse-button.primary:hover.depressed,
+.ldse-button.ldse-primary.depressed,
+.ldse-button.ldse-primary:hover.depressed,
+#ldse-toolbar-container .ldse-button.ldse-primary.depressed,
+#ldse-toolbar-container .ldse-button.ldse-primary:hover.depressed {
+    background: #215c34;
+}
+/* line 87, scss/_buttons.scss */
+.ldse-button.primary:active,
+.ldse-button.primary.depressed:active,
+.ldse-button.primary:hover:active,
+.ldse-button.primary:hover.depressed:active,
+#ldse-toolbar-container .ldse-button.primary:active,
+#ldse-toolbar-container .ldse-button.primary.depressed:active,
+#ldse-toolbar-container .ldse-button.primary:hover:active,
+#ldse-toolbar-container .ldse-button.primary:hover.depressed:active,
+.ldse-button.ldse-primary:active,
+.ldse-button.ldse-primary.depressed:active,
+.ldse-button.ldse-primary:hover:active,
+.ldse-button.ldse-primary:hover.depressed:active,
+#ldse-toolbar-container .ldse-button.ldse-primary:active,
+#ldse-toolbar-container .ldse-button.ldse-primary.depressed:active,
+#ldse-toolbar-container .ldse-button.ldse-primary:hover:active,
+#ldse-toolbar-container .ldse-button.ldse-primary:hover.depressed:active {
+    background: #215c34;
+}
+
+/* line 93, scss/_buttons.scss */
+.ldse-button.secondary,
+.ldse-button.secondary:hover,
+#ldse-toolbar-container .ldse-button.secondary,
+#ldse-toolbar-container .ldse-button.secondary:hover {
+    color: white;
+    background: #177c9c;
+}
+/* line 99, scss/_buttons.scss */
+.ldse-button.secondary.depressed,
+.ldse-button.secondary:hover.depressed,
+#ldse-toolbar-container .ldse-button.secondary.depressed,
+#ldse-toolbar-container .ldse-button.secondary:hover.depressed {
+    background: #00bad3;
+}
+/* line 103, scss/_buttons.scss */
+.ldse-button.secondary:active,
+.ldse-button.secondary.depressed:active,
+.ldse-button.secondary:hover:active,
+.ldse-button.secondary:hover.depressed:active,
+#ldse-toolbar-container .ldse-button.secondary:active,
+#ldse-toolbar-container .ldse-button.secondary.depressed:active,
+#ldse-toolbar-container .ldse-button.secondary:hover:active,
+#ldse-toolbar-container .ldse-button.secondary:hover.depressed:active {
+    background: #177c9c;
+}
+
+/* line 109, scss/_buttons.scss */
+.ldse-button.destructive,
+.ldse-button.destructive:hover,
+#ldse-toolbar-container .ldse-button.destructive,
+#ldse-toolbar-container .ldse-button.destructive:hover {
+    color: white;
+    border: 1px solid transparent;
+    background: #f22c2b;
+}
+/* line 115, scss/_buttons.scss */
+.ldse-button.destructive.depressed,
+.ldse-button.destructive:hover.depressed,
+#ldse-toolbar-container .ldse-button.destructive.depressed,
+#ldse-toolbar-container .ldse-button.destructive:hover.depressed {
+    background: #dc0f0e;
+}
+/* line 119, scss/_buttons.scss */
+.ldse-button.destructive:active,
+.ldse-button.destructive.depressed:active,
+.ldse-button.destructive:hover:active,
+.ldse-button.destructive:hover.depressed:active,
+#ldse-toolbar-container .ldse-button.destructive:active,
+#ldse-toolbar-container .ldse-button.destructive.depressed:active,
+#ldse-toolbar-container .ldse-button.destructive:hover:active,
+#ldse-toolbar-container .ldse-button.destructive:hover.depressed:active {
+    background: #b50302;
+}
+
+/* line 125, scss/_buttons.scss */
+.ldse-button.special,
+.ldse-button.special:hover,
+#ldse-toolbar-container .ldse-button.special,
+#ldse-toolbar-container .ldse-button.special:hover {
+    color: white;
+    border: 1px solid #d45311;
+    background: #ff9430;
+}
+/* line 131, scss/_buttons.scss */
+.ldse-button.special.depressed,
+.ldse-button.special:hover.depressed,
+#ldse-toolbar-container .ldse-button.special.depressed,
+#ldse-toolbar-container .ldse-button.special:hover.depressed {
+    background: #eb7200;
+}
+/* line 135, scss/_buttons.scss */
+.ldse-button.special:active,
+.ldse-button.special.depressed:active,
+.ldse-button.special:hover:active,
+.ldse-button.special:hover.depressed:active,
+#ldse-toolbar-container .ldse-button.special:active,
+#ldse-toolbar-container .ldse-button.special.depressed:active,
+#ldse-toolbar-container .ldse-button.special:hover:active,
+#ldse-toolbar-container .ldse-button.special:hover.depressed:active {
+    background: #d45311;
+}
+
+/* line 141, scss/_buttons.scss */
+.ldse-button.modified,
+.ldse-button.modified:hover,
+#ldse-toolbar-container .ldse-button.modified,
+#ldse-toolbar-container .ldse-button.modified:hover {
+    color: white;
+    border: 1px solid #d45311;
+    background: #ff9430;
+}
+/* line 147, scss/_buttons.scss */
+.ldse-button.modified.depressed,
+.ldse-button.modified:hover.depressed,
+#ldse-toolbar-container .ldse-button.modified.depressed,
+#ldse-toolbar-container .ldse-button.modified:hover.depressed {
+    background: #eb7200;
+}
+/* line 150, scss/_buttons.scss */
+.ldse-button.modified:active,
+.ldse-button.modified.depressed:active,
+.ldse-button.modified:hover:active,
+.ldse-button.modified:hover.depressed:active,
+#ldse-toolbar-container .ldse-button.modified:active,
+#ldse-toolbar-container .ldse-button.modified.depressed:active,
+#ldse-toolbar-container .ldse-button.modified:hover:active,
+#ldse-toolbar-container .ldse-button.modified:hover.depressed:active {
+    background: #d45311;
+}
+
+/* line 155, scss/_buttons.scss */
+.ldse-button.tile {
+    padding: 5px 10px 25px;
+    border: 1px solid #cfd2dd;
+    margin: 0px;
+    background: #e0e0e1;
+    color: #177c9c;
+    font-weight: bold;
+    width: 100%;
+    min-height: 110px;
+}
+@media screen and (min-width: 500px) {
+    /* line 155, scss/_buttons.scss */
+    .ldse-button.tile {
+        min-height: 130px;
+        padding-bottom: 24px;
+    }
+}
+/* line 168, scss/_buttons.scss */
+.ldse-button.tile:before {
+    margin: 0px;
+}
+/* line 171, scss/_buttons.scss */
+.ldse-button.tile.social {
+    font-size: 12px;
+    padding: 5px;
+}
+/* line 177, scss/_buttons.scss */
+.ldse-button.tile .tile-image {
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 7px;
+}
+/* line 183, scss/_buttons.scss */
+.ldse-button.tile .tile-image + span {
+    display: block;
+    margin: 10px 0 -98px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* line 192, scss/_buttons.scss */
+.ldse-block.tile.depressed .ldse-button.tile {
+    background: lightgrey;
+}
+
+/* line 195, scss/_buttons.scss */
+.ldse-block.tile {
+    padding: 0px;
+    min-width: 110px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (min-width: 500px) {
+    /* line 195, scss/_buttons.scss */
+    .ldse-block.tile {
+        min-width: 130px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+/* line 208, scss/_buttons.scss */
+.ldse-block.tile:active .ldse-button.tile {
+    background: #cccccc;
+}
+
+/* line 211, scss/_buttons.scss */
+.ldse-information {
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    background: #177c9c;
+    border-top: none;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 100%;
+    min-height: 20px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    border-radius: 0 0 3px 3px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+@media screen and (min-width: 500px) {
+    /* line 211, scss/_buttons.scss */
+    .ldse-information {
+        font-size: 12px;
+        min-height: 24px;
+        padding-top: 5px;
+    }
+}
+
+/* line 240, scss/_buttons.scss */
+.ldse-block.tile.depressed .ldse-information {
+    background: #00bad3;
+}
+
+/* line 244, scss/_buttons.scss */
+.ldse-information span {
+    vertical-align: middle;
+}
+
+/* line 248, scss/_buttons.scss */
+.ldse-block.tile:active .ldse-information {
+    background: #177c9c;
+}
+
+/* line 251, scss/_buttons.scss */
+.ldse-button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* line 256, scss/_buttons.scss */
+.ldse-block.tile.disabled .ldse-button.tile,
+.ldse-block.tile.disabled .ldse-information {
+    opacity: 0.4;
+    cursor: default;
+}
+/* line 260, scss/_buttons.scss */
+.ldse-block.tile.disabled:active .ldse-button.tile {
+    background: #f0f0f0;
+}
+/* line 263, scss/_buttons.scss */
+.ldse-block.tile.disabled:active .ldse-information {
+    background: #177c9c;
+}
+/* line 266, scss/_buttons.scss */
+.ldse-block.tile.disabled:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    margin-right: 5px;
+    background: #ff9430;
+    opacity: 0;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+/* line 278, scss/_buttons.scss */
+.ldse-block.tile.disabled:hover:after {
+    opacity: 1;
+}
+
+/* line 282, scss/_buttons.scss */
+.ldse-buttons {
+    margin-bottom: 0;
+}
+
+/* line 286, scss/_buttons.scss */
+.ldse-responsive-button,
+#ldse-toolbar-container .ldse-responsive-button {
+    text-indent: -99em;
+    width: 40px;
+    position: relative;
+}
+/* line 290, scss/_buttons.scss */
+.ldse-responsive-button:before,
+#ldse-toolbar-container .ldse-responsive-button:before {
+    text-indent: 0px;
+    position: absolute;
+    left: 19px;
+}
+@media screen and (min-width: 1024px) {
+    /* line 290, scss/_buttons.scss */
+    .ldse-responsive-button:before,
+    #ldse-toolbar-container .ldse-responsive-button:before {
+        position: static;
+    }
+}
+@media screen and (min-width: 1024px) {
+    /* line 286, scss/_buttons.scss */
+    .ldse-responsive-button,
+    #ldse-toolbar-container .ldse-responsive-button {
+        text-indent: 0em;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* line 306, scss/_buttons.scss */
+    #ldse-toolbar-container.front .ldse-responsive-button:before {
+        position: absolute;
+        left: 5px;
+        margin-left: 0px;
+    }
+}
+
+/* line 315, scss/_buttons.scss */
+.between {
+    background: #00bad3;
+    color: white;
+    border: 1px solid #37393e;
+}
+
+/* Classes for buttons in toolbar */
+/* line 2, scss/_toolbarButtons.scss */
+#ldse-toolbar-container .ldse-toolbar-buttons {
+    position: absolute;
+    left: 50px;
+    padding: 5px 5px 0;
+    width: calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px);
+}
+@media screen and (min-width: 480px) {
+    /* line 2, scss/_toolbarButtons.scss */
+    #ldse-toolbar-container .ldse-toolbar-buttons {
+        left: 200px;
+        -webkit-transition: left 1s ease-in-out 0s;
+        -moz-transition: left 1s ease-in-out 0s;
+        -o-transition: left 1s ease-in-out 0s;
+        -ms-transition: left 1s ease-in-out 0s;
+        transition: left 1s ease-in-out 0s;
+        width: calc(100% - 200px);
+        width: -webkit-calc(100% - 200px);
+        width: -moz-calc(100% - 200px);
+    }
+}
+
+/* line 17, scss/_toolbarButtons.scss */
+#ldse-toolbar-container .ldse-button {
+    margin: 0px 5px 5px 0px;
+}
+
+/* line 26, scss/_toolbarButtons.scss */
+#ldse-toolbar-container .ldse-button:before {
+    text-indent: 0em;
+    float: left;
+}
+
+@-moz-document url-prefix() {
+    /* line 34, scss/_toolbarButtons.scss */
+    #ldse-toolbar-container .ldse-button:before {
+        /* Center icons on buttons that I force to be icon-only in Firefox */
+        /*    margin-left: 8px;*/
+    }
+    @media screen and (min-width: 1024px) {
+        /* line 34, scss/_toolbarButtons.scss */
+        #ldse-toolbar-container .ldse-button:before {
+            margin-left: -8px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* line 42, scss/_toolbarButtons.scss */
+    #ldse-toolbar-container .ldse-button.ldse-icon {
+        text-indent: -99em;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* line 48, scss/_toolbarButtons.scss */
+    #ldse-toolbar-container .ldse-button.ldse-icon:before {
+        float: left;
+    }
+}
+
+@-moz-document url-prefix() {
+    /* line 54, scss/_toolbarButtons.scss */
+    #ldse-toolbar-container .ldse-button.ldse-icon:before {
+        /* Center icons on buttons that I force to be icon-only in Firefox */
+        margin-left: -8px;
+    }
+}
+
+/* line 2, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-subgroup .ldse-button,
+.ldse-button-subgroup .ldse-button {
+    text-indent: 0em;
+    width: auto;
+}
+/* line 5, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-subgroup .ldse-button:before,
+.ldse-button-subgroup .ldse-button:before {
+    float: none;
+}
+
+/* line 10, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-list .ldse-main-action,
+.ldse-button-list .ldse-main-action {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    /* line 10, scss/_buttonGroups.scss */
+    #ldse-toolbar-container .ldse-button-list .ldse-main-action,
+    .ldse-button-list .ldse-main-action {
+        display: inline-block;
+    }
+}
+
+/* line 17, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-list .ldse-main-action-list,
+.ldse-button-list .ldse-main-action-list {
+    display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+    /* line 17, scss/_buttonGroups.scss */
+    #ldse-toolbar-container .ldse-button-list .ldse-main-action-list,
+    .ldse-button-list .ldse-main-action-list {
+        display: none;
+    }
+}
+
+/* line 24, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button.dropdown-right,
+.ldse-button.dropdown-right {
+    width: 50px;
+}
+@media screen and (min-width: 1024px) {
+    /* line 24, scss/_buttonGroups.scss */
+    #ldse-toolbar-container .ldse-button.dropdown-right,
+    .ldse-button.dropdown-right {
+        width: 40px;
+        margin-left: -1px;
+        border-radius: 0px 3px 3px 0px;
+    }
+}
+/* line 31, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button.dropdown-right.depressed,
+.ldse-button.dropdown-right.depressed {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* line 37, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button.dropdown-right:before,
+.ldse-button.dropdown-right:before {
+    text-indent: 0;
+}
+@media screen and (min-width: 1024px) {
+    /* line 37, scss/_buttonGroups.scss */
+    #ldse-toolbar-container .ldse-button.dropdown-right:before,
+    .ldse-button.dropdown-right:before {
+        text-indent: -100em;
+    }
+}
+
+/* line 44, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button.dropdown-right:after,
+.ldse-button.dropdown-right:after {
+    font-family: ldsPublisherIcons;
+    content: "\e414";
+    position: static;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -8px;
+    text-indent: 0px;
+}
+@media screen and (min-width: 1024px) {
+    /* line 44, scss/_buttonGroups.scss */
+    #ldse-toolbar-container .ldse-button.dropdown-right:after,
+    .ldse-button.dropdown-right:after {
+        right: 50%;
+        margin-right: -8px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* line 60, scss/_buttonGroups.scss */
+    #ldse-toolbar-container .ldse-button.dropdown-left,
+    .ldse-button.dropdown-left {
+        margin-right: 0px;
+        border-radius: 3px 0px 0px 3px;
+    }
+}
+/* line 66, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-list ul,
+.ldse-button-list ul {
+    display: inline-block;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* line 72, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-list li,
+.ldse-button-list li {
+    display: inline-block;
+}
+
+/* line 76, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-list ul ul,
+.ldse-button-list ul ul {
+    display: none;
+    padding: 5px 5px 0px 10px;
+    border-radius: 0px 0px 5px 5px;
+    /* Textured background with dots */
+    background-color: #e0e0e1;
+    color: #37393e;
+    /*@include radialGradient(center center, circle contain, #292929 20%, #1F1F1F 25%, rgba(0,0,0,0) 40%);*/
+    /*background-size: 3px 3px;*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+        -5px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    position: absolute;
+    z-index: 99;
+}
+
+/* line 91, scss/_buttonGroups.scss */
+#ldse-toolbar-container .ldse-button-subgroup button,
+.ldse-button-subgroup button {
+    margin-bottom: 10px !important;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 14, scss/_clearfix.scss */
+.ldse-clearfix:before,
+.ldse-clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+/* line 19, scss/_clearfix.scss */
+.ldse-clearfix:after {
+    clear: both;
+}
+
+/* line 1, scss/_alert.scss */
+.ldse-alert-container {
+    display: none;
+}
+
+/* line 4, scss/_alert.scss */
+.ldse-alert {
+    position: fixed;
+    z-index: 10;
+    min-height: 50px;
+    top: 50px;
+    width: 190px;
+    left: 50%;
+    margin-left: -95px;
+    background: white;
+    border: 1px solid #999;
+    border-top: none;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 0.3s linear, width 0.5s linear,
+        margin-left 0.5s linear;
+    -moz-transition: top 0.3s linear, width 0.5s linear, margin-left 0.5s linear;
+    -o-transition: top 0.3s linear, width 0.5s linear, margin-left 0.5s linear;
+    -ms-transition: top 0.3s linear, width 0.5s linear, margin-left 0.5s linear;
+    transition: top 0.3s linear, width 0.5s linear, margin-left 0.5s linear;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+@media screen and (min-width: 480px) {
+    /* line 4, scss/_alert.scss */
+    .ldse-alert {
+        width: 300px;
+        margin-left: -150px;
+        -webkit-transition: width 0.5s linear, margin-left 0.5s linear;
+        -moz-transition: width 0.5s linear, margin-left 0.5s linear;
+        -o-transition: width 0.5s linear, margin-left 0.5s linear;
+        -ms-transition: width 0.5s linear, margin-left 0.5s linear;
+        transition: width 0.5s linear, margin-left 0.5s linear;
+    }
+}
+
+/* line 25, scss/_alert.scss */
+.ldse-alert.ldse-collapsed {
+    top: 0px;
+    -webkit-transition: top 0.3s linear 0s;
+    -moz-transition: top 0.3s linear 0s;
+    -o-transition: top 0.3s linear 0s;
+    -ms-transition: top 0.3s linear 0s;
+    transition: top 0.3s linear 0s;
+}
+
+/* line 29, scss/_alert.scss */
+.ldse-alert-text {
+    float: left;
+    margin: 0 50px 0 10px;
+    padding: 14px 0;
+    max-width: 230px;
+    font-size: 16px;
+    cursor: default;
+}
+
+/* line 37, scss/_alert.scss */
+.ldse-alert-close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 20px;
+    padding: 9px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    border: 1px solid #450000;
+    border-radius: 20px;
+    background: #f1f1f1;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* line 53, scss/_alert.scss */
+.ldse-alert-close:active {
+    background: #ccc;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 1, scss/_modal.scss */
+.ldse-modal {
+    position: fixed;
+    z-index: 10000;
+    box-shadow: 1px 1px 1px #3d3d3d, 1px 2px 12px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* line 9, scss/_modal.scss */
+.ldse-modal.large {
+    position: absolute;
+    max-width: 3000px;
+    width: 90%;
+    margin-left: 5%;
+    top: 80px !important;
+    left: 0 !important;
+    overflow: auto;
+}
+
+/* line 17, scss/_modal.scss */
+.ldse-modal .ldse-icon-x.ldse-icon {
+    right: 14px;
+    top: 8px;
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 0 -1px 1px #304240;
+}
+
+/* line 24, scss/_modal.scss */
+.ldse-modal .ldse-icon-x.ldse-icon:before {
+    left: 7px;
+    top: 4px;
+}
+
+/* line 28, scss/_modal.scss */
+.ldse-modal h1 {
+    color: #fff;
+    text-shadow: 0 -1px 1px #243534;
+    margin: 0 0 18px;
+}
+
+/* line 33, scss/_modal.scss */
+.ldse-modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9997;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* line 43, scss/_modal.scss */
+.ldse-modal .ldse-section.ldse-force--border {
+    border: 1px solid #dddddd;
+}
+
+/* line 47, scss/_modal.scss */
+#collection-modal-form {
+    margin-right: 130px;
+}
+
+/* line 50, scss/_modal.scss */
+#collection-search {
+    margin-bottom: 13px;
+}
+
+/* line 54, scss/_modal.scss */
+ul.collection-modal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    column-gap: 10px;
+    row-gap: 5px;
+}
+@media screen and (max-width: 768px) {
+    /* line 54, scss/_modal.scss */
+    ul.collection-modal-list {
+        column-width: 50%;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+/* line 68, scss/_modal.scss */
+ul.collection-modal-list li {
+    break-inside: avoid;
+    margin: 10px;
+}
+/* line 72, scss/_modal.scss */
+ul.collection-modal-list li img {
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+    /* line 72, scss/_modal.scss */
+    ul.collection-modal-list li img {
+        max-width: 300px;
+    }
+}
+/* line 82, scss/_modal.scss */
+ul.collection-modal-list a.ldse-block-toggle {
+    color: #999;
+}
+
+/* line 88, scss/_modal.scss */
+.ldse-modal.better {
+    border-radius: 5px;
+    top: 100px;
+}
+
+/* line 92, scss/_modal.scss */
+#collection-modal-form input[type="button"]:hover {
+    color: white;
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: linear-gradient(
+        to top,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+}
+
+/* line 100, scss/_modal.scss */
+.modal-pages {
+    margin-bottom: 10px;
+}
+.modal-pages a.page-link-active {
+    border-radius: 3px;
+    /* replace with variable */
+    border: 1px solid transparent;
+    color: #006a87;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0.3em;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    padding: 0.1em 0.485em;
+}
+/* line 112, scss/_modal.scss */
+.modal-pages a.page-link-active:hover {
+    border-color: #d8d8d8;
+    text-decoration: none;
+}
+/* line 117, scss/_modal.scss */
+.modal-pages a.page-link-active.selected {
+    background: linear-gradient(to bottom right, #00bad3, #177c9c 80%);
+    background-clip: padding-box;
+    color: white;
+    cursor: default;
+}
+/* line 123, scss/_modal.scss */
+.modal-pages a.page-link-active.selected:hover {
+    border-color: transparent;
+}
+
+/* line 1, scss/_section.scss */
+.ldse-section {
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+    min-width: 248px;
+    box-shadow: 0 1px 3px 0 rgba(14, 15, 16, 0.2);
+}
+/* line 8, scss/_section.scss */
+.ldse-section:hover {
+    box-shadow: 0 1px 3px 0 rgba(14, 15, 16, 0.4);
+}
+@media screen and (min-width: 500px) {
+    /* line 1, scss/_section.scss */
+    .ldse-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* line 15, scss/_section.scss */
+.ldse-section--header {
+    background-color: #e0e0e1;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 3px 3px 0 0;
+    padding: 5px;
+    min-height: 34px;
+}
+@media screen and (min-width: 500px) {
+    /* line 15, scss/_section.scss */
+    .ldse-section--header {
+        padding: 12px 10px;
+        min-height: 48px;
+    }
+}
+
+/* line 26, scss/_section.scss */
+.ldse-section--header .ldse-icon {
+    font-size: 22px;
+    height: 22px;
+    vertical-align: -18%;
+    margin-right: 10px;
+}
+
+/* line 32, scss/_section.scss */
+.ldse-section--header .ldse-icon.remove {
+    float: right;
+    margin-right: 0;
+    color: #f22c2b;
+}
+
+/* line 37, scss/_section.scss */
+.ldse-section--body .ldse-section--header {
+    border-top: 1px solid #dddddd;
+    border-radius: 0px;
+}
+
+.ldse-section--body .ldse-section--info {
+    text-align: left;
+    margin-left: 25px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* line 41, scss/_section.scss */
+.closed .ldse-section--header {
+    border-bottom: 0;
+    border-radius: 3px;
+}
+
+/* line 45, scss/_section.scss */
+.ldse-section--header h2 {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    line-height: 100%;
+    font-size: 1.15em;
+}
+@media screen and (min-width: 500px) {
+    /* line 45, scss/_section.scss */
+    .ldse-section--header h2 {
+        margin: 0.3em 0 0.2em 0.4em;
+    }
+}
+
+/* line 55, scss/_section.scss */
+.ldse-section--header h2 a {
+    padding-right: 7px;
+    color: white;
+    text-decoration: none;
+}
+@media screen and (min-width: 500px) {
+    /* line 55, scss/_section.scss */
+    .ldse-section--header h2 a {
+        margin: -4px 0px;
+    }
+}
+
+/* line 63, scss/_section.scss */
+.ldse-section--header.with-button {
+    padding-top: 12px;
+    min-height: 48px;
+}
+
+/* line 67, scss/_section.scss */
+.ldse-section--header.with-button h2 {
+    margin-top: 0.3em;
+}
+
+/* line 70, scss/_section.scss */
+.ldse-section--header button {
+    margin-top: -9px;
+    margin-bottom: -12px;
+}
+/* line 73, scss/_section.scss */
+.ldse-section--header button.header-right {
+    float: right;
+    margin-right: -2px;
+}
+/* line 77, scss/_section.scss */
+.ldse-section--header button.header-left {
+    float: left;
+    margin-left: -3px;
+}
+
+/* line 82, scss/_section.scss */
+.ldse-section--header button:before {
+    text-indent: 0;
+    float: left;
+}
+
+/* line 86, scss/_section.scss */
+.ldse-section--header [class^="ldse-icon-"]:before {
+    font-size: 22px;
+}
+
+/* line 89, scss/_section.scss */
+.ldse-section--header .subtext {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+}
+
+/* line 94, scss/_section.scss */
+.ldse-section--header dl {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+/* line 99, scss/_section.scss */
+.ldse-section--header .ldse-icon:before {
+    font-size: 22px;
+}
+
+/* line 102, scss/_section.scss */
+.ldse-section--body {
+    margin: 5px;
+    clear: both;
+}
+@media screen and (min-width: 500px) {
+    /* line 102, scss/_section.scss */
+    .ldse-section--body {
+        margin: 12px;
+    }
+}
+
+/* line 109, scss/_section.scss */
+.ldse-section--body h3 {
+    line-height: 100%;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* line 114, scss/_section.scss */
+.closed .ldse-section--body {
+    display: none;
+}
+
+/* line 117, scss/_section.scss */
+.closed .ldse-section--header a.ldse-icon-ko-tri-down:before {
+    content: "\e418";
+}
+
+/* line 120, scss/_section.scss */
+.closed .ldse-section--header a.ldse-icon-ko-tri-right:before {
+    content: "\e414";
+}
+
+/* line 123, scss/_section.scss */
+.closed .dynamic-xml-header a.ldse-icon-rev-tri-down:before {
+    content: "\e418";
+}
+
+/* line 126, scss/_section.scss */
+.closed hr {
+    display: none;
+}
+
+/* line 129, scss/_section.scss */
+.ldse-section.no-border {
+    border: none;
+}
+
+@media screen and (min-width: 500px) {
+    /* line 132, scss/_section.scss */
+    .ldse-section .grid {
+        margin-bottom: 12px;
+    }
+}
+
+/* line 137, scss/_section.scss */
+.ldse-section--body .grid-info {
+    font-size: 0.8em;
+}
+
+/* line 140, scss/_section.scss */
+.ldse-section--body .grid h3 {
+    margin: 0.5em 0 0.2em;
+    font-size: 1.17em;
+}
+
+/* line 144, scss/_section.scss */
+.ldse-section--body .grid button {
+    margin-bottom: 0;
+}
+
+/* line 150, scss/_section.scss */
+.ldse-section--body .grid a {
+    margin-top: 1em;
+}
+
+/* line 153, scss/_section.scss */
+.ldse-section--body .grid-thumbnail {
+    float: right;
+    width: 130px;
+    height: 130px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+@media screen and (min-width: 500px) {
+    /* line 153, scss/_section.scss */
+    .ldse-section--body .grid-thumbnail {
+        margin-left: 12px;
+        margin-top: -49px;
+        margin-bottom: 12px;
+    }
+}
+
+/* line 165, scss/_section.scss */
+.ldse-section--body .grid-description {
+    height: 9.5em;
+    overflow: hidden;
+}
+@media screen and (min-width: 500px) {
+    /* line 165, scss/_section.scss */
+    .ldse-section--body .grid-description {
+        height: 7em;
+    }
+}
+
+/* line 173, scss/_section.scss */
+.ldse-section--body .modified-button-group {
+    border-top: none;
+    border-bottom: 1px solid #ddd;
+    min-height: 45px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* line 1, scss/_form.scss */
+span.select {
+    margin-right: 5px;
+}
+
+/* line 4, scss/_form.scss */
+input[type="file"] {
+    border: none !important;
+}
+
+/* line 14, scss/_form.scss */
+.content-table input[type="select"],
+.content-table input[type="text"],
+.content-table input[type="password"],
+.content-table input[type="permalink"],
+.content-table textarea[type="wysiwyg"],
+.content-table textarea,
+.content-table ul.sortable,
+.publishing-table {
+    max-width: 830px;
+}
+
+/* line 17, scss/_form.scss */
+form.form-data fieldset dl dd ul.sortable {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* line 22, scss/_form.scss */
+.content-table #image-upload {
+    border: none;
+}
+
+/* line 25, scss/_form.scss */
+span#cke_textarea1 {
+    max-width: 830px;
+}
+
+/* line 28, scss/_form.scss */
+.ldse-form p {
+    padding-left: 12px;
+}
+
+/* line 31, scss/_form.scss */
+#translate-checkbox {
+    padding-left: 0px;
+}
+
+/* line 34, scss/_form.scss */
+form.content-table {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* line 38, scss/_form.scss */
+.iceForm .ldse-icon-ko-remove {
+    color: #f22c2b;
+}
+
+/* line 41, scss/_form.scss */
+.iceForm .ldse-icon-ko-add {
+    color: #177c9c;
+}
+
+/* line 44, scss/_form.scss */
+.iceForm .ldse-button.ldse-icon-ko-remove,
+.iceForm .ldse-button.ldse-icon-ko-add {
+    color: #fff;
+}
+
+/* line 47, scss/_form.scss */
+.content-section-heading {
+    padding-bottom: 10px;
+}
+
+/* line 50, scss/_form.scss */
+.ldse-form fieldset.margin-bottom-sm {
+    width: auto;
+}
+
+/* line 53, scss/_form.scss */
+.sortable input[type="hidden"].child a {
+    float: right !important;
+}
+
+/* line 56, scss/_form.scss */
+.repeated-item {
+    list-style: none !important;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #e0e0e1;
+}
+
+/* line 63, scss/_form.scss */
+.sortable dl a.delete {
+    float: right;
+    margin: 11px 10px 0px 0px;
+}
+
+/* line 67, scss/_form.scss */
+.sortable dl a.help {
+    float: none;
+    margin: 0;
+}
+
+/* line 71, scss/_form.scss */
+.iceForm em {
+    font-weight: bold;
+    padding-right: 0.5em;
+    vertical-align: top;
+    font-size: 96%;
+    font-style: normal;
+    color: red;
+}
+
+/* line 79, scss/_form.scss */
+dl.imageWrapper,
+.sectionWrapper {
+    padding: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+@media screen and (min-width: 500px) {
+    /* line 79, scss/_form.scss */
+    dl.imageWrapper,
+    .sectionWrapper {
+        padding: 12px;
+    }
+}
+
+/* line 88, scss/_form.scss */
+.sectionWrapper .wrapperTitle {
+    display: block;
+    margin: -12px -12px 5px -12px;
+    background: #ddd;
+    padding: 4px;
+}
+
+/* line 94, scss/_form.scss */
+dl img {
+    max-width: 200px;
+}
+
+/* line 97, scss/_form.scss */
+.ldse-form fieldset {
+    border: none;
+}
+
+/* line 102, scss/_form.scss */
+.ldse-form fieldset input[type="text"],
+.ldse-form input[type="password"],
+.ldse-form input[type="email"] {
+    width: 100% !important;
+}
+
+/* line 105, scss/_form.scss */
+.ldse-form .table dl {
+    display: block !important;
+}
+/* line 107, scss/_form.scss */
+.ldse-form .table dl.hidden {
+    display: none !important;
+}
+
+/* line 112, scss/_form.scss */
+.ldse-form .table dt,
+.ldse-form .table dd {
+    display: block !important;
+}
+
+/* line 116, scss/_form.scss */
+.ldse-form input,
+.ldse-form textarea {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 16px;
+    min-height: 40px;
+    line-height: 100%;
+    padding: 6px 10px;
+    color: #454545;
+}
+
+/* line 126, scss/_form.scss */
+.ldse-form input {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* line 132, scss/_form.scss */
+.ldse-form input.sm,
+.ldse-form textarea.sm {
+    max-width: 233px;
+}
+
+/* line 135, scss/_form.scss */
+.ldse-form input + div {
+    margin-top: 5px;
+}
+@media screen and (min-width: 500px) {
+    /* line 135, scss/_form.scss */
+    .ldse-form input + div {
+        margin-top: 12px;
+    }
+}
+
+/* line 141, scss/_form.scss */
+.ldse-form ul.not-list {
+    list-style: none;
+    padding: 10px;
+}
+
+/*.ldse-form input.med,
+.ldse-form textarea.med {
+}
+.ldse-form input.lg,
+.ldse-form textarea.lg {
+}
+.ldse-form input.xl,
+.ldse-form textarea.xl {
+}
+.ldse-form input.xxl,
+.ldse-form textarea.xxl {
+}
+.ldse-form input.xxxl,
+.ldse-form textarea.xxxl {
+}
+.ldse-form input.xxxxl,
+.ldse-form textarea.xxxxl {
+}
+*/
+/* line 166, scss/_form.scss */
+.ldse-form select,
+.ldse-form input[type="text"],
+.ldse-form textarea {
+    width: 100%;
+}
+
+/* line 169, scss/_form.scss */
+.ldse-form textarea {
+    height: 150px;
+}
+
+/* line 172, scss/_form.scss */
+.ldse-form table textarea {
+    height: auto;
+}
+
+/* line 176, scss/_form.scss */
+.ldse-form input::-webkit-input-placeholder,
+.ldse-form textarea::-webkit-input-placeholder {
+    color: #8a9497;
+    font-style: italic;
+    padding-top: 2px;
+}
+
+/* line 182, scss/_form.scss */
+.ldse-form input:-moz-placeholder,
+.ldse-form textarea::-moz-input-placeholder {
+    color: #8a9497;
+    font-style: italic;
+    padding-top: 2px;
+}
+
+/* line 188, scss/_form.scss */
+.ldse-form .error label {
+    color: #a51620;
+}
+
+/* line 189, scss/_form.scss */
+.ldse-form .error label:after {
+    content: " - Error";
+}
+
+/* line 194, scss/_form.scss */
+.ldse-form .error input,
+.ldse-form .error textarea,
+.ldse-form .error span.cke_skin_mn,
+.ldse-form .error span.ldse-option,
+.ldse-form .error .ui-multiSelect .select:nth-of-type(1) {
+    border: 1px solid #a51620 !important;
+}
+
+/* line 195, scss/_form.scss */
+.ldse-form .error dd {
+    border: 1px solid #a51620;
+}
+/* line 197, scss/_form.scss */
+.ldse-form .error dd:after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+/* line 203, scss/_form.scss */
+.ldse-form .warning {
+    margin-top: 5px;
+    /*-webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;*/
+}
+
+/* line 212, scss/_form.scss */
+.ldse-form dt,
+.ldse-form dd {
+    padding: 0;
+    margin: 0;
+}
+
+/* line 216, scss/_form.scss */
+.ldse-form dt {
+    margin-bottom: 10px;
+}
+
+/* line 219, scss/_form.scss */
+.ldse-form .table {
+    display: table;
+    table-layout: fixed;
+    width: auto;
+}
+
+/* line 224, scss/_form.scss */
+.ldse-form .table dl {
+    display: table-row;
+    margin-bottom: 5px;
+}
+
+/* line 229, scss/_form.scss */
+.ldse-form .table dt,
+.ldse-form .table dd {
+    display: table-cell;
+    margin: 0;
+    float: none;
+    padding-bottom: 5px;
+}
+
+/* line 238, scss/_form.scss */
+.ldse-form .repeater.table dt,
+.ldse-form .repeater.table dd,
+.ldse-form .ng-repeater.table dt,
+.ldse-form .ng-repeater.table dd {
+    display: table-cell !important;
+}
+
+/* CHANGED BN */
+/* line 242, scss/_form.scss */
+.ldse-form b.ldse-icon-calendar:before {
+    position: absolute;
+    left: -21px;
+    top: -12px;
+}
+
+/* line 247, scss/_form.scss */
+.ldse-form input.ldse-has-ldse-icon {
+    padding-right: 24px;
+}
+
+/* line 250, scss/_form.scss */
+.repeat-this {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+/* line 254, scss/_form.scss */
+.repeat-this dt {
+    width: auto;
+}
+
+/* line 257, scss/_form.scss */
+.repeat-this .ldse-icon {
+    height: 30px;
+    width: 30px;
+    display: block !important;
+    color: #910000;
+    font-size: 18px;
+    top: 8px;
+}
+
+/* line 265, scss/_form.scss */
+.repeat-this .ldse-icon:after {
+    color: #aa1c1c;
+    font-size: 30px;
+    top: 2px;
+}
+
+/* line 270, scss/_form.scss */
+.repeat-this .ldse-icon.disabled {
+    position: absolute;
+    left: -999em;
+    display: none !important;
+}
+
+/* Added */
+/* line 276, scss/_form.scss */
+.ldse-admin-page .ui-datepicker-prev:before,
+.ldse-admin-page .ui-datepicker-next:before {
+    font-family: ldsPublisherIcons;
+    font-size: 22px;
+    position: absolute;
+    top: 1px;
+    color: #666;
+}
+
+/* line 284, scss/_form.scss */
+.ldse-admin-page #ui-datepicker-div {
+    display: none;
+}
+
+/* line 285, scss/_form.scss */
+.ldse-admin-page .ui-datepicker-prev:before {
+    content: "\e416";
+    left: 2px;
+}
+
+/* line 290, scss/_form.scss */
+.ldse-admin-page .ui-datepicker-next:before {
+    content: "\e418";
+    right: 2px;
+}
+
+/* line 295, scss/_form.scss */
+.fake-ck-editor {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    color: #666666;
+}
+
+/* line 304, scss/_form.scss */
+.ldse-form select {
+    width: 100% !important;
+}
+
+/* line 309, scss/_form.scss */
+.ldse-form input.xxxs,
+.ldse-form textarea.xxxs {
+    max-width: 50px;
+}
+
+/* line 313, scss/_form.scss */
+.ldse-form input.xxs,
+.ldse-form textarea.xxs {
+    max-width: 83px;
+}
+
+/* line 317, scss/_form.scss */
+.ldse-form input.xs,
+.ldse-form textarea.xs {
+    max-width: 133px;
+}
+
+/* line 321, scss/_form.scss */
+.ldse-form input.sm,
+.ldse-form textarea.sm {
+    max-width: 233px;
+    width: 233px;
+}
+
+/* line 326, scss/_form.scss */
+.ldse-form input.med,
+.ldse-form textarea.med {
+    max-width: 283px;
+}
+
+/* line 330, scss/_form.scss */
+.ldse-form input.lg,
+.ldse-form textarea.lg {
+    max-width: 333px;
+}
+
+/* line 334, scss/_form.scss */
+.ldse-form input.xl,
+.ldse-form textarea.xl {
+    max-width: 400px;
+}
+
+/* line 338, scss/_form.scss */
+.ldse-form input.xxl,
+.ldse-form textarea.xxl {
+    max-width: 500px;
+}
+
+/* line 342, scss/_form.scss */
+.ldse-form input.xxxl,
+.ldse-form textarea.xxxl {
+    max-width: 600px;
+}
+
+/* line 345, scss/_form.scss */
+.dynamic-xml-header {
+    margin-top: 10px;
+}
+
+/* line 348, scss/_form.scss */
+.dynamic-xml-header a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* line 352, scss/_form.scss */
+.dynamic-xml-header h3 {
+    display: inline;
+}
+
+/* line 355, scss/_form.scss */
+.dynamic-xml-header a {
+    font-size: 18px;
+}
+
+/* line 358, scss/_form.scss */
+.repeated-item a {
+    font-size: 18px;
+    color: #999999;
+}
+
+/* line 362, scss/_form.scss */
+.ldse-icon-flag {
+    color: #999;
+}
+
+/* line 365, scss/_form.scss */
+.ldse-follow-content {
+    float: right;
+    font-family: OpenSansRegular, Arial, Helvetica, "Lucida Grande", sans-serif;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* line 372, scss/_form.scss */
+span.ldse-following-content {
+    color: #00bad3 !important;
+}
+
+/* line 375, scss/_form.scss */
+.ldse-publish-clock {
+    color: #00bad3;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+/* line 380, scss/_form.scss */
+.ldse-unpublish-clock {
+    color: #910000;
+    font-size: 16px !important;
+}
+
+/* line 384, scss/_form.scss */
+.ldse-form input[type="submit"] {
+    background: #00bad3;
+    color: #fff;
+    border: 1px solid #177c9c;
+}
+
+/* line 27, scss/_shared.scss */
+.ldse-push-right {
+    float: right;
+}
+
+/* line 31, scss/_shared.scss */
+.ldse-hidden {
+    display: none;
+}
+
+/* line 35, scss/_shared.scss */
+.ldse-first {
+    clear: left;
+}
+
+/* line 38, scss/_shared.scss */
+.ldse-last {
+    margin-right: 0 !important;
+}
+
+/* line 41, scss/_shared.scss */
+.ldse-fullbleed {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* 900px/16px=56.25em */
+@media screen and (min-width: 56.25em) {
+    /* line 48, scss/_shared.scss */
+    .grid-33 {
+        width: 32%;
+        float: left;
+    }
+
+    /* line 52, scss/_shared.scss */
+    .grid-33 + .grid-33,
+    .grid-33 + .grid-25,
+    .grid-33 + .grid-15 {
+        margin-left: 2%;
+    }
+
+    /* line 55, scss/_shared.scss */
+    .grid-25 {
+        width: 22%;
+        float: left;
+    }
+
+    /* line 59, scss/_shared.scss */
+    .grid-25 + .grid-25,
+    .grid-25 + .grid-33,
+    .grid-25 + .grid-15 {
+        margin-left: 2%;
+    }
+
+    /* line 62, scss/_shared.scss */
+    .grid-15 {
+        width: 13%;
+        float: left;
+    }
+
+    /* line 66, scss/_shared.scss */
+    .grid-15 + .grid-15,
+    .grid-15 + .grid-25,
+    .grid-15 + .grid-33 {
+        margin-left: 2%;
+    }
+
+    /* line 69, scss/_shared.scss */
+    .grid-50 {
+        width: 48.5%;
+        float: left;
+    }
+
+    /* line 73, scss/_shared.scss */
+    .grid-50 + .grid-50 {
+        margin-left: 3%;
+    }
+
+    /* line 76, scss/_shared.scss */
+    .grid-50 + .grid-50 + .grid-50 {
+        margin-left: 0%;
+    }
+
+    /* line 79, scss/_shared.scss */
+    .grid-50 + .grid-50 + .grid-50 + .grid-50 {
+        margin-left: 3%;
+    }
+}
+/* line 84, scss/_shared.scss */
+.ldse-admin-page .ui-datepicker-header {
+    height: 35px;
+    background: #eff0f0;
+}
+
+/* line 88, scss/_shared.scss */
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid #e0e0e1;
+    background: #eff0f0;
+    color: #37393e;
+}
+
+/* line 95, scss/_shared.scss */
+.ldse-admin-page div.ui-datepicker-title .dropDownBtn {
+    pointer-events: none;
+    position: relative;
+    border-left: solid #555 1px;
+    margin-left: -25px;
+    padding: 3px;
+    font-family: "ldsedit";
+    top: -1px;
+}
+
+/* line 106, scss/_shared.scss */
+.ldse-admin-page div.ui-datepicker-title .dropDownBtn.month {
+    left: -3px;
+}
+
+/* line 111, scss/_shared.scss */
+.ldse-admin-page div.ui-datepicker-title .dropDownBtn.year {
+    left: 85px;
+}
+
+/* line 116, scss/_shared.scss */
+.ldse-admin-page div.ui-datepicker-title select:after {
+    font-family: "ldsedit";
+    content: "\e057";
+}
+
+/* line 121, scss/_shared.scss */
+.ldse-admin-page div.ui-datepicker-title select {
+    padding: 5px 0 5px 10px;
+    margin: 0;
+    background: #00bad3;
+    color: white;
+    border: #177c9c;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+/* line 134, scss/_shared.scss */
+.ldse-admin-page div.ui-datepicker-title select:hover {
+    background: #177c9c;
+}
+
+/* line 140, scss/_shared.scss */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Styles specific to the preview sites (ice menu, etc.) */
+/* line 4, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button {
+    font-size: 18px;
+    font-family: OpenSansRegular, Arial, Helvetica, "Lucida Grande", sans-serif;
+    font-weight: normal;
+    padding: 0.5em;
+}
+/* line 9, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button:before {
+    font-size: 24px;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+
+/* line 15, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button.dropdown-right {
+    margin-left: 0px;
+}
+/* line 17, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button.dropdown-right:before {
+    text-indent: 0px;
+}
+/* line 20, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button.dropdown-right:after {
+    content: "";
+}
+/* line 23, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button.dropdown-right.depressed {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* line 28, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button.ldse-icon {
+    padding-left: 4px;
+}
+
+/* Classes for ICE Toggle Button */
+/* line 32, scss/_toolbarFrontButtons.scss */
+body.ice #ldse-toolbar-container.front #ldse-ice-toggle.ldse-button,
+body.iceComps #ldse-component-toggle {
+    border: 1px solid transparent;
+    background: #215c34;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px #666666;
+    color: white;
+}
+
+/* line 39, scss/_toolbarFrontButtons.scss */
+body.ice #ldse-toolbar-container.front #ldse-ice-toggle.ldse-button:active,
+#ldse-component-toggle {
+    background: #215c34;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Classes for button dropdown in toolbar */
+/* line 44, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button-subgroup {
+    width: 210px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 500px) {
+    /* line 44, scss/_toolbarFrontButtons.scss */
+    #ldse-toolbar-container.front .ldse-button-subgroup {
+        width: 275px;
+    }
+}
+
+/* line 53, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button-subgroup .ldse-button {
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* line 56, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button-subgroup .ldse-button:before {
+    font-size: 18px;
+}
+
+/* line 62, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button-subgroup li {
+    display: block;
+    margin-bottom: 0px;
+}
+/* line 65, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button-subgroup li.center {
+    text-align: center;
+}
+
+/* line 69, scss/_toolbarFrontButtons.scss */
+#ldse-toolbar-container.front .ldse-button-subgroup a {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #999999;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* line 79, scss/_toolbarFrontButtons.scss */
+#action-preview {
+    padding-right: 0px !important;
+}
+
+/* line 1, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status {
+    padding: 4px 0px 0px 4px;
+    width: 40px;
+    height: 26px;
+    border-radius: 3px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 16px;
+    text-indent: -99em;
+    color: #58585d;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    background: #e0e0e0;
+    border: 1px solid #a7a7a7;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.6);
+    z-index: 998;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* line 19, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container[class*="ldse-status-"]
+    .ldse-ice-status {
+    color: white;
+}
+
+/* line 24, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status:active,
+#ldse-show-ice .ldse-ice-menu-container.ldse-open .ldse-ice-status {
+    background: #cccccc;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 28, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container.ldse-open .ldse-ice-status {
+    border-radius: 3px 3px 0px 0px;
+}
+
+/* line 31, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status:before {
+    font-family: ldsPublisherIcons;
+    content: "\e428";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    text-indent: 0;
+}
+
+/* line 39, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container .ldse-ice-status:after {
+    font-family: ldsPublisherIcons;
+    content: "\e414";
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    text-indent: 0;
+}
+
+/* line 48, scss/_iceMenus.scss */
+#ldse-show-ice
+    #ldse-ice-menu-clone.ldse-ice-menu-container
+    .ldse-ice-status:before,
+#ldse-show-ice
+    #ldse-ice-menu-clone.ldse-ice-menu-container
+    .ldse-ice-status:after {
+    top: 4px;
+}
+
+/* line 52, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-published .ldse-ice-status {
+    border: 1px solid transparent;
+    background: #2f8e27;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+/* line 56, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-published
+    .ldse-ice-status:before {
+    content: "\e406";
+}
+
+/* line 61, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-published
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-published
+    .ldse-ice-status {
+    background: #215c34;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 66, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-not-published
+    .ldse-ice-status,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished
+    .ldse-ice-status {
+    border: 1px solid transparent;
+    background: #f22c2b;
+    box-shadow: inset 1px 1px 1px #fe4443;
+}
+/* line 70, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-not-published
+    .ldse-ice-status:before,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished
+    .ldse-ice-status:before {
+    content: "\e409";
+}
+
+/* line 74, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished
+    .ldse-ice-status:before {
+    content: "\e03e";
+}
+
+/* line 80, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-not-published
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-not-published
+    .ldse-ice-status,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-unpublished
+    .ldse-ice-status {
+    background: #dc0f0e;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* line 84, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-modified .ldse-ice-status {
+    border: 1px solid #d45311;
+    background: #ff9430;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+/* line 88, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-modified
+    .ldse-ice-status:before {
+    content: "\e410";
+}
+
+/* line 93, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-modified
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-modified
+    .ldse-ice-status {
+    background: #eb7200;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 97, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-scheduled .ldse-ice-status {
+    border: 1px solid #006a87;
+    background: #00bad3;
+    box-shadow: inset 1px 1px 1px rgba(194, 214, 241, 0.6);
+}
+/* line 101, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-scheduled
+    .ldse-ice-status:before {
+    content: "\e420";
+}
+
+/* line 106, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-scheduled
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-scheduled
+    .ldse-ice-status {
+    background: #177c9c;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 110, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container > a > span {
+    position: absolute;
+    right: 39px;
+    background-color: #222325;
+    z-index: -1;
+    color: #cccccc;
+    text-shadow: none;
+    padding: 3px 4px 3px 5px;
+    margin-top: -1px;
+    text-indent: 0;
+    font-size: 12px;
+    line-height: 100%;
+    border-radius: 3px 0px 0px 3px;
+}
+
+/* line 124, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-published-component
+    .ldse-ice-status {
+    border: 1px solid transparent;
+    background: #2f8e27;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+/* line 128, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-published-component
+    .ldse-ice-status:before {
+    content: "\e02e";
+}
+
+/* line 133, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-published-component
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-published-component
+    .ldse-ice-status {
+    background: #215c34;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 138, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-not-published-component
+    .ldse-ice-status,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished-component
+    .ldse-ice-status {
+    border: 1px solid transparent;
+    background: #f22c2b;
+    box-shadow: inset 1px 1px 1px #fe4443;
+}
+/* line 142, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-not-published-component
+    .ldse-ice-status:before,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished-component
+    .ldse-ice-status:before {
+    content: "\e02e";
+}
+
+/* line 146, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished-component
+    .ldse-ice-status:before {
+    content: "\e02e";
+}
+
+/* line 152, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-not-published-component
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-not-published-component
+    .ldse-ice-status,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-unpublished-component
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-unpublished-component
+    .ldse-ice-status {
+    background: #dc0f0e;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* line 156, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-modified-component
+    .ldse-ice-status {
+    border: 1px solid #d45311;
+    background: #ff9430;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+/* line 160, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-modified-component
+    .ldse-ice-status:before {
+    content: "\e02e";
+}
+
+/* line 165, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-modified-component
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-modified-component
+    .ldse-ice-status {
+    background: #eb7200;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 169, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-scheduled-component
+    .ldse-ice-status {
+    border: 1px solid #006a87;
+    background: #00bad3;
+    box-shadow: inset 1px 1px 1px rgba(194, 214, 241, 0.6);
+}
+/* line 173, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-scheduled-component
+    .ldse-ice-status:before {
+    content: "\e02e";
+}
+
+/* line 178, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-scheduled-component
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-scheduled-component
+    .ldse-ice-status {
+    background: #177c9c;
+    box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.6);
+}
+
+/* line 182, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container.ldse-status-component .ldse-ice-status {
+    border: 1px solid #a7a7a7;
+    background: #e0e0e0;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* line 187, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-component
+    .ldse-ice-status:before {
+    content: "\e02e";
+}
+
+/* line 192, scss/_iceMenus.scss */
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-status-component
+    .ldse-ice-status:active,
+#ldse-show-ice
+    .ldse-ice-menu-container.ldse-open.ldse-status-component
+    .ldse-ice-status {
+    background: #e0e0e0;
+    border: 1px solid #a7a7a7;
+    box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* line 198, scss/_iceMenus.scss */
+#ldse-show-ice .ldse-ice-menu-container ul.ldse-menu li {
+    cursor: pointer;
+}
+
+/* Styling of button and menu in toolbar */
+/* Classes for Check Links Button and List */
+/* line 3, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-check-links.ldse-button {
+    width: 56px;
+}
+/* line 5, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-check-links.ldse-button:before {
+    font-size: 18px;
+    margin-top: 2px;
+    padding-left: 30px;
+}
+
+/* line 11, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-check-links-status {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+}
+/* line 17, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-check-links-status:before {
+    text-indent: 0;
+    float: left;
+    font-size: 18px;
+}
+
+/* line 24, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-progress {
+    font-size: 14px;
+    color: #999999;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* line 32, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-progress-bar {
+    position: relative;
+    height: 16px;
+    border-radius: 25px;
+    padding: 8px;
+    margin-bottom: 5px;
+    background: #53565a;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.4);
+}
+
+/* line 41, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-progress-bar-color {
+    display: block;
+    height: 100%;
+    border-radius: 20px 8px 8px 20px;
+    background-color: #00bad3;
+    background-image: -webkit-linear-gradient(bottom, #00bad3 0%, #00d8f5 100%);
+    background-image: -moz-linear-gradient(bottom, #00bad3 0%, #00d8f5 100%);
+    background-image: -ms-linear-gradient(bottom, #00bad3 0%, #00d8f5 100%);
+    background-image: -o-linear-gradient(bottom, #00bad3 0%, #00d8f5 100%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.4),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+@-moz-keyframes progress {
+    /* line 121, scss/_mixins.scss */
+    from {
+        background-position: 0 0;
+    }
+
+    /* line 124, scss/_mixins.scss */
+    to {
+        background-position: 50px 50px;
+    }
+}
+
+@-webkit-keyframes progress {
+    /* line 130, scss/_mixins.scss */
+    from {
+        background-position: 0 0;
+    }
+
+    /* line 133, scss/_mixins.scss */
+    to {
+        background-position: 50px 50px;
+    }
+}
+
+@-ms-keyframes progress {
+    /* line 139, scss/_mixins.scss */
+    from {
+        background-position: 0 0;
+    }
+
+    /* line 142, scss/_mixins.scss */
+    to {
+        background-position: 50px 50px;
+    }
+}
+
+@-o-keyframes progress {
+    /* line 148, scss/_mixins.scss */
+    from {
+        background-position: 0 0;
+    }
+
+    /* line 151, scss/_mixins.scss */
+    to {
+        background-position: 50px 50px;
+    }
+}
+
+@keyframes progress {
+    /* line 157, scss/_mixins.scss */
+    from {
+        background-position: 0 0;
+    }
+
+    /* line 160, scss/_mixins.scss */
+    to {
+        background-position: 50px 50px;
+    }
+}
+
+/* line 52, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-progress-bar-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-image: -moz-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-image: -ms-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-image: -o-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    -webkit-animation: progress 2.5s linear 0s infinite;
+    -moz-animation: progress 2.5s linear 0s infinite;
+    -o-animation: progress 2.5s linear 0s infinite;
+    -ms-animation: progress 2.5s linear 0s infinite;
+    animation: progress 2.5s linear 0s infinite;
+    border-radius: 20px 8px 8px 20px;
+    overflow: hidden;
+}
+
+/* line 62, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-good {
+    color: white;
+    border: 1px solid transparent;
+    background: #2f8e27;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+/* line 68, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-good.depressed {
+    background: #215c34;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 72, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-good:active,
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-good.depressed:active {
+    background: #215c34;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* line 77, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-broken-link-preview {
+    border-color: #d45311;
+    background: #ff9430;
+    color: white;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+/* line 83, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-preview
+    .ldse-check-links-status:before {
+    content: "\e051";
+}
+/* line 86, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-preview.depressed {
+    background: #eb7200;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 90, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-preview:active,
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-preview.depressed:active {
+    background: #d45311;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* line 95, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-broken-link-prod {
+    color: white;
+    border-color: transparent;
+    background: #f22c2b;
+    box-shadow: inset 1px 1px 1px #fe4443;
+}
+/* line 101, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-prod
+    .ldse-check-links-status:before {
+    content: "\e051";
+}
+/* line 104, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-prod.depressed {
+    background: #dc0f0e;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 108, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-prod:active,
+#ldse-toolbar-container.front
+    #ldse-check-links.ldse-links-broken-link-prod.depressed:active {
+    background: #b50302;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@-moz-keyframes spin {
+    /* line 73, scss/_mixins.scss */
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    /* line 76, scss/_mixins.scss */
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    /* line 82, scss/_mixins.scss */
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    /* line 85, scss/_mixins.scss */
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes spin {
+    /* line 91, scss/_mixins.scss */
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    /* line 94, scss/_mixins.scss */
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spin {
+    /* line 100, scss/_mixins.scss */
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    /* line 103, scss/_mixins.scss */
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    /* line 109, scss/_mixins.scss */
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    /* line 112, scss/_mixins.scss */
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* line 114, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-link-checker.ldse-link-in-progress
+    .ldse-check-links-status {
+    -webkit-animation: spin 1.5s linear 0s infinite;
+    -moz-animation: spin 1.5s linear 0s infinite;
+    -o-animation: spin 1.5s linear 0s infinite;
+    -ms-animation: spin 1.5s linear 0s infinite;
+    animation: spin 1.5s linear 0s infinite;
+}
+/* line 116, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-link-checker.ldse-link-in-progress
+    .ldse-check-links-status:before {
+    content: "\e052";
+}
+
+/* line 121, scss/_linkChecker.scss */
+#ldse-toolbar-container.front #ldse-link-checker #ldse-link-progress,
+#ldse-toolbar-container.front
+    #ldse-link-checker.ldse-link-check-done
+    #ldse-link-progress {
+    display: none;
+}
+
+/* line 124, scss/_linkChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-link-checker.ldse-link-in-progress
+    #ldse-link-progress {
+    display: block;
+}
+
+/* line 127, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-count:before {
+    top: 50%;
+    margin-top: -15px;
+    left: 0px;
+    font-family: ldsPublisherIcons;
+    font-size: 20px;
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 6px;
+    color: white;
+    background: #222325;
+}
+
+/* line 143, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-count.ldse-unknown:before {
+    color: #58585d;
+    background: #cccccc;
+}
+
+/* line 147, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-count.ldse-good:before {
+    background: #2f8e27;
+}
+
+/* line 151, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-count.ldse-broken-preview:before {
+    background: #ff9430;
+}
+
+/* line 155, scss/_linkChecker.scss */
+#ldse-toolbar-container.front .ldse-link-count.ldse-broken-prod:before {
+    background: #f22c2b;
+}
+
+/* Styling of links on preview page */
+/* line 162, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-checked-link.ldse-unknown-link,
+#ldse-show-ice .ldse-checked-link.ldse-unknown-link * {
+    background-color: #e0e0e0;
+    color: #58585d;
+}
+
+/* line 167, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-preview,
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-preview * {
+    background-color: #ff9430;
+    color: white;
+}
+
+/* line 172, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-prod,
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-prod * {
+    background-color: #f22c2b;
+    color: #e0e0e1;
+}
+
+/* line 176, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-image-link {
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border: 6px solid #e0e0e0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* line 183, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-good-link .ldse-image-link {
+    display: none;
+}
+
+/* line 186, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-broken-link-preview .ldse-image-link {
+    border-color: #ff9430;
+}
+
+/* line 189, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-broken-link-prod .ldse-image-link {
+    border-color: #f22c2b;
+}
+
+/* line 192, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-image-link:after {
+    content: "\e051";
+    font-family: ldsPublisherIcons;
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    top: 50%;
+    margin-top: -17px;
+    left: 50%;
+    margin-left: -17px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: inset 0px 0px 2px 1px #53565a, 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 6px;
+    color: #58585d;
+    background-color: #e0e0e0;
+}
+
+/* line 212, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-broken-link-preview .ldse-image-link:after {
+    background-color: #ff9430;
+    color: white;
+}
+
+/* line 216, scss/_linkChecker.scss */
+#ldse-show-ice .ldse-broken-link-prod .ldse-image-link:after {
+    background-color: #f22c2b;
+    color: white;
+}
+
+/* Styling of button and menu in toolbar */
+/* Classes for Check Links Button and List */
+/* line 3, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button {
+    width: 56px;
+}
+/* line 5, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button:before {
+    font-size: 18px;
+    margin-top: 2px;
+    padding-left: 30px;
+}
+/* line 10, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button.ldse-seo-good {
+    color: white;
+    border: 1px solid transparent;
+    background: #2f8e27;
+}
+/* line 14, scss/_seoChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-seo.ldse-button.ldse-seo-good.depressed,
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button.ldse-seo-good:hover {
+    background: #215c34;
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: linear-gradient(
+        to top,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+}
+/* line 21, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button.ldse-seo-warning {
+    color: white;
+    border: 1px solid #d45311;
+    background: #ff9430;
+}
+/* line 25, scss/_seoChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-seo.ldse-button.ldse-seo-warning.depressed {
+    background: #eb7200;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 30, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button.ldse-seo-bad {
+    color: white;
+    border: 1px solid transparent;
+    background: #f22c2b;
+}
+/* line 35, scss/_seoChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-check-seo.ldse-button.ldse-seo-bad.depressed,
+#ldse-toolbar-container.front #ldse-check-seo.ldse-button.ldse-seo-bad:hover {
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: linear-gradient(
+        to top,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+}
+
+/* line 44, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-check-seo-status {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+}
+/* line 50, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-check-seo-status:before {
+    text-indent: 0;
+    float: left;
+    font-size: 24px;
+}
+
+/* line 57, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-seo-rank {
+    display: block;
+    vertical-align: middle;
+    color: #999999;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+/* line 63, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-seo-rank .ldse-seo-score {
+    float: right;
+    font-weight: bold;
+}
+/* line 66, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-seo-rank .ldse-seo-score .ldse-seo-out-of {
+    font-weight: normal;
+}
+
+/* line 74, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-seo-total .ldse-seo-rank {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #999999;
+    padding-top: 10px;
+}
+
+/* line 83, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-seo-ranking .ldse-seo-rank {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* line 91, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-seo-checker ul.ldse-button-subgroup {
+    width: 350px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 15px;
+}
+/* line 96, scss/_seoChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-seo-checker
+    ul.ldse-button-subgroup
+    .ldse-seo-scoring {
+    display: none;
+    margin-left: 20px;
+}
+
+/* line 102, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-seo-search {
+    border-top: 1px solid #999999;
+    width: 320px;
+    margin-left: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+/* line 110, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-seo-search .ldse-seo-rank {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* line 115, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-seo-search #ldse-seo-keyword {
+    width: 65%;
+    padding: 0px 0px 0px 10px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+/* line 122, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-seo-search #ldse-seo-rank-page {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* line 130, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-seo-page-score .ldse-seo-rank {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* line 134, scss/_seoChecker.scss */
+#ldse-toolbar-container.front #ldse-seo-page-score .ldse-seo-scored {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* line 139, scss/_seoChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-seo-page-score
+    .ldse-seo-scored.ldse-seo-good {
+    color: #2f8e27;
+}
+/* line 142, scss/_seoChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-seo-page-score
+    .ldse-seo-scored.ldse-seo-warning {
+    color: #ff9430;
+}
+/* line 145, scss/_seoChecker.scss */
+#ldse-toolbar-container.front
+    #ldse-seo-page-score
+    .ldse-seo-scored.ldse-seo-bad {
+    color: #f22c2b;
+}
+
+/* line 151, scss/_seoChecker.scss */
+#ldse-toolbar-container.front .ldse-seo-page-scoring {
+    color: #999999;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+/* line 9, scss/_previewSite.scss */
+#ldse-show-ice .ldse-ice-menu-container.ldse-highlight:before {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ffbf1c;
+    opacity: 0.8;
+    width: 60px;
+    height: 46px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(14, 15, 16, 0.2);
+}
+
+/* line 23, scss/_previewSite.scss */
+.html5editable {
+    cursor: default;
+}
+
+/* line 27, scss/_previewSite.scss */
+.html5editable.ldse-anchor-parent {
+    cursor: pointer;
+}
+
+/* line 31, scss/_previewSite.scss */
+#ldse-show-ice .html5editable {
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+}
+
+/* line 36, scss/_previewSite.scss */
+#ldse-show-ice .html5editable:hover,
+#ldse-show-ice .html5editable:focus {
+    outline: 5px solid #758dbd;
+    background-color: white;
+    color: #666666;
+    cursor: text;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 7px 3px;
+}
+
+/* line 1, scss/_modal.scss */
+.ldse-modal {
+    position: fixed;
+    z-index: 10000;
+    box-shadow: 1px 1px 1px #3d3d3d, 1px 2px 12px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* line 9, scss/_modal.scss */
+.ldse-modal.large {
+    position: absolute;
+    max-width: 3000px;
+    width: 90%;
+    margin-left: 5%;
+    top: 80px !important;
+    left: 0 !important;
+    overflow: auto;
+}
+
+/* line 17, scss/_modal.scss */
+.ldse-modal .ldse-icon-x.ldse-icon {
+    right: 14px;
+    top: 8px;
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 0 -1px 1px #304240;
+}
+
+/* line 24, scss/_modal.scss */
+.ldse-modal .ldse-icon-x.ldse-icon:before {
+    left: 7px;
+    top: 4px;
+}
+
+/* line 28, scss/_modal.scss */
+.ldse-modal h1 {
+    color: #fff;
+    text-shadow: 0 -1px 1px #243534;
+    margin: 0 0 18px;
+}
+
+/* line 33, scss/_modal.scss */
+.ldse-modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9997;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* line 43, scss/_modal.scss */
+.ldse-modal .ldse-section.ldse-force--border {
+    border: 1px solid #dddddd;
+}
+
+/* line 47, scss/_modal.scss */
+#collection-modal-form {
+    margin-right: 130px;
+}
+
+/* line 50, scss/_modal.scss */
+#collection-search {
+    margin-bottom: 13px;
+}
+
+/* line 54, scss/_modal.scss */
+ul.collection-modal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    column-gap: 10px;
+    row-gap: 5px;
+}
+@media screen and (max-width: 768px) {
+    /* line 54, scss/_modal.scss */
+    ul.collection-modal-list {
+        column-width: 50%;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+/* line 68, scss/_modal.scss */
+ul.collection-modal-list li {
+    break-inside: avoid;
+    margin: 10px;
+}
+/* line 72, scss/_modal.scss */
+ul.collection-modal-list li img {
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+    /* line 72, scss/_modal.scss */
+    ul.collection-modal-list li img {
+        max-width: 300px;
+    }
+}
+/* line 82, scss/_modal.scss */
+ul.collection-modal-list a.ldse-block-toggle {
+    color: #999;
+}
+
+/* line 88, scss/_modal.scss */
+.ldse-modal.better {
+    border-radius: 5px;
+    top: 100px;
+}
+
+/* line 92, scss/_modal.scss */
+#collection-modal-form input[type="button"]:hover {
+    color: white;
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: linear-gradient(
+        to top,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+}
+
+/* line 100, scss/_modal.scss */
+.modal-pages a.page-link-active {
+    border-radius: 3px;
+    /* replace with variable */
+    border: 1px solid transparent;
+    color: #006a87;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0.3em;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    padding: 0.1em 0.485em;
+}
+/* line 112, scss/_modal.scss */
+.modal-pages a.page-link-active:hover {
+    border-color: #d8d8d8;
+    text-decoration: none;
+}
+/* line 117, scss/_modal.scss */
+.modal-pages a.page-link-active.selected {
+    background: linear-gradient(to bottom right, #00bad3, #177c9c 80%);
+    background-clip: padding-box;
+    color: white;
+    cursor: default;
+}
+/* line 123, scss/_modal.scss */
+.modal-pages a.page-link-active.selected:hover {
+    border-color: transparent;
+}
+
+/* line 9, scss/ldspublisher-ice.scss */
+body {
+    margin-top: 50px;
+}
+
+/* CHANGED BN */
+/* line 13, scss/ldspublisher-ice.scss */
+.ldse-form .select {
+    width: 80%;
+    color: #545454;
+    display: inline-block;
+    padding: 9px 40px 0px 17px;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    position: relative;
+    height: 27px;
+    background-color: #fff;
+    background-position: left, right;
+}
+
+/* line 28, scss/ldspublisher-ice.scss */
+.ldse-info-button {
+    color: #8ba7c7;
+    margin-left: 5px;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+}
+
+/* line 35, scss/ldspublisher-ice.scss */
+.ldse-info-text {
+    background: #8ba7c7;
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* line 42, scss/ldspublisher-ice.scss */
+.ldse-form .select .text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* CHANGED BN */
+/* line 49, scss/ldspublisher-ice.scss */
+.ldse-form .select .arrow:after {
+    content: "\25be";
+    font-size: 16px;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.75);
+}
+
+/* line 57, scss/ldspublisher-ice.scss */
+#translationMarked .publishStatus {
+    float: left;
+    margin-bottom: 10px;
+}
+
+/* CHANGED BN */
+/* line 62, scss/ldspublisher-ice.scss */
+.ldse-form .select .arrow {
+    display: block;
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    background: #c5c5c5;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #ddd;
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.65);
+}
+
+/* line 79, scss/ldspublisher-ice.scss */
+.ldse-form .select select {
+    display: block;
+    font: 13px/15px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial,
+        Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+}
+
+/* line 86, scss/ldspublisher-ice.scss */
+.ldse-form .select option {
+    background: #fbf9f3;
+    color: #2f393a;
+}
+
+/* line 91, scss/ldspublisher-ice.scss */
+.ldse-modal .select select {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* line 96, scss/ldspublisher-ice.scss */
+.ldse-publish-dialog {
+    float: right;
+    margin-left: 10px;
+}
+/* line 99, scss/ldspublisher-ice.scss */
+.ldse-publish-dialog:before {
+    color: #669900;
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+}
+/* line 105, scss/ldspublisher-ice.scss */
+.ldse-publish-dialog.ldse-icon-ko-warning:before {
+    color: #e59941;
+}
+
+/* line 110, scss/ldspublisher-ice.scss */
+.ldse-seo-title {
+    color: #12c;
+    font-size: medium;
+    display: block;
+    text-decoration: underline;
+    padding-bottom: 2px;
+}
+
+/* line 118, scss/ldspublisher-ice.scss */
+.ldse-seo-url {
+    font-size: 14px;
+    color: #093;
+}
+
+/* line 123, scss/ldspublisher-ice.scss */
+.ldse-seo-description {
+    padding-top: 2px;
+    color: #444;
+    font-size: small;
+    display: block;
+}
+
+/* line 130, scss/ldspublisher-ice.scss */
+.ldse-seo-desc-message,
+.ldse-seo-title-message {
+    display: block;
+    padding-top: 5px;
+}
+
+/* line 135, scss/ldspublisher-ice.scss */
+.ldse-seo-title-number,
+.ldse-seo-desc-number {
+    font-weight: bold;
+}
+
+/* line 139, scss/ldspublisher-ice.scss */
+#ldse-toolbar-container.front #ldse-check-links-list a.no-link {
+    cursor: default;
+}
+
+/* line 143, scss/ldspublisher-ice.scss */
+#ldse-toolbar-container.front #ldse-check-links-list a.no-link:hover {
+    text-decoration: none;
+}
+
+/* line 148, scss/ldspublisher-ice.scss */
+.links__wrapper ice-div.ice-component:nth-child(1) div {
+    top: 40px;
+}
+
+/* line 152, scss/ldspublisher-ice.scss */
+.links__wrapper ice-div.ice-component:nth-child(3) div {
+    top: 80px;
+}
+
+/* line 156, scss/ldspublisher-ice.scss */
+.links__wrapper ice-div.ice-component:nth-child(5) div {
+    top: 120px;
+}
+
+/* line 159, scss/ldspublisher-ice.scss */
+li[data-gear]:hover {
+    box-shadow: 0 1px 3px 0 rgba(14, 15, 16, 0.4);
+}
+/* line 161, scss/ldspublisher-ice.scss */
+li[data-gear]:hover .node-vignet {
+    color: #fff;
+    background: linear-gradient(
+        0deg,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+}
+
+/* line 166, scss/ldspublisher-ice.scss */
+#ldse-toolbar-buttons.ldse-toolbar-buttons .ldse-button:hover,
+.ldse-page .ldse-button:hover {
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+    background-image: linear-gradient(
+        to top,
+        rgba(14, 15, 16, 0.25) 0%,
+        rgba(14, 15, 16, 0)
+    );
+}

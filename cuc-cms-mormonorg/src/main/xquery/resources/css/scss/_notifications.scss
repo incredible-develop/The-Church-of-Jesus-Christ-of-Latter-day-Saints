@@ -1,0 +1,101 @@
+.ldse-notification-container {
+  position: relative;
+  overflow: visible;
+}
+.ldse-notification {
+  position: absolute;
+  z-index: 100;
+  top: -4px;
+  right: -4px;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding-top: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid $white;
+  text-align: center;
+  font-size: 10px;
+  box-shadow: 0 0 3px $darkShadow, inset 0 0 3px $darkShadow;
+  @include noSelect;
+  overflow: visible;
+  background-color: $red;
+  @include linearGradient(top, $lightRed 0%, $red 50%);
+  color: $white;
+  @media screen and (min-width: $mobile) {
+    top: -8px;
+    right: -8px;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    font-size: 12px;
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+.ldse-notification.orange,
+.ldse-notification.warning {
+  @include linearGradient(top, $lightOrange 0%, $orange 50%);
+}
+.ldse-notification.blue {
+  @include linearGradient(top, $lightBlue 0%, $blue 50%);
+}
+.ldse-notification.green,
+.ldse-notification.good {
+  @include linearGradient(top, $lightGreen 0%, $green 50%);
+}
+.ldse-notification.red,
+.ldse-notification.bad {
+  @include linearGradient(top, $lightRed 0%, $red 50%);
+}
+.ldse-notification[class*="white-"] {
+  background: $white;
+}
+.ldse-notification.white-blue {
+  color: $blue;
+}
+.ldse-notification.white-red {
+  color: $red;
+}
+.ldse-notification.white-green {
+  color: $green;
+}
+.ldse-notification.ldse-icon {
+  white-space: nowrap;
+  @include boxSizing();
+  padding-top: 3px;
+  padding-left: 3px;
+  text-indent: -999em;
+  @media screen and (min-width: $mobile) {
+    padding-top: 4px;
+    padding-left: 4px; 
+  }
+}
+.ldse-notification[class*="ldse-icon-"]:before {
+  vertical-align: 0;
+}
+.ldse-info-button {
+  color: $blue;
+  margin-left: 5px;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+}
+.ldse-info-button.ldse-show-info:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid $blue;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.ldse-info-text {
+  background: $blue;
+  color: $white;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: $borderRadius;
+}

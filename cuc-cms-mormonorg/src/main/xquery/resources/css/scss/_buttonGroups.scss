@@ -1,0 +1,93 @@
+#ldse-toolbar-container .ldse-button-subgroup .ldse-button,
+.ldse-button-subgroup .ldse-button {
+  text-indent: 0em;
+  width: auto;
+  &:before {
+    float: none;
+  }
+}
+#ldse-toolbar-container .ldse-button-list .ldse-main-action,
+.ldse-button-list .ldse-main-action {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+  }
+}
+#ldse-toolbar-container .ldse-button-list .ldse-main-action-list,
+.ldse-button-list .ldse-main-action-list {
+  display: inline-block;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+#ldse-toolbar-container .ldse-button.dropdown-right,
+.ldse-button.dropdown-right {
+  width: 50px;
+  @media screen and (min-width: $tablet) {
+    width: 40px;
+    margin-left: -1px;
+    border-radius: 0px $borderRadius $borderRadius 0px;
+  }
+  &.depressed {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+#ldse-toolbar-container .ldse-button.dropdown-right:before,
+.ldse-button.dropdown-right:before {
+  text-indent: 0;
+  @media screen and (min-width: $tablet) {
+    text-indent: -100em;
+  }
+}
+#ldse-toolbar-container .ldse-button.dropdown-right:after,
+.ldse-button.dropdown-right:after {
+  font-family: $iconFont;
+  content: $ldse-icon-tri-down;
+  position: static;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -8px;
+  text-indent: 0px;
+  @media screen and (min-width: $tablet) {
+    right: 50%;
+    margin-right: -8px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  #ldse-toolbar-container .ldse-button.dropdown-left,
+  .ldse-button.dropdown-left {
+    margin-right: 0px;
+    border-radius: $borderRadius 0px 0px $borderRadius;
+  }
+}
+#ldse-toolbar-container .ldse-button-list ul,
+.ldse-button-list ul {
+  display: inline-block;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+#ldse-toolbar-container .ldse-button-list li,
+.ldse-button-list li {
+  display: inline-block;
+}
+#ldse-toolbar-container .ldse-button-list ul ul,
+.ldse-button-list ul ul {
+  display: none;
+  padding: 5px 5px 0px 10px;
+  border-radius: 0px 0px 5px 5px;
+  /* Textured background with dots */
+  background-color: $lightGrey;
+  color: $lightCharcoal;
+  /*@include radialGradient(center center, circle contain, #292929 20%, #1F1F1F 25%, rgba(0,0,0,0) 40%);*/
+  /*background-size: 3px 3px;*/
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px 0px 10px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  position: absolute;
+  z-index: 99;
+}
+#ldse-toolbar-container .ldse-button-subgroup button,
+.ldse-button-subgroup button {
+  margin-bottom: 10px !important;
+}

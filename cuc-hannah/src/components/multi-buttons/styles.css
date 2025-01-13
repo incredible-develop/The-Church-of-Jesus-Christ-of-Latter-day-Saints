@@ -1,0 +1,19 @@
+
+/* Mobile first */
+.multiButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: var(--spacing-unite-3);
+  white-space: nowrap;
+  &.left {
+  justify-content: start;
+}
+  &.center {
+    justify-content: center;
+  }
+  &.right {
+    justify-content: end;
+  }
+}

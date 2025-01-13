@@ -1,0 +1,234 @@
+
+/*Preview Tile Content*/
+#preview-comparison
+{
+	float: right;
+}
+
+#preview-body
+{
+	padding-bottom: 45px;
+}
+
+#preview-body input
+{
+	margin-right: 10px;
+}
+
+#preview-body button
+{
+	margin-top: 5px;
+}
+
+#preview-info iframe
+{
+  width: 100%;
+  height: 100%;
+  border: none;
+
+}
+
+#preview-comparison label
+{
+	font-weight: bold;
+}
+
+#preview-right
+{
+	display: none;
+}
+
+#preview-haschanges
+{
+	display: none;
+}
+
+#preview-body .preview-iframe-container
+{
+	width: 100%;
+	height: 600px;
+  box-shadow: 0 0 18px -5px #000;
+  position: relative;
+  margin: 0 auto 30px auto;
+
+  &.noBoxShadow {
+    box-shadow: none;
+  }
+}
+
+#preview-body .grid-50
+{
+	margin-bottom: 10px;
+}
+
+#preview-info {
+  span.select {
+    margin: 10px 10px 15px 0;
+    max-width: 400px;
+  }
+
+  #preview-left,
+  #preview-right {
+
+    .ldse-preview-compare-msg {
+      display: none;
+
+      span {
+        font-size: 23px;
+        line-height: 23px;
+      }
+    }
+
+   &.compare-preview {
+    .ldse-preview-compare-msg {
+      display: block;
+    }
+   }
+
+    &.compare-preview.ldse-preview-half {
+      .ldse-preview-compare-msg {
+        display: none;
+      }
+
+    }
+
+    &.ldse-preview-half {
+      width: 47%; 
+
+    }
+  }
+
+  #preview-right {
+    width: 100%;
+
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 50px;
+
+    &.ldse-preview-half {
+      margin-top: 0;
+      border: none;
+      padding-top: 0;
+    }
+  }
+
+  #preview-left {
+
+    &.ldse-preview-half {
+      margin-left: 20px;
+    }
+
+    width: 100%;
+
+    &.push-left{
+      margin-right: 30px;
+    }
+  }
+
+  .ldse-preview-window {  
+    &.push-left {
+      float:left;
+    }
+  }
+
+  .ldse-device-info {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  .preview-url {
+    width: 81%;
+  }
+
+  .preview-orientation {
+    text-align: center;
+    margin-bottom: 15px;
+
+    button {
+      width: 120px;
+      margin: 0 10px;
+      padding: 5px 10px;
+
+      &.active {
+        background: lightgrey;
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+}
+
+.ldse-preview-custom {
+  input {
+    width: 100px;
+  }
+  label {
+    width: 65px;
+    display: inline-block;
+  }
+}
+
+
+//it wasn't worth putting the portrait and landscape icons in the ldse font. They only serve a purpose on this page.
+//fonts are base 64 encoded and ready for use
+@font-face {
+  font-family: 'ldse-preview';
+  src:url('fonts/ldse-preview.eot');
+}
+@font-face {
+  font-family: 'ldse-preview';
+  src: url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAR0AAsAAAAAB1gAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAAAUYAAAJUfej/S0ZGVE0AAAJQAAAAGgAAABxl70usR0RFRgAAAmwAAAAdAAAAIAAxAARPUy8yAAACjAAAAEsAAABgODLcQGNtYXAAAALYAAAAPQAAAVLoafLNaGVhZAAAAxgAAAAuAAAANv2FHTloaGVhAAADSAAAAB4AAAAkBBD/5GhtdHgAAANoAAAADgAAAA4EAABgbWF4cAAAA3gAAAAGAAAABgAEUABuYW1lAAADgAAAAOUAAAHCrBm/lnBvc3QAAARoAAAADAAAACAAAwAAeJxjZGBhYWBkZOTNSSlO1S0oSi3LTC1nYGRiYGSw+yHH9EOe+YcESzcPczcPixwXg2Sw0P/ubjiDh707+8eUHyWsMgzT+WUYGARkGOYJyjBwyDD5CDGwgszgYOBnEGNQYtArzct0MzAwAFKuFqZmEMoc2U4U+xkYGNsZOxg7GVhAhjAx8DBcZ1zE1/2jhOXPlB9T2Pl+sPwoEf3PIJWW9p9BdOas//9fAVn/n86cJf/HhB3MgArBxOV+l7AhiYM1gbTL/wCqR5gDF5fbXSxa/V1kNrv3nxigRYLrRP4z8AW+gRJgLoj4/xEm8f8dnPgIk0CIQZR8hGqT/y7yWvT7ld9Tfl8BemXKdxZRrE7+Y4Ldyd9LsDv5B1A9tiApjhat/i0ym+1PzGlRbM6hxHtyr3+LAL3yHegVNqBXRLpFu3m4AJjWF/IAAHicY2BgYGQAgpOd+YYg+pzRO1sYDQBCSQZKAAB4nGNgZGBg4ANiCQYQYGJgBEJmIGYB8xgABGsANgAAAHicY2BmYmCcwMDKwMHow5jGwMDgDqW/MkgytDAwMDGwMjPAgQCCyRCQ5prC4PAi7AMD44P/Dxj0GB8wKDQwMDDCFSgAISMAG6wMfQB4nGNgYGBmgGAZBkYGEPAB8hjBfBYGAyDNAYRMIIkX4R8Y/v8Hs8IgLPE1AoxQXWDAyMaAzB2RAABLGwoMAAAAeJxjYGRgYADiN1Nmzonnt/nKwM3EAALnjN7ZIej/D5gYGB8AuRwMYGkATqALiAAAeJxjYGRgYHzw/wGDHhMDA8M/BiAJFEEBzABt5wP2AAACAAAAAAAAAAIAAGAAAAAAAABQAAAEAAB4nI2OwUrDQBCGv22TFrF4lOLFvdVLQjZSLL1469lTn6BLCZSkbEp9jl76MD6HL+BjePNPXEQEoQuz8+38/8wOMOGMoTtGfBd5wJinyEMeOEVO5HmPnHLNZ+QRE3Mvp0muVJn2XR0PuGEWecgLz5ETed4ip9zyEXnE1KTs2NDiydgTlI9Uul9ht2l9tg/+WHm9/og/9RUNNYc+B7ZSLSU5hfJS8d/4b9Uxl7JQlOpwPGpgUx9WTdh6W+aFXdrfa+jp5tkiKwsn54Wbr1UMMlb9pt2f3XasfWirprYuLy4d9QXwDUjnAAAAeJxjYGbACwAAfQAE) format('woff'),
+     url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'ldse-preview';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="ldse-preview-"] {
+*/
+.ldse-preview-portrait, .ldse-preview-landscape {
+  font-family: 'ldse-preview';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.ldse-preview-portrait:before {
+  content: "\e856";
+}
+.ldse-preview-landscape:before {
+  content: "\e857";
+}
+
+[class^="ldse-preview-"].above:before, [class*=" ldse-preview-"].above:before {
+  font-size: 42px;
+  padding-bottom: 6px;
+  width: 100%;
+  display: block;
+
+}
+
+@media all and (min-width: 500px) {
+  [class^="ldse-preview-"].above:before, [class*=" ldse-preview-"].above:before {
+    font-size: 52px;
+  }
+}
+

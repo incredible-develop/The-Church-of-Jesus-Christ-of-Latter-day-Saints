@@ -1,0 +1,95 @@
+.aspectRatio {
+  background: var(--grey-5) center/cover no-repeat;
+  max-height: initial;
+
+  & .titanWrapper {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.borderRadius0px {
+  border-radius: 0px;
+}
+
+.borderRadius2px {
+  border-radius: var(--border-radius);
+}
+
+.borderRadius8px {
+  border-radius: var(--border-radius-large);
+}
+
+.borderRadius50percent {
+  border-radius: 50%;
+}
+
+.image > *,
+.image > .titanWrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  background-color: gray;
+}
+
+.carouselCell {
+  & .image {
+    max-height: none;
+  }
+}
+
+.noLimit {
+  max-height: none;
+}
+
+@media (max-width: 480px) {
+  .mobileIgnoreAspect {
+    & .titanWrapper {
+      position: relative;
+    }
+    &::before,
+    &::after {
+      content: none;
+    }
+    & picture {
+      height: auto;
+      display: block;
+      position: relative;
+
+      & img {
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .desktopIgnoreAspect {
+    & .titanWrapper {
+      position: relative;
+    }
+    &::before,
+    &::after {
+      content: none;
+    }
+    & picture {
+      height: auto;
+      display: block;
+      position: relative;
+
+      & img {
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+        position: relative;
+      }
+    }
+  }
+}

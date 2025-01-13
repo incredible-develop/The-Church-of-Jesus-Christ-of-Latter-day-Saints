@@ -1,0 +1,56 @@
+.ldse-info-banner {
+  border: 1px solid $blue;
+  position: relative;
+}
+.ldse-info-banner .ldse-info-banner-icon {
+  font-size: 36px;
+  margin: 0px $mobileSpace 0px 0px;
+  vertical-align: middle;
+  height: 100%;
+  float: left;
+  @media screen and (min-width: $mobile) {
+    font-size: 42px;
+    margin-right: $desktopSpace;
+  }
+}
+.ldse-info-banner.small .ldse-info-banner-icon {
+  font-size: 36px;
+}
+.ldse-info-banner .ldse-info-banner-icon:before {
+  color: $blue;
+}
+.ldse-info-banner h3 {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0px 0px 0px;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 0px;
+  }
+}
+.ldse-info-banner.warning {
+  border: 1px solid $orange;
+}
+.ldse-info-banner.warning .ldse-info-banner-icon:before {
+  color: $orange;
+}
+.ldse-info-text a {
+  color: $white;
+  text-decoration: underline;
+  padding: 0 3px;
+  background: #3A5778;
+  border-radius: 5px;
+  float: none !important;
+  margin: 0px !important;
+  @include transition($property: background);
+  &:hover {
+    color: #3A5778;
+    text-decoration: none;
+    background: none;
+  }
+}
+.ldse-warning-messages-div {
+    padding-left: 55px;
+}
+.ldse-warning-message-div {
+    margin-bottom: 15px;
+}

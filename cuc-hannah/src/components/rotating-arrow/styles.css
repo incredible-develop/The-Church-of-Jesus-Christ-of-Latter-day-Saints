@@ -1,0 +1,46 @@
+/* Mobile first */
+.rotatingArrow {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+}
+.vertical {
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  & .icon {
+    margin-block-start: var(--spacing-unite-2);
+    justify-content: center;
+  }
+}
+
+.horizontal,
+.horizontalTop {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  & .icon {
+    margin-inline-start: var(--spacing-unite-3);
+  }
+}
+
+.horizontalTop {
+  align-items: flex-start;
+}
+
+.icon {
+  display: flex;
+  &.condensed svg {
+    transform: scaleX(1.5);
+  }
+}
+
+.rotatingArrow[clicked] {
+  & .icon svg {
+    transform: rotate(180deg);
+  }
+  & .condensed svg {
+    transform: scaleX(1.5) rotate(180deg);
+  }
+}

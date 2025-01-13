@@ -1,0 +1,152 @@
+/* --Base tile styling-- */
+
+/* Horizontal Alignment and Vertical Alignment*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  /* Default values */
+  justify-content: start;
+  align-items: start;
+
+  &.bottom .gradient:before {
+    margin-block-end: calc(var(--layoutPaddingBottom) * -1);
+    margin-block-start: auto;
+  }
+
+  &.left {
+    justify-content: flex-start;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &.top {
+    align-items: flex-start;
+  }
+
+  &.middle {
+    align-items: center;
+  }
+
+  &.bottom {
+    align-items: flex-end;
+  }
+}
+
+/* Text Alignment and Justify Items */
+.grid {
+  justify-items: flex-start;
+
+  &.left {
+    justify-items: flex-start;
+    text-align: start;
+  }
+
+  &.center {
+    justify-items: center;
+    text-align: center;
+  }
+
+  &.right {
+    justify-items: flex-end;
+    text-align: end;
+  }
+}
+
+.uberTile[class] {
+  overflow: hidden;
+  display: flex;
+  color: var(--textColor);
+
+  @nest button& {
+    border: none;
+    background: none;
+    cursor: pointer;
+    align-items: inherit; /* override user agent styles */
+  }
+  @nest [class*="layout_inner"] & {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  & .innerWrapper {
+    width: 100%;
+    display: flex;
+  }
+}
+/* when the layout is flush we will use the default uber padding, otherwise we use vertical padding defined by layout or default padding if there is background so it will match up with other components */
+.desktopIsFlush[class][class] {
+  @media (min-width: 600px) {
+    /* 64 pix if not inside an outer layout wrapper */
+    --layoutPaddingTop: var(--spacing-separate-1);
+    --layoutPaddingBottom: var(--spacing-separate-1);
+    --layoutPaddingHorizontal: var(--spacing-separate-1);
+    /* 32px if inside a layout and not inside a full EMT. Sadly EMT specific, but not sure how else to do it */
+    @nest [class*="layout_inner"]
+        [data-type="emphasized-media-tile"]:not([class*="fullDesktop"])
+        & {
+      --layoutPaddingTop: var(--spacing-relate);
+      --layoutPaddingBottom: var(--spacing-relate);
+      --layoutPaddingHorizontal: var(--spacing-relate);
+    }
+  }
+}
+.mobileIsFlush[class][class] {
+  @media (max-width: 599px) {
+    --layoutPaddingTop: var(--spacing-unite-3);
+    --layoutPaddingBottom: var(--spacing-unite-3);
+    --layoutPaddingHorizontal: var(--spacing-unite-3);
+    padding-left: var(--layoutPaddingHorizontal);
+    padding-right: var(--layoutPaddingHorizontal);
+  }
+}
+
+.gridGapLarge {
+  --base-tile-gap: var(--spacing-relate);
+}
+.gridGapSmall {
+  --base-tile-gap: var(--spacing-unite-3);
+}
+.isExtraBold {
+  & .heading {
+    font-weight: 800;
+    font-size: var(--font-size-20);
+  }
+
+  @media (min-width: 720px) {
+    --base-tile-gap: var(--spacing-relate);
+
+    & .heading {
+      font-size: var(--font-size-32);
+    }
+  }
+}
+
+.bodyCopy {
+  margin-top: calc((var(--base-tile-gap) / 2) * -1);
+}
+
+.iconOnlyStyles,
+.invertTextColor {
+  & [data-type="button"] {
+    & svg path {
+      fill: var(--grey-125);
+    }
+  }
+}
+
+.heading,
+.bodyCopy {
+  /* inherit so that it can be passed down to barWrapper, even though these elems aren't grid and won't use it */
+  justify-items: inherit;
+}
+.barWrapper {
+  display: grid;
+  justify-items: inherit;
+}

@@ -1,0 +1,72 @@
+/*
+  Break into repsonsive when three columns with collapsed
+  sidebar is reached (body=845px)
+*/
+
+@media screen and (max-width: 845px){
+.filter-nav, #page{
+  position: inherit;
+  display: block;
+  /*width: 100%; */
+  top:auto;
+  left:auto;
+  box-sizing:border-box;
+}
+#page{
+  box-shadow: none;
+  /*margin-top:-19px;*/
+  border-top:1px solid #d5d5d5;
+
+}
+.tagContainer.sticky{
+
+}
+.filter-nav{
+  height:auto;
+  padding-bottom:20px;
+}
+.filter-nav h4{
+
+}
+
+#toggle{
+  margin:0px;
+  float:right;
+  margin-right:10px;
+  padding:8px 20px;
+  border-radius: 5px 5px 0 0;
+  margin-top:-35px;
+
+}
+#toggle.in{
+  margin-top:0px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 0px 0px;
+}
+#toggle img{
+  transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+}
+#toggle.in img{
+  transform: rotate(270deg);
+   -moz-transform: rotate(270deg);
+   -webkit-transform: rotate(270deg);
+}
+.filter-nav.page-full{
+height:90px;
+}
+#page.page-full{
+
+}
+form:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+dl{
+  display: inline-block;
+  float:left;
+  margin-right: 20px;
+}
+}

@@ -1,0 +1,42 @@
+@import "toolbarFrontButtons";
+
+@import "iceMenus";
+
+@import "linkChecker";
+
+@import "seoChecker";
+
+#ldse-show-ice .ldse-ice-menu-container.ldse-highlight:before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: $yellow;
+  opacity: .8;
+  width: 60px;
+  height: 46px;
+  border-radius: $borderRadius;
+  box-shadow: 0 1px 3px 0 rgba(14,15,16,.2);
+}
+
+.html5editable {
+  cursor: default;
+}
+
+.html5editable.ldse-anchor-parent {
+  cursor: pointer;
+}
+
+#ldse-show-ice .html5editable {
+  background-color: rgba(0,0,0,0);
+  display: block;
+}
+
+#ldse-show-ice .html5editable:hover, #ldse-show-ice .html5editable:focus {
+  outline: 5px solid #758DBD;
+  background-color: $white;
+  color: $text;
+  cursor: text;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 7px 3px;
+}

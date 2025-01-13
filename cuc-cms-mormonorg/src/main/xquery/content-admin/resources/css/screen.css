@@ -1,0 +1,23 @@
+
+a.actionButton{
+    padding:10px 15px;
+    border-radius:5px;
+    font-size:13px;
+    text-decoration:none !important;
+    cursor:pointer;
+    text-align:center
+}
+a.secondaryButton{
+    color:#fff;
+    background:#177C9C;
+    box-shadow:inset 1px 1px 1px rgba(194,214,241,0.6);
+    padding: 5px;
+    margin-left: 5px;
+}
+button.destructive{color:#fff;border:1px solid #450000;background:#910000;}
+a.primaryButton{
+    color:#fff;
+    background:#2f8e27;
+    padding: 5px 0px 5px 5px;
+    margin-left: 5px;
+}

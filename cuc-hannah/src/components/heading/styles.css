@@ -1,0 +1,21 @@
+/*
+TODO:
+- Figure out how not to have the typography path dependency.
+*/
+
+.heading {
+}
+
+.pretitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.left {
+  text-align: start;
+}
+
+.right {
+  text-align: end;
+}
+

@@ -1,0 +1,39 @@
+.gradientWrapper {
+  /* 
+    contains the gradient to the actual height
+    of the content and gives it 100% width 
+    */
+  position: relative;
+  display: grid;
+  gap: var(--base-tile-gap);
+  &[class] {
+    margin: unset;
+  }
+  &[class*="uncontrolled"],
+  &[class*="flush"] {
+    width: auto; /* this is what overrides the 100% width of layout to let uber tile have horizontal alignment. Only needed for contentWidths that are normally 100% wide. */
+  }
+  & *:not(:first-child) {
+    position: relative;
+  }
+  @nest [class*="layout_inner"] & {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
+  &.gradient:before {
+    width: 9999px; /* the gradient needs to be as tall as the content so needs to be in a child, but the parent may restrict the width. This makes it crazy wide and then is reversed out the start side to cover the parent no matter how indented it may be */
+    margin-inline-start: -4999px;
+    margin-block-start: calc(var(--layoutPaddingTop) * -1);
+    padding: var(--spacing-relate);
+  }
+
+  &.centerOverlay:before {
+    height: 9999px;
+    top: -500px;
+  }
+  /* make sure all children are above overlay/gradient */
+  &[class] > * {
+    z-index: var(--overlay-z-index-above);
+  }
+}

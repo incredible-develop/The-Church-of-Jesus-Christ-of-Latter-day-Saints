@@ -1,0 +1,61 @@
+.center{
+    text-align: center;
+}
+.ldse-icon-ko-remove{
+    color: #910000;
+}
+.ldse-form .error label:after {
+    content: '';
+}
+.registration-table{
+    max-width: 830px;
+}
+.registration-section{
+    padding-bottom: 10px;
+    max-width: 830px;
+}
+.registration-section1 {
+    margin-bottom: 20px;
+}
+.ldse-section--body h3{
+    padding-top: 10px !important;
+}
+.registration-section-heading{
+    padding-bottom: 10px;
+}
+.contact li {
+    list-style: none !important;
+}
+.contact input[type=hidden].child a{
+    float: right !important;
+}
+.contact li{
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-bottom:10px;
+    background: #F9F9F9;
+}
+.contact dl a {
+    float: right;
+    margin: 11px 10px 0px 0px;
+}
+fieldset{
+    border:none;
+}
+fieldset input[type=text],
+.ldse-form input[type=password],
+.ldse-form input[type=email]{
+    width:100% !important;
+}
+.ldse-form .table dl{
+    display: block !important;
+}
+.ldse-form .table dt, .ldse-form .table dd{
+    display: block !important;
+}
+.site-user-name{
+    float:left;
+    padding-top: 5px;
+}
+body .message h3 {
+}

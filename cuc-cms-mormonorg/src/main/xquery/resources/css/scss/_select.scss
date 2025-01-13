@@ -1,0 +1,125 @@
+/* CHANGED BN */
+.ldse-form .select {
+  width: 98%;
+  min-width: 150px;
+  max-width: 98%;
+  color: #545454;
+  display: inline-block;
+  padding: 9px 40px 0px 17px;
+  text-decoration: none;
+  vertical-align: middle;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #DDD;
+  position: relative;
+  height: 40px;
+  background-color: #fff;
+  background-position: left, right;
+}
+.ldse-form .select .text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform:capitalize;
+}
+/* CHANGED BN */
+.ldse-form .select .arrow:after {
+  content: "\25be";
+  font-size: 16px;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.75);
+}
+/* CHANGED BN */
+.ldse-form .select .arrow {
+  display: block;
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  background: #C5C5C5;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 1px solid #ddd;
+  box-shadow: inset 0px 1px 1px rgba(255,255,255,0.65);
+}
+.ldse-form .select select {
+  display: block;
+  font: 13px/15px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}
+.ldse-form .select option, .ldse-select-override option{
+  background: #fbf9f3;
+  color: #2f393a;
+}
+
+.ui-multiSelect {
+  display: table;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.ui-multiSelect > * {
+  display: table-cell;
+}
+.ui-multiSelect .select,
+.ui-multiSelect .select span.text,
+.ui-multiSelect .select select {
+  width: 75%;
+}
+.ui-multiSelect .select select{
+  left: 10px;
+}
+.ui-multiSelect .remover {
+  display: table-cell !important;
+  width: 30px;
+}
+.ui-multiSelect .remover.disabled {
+  display: none !important;
+}
+.remover .ldse-icon {
+  height: 30px;
+  width: 30px;
+  display: block;
+  color: #910000;
+  font-size: 18px;
+  top: 5px;
+}
+.ui-multiSelect .adder span {
+  color: #0C79AE;
+}
+.ui-multiSelect> .select + .adder,
+.ldse-block > .repeater + .adder{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+.ui-multiSelect .adder span:before,
+.ldse-block .adder span:before{
+  font-size: 18px;
+}
+.ui-multiSelect .disabled {
+    visibility: hidden;
+}
+/* CHANGED BN */
+.ldse-block .adder span {
+  text-indent: 0;
+  width: auto;
+  color: #0C79AE;
+  padding-left: 18px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.ui-multiSelect .adder span {
+  padding: 0;
+  margin: 0;
+}

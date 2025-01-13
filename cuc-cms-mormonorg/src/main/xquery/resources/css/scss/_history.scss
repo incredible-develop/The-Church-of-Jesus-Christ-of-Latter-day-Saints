@@ -1,0 +1,97 @@
+.ldse-history-entry {
+  border-bottom: 1px solid $border;
+  padding: $mobileSpace;
+  position: relative;
+  @media screen and (min-width: $mobile) {
+    padding: 13px;
+  }
+}
+.ldse-history-entry:first-child {
+  margin-top: -$mobileSpace;
+	 border-top: 1px solid #DDDDDD;
+  @media screen and (min-width: $mobile) {
+    margin-top: -$desktopSpace;
+  }
+}
+.ldse-history-entry:last-child {
+  border-bottom: none;
+}
+.ldse-history-entry-icon {
+  border-radius: $borderRadius;
+  position: absolute;
+  top: 50%;
+  margin-left: 2px;
+  margin-top: -16px;
+  font-size: 26px;
+  display: inline-block;
+  width: 26px;
+  height: 32px;
+  @media screen and (min-width: $mobile) {
+    font-size: 30px;
+    width: 36px;
+    height: 42px;
+    margin-top: -17px;
+    margin-left: 5px;
+  }
+}
+.ldse-history-entry-details {
+  margin-left: 125px;
+  margin-right: 50px;
+  display: inline-block;
+  @media screen and (min-width: $mobile) {
+    margin-left: 178px;
+  }
+}
+.ldse-history-entry-details .ldse-history-entry-info {
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: $pageIcons;
+  @media screen and (min-width: $mobile) {
+    font-size: 12px;
+    width: auto;
+  }
+}
+.ldse-history-entry-details .ldse-history-entry-info span {
+  border-right: 1px solid $border;
+  padding-right: 3px;
+  margin-right: 2px;
+  @media screen and (min-width: $mobile) {
+    padding-right: 5px;
+    margin-right: 5px;
+  }
+}
+.ldse-history-entry-details .ldse-history-entry-info span:last-child {
+  border-right: none;
+}
+.ldse-history-entry-details .ldse-history-entry-text {
+  top: -1px;
+  position: relative;
+  @media screen and (min-width: $mobile) {
+    top: -2px;
+  }
+}
+.ldse-history-entry-details .ldse-history-entry-text.green {
+  color: $green;
+}
+.ldse-history-entry-details .ldse-history-entry-text.red {
+  color: $red;
+}
+
+.ldse-history-entry .ldse-fancy-date {
+  left: 75px;
+  position: absolute;
+  top: 20px;
+  @media screen and (min-width: $mobile) {
+    left: 66px;
+    top: 31px;
+  }
+}
+.ldse-comment-delete {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	@media screen and (min-width: $mobile) {
+    	bottom: 10px;
+  	}
+}

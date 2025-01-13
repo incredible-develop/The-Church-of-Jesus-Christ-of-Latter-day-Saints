@@ -1,0 +1,120 @@
+.ldse-comment {
+	margin-bottom: $mobileSpace;
+	@media screen and (min-width: $mobile) {
+		/*margin-bottom: $desktopSpace;*/
+	}
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+.ldse-comment-author {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: $ArialStack;
+	font-size: 14px;
+	margin: 0 0 2px 40px;
+	&:after {
+		content: "...";
+	}
+}
+
+.ldse-comment-contents {
+	background-color: $buttonGrey;
+	@include linearGradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.1) 100%);
+	padding: $mobileSpace;
+	border-radius: 10px;
+	position: relative;
+	color: $text;
+  	// text-shadow: 1px 1px 1px $darkShadow;
+  	box-shadow: inset 1px 1px 1px $lightShadow, 3px 3px 2px $lightDarkShadow;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 15px;
+		top: -13px;
+		width: 0px;
+		height: 0px;
+		border-bottom: 15px solid $buttonGrey;
+		border-left: 20px solid transparent;
+	}
+	@media screen and (min-width: $mobile) {
+		padding: $desktopSpace;
+
+	}
+}
+
+.ldse-comment-date {
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0;
+}
+
+.ldse-comment-delete {
+	float:right;
+}
+
+// .ldse-comment:nth-child(odd) {
+// 	.ldse-comment-contents {
+// 		background-color: $orange;
+// 		&:before {
+// 			border-bottom-color: $orange;
+// 		}
+// 	}
+// 	.ldse-comment-delete {
+// 		background-color: $darkOrange;
+// 		color: $orange;
+// 		box-shadow: inset 1px 1px 1px $orange;
+// 		border-color: $orangeBorder;
+// 		&:active {
+// 			background: $darkRed;
+// 	    	box-shadow: inset 1px 1px 3px $darkShadow;
+// 			color: $white;
+// 		}
+// 	}
+// }
+// .ldse-comment:nth-child(even) {
+// 	.ldse-comment-contents {
+// 		background-color: $blue;		
+// 		&:before {
+// 			border-bottom-color: $blue;
+// 		}
+// 	}	
+// 	.ldse-comment-delete {
+// 		background-color: $darkBlue;
+// 		color: $blue;
+// 		box-shadow: inset 1px 1px 1px $blue;
+// 		border-color: $blueBorder;
+// 		&:active {
+// 			background: $darkRed;
+// 	    	box-shadow: inset 1px 1px 3px $darkShadow;
+// 			color: $white;
+// 		}
+// 	}
+// }
+
+#new-comment textarea {
+	height: 100px;
+	margin-bottom: 5px;
+	@media screen and (min-width: $mobile) {
+		margin-bottom: 12px;
+	}
+}
+
+#new-comment button {
+	float: right;
+}
+
+#new-comment {
+	margin-bottom: 15px;
+}
+
+#commentslist span.ldse-fancy-date-day
+{
+	margin-left: -65px;
+}
+
+#commentslist span.ldse-history-entry-details
+{
+	margin-left: 90px;
+}

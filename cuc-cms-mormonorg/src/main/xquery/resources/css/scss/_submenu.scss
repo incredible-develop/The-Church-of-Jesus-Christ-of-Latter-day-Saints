@@ -1,0 +1,57 @@
+/* Classes specific to menu on admin pages */
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu li ul {
+  display: none;
+  position: relative;
+  overflow: visible;
+  height: auto;
+  top: 0;
+  padding: 0px;
+  margin: 0px;
+  width: 260px;
+  border-radius: 0px;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu li.ldse-open ul {
+  display: block;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu li ul li a {
+  font-size: 14px;
+  background-color: $lightGrey;
+  padding-left: 20px;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu li ul li:first-child a {
+  border-radius: 0px;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu li ul li:last-child a {
+  border-radius: 0px;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu .active > a,
+#ldse-toolbar-container ul.ldse-menu li ul li.active > a {
+  color: $white;
+  width: 260px;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu li ul li.active:first-child > a {
+  @include linearGradient(top, $menuBlueLight 0%, $menuBlueDark 50%);
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu li ul li.active:last-child > a {
+  @include linearGradient(top, $menuBlueLight 0%, $menuBlueDark 50%);
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu .active > a:hover {
+  color: #FFF;
+}
+/* Submenu indicator */
+#ldse-toolbar-container .ldse-menu li.with-submenu:after {
+  content: $ldse-icon-ko-tri-right;
+  font-family: $iconFont;
+  position: absolute;
+  right: 8px;
+  top: 16px;
+}
+#ldse-toolbar-container .ldse-menu li.with-submenu.ldse-open {
+  border-bottom: none;
+}
+#ldse-toolbar-container ul.ldse-menu li.with-submenu.ldse-open:last-child a {
+  border-radius: 0;
+}
+#ldse-toolbar-container .ldse-menu li.with-submenu.ldse-open:after {
+  content: $ldse-icon-ko-tri-down;
+}

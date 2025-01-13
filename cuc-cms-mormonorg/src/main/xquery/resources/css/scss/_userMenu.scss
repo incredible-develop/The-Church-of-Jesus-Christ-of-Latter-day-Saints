@@ -1,0 +1,57 @@
+/* Classes for user menu in toolbar */
+#ldse-toolbar-container .ldse-user .ldse-dropdownMenu-trigger {
+  padding: 0 18px;
+}
+#ldse-toolbar-container .ldse-user {
+  display: none;
+  width: auto;
+  float: right;
+  border-right: none;
+  @media screen and (min-width: $tablet-small) {
+    display: block;
+  }
+}
+#ldse-toolbar-container .ldse-user ul {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+  text-align: center;
+  right: 0;
+  top: 50px;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: auto;
+  border-radius: 0px 0px $borderRadius $borderRadius;
+  @media screen and (min-width: $mobile-small) {
+    padding: 0 12px;
+  }
+}
+#ldse-toolbar-container .ldse-user ul > li {
+  line-height: 50px;
+  border-bottom: none;
+  display: list-item;
+}
+#ldse-toolbar-container .ldse-user ul > li > a {
+  background-color: transparent;
+  width: auto;
+  padding: 0;
+}
+#ldse-toolbar-container .ldse-user p {
+  margin-bottom: 0;
+}
+#ldse-toolbar-container .ldse-user-name {
+  @include noSelect;
+}
+#ldse-toolbar-container .ldse-user .ldse-button {
+  text-indent: 0em;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+#ldse-toolbar-container .ldse-preview-button{
+  padding-top: 5px;
+  float: right;
+}
+
+#ldse-toolbar-container .ldse-preview-button .ldse-button{
+  padding: 4px 14px 1px;
+}

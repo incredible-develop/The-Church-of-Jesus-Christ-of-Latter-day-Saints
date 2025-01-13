@@ -1,0 +1,152 @@
+.articleTile {
+  color: var(--grey-40);
+  padding: 0.5em;
+  background-color: var(--color-white);
+  display: block;
+  position: relative;
+}
+
+.imageContainer {
+}
+
+.image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  & .link {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.link {
+  color: inherit;
+  position: relative;
+}
+
+.headline {
+  @nest &[class] {
+    margin-top: 0.5em;
+  }
+  color: var(--grey-60);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.contentContainer {
+  padding: 8px;
+}
+
+.contentContainer > .link:first-child > .headline {
+  margin-top: 0;
+}
+
+.primaryMeta {
+  font-size: 0.8125rem;
+}
+
+.secondaryMeta {
+  font: var(--typography-legal);
+  margin-top: 1em;
+  color: var(--grey-40);
+  text-transform: uppercase;
+}
+
+.content {
+  font: var(--typography-description);
+  margin-top: 0.5em;
+  font-size: 0.875rem;
+}
+
+.singleRow {
+}
+
+.slider {
+  & .contentWrapper {
+    position: relative;
+    height: 85px;
+    overflow: hidden;
+
+    &.noSecondary {
+      height: 111px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      height: 20px;
+    }
+  }
+}
+
+.emphasized .slider > .tileW:first-child .contentWrapper {
+  height: 140px;
+
+  &.noSecondary {
+    height: 166px;
+  }
+}
+
+.iconArea {
+  position: absolute;
+  bottom: 12px;
+  height: 18px;
+  width: 22px;
+  left: var(--spacing-unite-2);
+}
+
+.utility .articleTile {
+  margin-right: var(--spacing-unite-3);
+  box-shadow: 0 2px 3px 0 rgba(13, 15, 16, 0.2);
+  background: var(--white);
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 2px 3px 0 rgba(13, 15, 16, 0.4);
+  }
+
+  & .contentWrapper {
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+    transform: translateZ(0);
+
+    &.noSecondary {
+      height: 166px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      height: 20px;
+    }
+  }
+}
+.progress {
+  position: absolute;
+  top: var(--spacing-unite-2);
+  inset-inline-end: var(--spacing-unite-2);
+}

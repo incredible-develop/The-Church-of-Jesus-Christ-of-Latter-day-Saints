@@ -1,0 +1,438 @@
+/* LDS PUBLISHER wrapper fixes */
+
+body {
+    margin-top: 0 !important;
+}
+
+.ldse-page {
+    padding: 50px 0 0 0;
+    display: flex;
+    min-height: 100%;
+}
+
+.page-uri {
+    overflow-wrap: break-word;
+}
+
+/*Layout Elements*/
+html,
+body {
+    border: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    height: 100%;
+    background: #fff;
+    width: 100%;
+}
+header[role="branding"] {
+    width: 100%;
+    background: #222;
+    color: #ddd;
+    height: 50px;
+}
+.filter-nav {
+    box-sizing: border-box;
+    top: 50px;
+    left: 0;
+    min-width: 300px;
+    bottom: 0px;
+    padding: 0px;
+    background: #fff;
+    height: auto;
+    padding-top: 16px;
+}
+#page {
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border-left: 1px solid #abafaa;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    flex-grow: 1;
+}
+h3 {
+    display: inline-block;
+}
+.filter-nav h3 {
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.page-full #nodeContainer {
+    width: 90%;
+    margin-left: 50px;
+}
+#nodeContainer {
+    padding: 20px;
+}
+/* Toggle Button */
+#toggle {
+    background: #8aa6c8;
+    border: 0px;
+    color: #fff;
+    padding: 15px 8px 15px 8px;
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-decoration: none;
+    margin-left: -34px;
+    margin-top: 10px;
+    float: left;
+    border: 1px solid #657c9d;
+    border-right: 0px;
+    box-shadow: inset 1px 1px 1px rgba(194, 214, 241, 0.6);
+}
+#toggle.in {
+    margin-left: 0;
+    content: "&gt;";
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px;
+    border-left: 0px;
+}
+#toggle.in img {
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: lighter;
+}
+h3.nav-header {
+    font-size: 1.4em;
+    padding: 13px 0 13px 30px;
+}
+h4.nav-header {
+    font-size: 1em;
+    padding: 10px 0 10px 45px;
+}
+.nav-header {
+    margin: 0;
+    cursor: pointer;
+}
+.nav-header.active {
+    background-color: #e0e0e1;
+}
+.nav-select {
+    padding: 0 12px 12px;
+}
+.filter-nav a:hover {
+    text-decoration: none;
+    background-color: #e0e0e1;
+    display: block;
+}
+/*Form Elements*/
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+.date-picker {
+    padding-left: 8px;
+    border-radius: 5px;
+    width: 270px;
+    height: 35px;
+    font-size: 1em;
+    background: url(../images/date-icon.png) no-repeat #fff;
+    background-position: 96% 50%;
+    border: 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.select,
+.date-picker {
+    -webkit-transition: background-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -ms-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+}
+.select:hover,
+.date-picker:hover {
+    background-color: #f9f9f9;
+}
+.btn {
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+    padding: 4px 18px 1px;
+    min-height: 40px;
+    font-size: 16px;
+    line-height: 100%;
+    cursor: pointer;
+}
+.btn-disabled {
+    color: #777;
+    background: #d5d5d5;
+    cursor: default;
+}
+.btn-cancel {
+    background: #e0e0e0;
+    border: 1px solid #a7a7a7;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.6);
+    color: #58585d;
+}
+.btn-submit {
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+    border: 1px solid #355502;
+    background: #669900;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+    margin-right: 5px;
+}
+.btn-primary {
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+    border: 1px solid #657c9d;
+    background: #8ba7c7;
+    box-shadow: inset 1px 1px 1px rgba(194, 214, 241, 0.6);
+}
+.btn-delete {
+    background: #c88a8a;
+}
+
+/* filter tags */
+.tagContainer {
+    margin-top: 0px;
+    border-bottom: 1px solid #d5d5d5;
+    width: 100%;
+}
+.tagContainer-inner {
+    padding-left: 20px;
+    display: table;
+    width: 95%;
+}
+.tagContainer-inner .filters,
+.tagContainer-inner .controls {
+    display: table-cell;
+}
+.tagContainer-inner .controls {
+    width: 155px;
+    vertical-align: top;
+    padding: 10px;
+}
+h1,
+h2,
+h3 {
+    font-weight: lighter;
+    line-height: 1em;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 1em;
+}
+h3 {
+    font-size: 1.6em;
+}
+.tagContainer.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: #f9f9f9;
+    display: block;
+    margin-top: 0;
+    border-left: 1px solid #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 8, 0.11);
+    border-bottom: 1px solid #abafaa;
+}
+.filtertags {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.filtertags li {
+    display: inline-block;
+    padding: 10px 12px;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    background: #8ac894;
+    margin-right: 10px;
+    height: 16px;
+    border-radius: 3px;
+}
+.filtertags li:before {
+    content: "";
+    float: left;
+    position: relative;
+    top: -10px;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-color: #e9ede8 #8ac894 #e9ede8 #e9ede8;
+    border-style: solid;
+    border-width: 18px 10px 18px 0;
+}
+.filtertags li:after {
+    content: "";
+    position: relative;
+    top: 6px;
+    left: -9px;
+    float: left;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.filter-nav.page-full {
+}
+#page.page-full {
+    left: 10px;
+}
+dd,
+dt,
+dl {
+    margin: 0px;
+    padding: 0px;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+#btnTop {
+    position: relative;
+    right: 30px;
+}
+#nodes {
+    /*    position:relative;*/
+    width: 100%;
+}
+.bottom-notification {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 20px;
+    background: #eaeaea;
+    border: 1px solid #8aa6c8;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    width: 99%;
+    margin: 0 auto;
+    z-index: 30000;
+}
+
+.customPage {
+    width: 98%;
+    padding: 0 20px 30px 20px;
+}
+
+.expander {
+    cursor: pointer;
+}
+.triangle {
+    background-image: url(smoothness/images/ui-icons_222222_256x240.png);
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin: 0 5px -2px 0;
+    cursor: pointer;
+}
+.triangleOpen {
+    background-position: -64px -16px;
+}
+.triangleClosed {
+    background-position: -32px -16px;
+}
+button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.uriHeaders h3 {
+    width: 47.5%;
+    padding: 0px;
+    margin: 0.5%;
+}
+
+.uriForm {
+    color: #333;
+    background-color: #f9f9f9;
+    vertical-align: middle;
+}
+
+.uriForm:hover {
+    background-color: #fefefe;
+}
+
+.uriFieldContainer {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.uriField {
+    width: 47.5%;
+    margin: 0.5%;
+    color: #666;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.uriAddImg {
+    margin: 4px 0 0 0;
+}
+.uriDeleteImg {
+    margin: 3px 0 0 0;
+}
+
+.pages {
+    margin: 20px;
+}
+
+.page-link {
+    padding: 0 6px;
+}
+
+.page-link-active {
+    padding: 0 6px;
+}
+
+.ldse-form .gutter {
+    margin-left: 17px !important;
+    margin-bottom: 6px !important;
+}
+
+.ldse-form .between {
+    margin-left: 8px !important;
+    margin-bottom: 6px !important;
+}
+
+.ldse-form .override-width {
+    width: auto !important;
+}
+
+.ldse-select-override {
+    min-height: 30px;
+    height: 30px;
+    max-height: 30px;
+    padding: 5px !important;
+}
+.collection-update-button {
+    float: right;
+}
+a.page-link-active.selected {
+    background: linear-gradient(to bottom right, #00bad3, #177c9c 80%);
+    background-clip: padding-box;
+    color: white;
+    cursor: default;
+}

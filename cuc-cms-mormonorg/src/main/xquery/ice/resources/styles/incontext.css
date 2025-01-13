@@ -1,0 +1,4868 @@
+#ldse-show-ice .ldse-ice-menu-container {
+    display: block !important;
+}
+#ldse-show-ice .edit-resource {
+    display: inline !important;
+    position: relative;
+}
+.ldse-ice-menu-container,
+.edit-resource {
+    display: none !important;
+}
+
+/* display overrides for ice controls */
+#ldse-show-ice .flag {
+    z-index: 0;
+}
+#ldse-show-ice #disclaimer {
+    clear: both;
+}
+#ldse-show-ice #platform-footer-content #helpful-links {
+    overflow: visible;
+}
+#ldse-show-ice #menu,
+#popular,
+#resources {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    overflow: visible;
+}
+#ldse-show-ice #feature .ldse-ice-menu-container {
+    right: 35px;
+    top: 10px;
+}
+#ldse-show-ice #feature,
+#ldse-show-ice #feature #carousel,
+#ldse-show-ice #feature #carousel > li,
+#ldse-show-ice #teasers > div,
+#ldse-show-ice #teasers #carousel,
+#ldse-show-ice #teasers #carousel > li {
+    overflow: visible;
+}
+#ldse-show-ice #teasers.no-carousel > div > ul {
+    min-height: 175px;
+    overflow: visible;
+}
+#ldse-show-ice #teasers.no-carousel > div > ul > li {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#ldse-show-ice .archive-list > li,
+#ldse-show-ice .results-list > li,
+#ldse-show-ice .library-list > li,
+#ldse-show-ice .library-related-list > li {
+    clear: both;
+    overflow: visible;
+}
+#ldse-show-ice .mod-row {
+    overflow: visible;
+}
+#ldse-show-ice .bottom-teaser .ldse-ice-menu-container {
+    z-index: 1;
+}
+#ldse-show-ice .feature-preview .ldse-ice-menu-container {
+    z-index: 2;
+}
+#ldse-show-ice #feature #carousel,
+#ldse-show-ice #carousel-top,
+#ldse-show-ice .prev-next {
+    z-index: 10;
+}
+
+/* for youth */
+#ldse-show-ice .related,
+#ldse-show-ice #carousel-1,
+#ldse-show-ice #carousel-2,
+#ldse-show-ice #carousel-3,
+#ldse-show-ice .tri-col {
+    overflow: visible;
+}
+#ldse-show-ice .more,
+#ldse-show-ice .from-leaders,
+#ldse-show-ice .from-youth {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#ldse-show-ice .photo-carousel span.edit-teaser {
+    display: inline;
+    float: none;
+}
+#ldse-show-ice ul.music-filter > li {
+    position: relative;
+}
+#ldse-show-ice .music-filter .ice-button,
+#ldse-show-ice .experience-nav .ice-button,
+#ldse-show-ice .manuals .ice-button span {
+    display: inline;
+}
+#ldse-show-ice .primary .questions li > a {
+    background: none;
+}
+#ldse-show-ice .sidebar h3 {
+    margin-top: 20px;
+}
+#ldse-show-ice .experience-nav > li span {
+    display: inline;
+    margin-right: 0;
+}
+#ldse-show-ice .standards-grid > li {
+    min-height: 223px;
+}
+#ldse-show-ice .standards-grid .ldse-ice-menu-container {
+    margin-top: -18px;
+}
+#ldse-show-ice #carousel .ldse-ice-menu-container,
+#ldse-show-ice .features .ldse-ice-menu-container {
+    z-index: 998;
+}
+/* ice controls */
+#ldse-show-ice .ldse-ice-menu-container.active .ice-button {
+    background-color: yellow;
+    padding: 2px 20px 2px 2px;
+}
+#ldse-show-ice .ldse-ice-menu-container {
+    background: none;
+    position: relative;
+    height: 26px;
+    width: 40px;
+    float: right;
+    margin-left: 5px;
+}
+#ldse-show-ice .ldse-ice-menu-container.ldse-absolute {
+    position: absolute;
+    z-index: 3999;
+}
+#ldse-show-ice .ice-button {
+    /*    background: url(../images/ice-icon-sprite.png) no-repeat right 0;*/
+    font: 11px/11px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial,
+        Helvetica, sans-serif;
+    margin: 0;
+    margin-right: 14px;
+    display: inline;
+}
+#ldse-show-ice .ice-button.published {
+    background-position: right -30px;
+}
+#ldse-show-ice .ice-button.modified {
+    background-position: right -300px;
+}
+#ldse-show-ice .ice-button.future-publish {
+    background-position: right -330px;
+}
+#ldse-show-ice .ice-button span {
+    background: #4f709a;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 2px;
+}
+#ldse-show-ice .ldse-menu a.workflow {
+    display: block;
+    padding-top: 11px;
+}
+
+#ldse-show-ice .workflow-table {
+    position: absolute;
+    right: -7px;
+    z-index: 101;
+    /*background-color: #f3f0e7;
+    color: #2F393A;
+    border: 4px solid #fff;
+    -moz-box-shadow: 0 0 12px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 12px rgba(0,0,0,.3);
+    box-shadow: 0 0 12px rgba(0,0,0,.3);
+        width: auto;*/
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-top: 7px;
+    display: none;
+    max-height: 315px;
+    width: 425px;
+    /*overflow-y: auto;*/
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#777),
+        to(#555)
+    );
+    background: -moz-linear-gradient(top, #636363 0pt, #777 10%, #555 100%);
+    background: -ms-linear-gradient(top, #636363 0pt, #777 10%, #555 100%);
+    background: linear-gradient(top, #636363 0pt, #777 10%, #555 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#555555');
+    text-shadow: #333 0 -1px 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 3px solid #555;
+}
+
+#ldse-show-ice .workflow-table.workflow-left-align {
+    left: -7px;
+}
+
+#ldse-show-ice .workflow-table table {
+    margin-bottom: 0px;
+}
+#ldse-show-ice .workflow-table.active {
+    display: block;
+}
+#ldse-show-ice .workflow-table td,
+#ldse-show-ice .workflow-table th {
+    padding: 5px;
+    border: 1px solid #e9e4da;
+}
+
+#ldse-show-ice div.workflow-table div.ui-tabs ul.ui-tabs-nav > li > a > span {
+    background-color: transparent;
+    background-image: none;
+    color: #495569;
+    box-shadow: none;
+    display: inline;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial,
+        Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    height: auto;
+    margin: 0px;
+    min-width: 64px;
+    padding: 0px;
+    position: static;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: #303e53 0px -0.9090908765792847px 0px;
+    vertical-align: baseline;
+    zoom: 1;
+}
+
+#ldse-show-ice
+    div.workflow-table
+    div.ui-tabs
+    ul.ui-tabs-nav
+    > li.ui-tabs-selected
+    a
+    > span {
+    color: white;
+}
+
+#ldse-show-ice div.workflow-table div.ui-tabs ul.ui-tabs-nav > li {
+    display: inline-block;
+    float: none;
+}
+
+#ldse-show-ice div.workflow-table div.ui-tabs ul.ui-tabs-nav > li > a {
+    height: auto;
+    margin-bottom: 0px;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: 0px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    width: auto;
+}
+
+#ldse-show-ice .clearfix:after,
+#ldse-show-ice #teasers.no-carousel > div > ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#ldse-show-ice .clearfix,
+#ldse-show-ice #teasers.no-carousel > div > ul {
+    display: block;
+    zoom: 1;
+}
+#ldse-show-ice #modalContainer a.modalCloseImg {
+    background: url(../images/x.png) no-repeat; /* adjust url as required */
+    width: 25px;
+    height: 29px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: -15px;
+    right: -18px;
+    cursor: pointer;
+}
+#ldse-show-ice span.clone-teaser a,
+#ldse-show-ice span.edit-teaser a,
+#ldse-show-ice span.search-teaser a,
+#ldse-show-ice span.edit-topic a,
+#ldse-show-ice span.add-topic a,
+#ldse-show-ice span.add-content a,
+#ldse-show-ice span.edit-content a {
+    background-image: none;
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    text-decoration: none;
+}
+#ldse-show-ice span.clone-teaser {
+    background: url(../images/clone.png) no-repeat;
+}
+#ldse-show-ice span.edit-teaser,
+span.edit-topic {
+    background: url(../images/edit.png) no-repeat;
+}
+#ldse-show-ice span.add-topic {
+    background: url(../images/plus.png) no-repeat;
+}
+#ldse-show-ice span.edit-content {
+    background: url(../images/edit.png) no-repeat;
+    display: block;
+    padding: 5px;
+    margin: 0 7px;
+    width: 20px;
+    height: 20px;
+}
+#ldse-show-ice #details h1 span.resourceIce {
+    color: #3c424e;
+    font: 48px/50px "OFLSortsMillGoudyRegular", Georgia, "Times New Roman",
+        Times, serif;
+    letter-spacing: -1px;
+    margin-left: -2px;
+    width: 484px;
+    overflow: hidden;
+    *clear: left;
+    padding-bottom: 2px;
+    position: relative;
+}
+#ldse-show-ice span.add-content {
+    background: url(../images/plus.png) no-repeat;
+    display: block;
+    padding: 5px;
+    margin: 0 7px;
+    width: 20px;
+    height: 20px;
+}
+#ldse-show-ice span.search-teaser {
+    background: url(../images/find.png) no-repeat;
+}
+span#page-edit {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+#ldse-show-ice span.clone-teaser,
+#ldse-show-ice span.edit-teaser,
+#ldse-show-ice span.search-teaser,
+#ldse-show-ice span.edit-topic,
+#ldse-show-ice span.add-topic {
+    float: right;
+    height: 20px;
+    margin: 0 7px;
+    position: relative;
+    z-index: 1000;
+    width: 20px;
+}
+#ldse-show-ice .iceEditor table {
+    margin: 0 auto;
+    width: 97%;
+}
+#ldse-show-ice .iceEditor td {
+    padding: 10px;
+}
+#ldse-show-ice .iceEditor td.top {
+    vertical-align: top;
+}
+#ldse-show-ice .iceEditor td.label {
+    text-align: right;
+}
+#ldse-show-ice .iceEditor td.delImage {
+    padding: 10px 1px 10px 5px;
+}
+#ldse-show-ice h3.ice-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: #cccccc;
+}
+#ldse-show-ice div.ice-fileinputs {
+    /*position: relative;*/
+    padding-top: 2px;
+}
+#ldse-show-ice div.ice-fakefile {
+    margin-top: -25px;
+    /*position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;*/
+}
+#ldse-show-ice div.ice-fakefile .ice-upload {
+    width: 130px;
+}
+#ldse-show-ice input.ice-file {
+    position: relative;
+    text-align: right;
+    -moz-opacity: 0;
+    filter: alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}
+#ldse-show-ice input.ice-fakebutton {
+    margin-top: -6px;
+}
+#ldse-show-ice .ice-editor td select,
+#ldse-show-ice .ice-upload,
+#ldse-show-ice div .ice-text,
+#ldse-show-ice td .ice-seq,
+#ldse-show-ice td .ice-text,
+#ldse-show-ice td .ice-textarea {
+    background: url("../images/fieldshadow.png") repeat-x scroll 0 0 #ffffff;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #cccccc;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+}
+#ldse-show-ice td .ice-seq {
+    width: 70px;
+}
+#ldse-show-ice td .ice-text {
+    width: 388px;
+}
+#ldse-show-ice td .ice-textarea {
+    height: 150px;
+    width: 388px;
+}
+#ldse-show-ice tr .header {
+    border-bottom: solid 2px gray;
+}
+#ldse-show-ice div#ice-image-existing img {
+    max-width: 75px;
+    max-height: 75px;
+    padding-right: 15px;
+}
+#ldse-show-ice div#ice-image-change {
+    display: none;
+}
+#ldse-show-ice .edit-resource {
+    padding: 0 0 0 3px;
+    margin: 0;
+    background: none;
+}
+#ldse-show-ice .edit-resource img {
+    width: 9px;
+    height: 9px;
+}
+#ldse-show-ice .linkTeaser {
+    float: left;
+    width: 200px;
+}
+#ldse-show-ice .jerichoEdit div {
+    padding-right: 20px;
+}
+#ldse-show-ice tr.sectionContent input {
+    font-weight: bold;
+}
+#ldse-show-ice ul li.toolTeaser:hover {
+    background-color: #fff;
+}
+#ldse-show-ice .tool-list-platform > li > a {
+    display: block;
+    padding: 8px 90px 8px 18px;
+    overflow: hidden;
+    text-decoration: none;
+}
+#ldse-show-ice .tool-list-platform > li > a:hover {
+    background-color: #9e5db0;
+    /*background-color: #bc9fc5;*/
+    color: #fff;
+}
+#ldse-show-ice .tool-list-platform .tool-info {
+    display: block;
+    width: 200px;
+    float: right;
+}
+#ldse-show-ice .tool-list-platform .tool-name {
+    display: block;
+    color: #827097;
+    font-size: 14px;
+}
+#ldse-show-ice .tool-list-platform .tool-desc {
+    display: block;
+    color: #8d999e;
+    font-size: 12px;
+}
+#ldse-show-ice .tool-list-platform > li > a:hover * {
+    color: #fff;
+}
+#ldse-show-ice .actionModal {
+    padding: 40px;
+}
+#ldse-show-ice .actionModal .actionLabel {
+    float: left;
+    /*width: 200px;*/
+    height: 30px;
+    padding-right: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#ldse-show-ice .actionModal .actionImage {
+    float: right;
+    height: 30px;
+    /* padding-right: 10px; */
+}
+#ldse-show-ice .actionModal .actionStatus {
+    float: right;
+    height: 30px;
+}
+#ldse-show-ice span.info {
+    font-size: 10px;
+}
+#ldse-show-ice .sessions td.download .download-menu a.edit-resource {
+    text-indent: 0;
+}
+span.info {
+    font-size: 10px;
+}
+.sessions td.download .download-menu a.edit-resource {
+    text-indent: 0;
+}
+.iceForm .ixf-button.primary {
+    min-height: 0;
+    width: inherit;
+}
+.main-title-right-tabs {
+    z-index: 10;
+}
+#ice-overlay-header {
+    color: #735005;
+    font-size: 130%;
+    font-weight: bold;
+    height: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+#ice-overlay-header #unsupported-browser {
+    background-color: #f4a83d;
+    border-bottom: 1px solid #d6800c;
+    padding: 7px 0;
+}
+#ice-overlay-header span.notify-close {
+    background-color: #fad163;
+    border: 2px solid #735005;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-right: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+}
+#ice-overlay-header span.notify-close a {
+    text-decoration: none;
+    color: #735005;
+}
+
+/* Below was moved from screen.css - iceform stuff*/
+
+.workflow-table .ixf-tabs-wrapper {
+    width: 405px;
+    margin: auto;
+    text-shadow: white 0 1px 0;
+    color: #555;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial,
+        Helvetica, sans-serif;
+}
+
+.workflow-table .ixf-tabs-wrapper .ui-tabs-nav {
+    height: 27px;
+}
+
+.workflow-table .ixf-container ul {
+    margin: 0px;
+    list-style: none;
+}
+
+.workflow-table .ixf-container ul li {
+    border: none;
+}
+
+.workflow-table .ixf-tabs-wrapper .ixf-container {
+    height: 255px;
+    overflow: auto;
+    margin: auto 0px;
+    margin-top: 5px;
+}
+.workflow-table .ixf-tabs-wrapper .ixf-container ul {
+    margin: 0px;
+}
+
+.actionModal .actionImage .ui-finder-loader {
+    position: relative;
+}
+
+.iceForm .imageWrapper {
+    border: 2px solid;
+}
+
+.iceForm em {
+    font-weight: bold;
+    padding-right: 0.5em;
+    vertical-align: top;
+    font-size: 96%;
+    font-style: normal;
+    color: red;
+}
+.iceForm input.required.error,
+.iceForm textarea.required.error {
+    border: 1px solid red;
+    border-bottom: 1px solid red;
+    display: inline;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 2px 3px;
+    text-align: left;
+}
+.iceForm label.error {
+    background: #efe7df;
+    border: 1px solid #e0aca6;
+    color: #c23232;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    text-align: center;
+}
+#ice-dialog {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.iceForm .inline-block {
+    display: inline-block;
+}
+
+.iceForm .inline {
+    display: inline;
+}
+.iceForm .sortable dt,
+.iceForm .sortable dd {
+}
+
+.iceForm .sortable dt label {
+    display: block;
+}
+
+.iceForm .sortable {
+    list-style: none;
+}
+
+.iceForm .sortable li {
+    margin: 5px 0px 5px 0px;
+    cursor: move;
+    background-color: lightgrey;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid #555;
+}
+
+.iceForm .sortable.teaserManager li {
+    width: 130px;
+    height: 230px;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.iceForm .sortable.teaserManager li p {
+    font: 12px/14px Georgia, arial;
+}
+
+.iceForm .teaserManager {
+    padding: 5px;
+    margin: 0;
+}
+
+.iceForm .teaserManager button {
+    font-size: 10px;
+    padding: 1px;
+    margin: 0 0 5px 3px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.iceForm .teaserManager button:first-child {
+    margin: 0 0 5px 0;
+}
+
+/* End of Sortable */
+
+.iceForm .ui-state-default {
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e7e6e2),
+        to(#cfceca)
+    );
+    background: -moz-linear-gradient(top, #e7e6e2, #cfceca);
+    background: -ms-linear-gradient(top, #e7e6e2, #cfceca);
+    background: linear-gradient(top, #e7e6e2, #cfceca);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e6e2', endColorstr='#cfceca');
+}
+
+.iceForm .ui-state-hover,
+.iceForm .ui-state-highlight {
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e7e6e2),
+        to(#cfceca)
+    );
+    background: -moz-linear-gradient(top, #e7e6e2, #cfceca);
+    background: -ms-linear-gradient(top, #e7e6e2, #cfceca);
+    background: linear-gradient(top, #e7e6e2, #cfceca);
+    /*  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e6e2', endColorstr='#cfceca'); this caused issues with the close button on popup*/
+    color: #000;
+}
+
+.iceForm .ui-state-active {
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#bec6d2),
+        to(#5c697e),
+        color-stop(0.04, #9aa5b6)
+    );
+    background: -moz-linear-gradient(
+        top,
+        #bec6d2 0pt,
+        #9aa5b6 4%,
+        #5c697e 100%
+    );
+    background: -ms-linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    background: linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9aa5b6', endColorstr='#5c697e');
+    color: #fff;
+}
+
+/*Inner Content Stuff +++*/
+
+/*Lists*/
+.iceForm .ifx-form dl {
+    padding-bottom: 15px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+}
+.iceForm .ifx-form dt {
+    float: left;
+    width: 10%;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    color: #000;
+}
+.iceForm .ifx-form dd {
+    float: left;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+/*Headings*/
+
+/*Miscellaneous*/
+
+/*@group general formatting*/
+/*Text alignment*/
+.iceForm .left {
+    text-align: left;
+}
+.iceForm .right {
+    text-align: right;
+}
+.iceForm .center {
+    text-align: center;
+}
+
+/*Vertical align, mostly in tables*/
+.iceForm .top {
+    vertical-align: top;
+}
+.iceForm .middle {
+    vertical-align: middle;
+}
+.iceForm .bottom {
+    vertical-align: bottom;
+}
+.iceForm .baseline {
+    vertical-align: baseline;
+}
+
+/*Floats*/
+.iceForm .float-right {
+    float: right;
+}
+.iceForm .float-left {
+    float: left;
+}
+
+/*Clear*/
+.iceForm .clear {
+    clear: both;
+}
+.iceForm .clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    top: -1em;
+    position: relative;
+}
+.iceForm .no-clear {
+    clear: none;
+}
+.iceForm .nowrap {
+    white-space: nowrap;
+}
+
+/*Hiding Stuff*/
+.iceForm .invisible {
+    /*new technique via http://snook.ca/archives/html_and_css/hiding-content-for-accessibility*/
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.iceForm .gone {
+    display: none;
+}
+
+/*Block Padding*/
+.iceForm .padding-xs {
+    padding: 4px;
+}
+.iceForm .padding-sm {
+    padding: 15px;
+}
+.iceForm .padding-md {
+    padding: 30px;
+}
+.iceForm .padding-lg {
+    padding: 60px;
+}
+.iceForm .padding-xl {
+    padding: 90px;
+}
+
+.iceForm .padding-left-xs {
+    padding-left: 4px;
+}
+.iceForm .padding-left-sm {
+    padding-left: 15px;
+}
+.iceForm .padding-left-md {
+    padding-left: 30px;
+}
+.iceForm .padding-left-lg {
+    padding-left: 60px;
+}
+.iceForm .padding-left-xl {
+    padding-left: 90px;
+}
+
+.iceForm .padding-right-xs {
+    padding-right: 4px;
+}
+.iceForm .padding-right-sm {
+    padding-right: 15px;
+}
+.iceForm .padding-right-md {
+    padding-right: 30px;
+}
+.iceForm .padding-right-lg {
+    padding-right: 60px;
+}
+.iceForm .padding-right-xl {
+    padding-right: 90px;
+}
+
+.iceForm .padding-bottom-xs {
+    padding-bottom: 4px;
+}
+.iceForm .padding-bottom-sm {
+    padding-bottom: 15px;
+}
+.iceForm .padding-bottom-md {
+    padding-bottom: 30px;
+}
+.iceForm .padding-bottom-lg {
+    padding-bottom: 60px;
+}
+.iceForm .padding-bottom-xl {
+    padding-bottom: 90px;
+}
+
+.iceForm .padding-top-xs {
+    padding-top: 4px;
+}
+.iceForm .padding-top-sm {
+    padding-top: 15px;
+}
+.iceForm .padding-top-md {
+    padding-top: 30px;
+}
+.iceForm .padding-top-lg {
+    padding-top: 60px;
+}
+.iceForm .padding-top-xl {
+    padding-top: 90px;
+}
+
+/*Block Margins*/
+.iceForm .margin-xs {
+    margin: 4px;
+}
+.iceForm .margin-sm {
+    margin: 15px;
+}
+.iceForm .margin-md {
+    margin: 30px;
+}
+.iceForm .margin-lg {
+    margin: 60px;
+}
+.iceForm .margin-xl {
+    margin: 90px;
+}
+
+.iceForm .margin-left-xs {
+    margin-left: 4px;
+}
+.iceForm .margin-left-sm {
+    margin-left: 15px;
+}
+.iceForm .margin-left-md {
+    margin-left: 30px;
+}
+.iceForm .margin-left-lg {
+    margin-left: 60px;
+}
+.iceForm .margin-left-xl {
+    margin-left: 90px;
+}
+
+.iceForm .margin-right-xs {
+    margin-right: 4px;
+}
+.iceForm .margin-right-sm {
+    margin-right: 15px;
+}
+.iceForm .margin-right-md {
+    margin-right: 30px;
+}
+.iceForm .margin-right-lg {
+    margin-right: 60px;
+}
+.iceForm .margin-right-xl {
+    margin-right: 90px;
+}
+
+.iceForm .margin-bottom-xs {
+    margin-bottom: 4px;
+}
+.iceForm .margin-bottom-sm {
+    margin-bottom: 15px;
+}
+.iceForm .margin-bottom-md {
+    margin-bottom: 30px;
+}
+.iceForm .margin-bottom-lg {
+    margin-bottom: 60px;
+}
+.iceForm .margin-bottom-xl {
+    margin-bottom: 90px;
+}
+
+.iceForm .margin-top-xs {
+    margin-top: 4px;
+}
+.iceForm .margin-top-sm {
+    margin-top: 15px;
+}
+.iceForm .margin-top-md {
+    margin-top: 30px;
+}
+.iceForm .margin-top-lg {
+    margin-top: 60px;
+}
+.iceForm .margin-top-xl {
+    margin-top: 90px;
+}
+
+.iceForm .width-xs {
+    width: 10%;
+}
+.iceForm .width-sm {
+    width: 20%;
+}
+.iceForm .width-md {
+    width: 30%;
+}
+.iceForm .width-lg {
+    width: 40%;
+}
+.iceForm .width-xl {
+    width: 50%;
+}
+
+/* these widths match the widths of the input/select fields widths. TH padding/border will be ADDED TO these widths. */
+.iceForm th.xxxl {
+    width: 600px;
+}
+.iceForm th.xxl {
+    width: 300px;
+}
+.iceForm th.xl {
+    width: 200px;
+}
+.iceForm th.lg {
+    width: 150px;
+}
+.iceForm th.md {
+    width: 100px;
+}
+.iceForm th.sm {
+    width: 50px;
+}
+.iceForm th.xs {
+    width: 20px;
+}
+
+.iceForm .text-xs *,
+.iceForm .text-xs {
+    font-size: 11px;
+    line-height: 12px;
+}
+.iceForm .text-sm *,
+.iceForm .text-sm {
+    font-size: 12px;
+    line-height: 18px;
+}
+.iceForm .text-md *,
+.iceForm .text-md {
+    font-size: 14px;
+}
+.iceForm .text-lg *,
+.iceForm .text-lg {
+    font-size: 16px;
+}
+.iceForm .text-xl *,
+.iceForm .text-xl {
+    font-size: 20px;
+    line-height: 23px;
+}
+.iceForm .text-xxl *,
+.iceForm .text-xxl {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.iceForm .ixf-fill-width,
+.iceForm .ixf-match-width {
+    /* The .ixf-match-width was used for the JS version, so keeping here for legacy */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+}
+
+.iceForm .ixf-table.text-md th,
+.iceForm .ixf-table.text-md th a {
+    font-size: 12px;
+}
+.iceForm .ixf-table.text-lg th,
+.iceForm .ixf-table.text-lg th a {
+    font-size: 14px;
+}
+.iceForm .ixf-table.text-xl th,
+.iceForm .ixf-table.text-xl th a {
+    font-size: 16px;
+}
+
+.iceForm .ixf-toolbar.text-xl a {
+    padding-top: 2px;
+}
+
+.iceForm .ixf-button.text-sm {
+    font-size: 12px;
+    line-height: 11px;
+    padding-top: 0.5em;
+}
+
+.iceForm .ixf-form .text-sm dt {
+    padding: 4px 10px 0 0;
+}
+.iceForm .ixf-form .text-sm dd.options-vertical {
+    padding-top: 4px;
+}
+
+.iceForm .nolinks a {
+    text-decoration: none;
+}
+
+.iceForm .noline-top {
+    border-top: 0;
+}
+
+.iceForm .noline-bottom {
+    border-bottom: 0;
+}
+
+/*@end general formatting */
+/* @end general styles */
+
+.iceForm .twocolumns {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.iceForm .threecolumns {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+/* @end */
+
+/* @group ixf-button */
+.iceForm .ixf-button,
+.iceForm .ixf-button:link,
+.iceForm .ixf-button:visited,
+.iceForm .ui-button, /* cover any jQuery UI generated buttons */
+.iceForm .ui-button:link,
+.iceForm .ui-button:visited,
+
+/* Fix for https://bugzilla.mozilla.org/show_bug.cgi?id=349259 compensate for line-height with reduction in padding */ 
+.mozilla .iceForm button.ixf-button,
+.iceForm .mozilla button.ixf-button {
+    padding: 1.3px 8px 2px;
+}
+.mozilla .iceForm input.ixf-button,
+.iceForm .mozilla input.ixf-button {
+    padding: 1.3px 8px 2px;
+}
+
+.webkit .iceForm button.ixf-button {
+    margin: 0;
+}
+
+.iceForm .ixf-button.spritefix {
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+.iceForm .disabled,
+.iceForm .disabled:hover,
+.iceForm .disabled:active,
+.iceForm .disabled:focus {
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    cursor: default;
+    -webkit-box-shadow: inherit;
+    -moz-box-shadow: inherit;
+    box-shadow: inherit;
+    color: inherit;
+}
+
+.iceForm .ifx-form .ixf-button.disabled:active {
+    top: 0;
+    background: #dcdcdc;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#fff),
+        to(#c0c0c0),
+        color-stop(0.04, #f2f2f2)
+    );
+    background-image: -moz-linear-gradient(
+        top,
+        #fff 0pt,
+        #f2f2f2 4%,
+        #c0c0c0 100%
+    );
+    background-image: -ms-linear-gradient(
+        top,
+        #fff 0pt,
+        #f2f2f2 4%,
+        #c0c0c0 100%
+    );
+    background-image: linear-gradient(top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #818181;
+}
+.iceForm .ixf-button.disabled:focus {
+    text-shadow: inherit;
+}
+
+.iceForm .rounded {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+
+.iceForm .ifx-form .ixf-button.text-sm {
+    font-size: 13px;
+}
+
+.iceForm .primary,
+.iceForm .primary:link,
+.iceForm .primary:visited,
+.iceForm .disabled.primary:hover,
+.iceForm .disabled.primary:active,
+.iceForm .disabled.primary:focus {
+    color: #fff;
+    /*  padding: .42em .9em .5em;*/
+    background: #a9b76b;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#c7d397),
+        to(#6c7a2f),
+        color-stop(0.04, #abba6d)
+    );
+    background: -moz-linear-gradient(
+        top,
+        #c7d397 0pt,
+        #abba6d 4%,
+        #6c7a2f 100%
+    );
+    background: -ms-linear-gradient(top, #c7d397 0pt, #abba6d 4%, #6c7a2f 100%);
+    background: linear-gradient(top, #c7d397 0pt, #abba6d 4%, #6c7a2f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abba6d', endColorstr='#6c7a2f');
+    text-shadow: #303e53 0 -1px 0;
+    border-top: 1px solid #929b5a;
+    border-left: 1px solid #808f43;
+    border-right: 1px solid #808f43;
+    border-bottom: 1px solid #586524;
+    width: auto;
+}
+
+.iceForm .primary:hover,
+.iceForm .primary:focus {
+    color: #fff;
+    background: ;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#b7c080),
+        to(#5c6626),
+        color-stop(0.04, #9fa960)
+    );
+    background-image: -moz-linear-gradient(
+        top,
+        #b7c080 0pt,
+        #9fa960 4%,
+        #5c6626 100%
+    );
+    background-image: -ms-linear-gradient(
+        top,
+        #b7c080 0pt,
+        #9fa960 4%,
+        #5c6626 100%
+    );
+    background-image: linear-gradient(
+        top,
+        #b7c080 0pt,
+        #9fa960 4%,
+        #5c6626 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b7c080', endColorstr='#5c6626');
+    text-shadow: #303e53 0 -1px 0;
+    border-top: 1px solid #757e3f;
+    border-left: 1px solid #707a37;
+    border-right: 1px solid #707a37;
+    border-bottom: 1px solid #484f1b;
+}
+
+.iceForm .primary:active {
+    color: #fff;
+    background: ;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#949c59),
+        to(#abba6d)
+    );
+    background-image: -moz-linear-gradient(top, #949c59, #abba6d);
+    background-image: -ms-linear-gradient(top, #949c59, #abba6d);
+    background-image: linear-gradient(top, #949c59, #abba6d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#949c59', endColorstr='#abba6d');
+    text-shadow: #303e53 0 -1px 0;
+    border-top: 1px solid #586524;
+    border-bottom: 1px solid #929b5a;
+}
+
+/* ldseForm Styles for jQuery Dialog*/
+.ldseForm {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+}
+.ldseForm.ui-dialog {
+    border: none;
+}
+
+.ldseForm .ui-dialog-titlebar {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+    min-height: 34px;
+}
+
+.ldseForm .ui-dialog-titlebar .ui-dialog-title {
+    display: inline-block;
+    line-height: 100%;
+    font-size: 1.15em;
+    margin: 9px;
+    font-weight: bold;
+    font-family: OpenSansRegular, Arial, Helvetica, "Lucida Grande", sans-serif;
+}
+
+.ldseForm .ui-dialog-titlebar-close .ui-icon {
+    display: inline-block;
+    text-indent: -999em;
+    overflow: hidden;
+    width: 20px;
+    font-family: ldsPublisherIcons;
+    margin: 10px;
+    float: right;
+    color: #666;
+}
+.ldseForm .ui-dialog-titlebar-close .ui-icon::before {
+    content: "\e00c";
+    position: static;
+    float: left;
+    text-indent: 0;
+    margin-right: 0;
+    padding: 0;
+    margin: 0;
+    left: auto !important;
+    font-size: 16px;
+}
+.ui-widget-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ldseForm .actionModal {
+    background: #fff;
+}
+
+/* @group ixf-header */
+
+.iceForm .ixf-header {
+    position: relative;
+    min-height: 34px;
+    float: left;
+    background-color: #2a2a2a;
+    background-image: -webkit-gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        from(#3c3c3c),
+        to(#161616)
+    );
+    background-image: -moz-linear-gradient(100% 100% 90deg, #161616, #3c3c3c);
+    background-image: -ms-linear-gradient(100% 100% 90deg, #161616, #3c3c3c);
+    background-image: linear-gradient(100% 100% 90deg, #161616, #3c3c3c);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c3c3c', endColorstr='#161616');
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.iceForm .ixf-appname {
+    float: left;
+    padding: 7px 11px 10px 12px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #727272;
+    text-shadow: #000 0 -1px 0;
+}
+
+.iceForm .ixf-appname a {
+    color: #aaa;
+    text-decoration: none;
+    text-shadow: none;
+}
+.iceForm .ixf-appname a:focus {
+    text-decoration: underline;
+}
+/*.ixf-appname-link {
+    background: transparent url(../images/ixf-downarrow.png) no-repeat 100% 7px;
+    padding-right: 14px;
+    }*/
+
+.iceForm .ixf-appname-link:hover {
+    color: #fff;
+}
+
+.iceForm .ixf-nav {
+    line-height: 9px;
+    border-left: 1px solid #151515;
+    border-right: 1px solid #393939;
+    float: left;
+    white-space: nowrap;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.iceForm .ixf-nav:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.iceForm .ixf-nav li {
+    float: left;
+}
+
+.iceForm .ixf-nav a {
+    float: left;
+    padding: 12px 13px;
+    border-left: 1px solid #393939;
+    border-right: 1px solid #151515;
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: #000 0 -1px 2px;
+    border-bottom: 1px solid #161616;
+}
+
+.iceForm .ixf-nav a:hover {
+    color: #fff;
+}
+.iceForm .ixf-nav a:focus {
+    text-decoration: underline;
+}
+.iceForm .ixf-nav .selected > a {
+    background-color: #000;
+    background-image: -webkit-gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        from(#161616),
+        to(#3c3c3c)
+    );
+    background-image: -moz-linear-gradient(100% 100% 90deg, #3c3c3c, #161616);
+    background-image: -ms-linear-gradient(100% 100% 90deg, #3c3c3c, #161616);
+    background-image: linear-gradient(100% 100% 90deg, #3c3c3c, #161616);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#161616', endColorstr='#3c3c3c');
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    padding: 12px 14px;
+    border-bottom: 1px solid #292929;
+    text-shadow: #000 0 1px 3px;
+}
+
+.iceForm .ixf-tools {
+    float: right;
+    padding: 9px 10px 11px 10px;
+    text-align: left;
+    z-index: 999;
+    color: #444;
+}
+
+.iceForm a.ixf-tools-link {
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: #000 0 -1px 2px;
+    margin-left: 16px;
+    display: inline-block;
+}
+.iceForm a.ixf-tools-link:focus {
+    text-decoration: underline;
+}
+
+.iceForm a.ixf-tools-link.menu-arrow:after,
+.iceForm .ixf-appname-link:after {
+    /* not supported by IE7 */
+    content: "▼";
+    text-shadow: #222 0 1px 2px;
+    color: #a7a7a7;
+    font-size: 10px;
+    font-family: "comic sans ms"; /* yes, comic sans... for this it looks the best cross browser */
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    filter: glow(color=#666666, strength=3);
+    padding-left: 5px;
+}
+.webkit .iceForm a.ixf-tools-link.menu-arrow:after,
+.webkit .ixf-appname-link:after {
+    font-size: 9px;
+}
+/* My Comment */
+
+.iceForm .ixf-tools-link:hover,
+.iceForm .ixf-tools-link.selected {
+    color: #fff;
+}
+
+.iceForm .ixf-tools .messagecount {
+    background: #8b0000;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#8b0000),
+        to(#d20000)
+    );
+    background: -moz-linear-gradient(top, #8b0000, #d20000);
+    background: -ms-linear-gradient(top, #8b0000, #d20000);
+    background: linear-gradient(top, #8b0000, #d20000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8b0000', endColorstr='#d20000');
+    -webkit-box-shadow: 0 1px 0px #333;
+    -moz-box-shadow: 0 1px 0px #333;
+    box-shadow: 0 1px 0px #333;
+    padding: 2px 6px;
+    height: 16px;
+    font-size: 10px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: #fff;
+    text-shadow: #000 0 1px 0px;
+    position: relative;
+    top: -1px;
+    border: 1px solid #222;
+}
+
+.iceForm .ixf-options-link:hover {
+    color: #fff;
+}
+
+/* @end */
+
+/* @group ixf-subheader */
+
+.iceForm .ixf-subheader {
+    clear: both;
+    position: relative;
+    /*  min-height: 34px;*/
+    /*  background: #3b3b3b url(../images/ixf-subnavback.png) repeat-x 0 0;
+    */
+    background-color: #3b3b3b;
+    /*css3 only BG curtousey of http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/ */
+    -moz-background-size: 4px 4px;
+    /*  -webkit-background-size: 4px 4px;*/
+    background-size: 4px 4px;
+    /*need to update default. find good IE fallback */
+    background-image: -moz-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 50%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0.2) 55%,
+        transparent 55%,
+        transparent
+    );
+    background-image: -webkit-gradient(
+        linear,
+        0 0,
+        100% 100%,
+        color-stop(0.4, transparent),
+        color-stop(0.4, rgba(0, 0, 0, 0.2)),
+        color-stop(0.55, rgba(0, 0, 0, 0.2)),
+        color-stop(0.55, transparent),
+        to(transparent)
+    );
+
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15) inset;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15) inset;
+
+    border-left: 8px solid #161616;
+    border-right: 8px solid #161616;
+}
+.ie .iceForm .ixf-subheader,
+.iceForm .ie .ixf-subheader {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#3c3c3c', endColorstr='#161616');
+}
+
+.iceForm .ixf-subnav {
+    /*  position: absolute;
+    left: 0;
+    top: 0;*/
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.ixf-subnav:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.iceForm .ixf-subnav li {
+    float: left;
+}
+
+.iceForm .ixf-subnav a {
+    float: left;
+    padding: 10px 13px 0;
+    height: 25px;
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: #000 0 1px 3px;
+}
+
+.iceForm .ixf-subnav a:hover {
+    color: #fff;
+}
+.iceForm .ixf-subnav a:focus {
+    text-decoration: underline;
+}
+
+.iceForm .ixf-subnav .selected > a {
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    /*  background: transparent url(../images/ixf-subnavarrow.png) no-repeat center 23px;*/
+}
+/* firefox stuff by default */
+.iceForm .ixf-subnav .selected > a span:before {
+    content: "◥";
+    text-shadow: #444 0 0px 3px;
+    color: #c7c7c7;
+    font-size: 13px;
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    margin-left: -6px;
+    -moz-transform: rotate(-45deg);
+}
+.webkit .iceForm .ixf-subnav .selected > a span:before,
+.iceForm .webkit .ixf-subnav .selected > a span:before {
+    font-size: 10px;
+    top: 29px;
+    margin-left: -4px;
+    -webkit-transform: rotate(-45deg);
+}
+.ie .iceForm .ixf-subnav .selected > a span:before,
+.iceForm .ie .ixf-subnav .selected > a span:before {
+    content: " "; /*▲*/
+    height: 0;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    margin-left: -8px;
+    filter: glow(color=#f00, strength=3);
+    padding: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #c7c7c7;
+    border-width: 0 7px 8px 7px;
+}
+/* @end */
+
+/* @group ixf-panels */
+
+.iceForm .ixf-panels {
+    border: 8px solid #161616;
+    border-top: 0;
+    background: #e7e6e2;
+    clear: both;
+    overflow: auto;
+    position: relative;
+}
+
+.iceForm .ixf-panel {
+    overflow: auto;
+    background: #e7e6e2;
+    font-size: 15px;
+    color: #555;
+    text-shadow: #fff 0 1px 0;
+    position: relative; /* fallback for if we don't have layout firing to set an absolute */
+    min-height: 2px; /* the layout script requires the panels to have some height before being initialized. If an "inner" set of panels gets initialized before an "outer" set of panels (due to being first in the source order) things break. This seems to fix that. */
+}
+
+.iceForm .ui-layout-resizer-east,
+.iceForm .ui-layout-resizer-west {
+    width: 7px;
+    border-left: 1px solid #bdbdbb;
+    border-right: 1px solid #a2a2a1;
+    background-color: #e1e1e0; /* fallback color */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#ededec),
+        to(#d5d5d3)
+    );
+    background: -moz-linear-gradient(left center, #ededec, #d5d5d3);
+    background: -ms-linear-gradient(left center, #ededec, #d5d5d3);
+    background: linear-gradient(left center, #ededec, #d5d5d3);
+    /*  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#EDEDEC', endColorstr='#D5D5D3'); Filter forces that element to clip anything inside it, so the pin was getting cropped. */
+}
+
+.iceForm .ui-layout-resizer-north,
+.iceForm .ui-layout-resizer-south {
+    height: 7px;
+    border-top: 1px solid #bdbdbb;
+    border-bottom: 1px solid #a2a2a1;
+    background-color: #e1e1e0; /* fallback color */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#ededec),
+        to(#d5d5d3)
+    );
+    background: -moz-linear-gradient(top, #ededec 0pt, #d5d5d3 100%);
+    background: -ms-linear-gradient(top, #ededec 0pt, #d5d5d3 100%);
+    background: linear-gradient(top, #ededec 0pt, #d5d5d3 100%);
+    /*  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EDEDEC', endColorstr='#D5D5D3'); Filter forces that element to clip anything inside it, so the pin was getting cropped. */
+}
+
+body.ixf-ldsorg .iceForm .ui-layout-resizer-east,
+body.ixf-ldsorg .iceForm .ui-layout-resizer-west,
+body.ixf-ldsorg .iceForm .ui-layout-resizer-north,
+body.ixf-ldsorg .iceForm .ui-layout-resizer-south {
+    border: 0;
+    background: #fff;
+    filter: none;
+}
+
+.iceForm .ui-layout-toggler {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    height: 0;
+    width: 3px;
+    padding-top: 16px;
+    overflow: hidden;
+    display: block;
+    background: transparent url(../images/ixf-sprite.png) no-repeat -476px -448px; /* divots-v +2 +0*/
+}
+
+.iceForm .ui-layout-resizer-north .ui-layout-toggler,
+.iceForm .ui-layout-resizer-south .ui-layout-toggler {
+    position: absolute;
+    top: 43%;
+    left: 2px;
+    height: 0;
+    width: 3px;
+    padding-top: 16px;
+    overflow: hidden;
+    display: block;
+    background: transparent url(../images/ixf-sprite.png) no-repeat -474px -450px; /* divots-h +0 +3 */
+}
+
+body.ixf-ldsorg .iceForm .ui-layout-toggler {
+    left: 1px;
+}
+
+body.ixf-ldsorg .iceForm .ui-layout-resizer-north .ui-layout-toggler,
+body.ixf-ldsorg .iceForm .ui-layout-resizer-south .ui-layout-toggler {
+    left: 48%;
+    top: 1px;
+}
+
+.iceForm .sunken {
+    -moz-box-shadow: #999 0px 0px 10px inset;
+    -webkit-box-shadow: #999 0px 0px 10px inset;
+    box-shadow: #999 0px 0px 10px inset;
+}
+
+.iceForm .ui-layout-button-pin {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    display: none;
+    background-image: url(../images/ixf-sprite.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.iceForm .ui-layout-button-pin-west-up {
+    right: -17px;
+    top: 49%;
+    margin-top: -5px;
+    display: block;
+    background-position: -300px -627px; /* pins-west */
+}
+
+.iceForm .ui-layout-button-pin-east-up {
+    left: -15px;
+    top: 49%;
+    margin-top: -5px;
+    display: block;
+    background-position: -411px -526px; /* pins-east */
+}
+
+.iceForm .ui-layout-button-pin-north-up {
+    bottom: -19px;
+    left: 50%;
+    margin-left: -14px;
+    display: block;
+    background-position: -374px -562px; /* pins-north */
+}
+
+.iceForm .ui-layout-button-pin-south-up {
+    top: -13px;
+    left: 50%;
+    margin-left: -14px;
+    display: block;
+    background-position: -337px -596px; /* pins-south */
+}
+
+.iceForm .ui-layout-resizer {
+    overflow: visible; /*required to get around overflow:hidden applied by script. Suggested in documentation so apparently there is no other way around it.*/
+}
+
+/* @end */
+
+/* @group ixf-actions */
+
+.iceForm .ixf-actions {
+    background: #161616;
+    background: rgba(22, 22, 22, 0.8);
+    position: fixed;
+    bottom: 8px;
+    width: 100%;
+    padding: 10px;
+    z-index: 500;
+    height: 34px;
+}
+.ie8 .iceForm .ixf-actions {
+    margin-bottom: -4px;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    line-height: 1.3;
+}
+
+.iceForm .ixf-actions .ixf-button {
+    /*  font-size: 13px;*/
+    /*  padding-top: .5em;*/
+    margin-top: 5px;
+}
+
+.iceForm .ixf-actions .ixf-button:hover,
+.iceForm .ixf-actions .ixf-button:active {
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 0;
+}
+
+/* make buttons a little bigger (padding) inside ixf-action */
+.iceForm .ixf-actions .ixf-button {
+    border: none;
+    padding: 6px 11px;
+}
+
+.iceForm .ixf-actions .mozilla .ixf-button {
+    /*  padding:4px 11px;*/
+}
+
+/* @end */
+
+/* @group ixf-table */
+
+.iceForm .ixf-table {
+    width: 100%;
+    clear: both;
+    border-collapse: separate;
+    color: #555;
+    text-shadow: #fff 0 1px 0;
+    border-top: 1px solid #c9c9c6;
+    border-bottom: 1px solid #efefec;
+    font-size: 12px;
+}
+
+.iceForm .ixf-table thead th,
+.iceForm .ixf-table thead td {
+    text-transform: uppercase;
+    font-size: 11px;
+    border-top: 1px solid #efefec;
+    border-bottom: 1px solid #c9c9c6;
+    background: #e7e6e2;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e7e6e2),
+        to(#cfceca)
+    );
+    background: -moz-linear-gradient(top, #e7e6e2, #cfceca);
+    background: -ms-linear-gradient(top, #e7e6e2, #cfceca);
+    background: linear-gradient(top, #e7e6e2, #cfceca);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e6e2', endColorstr='#cfceca');
+    text-align: left;
+    font-weight: normal;
+    padding: 6px 10px;
+    vertical-align: bottom;
+}
+
+.iceForm .ixf-table thead td .select,
+.iceForm .ixf-table thead td option {
+    text-transform: none;
+}
+.iceForm .ixf-table thead td {
+    line-height: 1.15;
+}
+.iceForm .ixf-table.fixed {
+    width: inherit;
+}
+
+.iceForm .padding-xs .ixf-table th:first-child,
+.iceForm .padding-sm .ixf-table th:first-child,
+.iceForm .padding-md .ixf-table th:first-child,
+.iceForm .padding-lg .ixf-table th:first-child,
+.iceForm .padding-xl .ixf-table th:first-child,
+.iceForm .margin-xs .ixf-table th:first-child,
+.iceForm .margin-sm .ixf-table th:first-child,
+.iceForm .margin-md .ixf-table th:first-child,
+.iceForm .margin-lg .ixf-table th:first-child {
+    border-left: 1px solid #c9c9c6;
+}
+
+.iceForm .padding-xs .ixf-table th:last-child,
+.iceForm .padding-sm .ixf-table th:last-child,
+.iceForm .padding-md .ixf-table th:last-child,
+.iceForm .padding-lg .ixf-table th:last-child,
+.iceForm .padding-xl .ixf-table th:last-child,
+.iceForm .margin-xs .ixf-table th:last-child,
+.iceForm .margin-sm .ixf-table th:last-child,
+.iceForm .margin-md .ixf-table th:last-child,
+.iceForm .margin-lg .ixf-table th:last-child {
+    border-right: 1px solid #c9c9c6;
+}
+
+.iceForm .padding-xs .ixf-table .selected td:first-child,
+.iceForm .padding-sm .ixf-table .selected td:first-child,
+.iceForm .padding-md .ixf-table .selected td:first-child,
+.iceForm .padding-lg .ixf-table .selected td:first-child,
+.iceForm .padding-xl .ixf-table .selected td:first-child,
+.iceForm .margin-xs .ixf-table .selected td:first-child,
+.iceForm .margin-sm .ixf-table .selected td:first-child,
+.iceForm .margin-md .ixf-table .selected td:first-child,
+.iceForm .margin-lg .ixf-table .selected td:first-child {
+    border-left: 1px solid #c9c9c6;
+}
+
+.iceForm .padding-xs .ixf-table .selected td:last-child,
+.iceForm .padding-sm .ixf-table .selected td:last-child,
+.iceForm .padding-md .ixf-table .selected td:last-child,
+.iceForm .padding-lg .ixf-table .selected td:last-child,
+.iceForm .padding-xl .ixf-table .selected td:last-child,
+.iceForm .margin-xs .ixf-table .selected td:last-child,
+.iceForm .margin-sm .ixf-table .selected td:last-child,
+.iceForm .margin-md .ixf-table .selected td:last-child,
+.iceForm .margin-lg .ixf-table .selected td:last-child {
+    border-right: 1px solid #c9c9c6;
+}
+
+.iceForm .ixf-table th a {
+    padding: 6px 0;
+    margin: -6px 0;
+    line-height: 14px;
+    color: #3b3b3b;
+    display: block;
+    text-decoration: none;
+}
+
+.iceForm .ixf-table th a:hover {
+    color: #000;
+}
+
+.iceForm .ixf-table thead th.sort-down a,
+.iceForm .ixf-table thead .sorting_desc a {
+    padding-left: 16px;
+    background: transparent url(../images/ixf-sprite.png) no-repeat -22px -897px; /* sort-down +0 +9 */
+    color: #000;
+}
+
+.iceForm .ixf-table thead th.sort-up a,
+.iceForm .ixf-table thead .sorting_asc a {
+    padding-left: 16px;
+    background: transparent url(../images/ixf-sprite.png) no-repeat -0px -919px; /* sort-up +0 +8 */
+    color: #000;
+}
+
+.iceForm .ixf-table tbody td,
+.iceForm .ixf-table tfoot td {
+    border-top: 1px solid #efefec;
+    border-bottom: 1px solid #c9c9c6;
+    padding: 5px 10px;
+    vertical-align: top;
+    line-height: 17px;
+}
+
+.iceForm .ixf-table tfoot td {
+    background: #efefed;
+    font-weight: bold;
+}
+
+.iceForm .ixf-table .iconwidth {
+    width: 10px;
+    padding: 5px;
+}
+
+.iceForm .ixf-table tbody td a {
+    color: #4b576b;
+}
+
+.iceForm .ixf-table tbody td a:hover {
+    color: #000;
+}
+
+.iceForm .ixf-table tbody tr:hover td {
+    background: #efefed;
+}
+
+.iceForm .ixf-container .ixf-table tbody tr:hover td,
+.iceForm .ui-tabs-panel .ixf-table tbody tr:hover td {
+    background: #f4f4f3;
+}
+
+.iceForm .ixf-table tbody tr.selected td {
+    background: #f6dba5;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#fde4b1),
+        to(#e4c587)
+    );
+    background: -moz-linear-gradient(top, #fde4b1 0pt, #e4c587 100%);
+    background: -ms-linear-gradient(top, #fde4b1 0pt, #e4c587 100%);
+    background: linear-gradient(top, #fde4b1 0pt, #e4c587 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fde4b1', endColorstr='#e4c587');
+    text-shadow: #fff0d0 0 1px 0;
+    border-bottom: 1px solid #d3b271;
+    border-top: 1px solid #feebc2;
+    color: #333;
+}
+
+.iceForm .ixf-table tbody tr.selected td a {
+    color: #333;
+}
+
+.iceForm .ixf-table .rowdelete {
+    display: block;
+    width: 16px;
+    height: 0;
+    padding-top: 16px;
+    overflow: hidden;
+    background: transparent url(../images/ixf-sprite.png) no-repeat -516px -427px; /* deleterow */
+}
+
+.iceForm .ixf-table tr:hover .rowdelete {
+    background-position: -542px -401px; /* deleterow-hover */
+}
+.iceForm tr.disabled td,
+tr.inactive td {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* @end */
+
+.iceForm .dataTables_wrapper {
+    position: relative;
+}
+
+/* @group ixf-table */
+
+/* Stacked Form (Labels on the top)
+------------------------------------------------------------------ */
+.iceForm .ixf-form dl {
+    vertical-align: top;
+    display: inherit;
+    margin: 3px;
+}
+.iceForm .ixf-form dl.nopad {
+    padding: 0;
+}
+.iceForm .ixf-form dl.nopad dd {
+    padding: 0;
+}
+
+.iceForm .ixf-form dd,
+.iceForm .ixf-form dt {
+    float: none;
+    text-align: left;
+    width: auto;
+    position: relative;
+}
+
+.iceForm .ixf-form dt {
+    font-weight: normal;
+    margin-bottom: 2px;
+    position: relative;
+    width: auto;
+    color: #000;
+    font-weight: normal;
+    line-height: inherit;
+}
+
+.iceForm .ixf-form.text-sm dt,
+.iceForm .ixf-form .text-sm dt {
+    margin-bottom: 0;
+}
+
+.iceForm .ixf-form dd {
+    margin: 0 0 6px 0;
+}
+
+.iceForm .ixf-form.flowing .error-indicator,
+.iceForm .ixf-form dl .error-indicator {
+    background: transparent url(../images/ico-sprite-16-v2.png) no-repeat -52px -1484px;
+    float: left;
+    margin-right: 4px;
+}
+
+/* Table-style form (side-by-side)
+------------------------------------------------------------------ */
+.iceForm .ixf-form .table {
+    display: table;
+    table-layout: fixed;
+    width: auto;
+}
+
+.iceForm .ixf-form .table dl {
+    display: table-row;
+    padding: 5px 0;
+    margin: 0;
+    /*the following were causing issues in chrome when a datepicker row was preceded by a select row (weird I know). Removing the overflow:hidden fixed it. not sure why we have clearfix stuff anyway, the dd/dt aren't floated in this case. could be legacy*/
+    /*  clear: both;
+    overflow: hidden;*/
+}
+
+.iceForm .ixf-form .table dt,
+.iceForm .ixf-form .table dd {
+    display: table-cell;
+    margin: 0;
+    float: none;
+}
+
+.iceForm .ixf-form .table dt {
+    padding: 2px 10px 10px 0;
+    vertical-align: top;
+    text-align: right;
+}
+
+.iceForm .ixf-form .table dd {
+    padding: 0 5px 10px 0;
+}
+
+.iceForm .ixf-form .table .options-vertical {
+    padding-top: 4px;
+}
+.iceForm .ixf-form.text-sm .table .options-vertical,
+.iceForm .ixf-form .table.text-sm .options-vertical {
+    padding-top: 2px;
+}
+
+.iceForm .ixf-form .readonly dd {
+    padding-top: 2px;
+    white-space: normal;
+}
+
+/* Adjustments for stretchy table form - no select because it doesn't play nice with the fixSelect script
+------------------------------------------------------------------ */
+.iceForm .ixf-form .table.stretchy {
+    width: 100%;
+}
+.iceForm .ixf-form .stretchy input[type="text"],
+.iceForm .ixf-form .stretchy input[type="password"],
+.iceForm .ixf-form .stretchy textarea {
+    width: 98%;
+}
+
+/* Flowing Form (Labels on the top)
+------------------------------------------------------------------ */
+
+.iceForm .ixf-form .flowing dl {
+    display: inherit;
+    padding: 5px 20px 5px 0;
+    float: left;
+    clear: none;
+    overflow: hidden;
+}
+
+.iceForm .ixf-form .flowing dd,
+.iceForm .ixf-form .flowing dt {
+    float: none;
+    text-align: left;
+    display: block;
+}
+
+.iceForm .flowing dt {
+    padding: 0 0 2px 0;
+}
+
+.iceForm .ixf-form .flowing .options-vertical {
+    margin-top: 0;
+}
+
+/* Form elements
+------------------------------------------------------------------ */
+.iceForm .ixf-form samp {
+    font-size: 85%;
+    color: #666;
+}
+
+.iceForm .select select {
+    top: 5px;
+    left: -3px;
+}
+
+.iceForm .select,
+.iceForm select,
+.iceForm .select select {
+    position: relative;
+    padding: 2px 20px 2px 5px;
+    color: #495569;
+    background: #dcdcdc;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#f2f2f2),
+        to(#c0c0c0)
+    );
+    background: -moz-linear-gradient(top, #f2f2f2, #c0c0c0);
+    background: -ms-linear-gradient(top, #f2f2f2, #c0c0c0);
+    background: linear-gradient(top, #f2f2f2, #c0c0c0);
+    border: 1px;
+    border-top: 1px solid #adadad;
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+    border-bottom: 1px solid #818181;
+    -webkit-box-shadow: 0 1px 2px #bebebc;
+    -moz-box-shadow: 0 1px 2px #bebebc;
+    box-shadow: 0 1px 2px #bebebc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 18px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+.ie9 .iceForm select,
+.iceForm .ie9 select {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#c0c0c0');
+}
+.ie7 .iceForm select,
+.ie8 .iceForm select,
+.iceForm .ie7 select,
+.iceForm .ie8 select {
+    /*  border:0;*/
+    background: #fff;
+    position: static;
+    filter: none;
+}
+.iceForm .select:hover,
+.iceForm select:hover,
+.iceForm .select.focus {
+    -webkit-box-shadow: 0 1px 4px #999;
+    -moz-box-shadow: 0 1px 4px #999;
+    box-shadow: 0 1px 4px #999;
+}
+
+.iceForm select {
+    height: 24px;
+    padding: 0;
+}
+.iceForm option {
+    background-color: #e1dfdb;
+}
+.iceForm .ie7 option,
+.iceForm .ie8 option,
+.ie7 .iceForm option,
+.ie8 .iceForm option {
+    background: #fff;
+}
+
+.iceForm .select .arrow,
+.iceForm .arrow {
+    background: transparent url(../images/ixf-sprite.png) no-repeat -448px -492px; /* dropdownarrow */
+    width: 0;
+    height: 24px;
+    padding: 0 0 0 20px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    border-radius: ;
+}
+
+.iceForm .select .text {
+    padding: 0;
+    text-transform: none;
+    text-shadow: #fff 0 1px 0;
+    display: inline-block;
+    overflow: hidden;
+    /*last two lines are to crop text that is wider then the element is set to*/
+}
+.iceForm .select span {
+    white-space: nowrap;
+    overflow: hidden;
+    /*  display:inline-block; this was causing extra space in browsers, removed and the space goes away with no apparent issues. Leaving for easy viewing in case an issue comes up */
+}
+
+.iceForm .inline-help {
+    text-align: left;
+}
+
+.iceForm .highlight-error dt {
+    color: #bc0000;
+}
+
+.iceForm .error-indicator {
+    background: transparent url(../images/ico-sprite-16-v2.png) no-repeat -52px -1484px;
+    width: 16px;
+    height: 0;
+    padding-top: 16px;
+    overflow: hidden;
+    display: inline-block;
+    float: none;
+    margin: 0;
+    position: relative;
+    top: 2px;
+    right: -4px;
+}
+
+.iceForm .ixf-form dl.error dt {
+    color: #bc0000;
+}
+
+.iceForm .ixf-form.ruled {
+    border-bottom: 1px solid #ddd;
+}
+.iceForm .ixf-form.ruled dl {
+    border-top: 1px solid #ddd;
+}
+
+.iceForm .ixf-form input[type="text"],
+.iceForm .ixf-form input[type="password"],
+.iceForm .ixf-form input[type="file"],
+.iceForm .ixf-form textarea,
+.iceForm .ixf-form input.ixf-filter,
+.iceForm .ixf-form .ixf-textfield {
+    border-top: 1px solid #b2b2b1;
+    border-left: 1px solid #c4c4c3;
+    border-right: 1px solid #c4c4c3;
+    border-bottom: 1px solid #d6d6d5;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 0 #f9f9f8, 0px 1px 3px #e4e4e4 inset;
+    -moz-box-shadow: 0 1px 0 #f9f9f8 0px 1px 3px #e4e4e4 inset;
+    box-shadow: 0 1px 0 #f9f9f8;
+    padding: 2px 3px;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #535353;
+    height: 18px;
+}
+.iceForm .ixf-form input[type="text"]:focus,
+.iceForm .ixf-form input[type="password"]:focus,
+.iceForm .ixf-form input[type="file"]:focus,
+.iceForm .ixf-form textarea:focus,
+.iceForm .ixf-form input.ixf-filter:focus,
+.iceForm .ixf-form .ixf-textfield:focus {
+    /*background:#FFF7E8; yellow*/
+    /*background:#F2F4F7; blue*/
+    border-top: 1px solid #848d9b;
+    border-left: 1px solid #99a4b6;
+    border-right: 1px solid #99a4b6;
+    border-bottom: 1px solid #afb9c7;
+}
+
+.iceForm .ixf-form input[type="text"][disabled],
+.iceForm .ixf-form input[type="password"][disabled],
+.iceForm .ixf-form input[type="file"][disabled],
+.iceForm .ixf-form textarea[disabled],
+.iceForm .ixf-form input.ixf-filter[disabled],
+.iceForm .ixf-form .ixf-textfield[disabled],
+.iceForm .ixf-form .select.disabled {
+    opacity: 0.6;
+}
+
+/* try to make something out of the input type="file" */
+.iceForm .ixf-file-fixer {
+    position: relative;
+}
+.iceForm .ixf-file-fixer .ixf-file {
+    opacity: 0.001;
+    position: absolute;
+    left: 0;
+    filter: Alpha(Opacity=.001);
+}
+.iceForm .ixf-fakefile {
+    margin-right: 5px;
+}
+
+/*Input Sizes - using because you apparently want to trump any existing sizes*/
+
+.iceForm input.xxxl,
+.iceForm select.xxxl {
+    width: 600px;
+}
+.iceForm input.xxl,
+.iceForm select.xxl {
+    width: 300px;
+}
+.iceForm input.xl,
+.iceForm select.xl {
+    width: 200px;
+}
+.iceForm input.lg,
+.iceForm select.lg {
+    width: 150px;
+}
+.iceForm input.md,
+.iceForm select.md {
+    width: 100px;
+}
+.iceForm input.sm,
+.iceForm select.sm {
+    width: 50px;
+}
+.iceForm input.xs,
+.iceForm select.xs {
+    width: 20px;
+}
+
+.iceForm textarea {
+    height: auto;
+} /* compensate for the 18px height set above, that isn't needed on textareas*/
+.iceForm textarea.xxxl {
+    width: 600px;
+    height: 300px;
+}
+.iceForm textarea.xxl {
+    width: 300px;
+    height: 150px;
+}
+.iceForm textarea.xl {
+    width: 200px;
+    height: 100px;
+}
+.iceForm textarea.lg {
+    width: 150px;
+    height: 75px;
+}
+.iceForm textarea.md {
+    width: 100px;
+    height: 50px;
+}
+.iceForm textarea.sm {
+    width: 50px;
+    height: 25px;
+}
+.iceForm textarea.xs {
+    width: 20px;
+    height: 20px;
+}
+
+/*Alerts*/
+.iceForm .ixf-alert {
+    background: url(../images/ico-sprite-32.png) no-repeat 10px -117px #fff; /* +10 +9 */
+    margin-bottom: 15px;
+    padding: 15px 35px 0px 51px; /* removed bottom padding to allow P/UL/etc to handle the bottom spacing */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+
+.iceForm .ixf-alert p {
+    color: #888;
+    font-size: 14px;
+    padding-right: 30px;
+}
+.iceForm .ixf-alert p a {
+    color: #888;
+}
+.iceForm .ixf-alert strong {
+    font-weight: normal;
+    color: #717f38;
+}
+.iceForm .ixf-alert ul {
+    margin: 5px 0 15px 0px;
+    padding: 0 30px 0 0;
+    list-style-type: none;
+}
+.iceForm .ixf-alert li {
+    color: #888;
+    background: url(../images/ixf-sprite.png) no-repeat -962px 8px;
+    padding-left: 10px;
+    font-size: 14px;
+} /* bullet +0 +8 */
+.iceForm .ixf-alert li strong {
+    color: #555;
+}
+.iceForm .ixf-alert a.close {
+    background: url(../images/ixf-sprite.png) -610px -325px no-repeat;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    display: inline-block;
+    position: absolute;
+    right: 13px;
+    top: 24px;
+    margin-top: -10px;
+} /* close-success */
+
+.iceForm .ixf-alert.error {
+    background: url(../images/ico-sprite-32.png) no-repeat -74px -33px #fff;
+} /* +10 +9 */
+.iceForm div.error strong {
+    color: #965005;
+}
+.iceForm div.error a.close {
+    background-position: -670px -265px;
+} /* close-error */
+
+.iceForm .ixf-alert.notice {
+    background: url(../images/ico-sprite-32.png) no-repeat -32px -75px #fff;
+} /* +10 +9 */
+.iceForm .notice strong {
+    color: #747d8c;
+}
+.iceForm .notice a.close {
+    background-position: -640px -295px;
+} /* close-notice */
+
+.iceForm .ixf-alert.critical {
+    background: url(../images/ico-sprite-32.png) no-repeat -116px 9px #fff;
+} /* +10 +9 */
+.iceForm .critical strong {
+    color: #ab6363;
+}
+.iceForm .critical a.close {
+    background-position: -700px -235px;
+} /* close-critical */
+
+/*Inline Errors*/
+.iceForm .inline-error {
+    position: absolute;
+    margin-left: 6px;
+    margin-top: -2px;
+    background: #dcdcdc;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#aeaeae),
+        to(#696969),
+        color-stop(0.04, #9d9d9d)
+    );
+    background-image: -moz-linear-gradient(
+        top,
+        #aeaeae 0pt,
+        #9d9d9d 4%,
+        #696969 100%
+    );
+    background-image: -ms-linear-gradient(
+        top,
+        #aeaeae 0pt,
+        #9d9d9d 4%,
+        #696969 100%
+    );
+    background-image: linear-gradient(
+        top,
+        #aeaeae 0pt,
+        #9d9d9d 4%,
+        #696969 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9d9d9d', endColorstr='#696969');
+    padding: 4px 4px 5px 4px;
+    border-top: 1px solid #6f6f6f;
+    border-left: 1px solid #5a5a5a;
+    border-right: 1px solid #5a5a5a;
+    border-bottom: 1px solid #464646;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    line-height: 18px;
+    font-size: 13px;
+    z-index: 100;
+}
+
+.iceForm .inline-error strong {
+    margin-left: -16px;
+    padding: 19px 5px 5px 37px;
+    background: url(../images/alert_arrow.png) no-repeat 0 19px;
+    color: #fff;
+    text-shadow: #666 0px -1px 0px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.iceForm a.big-white {
+    color: #666;
+    font-size: 15px;
+    background: url(../images/big-button-white.jpg) no-repeat top left;
+    padding: 0 0 0 14px;
+    display: inline-block;
+    text-decoration: none;
+}
+.iceForm a.big-white:hover {
+    color: #333;
+}
+.iceForm a.big-white span {
+    background: url(../images/big-button-white.jpg) no-repeat top right;
+    padding: 5px 22px 0 0px;
+    line-height: 20px;
+    display: inline-block;
+    height: 25px;
+    text-shadow: #fff 0px 1px 0px;
+    text-align: left;
+}
+
+.iceForm .ixf-legend,
+.iceForm .ixf-container,
+.iceForm .ixf-fieldset {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-left: 1px solid #babab7;
+    border-right: 1px solid #babab7;
+    border-top: 1px solid #acaca9;
+    border-bottom: 1px solid #c9c9c6;
+    /*  background: #ededeb url(../images/fieldset_shadow.png) repeat-x 0 0;*/
+    background: #ededeb;
+    -webkit-box-shadow: 0 1px 0 #f9f9f8, 0 1px 2px #d4d4d2 inset;
+    -moz-box-shadow: 0 1px 0 #f9f9f8, 0 1px 2px #d4d4d2 inset;
+    box-shadow: 0 1px 0 #f9f9f8;
+}
+
+.iceForm .ixf-legend {
+    padding: 4px 10px;
+    -webkit-box-shadow: 0 1px 3px #d4d4d2;
+    -moz-box-shadow: 0 1px 3px #d4d4d2;
+    box-shadow: 0 1px 3px #d4d4d2;
+    border-bottom: 1px solid #acaca9;
+    background-image: none;
+    margin-bottom: -1px;
+}
+
+/* @end */
+
+/* @group ixf-option */
+
+/* Custom checkbox and radio styles */
+
+.iceForm .ixf-option {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.iceForm .options-horizontal .ixf-option {
+    display: inline-block;
+    margin: 0 5px 2px 0;
+}
+
+.iceForm label + .ixf-option,
+.iceForm input + .ixf-option {
+    margin-to.ixf-option: 20px;
+}
+
+.iceForm .ixf-option > input {
+    padding: 0;
+    margin: 0;
+    height: 17px;
+    width: 17px;
+    float: left;
+    position: absolute;
+    opacity: 0.001; /* hack for testing tools like selenium. They require opacity to not be 0. This meets that, but doesn't appear to be displayed at all. No color shift even. */
+}
+
+.iceForm .ixf-option > label {
+    /*  float: left; */
+    display: block;
+    line-height: 18px;
+    padding: 0 0 0 23px;
+}
+
+/*
+the :not(x) is to exclude IE8. It doesn't support :checked and so we also use :not which it doesn't support
+See http://www.thecssninja.com/css/custom-inputs-using-css for details
+*/
+.iceForm .ixf-option:not(x) > input + label {
+    background: url(../images/ixf-sprite.png) -730px -207px no-repeat; /* checkbox-unchecked */
+    min-height: 18px;
+}
+
+.iceForm .ixf-option:not(x) > input[type="radio"] + label {
+    background-position: -44px -877px;
+} /* radio-unchecked */
+
+/* Checked styles */
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:checked + label {
+    background-position: -846px -97px;
+} /* checkbox-checked */
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:hover:checked + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:focus:checked + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:checked + label:hover,
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:focus:checked + label {
+    background-position: -875px -68px;
+} /* checkbox-checked-hover */
+.iceForm .ixf-option:not(x) > input[type="radio"]:checked + label {
+    background-position: -160px -767px;
+} /* radio-checked */
+.iceForm .ixf-option:not(x) > input[type="radio"]:hover:checked + label,
+.iceForm .ixf-option:not(x) > input[type="radio"]:focus:checked + label,
+.iceForm .ixf-option:not(x) > input[type="radio"]:checked + label:hover,
+.iceForm .ixf-option:not(x) > input[type="radio"]:focus:checked + label {
+    background-position: -189px -740px;
+} /* radio-checked-hover */
+
+/* Hover & Focus styles */
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:hover + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:focus + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"] + label:hover {
+    background-position: -759px -178px;
+} /* checkbox-unchecked-hover */
+.iceForm .ixf-option:not(x) > input[type="radio"]:hover + label,
+.iceForm .ixf-option:not(x) > input[type="radio"]:focus + label,
+.iceForm .ixf-option:not(x) > input[type="radio"] + label:hover {
+    background-position: -73px -848px;
+} /* radio-unchecked-hover */
+
+/* Active styles */
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:active + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"] + label:hover:active {
+    background-position: -817px -124px;
+} /* checkbox-unchecked-active */
+.iceForm .ixf-option:not(x) > input[type="radio"]:active + label,
+.iceForm .ixf-option:not(x) > input[type="radio"] + label:hover:active {
+    background-position: -131px -794px;
+} /* radio-unchecked-active */
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:active:checked + label,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="checkbox"]:checked
+    + label:hover:active {
+    background-position: -933px -13px;
+} /* checkbox-checked-active */
+.iceForm .ixf-option:not(x) > input[type="radio"]:active:checked + label,
+.iceForm .ixf-option:not(x) > input[type="radio"]:checked + label:hover:active {
+    background-position: -247px -686px;
+} /* radio-checked-active */
+
+/* Disabled styles */
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:disabled + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:hover:disabled + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:focus:disabled + label,
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:disabled + label:hover,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="checkbox"]:disabled
+    + label:hover:active {
+    background-position: -788px -151px;
+} /* checkbox-unchecked-disabled */
+.iceForm .ixf-option:not(x) > input[type="radio"]:disabled + label,
+.iceForm .ixf-option:not(x) > input[type="radio"]:hover:disabled + label,
+.iceForm .ixf-option:not(x) > input[type="radio"]:focus:disabled + label,
+.iceForm .ixf-option:not(x) > input[type="radio"]:disabled + label:hover,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="radio"]:disabled
+    + label:hover:active {
+    background-position: -102px -821px;
+} /* radio-unchecked-disabled */
+.iceForm .ixf-option:not(x) > input[type="checkbox"]:disabled:checked + label,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="checkbox"]:hover:disabled:checked
+    + label,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="checkbox"]:focus:disabled:checked
+    + label,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="checkbox"]:disabled:checked
+    + label:hover,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="checkbox"]:disabled:checked
+    + label:hover:active {
+    background-position: -904px -40px;
+} /* checkbox-checked-disabled */
+.iceForm .ixf-option:not(x) > input[type="radio"]:disabled:checked + label,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="radio"]:hover:disabled:checked
+    + label,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="radio"]:focus:disabled:checked
+    + label,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="radio"]:disabled:checked
+    + label:hover,
+.iceForm
+    .ixf-option:not(x)
+    > input[type="radio"]:disabled:checked
+    + label:hover:active {
+    background-position: -218px -713px;
+} /* radio-checked-disabled */
+
+.iceForm .no-label {
+    width: 20px;
+    height: 17px;
+}
+.iceForm .no-label > label {
+    width: 0px;
+    position: absolute;
+}
+
+/* @end */
+
+/* @group ixf-smallapp */
+
+.iceForm .ixf-smallapp-wrapper {
+    width: 976px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 3px 10px #3b414b;
+    -moz-box-shadow: 0 3px 10px #3b414b;
+    box-shadow: 0 3px 10px #3b414b;
+}
+
+.iceForm .ixf-smallapp .ixf-appname a {
+    color: #aaa;
+}
+
+.iceForm .ixf-smallapp .ixf-panels {
+    margin: 0 auto;
+}
+
+body.ixf-ldsorg .iceForm .ixf-panels {
+    border: 8px solid #fff;
+}
+
+body.ixf-ldsorg .iceForm .ixf-smallapp-wrapper {
+    -webkit-box-shadow: 0 2px 15px #1a212c;
+    -moz-box-shadow: 0 2px 15px #1a212c;
+    box-shadow: 0 2px 15px #1a212c;
+}
+
+.iceForm .ixf-smallapp-header {
+    position: relative;
+    height: 86px;
+    width: 977px;
+    margin: 0 auto;
+}
+
+.iceForm .ixf-smallapp-header .tools {
+    position: absolute;
+    top: 34px;
+    right: 56px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: #666 0 1px 4px;
+}
+
+.iceForm .ixf-smallapp-header .tools a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.iceForm .ixf-smallapp-header .tools a:hover {
+    text-decoration: underline;
+}
+
+body.ixf-ldsorg .iceForm .ixf-smallapp-header .tools {
+    color: #7b88a1;
+    text-shadow: #1d2840 0 1px 3px;
+    font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Regular",
+        "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+
+body.ixf-ldsorg .iceForm .ixf-smallapp-header .tools a {
+    color: #7b88a1;
+}
+
+body.ixf-ldsorg .iceForm .ixf-smallapp-header .tools a:hover {
+    color: #7b88a1;
+    text-decoration: underline;
+}
+
+.iceForm .logo {
+    background: transparent url(../images/ixf-logo-white.png);
+    width: 150px;
+    height: 0;
+    padding-top: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+/* @end */
+
+/* @group ixf-toolbar */
+
+.iceForm .ixf-toolbar {
+    line-height: 16px;
+    height: 28px;
+    padding-top: 4px;
+    margin-bottom: 4px;
+}
+
+.iceForm .ixf-toolbar a,
+.iceForm .ixf-toolbar .info {
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 12px;
+    line-height: 15px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-width: 3px 4px 1px;
+}
+
+.iceForm .ixf-toolbar .info {
+    float: left;
+    padding: 5px 6px 3px 6px;
+    font-weight: bold;
+}
+
+.iceForm .ixf-toolbar .tool {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    display: inline-block;
+    float: left;
+}
+
+.iceForm .ixf-toolbar .tool:hover {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-left: 1px solid #babab7;
+    border-right: 1px solid #babab7;
+    border-top: 1px solid #c9c9c6;
+    border-bottom: 1px solid #acaca9;
+    background: #e7e6e2;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e7e6e2),
+        to(#cfceca)
+    );
+    background: -moz-linear-gradient(top, #e7e6e2, #cfceca);
+    background: -ms-linear-gradient(top, #e7e6e2, #cfceca);
+    background: linear-gradient(top, #e7e6e2, #cfceca);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e6e2', endColorstr='#cfceca');
+    -webkit-box-shadow: 0 1px 0 #f9f9f8;
+    -moz-box-shadow: 0 1px 0 #f9f9f8;
+    box-shadow: 0 1px 0 #f9f9f8;
+}
+
+.iceForm .ixf-toolbar .tool:active {
+    border-left: 1px solid #babab7;
+    border-right: 1px solid #babab7;
+    border-top: 1px solid #acaca9;
+    border-bottom: 1px solid #c9c9c6;
+    background: #ededeb;
+    -webkit-box-shadow: 0 1px 0 #f9f9f8, 0 1px 2px #d4d4d2 inset;
+    -moz-box-shadow: 0 1px 0 #f9f9f8, 0 1px 2px #d4d4d2 inset;
+    box-shadow: 0 1px 0 #f9f9f8;
+}
+
+.iceForm .ixf-toolbar .tool.disabled:hover,
+.iceForm .ixf-toolbar .tool.disabled:active {
+    background: none;
+    border: 1px solid transparent;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: none;
+}
+.iceForm .ixf-toolbar .disabled a {
+    cursor: default;
+}
+
+.iceForm .ixf-toolbar .ixf-filter,
+.iceForm .ixf-table .ixf-filter {
+    vertical-align: baseline;
+    margin: 0 3px;
+    padding: 3px;
+    height: 16px;
+    font-size: 12px;
+}
+
+.iceForm .ixf-table .ixf-filter {
+    margin: 0;
+    width: 94%;
+}
+
+/* @end */
+
+/* @group ixf-list */
+
+.iceForm .ixf-list {
+    border-top: 1px solid #c9c9c6;
+    border-bottom: 1px solid #efefec;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    clear: both;
+}
+
+.iceForm .ui-tooltip .ixf-list {
+    margin-bottom: -2px;
+}
+
+.iceForm .ui-tooltip .ixf-list li:last-child {
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+}
+
+.iceForm .ixf-list li {
+    border-top: 1px solid #efefec;
+    border-bottom: 1px solid #c9c9c6;
+    font-size: 12px;
+}
+
+.iceForm .ixf-list li:hover {
+    background: #efefed;
+}
+
+.iceForm .ixf-container .ixf-list li:hover,
+.iceForm .ui-tabs-panel .ixf-list li:hover {
+    background: #f4f4f3;
+}
+
+.iceForm .ixf-list li.selected {
+    background: #f6dba5 !important;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#fde4b1),
+        to(#e4c587)
+    ) !important;
+    background: -moz-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    background: -ms-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    background: linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fde4b1', endColorstr='#e4c587') !important;
+    text-shadow: #fff0d0 0 1px 0;
+    border-bottom: 1px solid #d3b271;
+    border-top: 1px solid #feebc2;
+    color: #000 !important;
+}
+
+.iceForm .ixf-list li.selected a {
+    color: #000;
+}
+
+.iceForm .padding-xs .ixf-list li.selected,
+.iceForm .padding-sm .ixf-list li.selected,
+.iceForm .padding-md .ixf-list li.selected,
+.iceForm .padding-lg .ixf-list li.selected,
+.iceForm .padding-xl .ixf-list li.selected,
+.iceForm .margin-xs .ixf-list li.selected,
+.iceForm .margin-sm .ixf-list li.selected,
+.iceForm .margin-md .ixf-list li.selected,
+.iceForm .margin-lg .ixf-list li.selected {
+    border-left: 1px solid #c9c9c6;
+    border-right: 1px solid #c9c9c6;
+}
+
+.iceForm .ixf-list li a {
+    display: block;
+    color: #4b576b;
+    padding: 6px 10px;
+    margin: -6px -10px;
+    text-decoration: none;
+}
+
+.iceForm .inline-links li a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.iceForm .ixf-list li {
+    color: #4b576b;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.iceForm .ixf-list a.rowdelete {
+    display: block;
+    width: 16px;
+    height: 0;
+    padding: 16px 0 0 0;
+    overflow: hidden;
+    background: transparent url(../images/ixf-sprite.png) no-repeat -516px -427px; /* deleterow */
+    float: right;
+    position: relative;
+    margin: -1px -4px 0 8px;
+}
+
+.iceForm .ixf-list li:hover .rowdelete {
+    background-position: -542px -401px; /* deleterow-hover */
+}
+
+.iceForm .ixf-list .no-label:not(x) {
+    float: left;
+    margin: -1px 4px -1px -4px;
+}
+
+.iceForm .ixf-list li .sprite {
+    margin: 0 3px 0 0;
+}
+
+/* @end */
+
+.iceForm .ixf-percentage {
+    display: block;
+}
+.iceForm .ixf-percentage-bar,
+.iceForm .ixf-percentage-fill {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 100%;
+    display: block;
+}
+
+.iceForm .ixf-percentage-bar {
+    float: left;
+    margin-top: 2px;
+    height: 10px;
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    -webkit-box-shadow: inset 0px 1px 3px #c9c9c6;
+    -moz-box-shadow: inset 0px 1px 3px #c9c9c6;
+    box-shadow: inset 0px 1px 3px #c9c9c6;
+    margin-right: 5px;
+    -moz-background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-background-clip: padding-box;
+}
+
+.iceForm .ixf-percentage-fill.bad {
+    background-color: #aa6262;
+}
+
+.iceForm .ixf-percentage-fill.good {
+    background-color: #6c7a2f;
+}
+
+.iceForm .ixf-percentage-fill {
+    /* neutral color */
+    background-color: #5c697e;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(255, 255, 255, 0.45)),
+        color-stop(1, rgba(255, 255, 255, 0))
+    );
+    background-image: -moz-linear-gradient(
+        top,
+        rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0)
+    );
+    background-image: -ms-linear-gradient(
+        top,
+        rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0)
+    );
+    background-image: linear-gradient(
+        top,
+        rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0)
+    );
+}
+
+/* @group basic stuff */
+
+.iceForm .ui-helper-hidden {
+    display: none;
+}
+.iceForm .ui-helper-hidden-accessible {
+    position: absolute;
+    left: -99999999px;
+}
+.iceForm .ui-helper-clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.iceForm .ui-helper-clearfix {
+    display: inline-block;
+}
+/* required comment for clearfix to work in Opera \*/
+.iceForm .ui-helper-clearfix {
+    height: 1%;
+}
+.iceForm .ui-helper-clearfix {
+    display: block;
+}
+/* end clearfix */
+.iceForm .ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+}
+
+.iceForm .ui-widget :active {
+    outline: none;
+}
+
+/* @end */
+
+/* @group ui-tabs */
+.iceForm .ui-tabs .ui-tabs-hide {
+    display: none;
+}
+.iceForm .ui-tabs-nav {
+    font-size: 13px;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 auto -14px -17px;
+}
+
+.iceForm .ui-tabs-nav:after {
+    /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+.iceForm .ui-tabs-nav li {
+    display: inline;
+}
+
+.iceForm .ui-tabs-nav a {
+    position: relative;
+    display: inline-block;
+    padding: 0.45em 0.9em 0.45em;
+    color: #495569;
+    background: #d6d6d6;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#fff),
+        to(#c0c0c0),
+        color-stop(0.04, #f2f2f2)
+    );
+    background-image: -moz-linear-gradient(
+        top,
+        #fff 0pt,
+        #f2f2f2 4%,
+        #c0c0c0 100%
+    );
+    background-image: -ms-linear-gradient(
+        top,
+        #fff 0pt,
+        #f2f2f2 4%,
+        #c0c0c0 100%
+    );
+    background-image: linear-gradient(top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#c0c0c0');
+    text-shadow: #fff 0 1px 0;
+    margin: 0 -4px;
+    text-decoration: none;
+    border-top: 1px solid #adadad;
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+    border-bottom: 1px solid #818181;
+    -webkit-box-shadow: 0 1px 3px #bebebc;
+    -moz-box-shadow: 0 1px 3px #bebebc;
+    box-shadow: 0 1px 3px #bebebc;
+} /*http://ixf/#tab-2*/
+
+.iceForm .ui-tabs-nav a:hover {
+    color: #000;
+    background: #8f9aac;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#f2f2f2),
+        to(#b9b9b9),
+        color-stop(0.1, #eeeeee)
+    );
+    background-image: -moz-linear-gradient(
+        top,
+        #f2f2f2 0pt,
+        #eeeeee 10%,
+        #b9b9b9 100%
+    );
+    background-image: -ms-linear-gradient(
+        top,
+        #f2f2f2 0pt,
+        #eeeeee 10%,
+        #b9b9b9 100%
+    );
+    background-image: linear-gradient(
+        top,
+        #f2f2f2 0pt,
+        #eeeeee 10%,
+        #b9b9b9 100%
+    );
+}
+
+.iceForm .ui-tabs-nav a:active {
+    background: #8f9aac;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#b9b9b9),
+        to(#d8d8d8)
+    );
+    background: -moz-linear-gradient(top, #b9b9b9, #d8d8d8);
+    background: -ms-linear-gradient(top, #b9b9b9, #d8d8d8);
+    background: linear-gradient(top, #b9b9b9, #d8d8d8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b9b9b9', endColorstr='#d8d8d8');
+    border-top: 1px solid #818181;
+    border-bottom: 1px solid #adadad;
+    /*  -moz-box-shadow: inset 0px 0px 6px #888;*/
+    text-shadow: #ddd 0px 1px 0px;
+}
+
+.iceForm .ui-tabs-nav li:first-child a {
+    -moz-border-radius-topleft: 0.3em;
+    -webkit-border-top-left-radius: 0.3em;
+    -moz-border-radius-bottomleft: 0.3em;
+    -webkit-border-bottom-left-radius: 0.3em;
+    border-left: 1px solid #989791;
+}
+
+.iceForm .ui-tabs-nav li:last-child a {
+    -moz-border-radius-topright: 0.3em;
+    -webkit-border-top-right-radius: 0.3em;
+    -moz-border-radius-bottomright: 0.3em;
+    -webkit-border-bottom-right-radius: 0.3em;
+    border-right: 1px solid #989791;
+}
+
+.iceForm .ui-tabs-nav li.ui-state-active a {
+    color: #fff;
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#bec6d2),
+        to(#5c697e),
+        color-stop(0.04, #9aa5b6)
+    );
+    background: -moz-linear-gradient(
+        top,
+        #bec6d2 0pt,
+        #9aa5b6 4%,
+        #5c697e 100%
+    );
+    background: -ms-linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    background: linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9aa5b6', endColorstr='#5c697e');
+    text-shadow: #303e53 0 -1px 0;
+    border-top: 1px solid #848d9b;
+    border-left: 1px solid #5c6779;
+    border-right: 1px solid #5c6779;
+    border-bottom: 1px solid #313f54;
+    z-index: 2;
+}
+
+.iceForm .ui-tabs-nav .ui-state-disabled a,
+.iceForm .ui-tabs-nav .ui-state-disabled a:hover,
+.iceForm .ui-tabs-nav .ui-state-disabled a:active {
+    color: #888;
+    filter: none;
+    background: #ccc;
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #818181;
+    text-shadow: none;
+    cursor: default;
+}
+.iceForm .ui-tabs-nav .ui-state-disabled {
+    opacity: 1; /* can't be transparent due to overlapping of ui-tabs-panel */
+}
+
+.iceForm .ui-tabs-nav .ui-tabs-selected a,
+.iceForm .ui-tabs-nav a:hover,
+.iceForm .ui-tabs-nav a:focus,
+.iceForm .ui-tabs-nav a:active {
+    outline: 0; /* prevent dotted border in Firefox */
+}
+
+.iceForm .ui-tabs-nav a span {
+    width: 64px; /* IE 6 treats width as min-width */
+    min-width: 64px;
+    padding-right: 0;
+}
+
+.iceForm .ui-tabs-nav .ui-tabs-selected a:link,
+.iceForm .ui-tabs-nav .ui-tabs-selected a:visited,
+.iceForm .ui-tabs-nav .ui-tabs-disabled a:link,
+.iceForm .ui-tabs-nav .ui-tabs-disabled a:visited {
+    /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.iceForm .ui-tabs-nav a:hover,
+.iceForm .ui-tabs-nav a:focus,
+.iceForm .ui-tabs-nav a:active {
+    /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.iceForm .ui-tabs-nav .ui-tabs-disabled {
+    opacity: 0.4;
+}
+.iceForm .ui-tabs-panel {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-left: 1px solid #babab7;
+    border-right: 1px solid #babab7;
+    border-top: 1px solid #acaca9;
+    border-bottom: 1px solid #c9c9c6;
+    /*  background: #ededeb url(../images/fieldset_shadow.png) repeat-x 0 0;*/
+    background: #ededeb;
+    -webkit-box-shadow: 0 1px 0 #f9f9f8, 0 1px 2px #d4d4d2 inset;
+    -moz-box-shadow: 0 1px 0 #f9f9f8, 0 1px 2px #d4d4d2 inset;
+    box-shadow: 0 1px 0 #f9f9f8;
+}
+.iceForm .ui-tabs-panel:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.iceForm .ui-tabs-loading em {
+    padding: 0 0 0 20px;
+    background: url(../images/loading_selected.gif) no-repeat 0 50%;
+}
+
+/* @group ui-finder */
+
+.iceForm .ixf-finder-fixed {
+    width: 602px;
+    border: 1px solid #bdbdbb;
+    background: #efefec;
+}
+
+.iceForm .ixf-finder-fixed li:first-child {
+    border-top: 0;
+}
+
+.iceForm .ixf-finder-fixed .ui-finder-list {
+    border-top: 0;
+}
+
+.iceForm .ixf-finder-fixed .ui-finder-list {
+    border-right: 1px solid #c9c9c6;
+}
+
+.iceForm .ui-finder-list {
+    border-top: 1px solid #c9c9c6;
+}
+
+.iceForm .ui-finder-list li {
+    border-top: 1px solid #efefec;
+    border-bottom: 1px solid #c9c9c6;
+    font-size: 12px;
+    position: relative;
+    text-shadow: #fff 0 1px 0 !important;
+}
+
+.iceForm .ui-finder-list .ui-state-active {
+    text-shadow: #fff0d0 0 1px 0 !important;
+}
+
+.iceForm .ui-finder .ui-state-hover {
+    background: #efefed !important;
+}
+
+.iceForm .ui-finder-list a {
+    padding: 6px 26px 6px 24px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    color: #4b576b;
+    background: url("../images/ico-sprite-16-v2.png") no-repeat -568px -960px; /* add 4 and 5 to sprite position*/
+} /* Loads the page icon by default */
+
+.iceForm .ui-finder .ui-state-active {
+    background: #f6dba5 !important;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#fde4b1),
+        to(#e4c587)
+    ) !important;
+    background: -moz-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    background: -ms-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    background: linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fde4b1', endColorstr='#e4c587') !important;
+    text-shadow: #fff0d0 0 1px 0;
+    border-bottom: 1px solid #d3b271;
+    border-top: 1px solid #feebc2;
+    color: #000;
+}
+
+.iceForm .ui-finder .ui-state-focus {
+    background: #efefed;
+    text-shadow: #fff0d0 0 1px 0;
+    color: #000 !important;
+}
+
+.iceForm .ui-finder .ui-state-focus a {
+    color: #000;
+}
+
+.iceForm .ui-finder .ui-state-active a {
+    color: #333;
+    font-weight: bold;
+}
+
+.iceForm .ui-finder-list .ui-finder-folder a {
+    background-position: -1036px -493px;
+} /* add 4 and 4 to sprite position*/
+/* if it's a folder, reposition sprite to use it */
+
+.iceForm .ui-finder-list .ui-finder-folder.ui-state-active a {
+    background-position: -1010px -519px;
+} /* add 4 and 4 to sprite position*/
+/* if it's an active folder, reposition sprite to the open folder */
+
+.iceForm .ui-finder-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.iceForm .ui-finder-loader {
+    background: url("../images/mini-bar.gif") no-repeat 0 0;
+    height: 8px;
+    width: 40px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+}
+
+.iceForm .ui-finder-loader {
+    text-indent: 0;
+    padding-left: 16px;
+} /*IE7*/
+/*          #finder-wrapper { clear:both; overflow:hidden; }*/
+
+.iceForm .ixf-filter-nav {
+    border-top: 1px solid #c9c9c6;
+    background: #efefec;
+}
+
+/* @end */
+
+/* @group qtip */
+
+/*!
+ * jquery.qtip.css The jQuery tooltip plugin - Styles
+ *
+ * Copyright (c) 2009 Craig Thompson
+ * http://craigsworks.com
+ *
+ * Licensed under MIT
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Launch   : August 2009
+ * Version  : TRUNK - NOT FOR USE IN PRODUCTION ENVIRONMENTS!!!!
+ *
+ * FOR STABLE VERSIONS VISIT: http://craigsworks.com/projects/qtip/download/
+ */
+/* Fluid class for determining actual width in IE */
+.iceForm .ui-tooltip-fluid {
+    display: block;
+    visibility: hidden;
+    position: static !important;
+    float: left !important;
+    max-width: none !important;
+    min-width: 0px !important;
+    max-height: none !important;
+    min-height: 0px !important;
+}
+.iceForm .ui-tooltip,
+.iceForm .qtip,
+.iceForm .ui-tooltip-hidden {
+    position: absolute;
+    left: -31000px;
+    top: -31000px;
+    display: block;
+    max-width: 2000px;
+    min-width: 50px;
+    outline: none;
+}
+
+/*! Default tooltip style */
+
+/*! Tips plugin */
+.iceForm .ui-tooltip-tip {
+    position: absolute;
+    margin: 0 auto;
+    line-height: 0.1px;
+    font-size: 1px;
+    background: #555;
+    border: 0px !important;
+}
+
+.iceForm .ui-tooltip-tip * {
+    line-height: 0.1px;
+    font-size: 0.1px;
+}
+
+.iceForm .ui-tooltip-tip div.ui-tooltip-tip-inner {
+    background: transparent !important;
+    border: 0px solid transparent;
+}
+
+.iceForm .ui-tooltip,
+.iceForm .ui-dialog {
+    text-shadow: #fff 0 1px 0;
+    -webkit-box-shadow: 0 1px 5px #333;
+    -moz-box-shadow: 0 1px 5px #333;
+    box-shadow: 0 1px 5px #333;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.iceForm .ui-dialog {
+    position: absolute;
+}
+.ui-dialog-content {
+    position: relative;
+    overflow: auto;
+    text-align: left;
+    word-wrap: break-word;
+}
+.iceForm .ui-tooltip-content {
+    position: relative;
+    /*  padding: 5px 9px; removing in rc3 so that content areas can be full bleed. designer should define the paddign size via -sm type classes */
+    overflow: auto;
+
+    text-align: left;
+    word-wrap: break-word;
+    /*  overflow: auto;*/
+    background: #efefef;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#efefef),
+        to(#dfdfdf)
+    );
+    background: -moz-linear-gradient(top, #efefef, #dfdfdf);
+    background: -ms-linear-gradient(top, #efefef, #dfdfdf);
+    background: linear-gradient(top, #efefef, #dfdfdf);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#dfdfdf');
+    -webkit-background-clip: padding-box; /* webkit bg bleeds out from behind radius, this makes the BG not go behind the border */
+}
+/*.ui-dialog-content {
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}*/
+.iceForm .ui-tooltip-titlebar,
+.ui-tooltip-content,
+.iceForm .ui-dialog-titlebar,
+.ui-dialog {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 3px solid #555;
+}
+.iceForm div.ui-tooltip-titlebar + div.ui-tooltip-content {
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    border-top-width: 0px;
+}
+
+#ixf-popups .iceForm .ui-tooltip {
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+}
+
+.iceForm .ui-tooltip-titlebar,
+.iceForm .ui-dialog-titlebar {
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#777),
+        to(#555)
+    );
+    background: -moz-linear-gradient(top, #636363 0pt, #777 10%, #555 100%);
+    background: -ms-linear-gradient(top, #636363 0pt, #777 10%, #555 100%);
+    background: linear-gradient(top, #636363 0pt, #777 10%, #555 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#555555');
+    text-shadow: #333 0 -1px 0;
+    /*  -webkit-border-radius: 0 !important;*/
+    /*  -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;*/
+    /*  border-radius: 3px;*/
+    color: #fff;
+    padding: 6px 30px 8px 10px;
+    position: relative;
+    font-size: 13px;
+    white-space: nowrap;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+}
+.iceForm .ui-dialog-titlebar {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    border: 0;
+}
+
+.iceForm .ui-dialog-buttonpane {
+    background: #dfdfdf;
+    padding: 5px 0px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+.iceForm .ui-dialog-buttonpane .ui-button {
+    margin: 0 9px;
+}
+.iceForm .ui-tooltip-titlebar .ui-state-default,
+.iceForm .ui-tooltip-close,
+.iceForm .ui-tooltip-close.ui-state-active,
+.iceForm .ui-tooltip-close.ui-state-default,
+.iceForm .ui-dialog-titlebar-close {
+    background: transparent url(../images/ixf-sprite.png) no-repeat -276px -659px !important; /* popup-close +0 +4 */
+    height: 0;
+    width: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    cursor: pointer;
+    border: 0 !important;
+    /*  overcomes the ui-state-default settings*/
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    filter: none;
+}
+
+.iceForm #ui-tooltip-options div.ui-tooltip-tip,
+.iceForm #ui-tooltip-apps div.ui-tooltip-tip {
+    background: #efefef;
+}
+
+.iceForm .qtip-right canvas {
+    margin-left: -20px;
+}
+.iceForm .qtip-left canvas {
+    margin-left: 20px;
+}
+
+.iceForm .ixf-popup-actions {
+    margin-top: -4px;
+}
+
+.iceForm .ixf-popup-actions a {
+    text-decoration: none;
+    color: #000;
+}
+
+.iceForm .ixf-popup-actions.margin-sm .ixf-button {
+    margin-bottom: 14px;
+}
+
+.iceForm .ixf-popup-actions:after {
+    /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+/* second set it each row below is for when size is set via the anchor instead of the content*/
+.iceForm .ui-tooltip .popup-xs,
+.iceForm .ui-tooltip.popup-xs {
+    width: 250px;
+}
+.iceForm .ui-tooltip .popup-sm,
+.iceForm .ui-tooltip.popup-sm {
+    width: 350px;
+}
+.iceForm .ui-tooltip .popup-md,
+.iceForm .ui-tooltip.popup-md {
+    width: 500px;
+}
+.iceForm .ui-tooltip .popup-lg,
+.iceForm .ui-tooltip.popup-lg {
+    width: 700px;
+}
+
+/*Modal Overlay*/
+.iceForm .ui-widget-overlay {
+    background: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+.ie8 .iceForm .ui-widget-overlay,
+.iceForm .ie8 .ui-widget-overlay {
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+}
+
+/* @end */
+
+/* @group Action Bar Indicators */
+.iceForm .notifier {
+    width: 170px;
+    height: 37px;
+    border: 1px solid #161616;
+    -moz-box-shadow: #535353 0px 1px 0px;
+    -webkit-box-shadow: #535353 0px 1px 0px;
+    box-shadow: #535353 0px 1px 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #161616; /*fallback*/
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#40403f),
+        to(#161616)
+    );
+    background: -moz-linear-gradient(top, #40403f, #161616);
+    background: -ms-linear-gradient(top, #40403f, #161616);
+    background: linear-gradient(top, #40403f, #161616);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40403F', endColorstr='#161616');
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    margin-left: -85px;
+    text-align: center;
+    cursor: pointer;
+}
+/*Saving*/
+.iceForm .saving p {
+    font-size: 11px;
+    color: #bbb;
+    text-align: center;
+    text-shadow: #161616 0px -1px 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+.iceForm .saving span {
+    background: url(../images/loading_big.gif) no-repeat;
+    width: 155px;
+    height: 7px;
+    display: inline-block;
+    text-align: center;
+    -moz-box-shadow: #000 0px -1px 3px;
+    -webkit-box-shadow: #000 0px -1px 3px;
+    box-shadow: #000 0px -1px 5px;
+}
+/*Saved*/
+.iceForm .saved {
+    font-size: 11px;
+    color: #bbb;
+    text-shadow: #161616 0px -1px 0px;
+    margin-top: 12px;
+}
+/*Errors*/
+.iceForm .errors p {
+    font-size: 13px;
+    text-shadow: #161616 0px -1px 0px;
+    background: url(../images/icon-warning-med.png) no-repeat 0px 1px;
+    color: #efcf86;
+    margin: 9px 10px 0px 10px;
+    padding: 0px 0px 0px 25px;
+    display: inline-block;
+}
+/* @end */
+
+/* @end */
+
+/* @group sign in */
+body.signin {
+    background: #e7e6e2;
+}
+.iceForm #signin-top {
+    background: #2f2f2f;
+    height: 250px;
+}
+.iceForm #signin-container {
+    position: absolute;
+    width: 500px;
+    margin-left: -250px;
+    left: 50%;
+    top: 130px;
+}
+body.signin .iceForm h1 {
+    color: #999;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 7px;
+    text-shadow: #000 0px 0px 3px;
+}
+body.signin .iceForm h2 {
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-shadow: #000 0px 0px 3px;
+    font-weight: 400;
+}
+body.signin .iceForm .ixf-form .form-v1 dl {
+    padding: 0 !important;
+}
+.iceForm #signin-box {
+    width: 202px;
+    min-height: 160px;
+    background: #ededeb;
+    -moz-box-shadow: #999 0px 1px 5px, #f9f9f9 0px 5px 5px inset;
+    -webkit-box-shadow: #999 0px 1px 5px, #f9f9f9 0px 5px 5px inset;
+    box-shadow: #999 0px 1px 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin: 0 auto 15px auto;
+    padding: 20px;
+}
+.iceForm #signin-box form {
+    padding: 0;
+}
+.iceForm #signin-box label {
+    color: #666;
+    font-size: 14px;
+}
+.iceForm #signin-box input {
+    width: 192px;
+}
+
+body.signin .iceForm p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+body.signin .iceForm a {
+    color: #999;
+    font-size: 13px;
+}
+.iceForm .church-logo {
+    background: url(../images/church-logo.png) no-repeat;
+    width: 146px;
+    height: 46px;
+    text-indent: -9999px;
+    margin: 50px auto 0px auto;
+}
+
+.iceForm #signin-loading {
+    text-align: center;
+}
+.iceForm #signin-loading p {
+    font-size: 17px;
+    margin-top: 50px;
+    font-weight: lighter;
+    text-shadow: #fff 0px 1px 0px;
+}
+.iceForm #signin-loading span {
+    width: 200px;
+    height: 15px;
+    background: url(../images/loading_huge_light.gif) no-repeat;
+    display: inline-block;
+}
+
+/* @group timepicker
+ */
+
+.iceForm .ui-timePicker {
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 99;
+}
+* html .iceForm .ui-timePicker {
+    width: 150px;
+}
+
+.iceForm .ui-timePicker .ui-state-hover,
+.iceForm .ui-timePicker .ui-state-active {
+    background: #f6dba5 !important;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#fde4b1),
+        to(#e4c587)
+    ) !important;
+    background: -moz-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    background: -ms-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    background: linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fde4b1', endColorstr='#e4c587') !important;
+    text-shadow: #fff0d0 0 1px 0;
+    border-bottom: 0;
+    border-top: 0;
+    color: #000 !important;
+}
+
+/* @end */
+/* @end */
+
+/* @group Panel Loader */
+.iceForm .panel-loading {
+    display: none;
+    width: 220px;
+    height: 60px;
+    border: 1px solid #161616;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #161616; /*fallback*/
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#40403f),
+        to(#161616)
+    );
+    background: -moz-linear-gradient(top, #40403f, #161616);
+    background: -ms-linear-gradient(top, #40403f, #161616);
+    background: linear-gradient(top, #40403f, #161616);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40403F', endColorstr='#161616');
+    position: absolute;
+    z-index: 501;
+    top: 50%;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: -30px;
+    text-align: center;
+}
+.iceForm .panel-loading p {
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+    text-shadow: #000 0px -1px 0px;
+    margin: 10px 0px;
+    line-height: 1;
+}
+.iceForm .panel-loading span {
+    background: url(../images/loading_huge.gif) no-repeat;
+    width: 200px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.iceForm .loading-xl {
+    width: 200px;
+    height: 15px;
+    background: url(../images/loading_huge_light.gif) no-repeat;
+    display: inline-block;
+}
+
+/* @group master styles */
+
+/* Toolbox Layout & Style */
+
+body.toolbox .iceForm .toolbox-master {
+    background: #555;
+    padding: 0px 30px 30px;
+}
+body.toolbox .iceForm .toolbox-master ul {
+    border: none;
+    list-style-type: none;
+    padding: 0;
+}
+body.toolbox .iceForm .toolbox-master ul li {
+    border: none !important;
+    padding: 10px;
+    vertical-align: middle;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+body.toolbox .iceForm .toolbox-master ul li:hover {
+    background: none;
+    cursor: pointer;
+}
+body.toolbox .iceForm .toolbox-master li a {
+    color: #ddd;
+    text-shadow: #000 0px -1px 0px;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+body.toolbox .iceForm .toolbox-master li a:hover {
+    color: #fff;
+}
+body.toolbox .iceForm .toolbox-master li strong {
+    color: #fff;
+    text-shadow: #000 0px -1px 0px;
+    background: #383838;
+    padding: 4px 8px;
+    display: inline-block;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    float: right;
+    text-align: center;
+    -moz-box-shadow: #666 0px 1px 0px;
+    -webkit-box-shadow: #666 0px 1px 0px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: -2px;
+}
+
+body.toolbox .iceForm .toolbox-master li.selected {
+    color: #fff !important;
+    -moz-box-shadow: #222 0px 0px 4px inset, #666 0px 1px 0px;
+    -webkit-box-shadow: #222 0px 0px 4px inset, #666 0px 1px 0px;
+    box-shadow: #222 0px 0px 4px inset, #666 0px 1px 0px;
+    border: none !important;
+    background-color: #444; /* fallback color */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#555),
+        to(#6c6c6c)
+    ) !important;
+    background: -moz-linear-gradient(top, #555 0pt, #6c6c6c 100%) !important;
+    background: -ms-linear-gradient(top, #555 0pt, #6c6c6c 100%) !important;
+    background: linear-gradient(top, #555 0pt, #6c6c6c 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#6C6C6C') !important;
+}
+body.toolbox .iceForm .toolbox-master li.selected a {
+    color: #fff;
+}
+body.toolbox .iceForm .toolbox-master li.selected strong {
+    background-color: #2b2b2b;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#505050),
+        to(#2b2b2b)
+    ) !important;
+    background: -moz-linear-gradient(top, #505050 0pt, #2b2b2b 100%) !important;
+    background: -ms-linear-gradient(top, #505050 0pt, #2b2b2b 100%) !important;
+    background: linear-gradient(top, #505050 0pt, #2b2b2b 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#505050', endColorstr='#2B2B2B') !important;
+    -moz-box-shadow: #777 0px 1px 0px, #000 0px 0px 3px inset;
+    -webkit-box-shadow: #777 0px 1px 0px, #000 0px 0px 3px inset;
+    box-shadow: #777 0px 1px 0px, #000 0px 0px 3px inset;
+}
+body.toolbox .iceForm .toolbox-master li.selected em {
+    margin-top: 3px;
+}
+body.toolbox .iceForm .toolbox-master li em {
+    float: left;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+body.toolbox .iceForm .ui-layout-resizer-east,
+body.toolbox .iceForm .ui-layout-resizer-west {
+    width: 7px;
+    border: none;
+    cursor: col-resize;
+    background: #555;
+    filter: none;
+}
+body.toolbox .iceForm .ui-layout-toggler {
+    cursor: col-resize;
+    position: absolute;
+    top: 110px !important;
+    left: 2px;
+    height: 0;
+    width: 3px;
+    padding-top: 16px;
+    overflow: hidden;
+    display: block;
+    background: url(../images/ixf-sprite.png) no-repeat -475px -436px #666; /* divots-v +3 +17 */
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+/*Detail */
+body.toolbox .iceForm .toolbox-detail {
+    background: #555;
+}
+body.toolbox .iceForm .toolbox-detail .lift {
+    background: #e7e6e2;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: #222 0px 2px 8px, 0px 3px 10px #fff inset;
+    -webkit-box-shadow: #222 0px 2px 8px, 0px 3px 10px #fff inset;
+    box-shadow: #222 0px 2px 8px, 0px 3px 10px #fff inset;
+}
+
+/*Nothing to Display in Detail View */
+.iceForm .nothing {
+    padding: 60px 30px;
+}
+.iceForm .nothing h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #666;
+}
+.iceForm .nothing p {
+    text-align: center;
+    color: #999;
+}
+
+/*Regular Master/Detail View */
+.iceForm .charcoal table {
+    border: none;
+    border-bottom: 1px solid #666;
+}
+.iceForm .charcoal,
+.iceForm .charcoal tbody td {
+    background: #555;
+    border: none;
+}
+.iceForm .charcoal .dataTables_wrapper {
+    background-color: #888; /* fallback color */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#aaa),
+        to(#888)
+    );
+    background: -moz-linear-gradient(top, #aaa 0pt, #888 100%);
+    background: -ms-linear-gradient(top, #aaa 0pt, #888 100%);
+    background: linear-gradient(top, #aaa 0pt, #888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorstr='#888888');
+    border-bottom: 1px solid #666;
+}
+.iceForm #demo_wrapper {
+    border: none;
+}
+.iceForm .charcoal .dataTables_wrapper input {
+    border: 1px solid #666;
+    -moz-box-shadow: #999 0px 1px 2px inset, #aaa 0px 1px 0px;
+    -webkit-box-shadow: #999 0px 1px 2px inset, #aaa 0px 1px 0px;
+    box-shadow: #999 0px 1px 2px inset, #aaa 0px 1px 0px;
+    padding: 6px;
+    font-size: 13px;
+    margin: 10px;
+}
+.iceForm .charcoal thead th {
+    background: #666;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#888),
+        to(#666)
+    );
+    background: -moz-linear-gradient(top, #888 0pt, #666 100%);
+    background: -ms-linear-gradient(top, #888 0pt, #666 100%);
+    background: linear-gradient(top, #888 0pt, #666 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#666666');
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #444;
+    filter: none;
+}
+
+.iceForm .charcoal thead th a {
+    font-weight: bold;
+    color: #ccc;
+    text-shadow: #000 0px -1px 0px;
+}
+.iceForm .charcoal thead th a:hover {
+    color: #ddd;
+}
+.iceForm .charcoal thead th.sorting_asc a,
+.iceForm .charcoal thead th.sorting_desc a {
+    color: #ccc;
+}
+.iceForm .charcoal tbody td a {
+    color: #eee;
+    text-shadow: #000 0px -1px 0px;
+    font-weight: bold;
+}
+.iceForm .charcoal tbody td {
+    color: #ccc;
+    text-shadow: #000 0px -1px 0px;
+    vertical-align: bottom;
+    background: transparent;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #444;
+}
+.iceForm .charcoal tbody tr:hover td,
+.iceForm .charcoal li:hover {
+    background: #666;
+    filter: none;
+}
+.iceForm .charcoal tbody tr:hover td a,
+.iceForm .charcoal li:hover a {
+    color: #fff;
+}
+.iceForm .charcoal tbody tr.selected td,
+.iceForm .charcoal tbody tr.selected:hover td,
+.iceForm .charcoal .ui-finder .ui-state-active,
+.iceForm .charcoal .ui-finder .ui-state-active:hover {
+    color: #fff;
+    background: #9aa5b6;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#bec6d2),
+        to(#5c697e),
+        color-stop(0.04, #9aa5b6)
+    );
+    background: -moz-linear-gradient(
+        top,
+        #bec6d2 0pt,
+        #9aa5b6 4%,
+        #5c697e 100%
+    );
+    background: -ms-linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    background: linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bec6d2', endColorstr='#9aa5b6');
+    text-shadow: #303e53 0 -1px 0;
+    border-top: 1px solid #848d9b;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #313f54;
+}
+
+body.charcoal-detail .iceForm .ui-layout-resizer-east,
+body.charcoal-detail .iceForm .ui-layout-resizer-west {
+    border-left: 1px solid #555;
+}
+
+/*Double-line Master/Detail (styles for lists)*/
+.iceForm .charcoal tbody tr:hover,
+.iceForm .charcoal li {
+    cursor: pointer;
+}
+
+.iceForm .charcoal tbody td a,
+.iceForm .charcoal li a {
+    text-decoration: none;
+}
+
+.iceForm .charcoal tbody td a:hover,
+.iceForm .charcoal li a:hover {
+    color: #fff;
+}
+
+.iceForm .charcoal tbody tr.selected td a,
+.iceForm .charcoal li.selected a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.iceForm .charcoal tbody tr.selected td,
+.iceForm .charcoal li.selected,
+.iceForm .charcoal .ui-state-focus {
+    color: #fff;
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#bec6d2),
+        to(#5c697e),
+        color-stop(0.02, #9aa5b6)
+    );
+    background: -moz-linear-gradient(
+        top,
+        #bec6d2 0pt,
+        #9aa5b6 4%,
+        #5c697e 100%
+    );
+    background: -ms-linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    background: linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9aa5b6', endColorstr='#5c697e');
+    text-shadow: #303e53 0 -1px 0;
+    border-top: 1px solid #848d9b;
+    border-bottom: 1px solid #313f54;
+}
+
+.iceForm .charcoal ul {
+    list-style-type: none;
+    margin: 30px 0px 0px 0px;
+    padding: 0;
+}
+.iceForm .charcoal ul li {
+    border: none;
+    margin: 0;
+    padding: 0px 10px;
+}
+.iceForm .charcoal ul li:hover {
+    background: #555;
+}
+.iceForm .charcoal ul li a:hover {
+    color: #fff;
+}
+
+.iceForm .detail-pane-bg {
+    background: #efefed;
+}
+
+.iceForm .charcoal ul.double-line li {
+    padding: 5px 10px;
+}
+
+.iceForm .charcoal li a {
+    display: block;
+    color: #ddd;
+    text-shadow: #000 0px -1px 0px;
+}
+.iceForm .charcoal li.selected a {
+    color: #fff;
+    text-shadow: #303e53 0 -1px 0;
+}
+.iceForm .charcoal li:hover a {
+    color: #fff;
+}
+.iceForm .charcoal span {
+    font-size: 12px;
+    color: #bbb;
+    padding-right: 10px;
+    text-shadow: #303e53 0px -1px 0px;
+}
+.iceForm .charcoal li.selected span {
+    color: #c5c6d1;
+}
+
+/*Finder View Tweaks with Graphite Style*/
+.iceForm .charcoal .ui-finder-list li a {
+    color: #ddd;
+    text-shadow: #000 0px -1px 0px;
+}
+.iceForm .charcoal .ui-finder-list li a:hover,
+.charcoal .ui-finder .ui-state-active a {
+    color: #fff;
+}
+.iceForm .charcoal .ixf-filter-nav {
+    background-color: #555; /* fallback color */
+    border-top: 1px solid #444;
+    -webkit-box-shadow: #595959 0px 1px 0px inset;
+    -moz-box-shadow: #595959 0px 1px 0px inset;
+    box-shadow: #595959 0px 1px 0px inset;
+}
+.iceForm .charcoal .ui-finder-list {
+    border: none;
+}
+.iceForm .charcoal .ui-finder-list li:hover {
+    background: #555;
+    border: none;
+}
+.charcoal .ui-finder-list li:hover a {
+    color: #fff;
+    text-shadow: #000 0px -1px 0px;
+}
+
+/*Charcoal Accordion */
+.iceForm .charcoal .ui-accordion {
+    border: none;
+}
+.iceForm .charcoal .ixf-accordion span {
+    padding: 0;
+}
+.iceForm .charcoal .ui-accordion-header {
+    padding-bottom: 4px;
+    background: #666;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#888),
+        to(#666)
+    );
+    background: -moz-linear-gradient(top, #888 0pt, #666 100%);
+    background: -ms-linear-gradient(top, #888 0pt, #666 100%);
+    background: linear-gradient(top, #888 0pt, #666 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#666666');
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #444;
+    border-right: none;
+    border-left: none;
+}
+.iceForm .charcoal .ui-accordion-header:hover {
+    background: #666;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#828282),
+        to(#626262)
+    );
+    background: -moz-linear-gradient(top, #828282 0pt, #626262 100%);
+    background: -ms-linear-gradient(top, #828282 0pt, #626262 100%);
+    background: linear-gradient(top, #828282 0pt, #626262 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#828282', endColorstr='#626262');
+}
+.iceForm .charcoal .ui-accordion-header:hover a {
+    color: #ddd;
+}
+.iceForm .charcoal .ui-accordion-header a {
+    color: #ccc;
+    text-shadow: #000 0px -1px 0px;
+}
+.iceForm .charcoal .ui-accordion-content {
+    background: #555;
+    color: #ddd;
+    text-shadow: #000 0px -1px 0px;
+}
+.iceForm .charcoal .ui-accordion-content {
+    height: auto;
+}
+.iceForm .charcoal .ixf-accordion div > div {
+    padding-bottom: 15px;
+}
+.iceForm .charcoal .ui-state-active,
+.iceForm .charcoal .ui-state-active:hover {
+    background: #6e6e6e;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#bec6d2),
+        to(#5c697e),
+        color-stop(0.04, #9aa5b6)
+    );
+    background: -moz-linear-gradient(
+        top,
+        #bec6d2 0pt,
+        #9aa5b6 4%,
+        #5c697e 100%
+    );
+    background: -ms-linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    background: linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9aa5b6', endColorstr='#5c697e');
+
+    border-top: 1px solid #848d9b;
+    border-bottom: 1px solid #313f54;
+    border-left: none;
+    border-right: none;
+}
+.iceForm .charcoal .ui-state-active a {
+    color: #fff;
+    text-shadow: #303e53 0 -1px 0;
+}
+/*Messages Popup Menu*/
+.iceForm #messages-menu {
+    width: 250px;
+}
+.iceForm #messages-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.iceForm #messages-menu ul li {
+    margin-bottom: 8px;
+}
+
+/* Breadcrumb */
+.iceForm .ixf-breadcrumb {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.iceForm .ixf-breadcrumb a {
+    text-decoration: none;
+}
+
+/* GRID System
+--------------------------------------------------------------------------------*/
+.iceForm .grid-1,
+.iceForm .grid-2,
+.iceForm .grid-3,
+.iceForm .grid-4,
+.iceForm .grid-5,
+.iceForm .grid-6,
+.iceForm .grid-7,
+.iceForm .grid-8,
+.iceForm .grid-9,
+.iceForm .grid-10,
+.iceForm .grid-11,
+.iceForm .grid-25,
+.iceForm .grid-33,
+.iceForm .grid-50,
+.iceForm .grid-66,
+.iceForm .grid-75 {
+    display: inline;
+    float: left;
+    margin-left: 0%;
+    margin-right: 2%;
+}
+.iceForm .last {
+    margin-right: 0;
+}
+.iceForm .grid-1 {
+    width: 6.5%;
+}
+.iceForm .grid-2 {
+    width: 15%;
+}
+.iceForm .grid-3,
+.iceForm .grid-25 {
+    width: 23.5%;
+}
+.iceForm .grid-4,
+.iceForm .grid-33 {
+    width: 32%;
+}
+.iceForm .grid-5 {
+    width: 40.5%;
+}
+.iceForm .grid-6,
+.iceForm .grid-50 {
+    width: 49%;
+}
+.iceForm .grid-7 {
+    width: 57.5%;
+}
+.iceForm .grid-8,
+.iceForm .grid-66 {
+    width: 66%;
+}
+.iceForm .grid-9,
+.iceForm .grid-75 {
+    width: 74.5%;
+}
+.iceForm .grid-10 {
+    width: 83%;
+}
+.iceForm .grid-11 {
+    width: 91.5%;
+}
+.iceForm .grid-12,
+.iceForm .grid-100 {
+    width: 100%;
+    clear: both;
+}
+.iceForm .grid-12:after,
+.iceForm .grid-100:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Add space to front */
+.iceForm .prefix-1 {
+    padding-left: 8.5%;
+}
+.iceForm .prefix-2 {
+    padding-left: 17%;
+}
+.iceForm .prefix-3 {
+    padding-left: 25.5%;
+}
+.iceForm .prefix-4 {
+    padding-left: 34%;
+}
+.iceForm .prefix-5 {
+    padding-left: 42.5%;
+}
+.iceForm .prefix-6 {
+    padding-left: 51%;
+}
+.iceForm .prefix-7 {
+    padding-left: 59.5%;
+}
+.iceForm .prefix-8 {
+    padding-left: 68%;
+}
+.iceForm .prefix-9 {
+    padding-left: 76.5%;
+}
+.iceForm .prefix-10 {
+    padding-left: 85%;
+}
+.iceForm .prefix-11 {
+    padding-left: 93.5%;
+}
+
+/* Add space to end */
+.iceForm .suffix-1 {
+    padding-right: 8.5%;
+}
+.iceForm .suffix-2 {
+    padding-right: 17%;
+}
+.iceForm .suffix-3 {
+    padding-right: 25.5%;
+}
+.iceForm .suffix-4 {
+    padding-right: 34%;
+}
+.iceForm .suffix-5 {
+    padding-right: 42.5%;
+}
+.iceForm .suffix-6 {
+    padding-right: 51%;
+}
+.iceForm .suffix-7 {
+    padding-right: 59.5%;
+}
+.iceForm .suffix-8 {
+    padding-right: 68%;
+}
+.iceForm .suffix-9 {
+    padding-right: 76.5%;
+}
+.iceForm .suffix-10 {
+    padding-right: 85%;
+}
+.iceForm .suffix-11 {
+    padding-right: 93.5%;
+}
+
+/* 1024 layout*/
+.iceForm .padding-sm.grid-fixed,
+.iceForm .margin-sm.grid-fixed {
+    width: 963px;
+}
+.iceForm .padding-md.grid-fixed,
+.iceForm .margin-md.grid-fixed {
+    width: 933px;
+}
+.iceForm .padding-lg.grid-fixed,
+.iceForm .margin-lg.grid-fixed {
+    width: 873px;
+}
+
+/* Error Page
+--------------------------------------------------------------------------------*/
+.iceForm .error-box {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+.iceForm .error-box h1 {
+    padding-bottom: 10px;
+}
+.iceForm .error-box div p {
+    margin: 0;
+}
+.iceForm .error-box span {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+/* IE9 still requires filters to do gradients. Filters aren't clipped by rounded corners (border radius) so we have to kill them. LAME!! */
+.iceForm .ie9 .ui-tooltip-titlebar,
+.iceForm .ie9 .ui-dialog-titlebar,
+.iceForm .ie9 .ui-tooltip,
+.iceForm .ie9 .ui-dialog,
+.iceForm .ie9 div.ui-tooltip-titlebar + div.ui-tooltip-content,
+.iceForm .ie9 div.ui-dialog-titlebar + div.ui-dialog-content,
+.iceForm .ie9 .ui-tooltip-content,
+.iceForm .ie9 .ui-dialog-content,
+.iceForm .ie9 .ixf-button,
+.iceForm .ie9 .ui-datepicker .ui-datepicker-buttonpane button,
+.iceForm .ie9 .ui-datepicker,
+.iceForm .ie9 .panel-loading {
+    border-radius: 0;
+}
+
+/* Error styles from content.css (https://edge.ldscdn.org/ml/ldsorg/css/common/content.css) */
+.iceForm .error {
+    background: #efe7df;
+    border: 1px solid #e0aca6;
+    color: #c23232;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    text-align: center;
+}

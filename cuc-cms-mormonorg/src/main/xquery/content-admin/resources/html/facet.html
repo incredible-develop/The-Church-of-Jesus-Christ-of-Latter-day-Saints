@@ -1,0 +1,1 @@
+<select type="select" name="facet" ng-options="item.title for item in $ctrl.facetSection.options track by item.id" ng-model="$ctrl.facetSection.selected" ng-change="$ctrl.updateEverything($ctrl.facetSection.selected)"></select>

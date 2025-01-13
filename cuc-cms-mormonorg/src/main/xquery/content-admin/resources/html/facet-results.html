@@ -1,0 +1,37 @@
+<button class="ldse-secondary ldse-responsive ldse-icon-send ldse-button" ng-click="$ctrl.updateItems('ldse:publish')" ng-show="$ctrl.statuses.indexOf('preview') > -1 || $ctrl.statuses.indexOf('unpublish') > -1">Publish</button>
+<button class="ldse-destructive ldse-responsive ldse-icon-ko-remove ldse-button" ng-click="$ctrl.updateItems('ldse:unpublish')" ng-show="$ctrl.statuses.indexOf('published') > -1">Unpublish</button>
+<button class="ldse-primary ldse-responsive ldse-icon-ko-add ldse-button" ng-click="$ctrl.updateItems('ldse:preview')" ng-show="$ctrl.statuses.indexOf('') > -1" ng-disabled="$ctrl.templateOption == '' || !$ctrl.templateOption">Add</button>
+<label ng-show="$ctrl.statuses.indexOf('') > -1" for="template">Choose Template*</label>
+<select name="template" id="template-option" ng-show="$ctrl.statuses.indexOf('') > -1" ng-model="$ctrl.templateOption">
+    <option ng-repeat="template in $ctrl.templates" value="{{ template.value }}">{{ template.title }}</option>
+</select>
+<button class="ldse-destructive ldse-responsive ldse-icon-trash ldse-button" ng-click="$ctrl.updateItems('ldse:delete')" ng-show="$ctrl.statuses.indexOf('published') > -1 || $ctrl.statuses.indexOf('preview') > -1 || $ctrl.statuses.indexOf('unpublish') > -1">Remove</button>
+<table class="results-table" ng-show="$ctrl.files">
+    <thead>
+        <tr>
+            <td>
+                <input type="checkbox" name="check-all" ng-model="$ctrl.checkAllChecked" ng-click="$ctrl.checkAll()"></input>
+            </td>
+            <td>File Name</td>
+            <td>Status</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="file in $ctrl.files" class="results-table-tr">
+            <td>
+                <input type="checkbox" ng-model="file.checked" ng-click="$ctrl.checkButtons(file)" name="file-{{$index}}"></input>
+            </td>
+            <td>
+                <a href="{{ file.url }}" target="previewFile" ng-hide="file.status === ''">{{ file.title }}</a>
+                <span ng-hide="file.status !== ''">{{ file.title }}</span>
+            </td>
+            <td>
+                {{file.status}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+    
+<!--<div class="file-results" ng-repeat="file in $ctrl.files">
+    <span>{{file.title}}</span>
+</div>-->

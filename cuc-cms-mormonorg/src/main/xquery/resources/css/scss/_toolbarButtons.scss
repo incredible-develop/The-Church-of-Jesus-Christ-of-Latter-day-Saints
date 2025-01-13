@@ -1,0 +1,58 @@
+/* Classes for buttons in toolbar */
+#ldse-toolbar-container .ldse-toolbar-buttons {
+  position: absolute;
+  left: 50px;
+  padding: 5px 5px 0;
+  width: calc(100% - 50px);
+  width: -webkit-calc(100% - 50px);
+  width: -moz-calc(100% - 50px);
+  @media screen and (min-width: $mobile-small) {
+    left: 200px;
+    @include transition($property: left, $duration: 1s);
+    width: calc(100% - 200px);
+    width: -webkit-calc(100% - 200px);
+    width: -moz-calc(100% - 200px);
+  }
+}
+#ldse-toolbar-container .ldse-button {
+  margin: 0px 5px 5px 0px;
+  // text-indent: -99em;
+  // width: 40px;
+  // @media screen and (min-width: $tablet) {
+  //   text-indent: 0em;
+  //   width: auto;
+  // }
+}
+#ldse-toolbar-container .ldse-button:before {
+  text-indent: 0em;
+  float: left;
+  @media screen and (min-width: $tablet) {
+    // float: none;   
+  }
+}
+@-moz-document url-prefix(){
+  #ldse-toolbar-container .ldse-button:before {
+    /* Center icons on buttons that I force to be icon-only in Firefox */
+/*    margin-left: 8px;*/
+    @media screen and (min-width: $tablet) {
+      margin-left: -8px;      
+    }
+  }
+}
+#ldse-toolbar-container .ldse-button.ldse-icon {
+  @media screen and (min-width: $tablet) {
+    text-indent: -99em;
+    width: 40px;
+  }
+}
+#ldse-toolbar-container .ldse-button.ldse-icon:before {
+  @media screen and (min-width: $tablet) {
+    float: left;   
+  }
+}
+@-moz-document url-prefix(){
+  #ldse-toolbar-container .ldse-button.ldse-icon:before {
+    /* Center icons on buttons that I force to be icon-only in Firefox */
+    margin-left: -8px;
+  }
+}

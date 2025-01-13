@@ -1,0 +1,46 @@
+/* Font Variables */
+/* Media Query Sizes */
+/* Icons */
+/* Sizes */
+/* Colors */
+/* -red-ui-500 */
+/* -red-ui-600 */
+/* -red-ui-700 */
+/* -red-ui-400 */
+/* --green */
+/* --green-600 */
+/* --green-400 */
+/* --green-600 */
+/* orange-A700 */
+/* ORANGE-A800 */
+/* ORANGE-500 */
+/* ORANGE-A600 */
+/* ORANGE-500 */
+/* blue-A500 */
+/* blue-A600 */
+/* blue-A700 */
+/* blue-A400 */
+/* blue-A700 */
+/* orange-300 */
+/* onyx-text */
+/* gray-A800 */
+/* onyx */
+/* gray-A200 */
+/* gray-300 */
+/* gray-A100 */
+.ldse-table td.translation-flag-cell {
+  width: 40px;
+  padding: 0px; }
+
+.translation-flag {
+  font-size: 20px;
+  width: 40px;
+  padding: 10px;
+  position: relative;
+  overflow: visible;
+  display: none; }
+  .translation-flag:before {
+    color: #FF9430; }
+
+.needs-translation .translation-flag {
+  display: inline-block; }

@@ -1,0 +1,34 @@
+.pullQuote {
+}
+
+.content {
+  font-size: 1.125em;
+  text-align: center;
+}
+
+.text {
+  font: var(--typography-pullQuote);
+}
+
+.citation {
+  font: var(--typography-citation);
+}
+
+.text + .citation {
+  padding-top: var(--spacing-unite-3);
+}
+
+.default {
+}
+
+.left {
+  text-align: start;
+}
+
+.right {
+  text-align: end;
+}
+
+.center {
+  text-align: center;
+}

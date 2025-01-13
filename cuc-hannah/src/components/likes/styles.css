@@ -1,0 +1,79 @@
+.countButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--grey-5);
+    border: none;
+  }
+
+  & .beforeToggle {
+    display: flex;
+    justify-content: center;
+  }
+
+  & .afterToggle {
+    display: none;
+
+    & svg path {
+      fill: var(--red-15);
+    }
+  }
+  & .afterToggle.colorWhite {
+    & svg path {
+      fill: var(--white);
+    }
+  }
+  &[data-toggled="on"] {
+    cursor: initial;
+    border: none;
+
+    & .beforeToggle {
+      display: none;
+    }
+
+    & .afterToggle {
+      display: flex;
+      justify-content: center;
+    }
+
+    &:active,
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.likes {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.count {
+  margin-left: 4px;
+  font: normal 400 16px/1.6 var(--font-families--sans-serif);
+}

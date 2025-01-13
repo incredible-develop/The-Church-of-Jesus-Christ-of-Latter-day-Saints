@@ -1,0 +1,10 @@
+.horizontalRule {
+  height: 1px;
+  border: none;
+  background-color: var(--grey-5);
+  margin: 0 auto;
+}
+
+.invertColor {
+  background-color: var(--white);
+}

@@ -1,0 +1,220 @@
+/* Styling of button and menu in toolbar */
+/* Classes for Check Links Button and List */
+#ldse-toolbar-container.front #ldse-check-links.ldse-button {
+  width: 56px;
+  &:before {
+    font-size: 18px;
+    margin-top: 2px;
+    padding-left: 30px;
+  }
+}
+#ldse-toolbar-container.front .ldse-check-links-status {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 28px;
+  height: 28px;
+  &:before {
+    text-indent: 0;
+    float: left;
+    font-size: 18px;
+  }
+}
+
+#ldse-toolbar-container.front .ldse-link-progress {
+  font-size: 14px;
+  color: $menuText;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  @include boxSizing;
+}
+#ldse-toolbar-container.front .ldse-link-progress-bar {
+  position: relative;
+  height: 16px;
+  border-radius: 25px;
+  padding: 8px;
+  margin-bottom: 5px;
+  background: $darkGrey;
+  box-shadow: inset 0 -1px 1px $lightShadow;
+}
+#ldse-toolbar-container.front .ldse-link-progress-bar-color {
+  display: block;
+  height: 100%;
+  border-radius: 20px 8px 8px 20px;
+  background-color: $blue;
+  @include linearGradient(bottom, $blue 0%, $lightBlue 100%);
+  box-shadow: inset 0 2px 9px $lightShadow, inset 0 -2px 6px $darkShadow;
+  overflow: hidden;
+  position: relative;
+}
+@include progress;
+#ldse-toolbar-container.front .ldse-link-progress-bar-animation {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  @include linearGradient(-45deg, rgba(255,255,255,.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.2) 50%, rgba(255,255,255,.2) 75%, transparent 75%, transparent);
+  z-index: 1;
+  background-size: 50px 50px;
+  @include animate(progress);
+  border-radius: 20px 8px 8px 20px;
+  overflow: hidden;
+}
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-good {
+  color: $white;
+
+  border: 1px solid $greenBorder;
+  background: $green;
+  box-shadow: inset 1px 1px 1px $lightShadow;
+  &.depressed {
+    background: $darkGreen;
+    box-shadow: inset 1px 1px 3px $darkShadow;
+  }
+  &:active, &.depressed:active {
+    background: $darkerGreen;
+    box-shadow: inset 2px 2px 4px $darkShadow;
+  }
+}
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-broken-link-preview {
+  border-color: $orangeBorder;
+  background: $orange;
+  color: $white;
+
+  box-shadow: inset 1px 1px 1px $lightShadow;
+  .ldse-check-links-status:before {
+    content: "\e051";
+  }
+  &.depressed {
+    background: $darkOrange;
+    box-shadow: inset 1px 1px 3px $darkShadow;
+  }
+  &:active, &.depressed:active {
+    background: $darkerOrange;
+    box-shadow: inset 2px 2px 4px $darkShadow;
+  }
+}
+#ldse-toolbar-container.front #ldse-check-links.ldse-links-broken-link-prod {
+  color: $white;
+
+  border-color: $redBorder;
+  background: $red;
+  box-shadow: inset 1px 1px 1px $lightRed;
+  .ldse-check-links-status:before {
+    content: "\e051";
+  }
+  &.depressed {
+    background: $darkRed;
+    box-shadow: inset 1px 1px 3px $darkShadow;
+  }
+  &:active, &.depressed:active {
+    background: $darkerRed;
+    box-shadow: inset 2px 2px 4px $heavyDarkShadow;
+  }
+}
+@include spin;
+#ldse-toolbar-container.front #ldse-link-checker.ldse-link-in-progress .ldse-check-links-status {
+  @include animate(spin, $duration: 1.5s);
+  &:before {
+    content: "\e052";
+  }
+}
+#ldse-toolbar-container.front #ldse-link-checker #ldse-link-progress,
+#ldse-toolbar-container.front #ldse-link-checker.ldse-link-check-done #ldse-link-progress {
+  display: none;
+}
+#ldse-toolbar-container.front #ldse-link-checker.ldse-link-in-progress #ldse-link-progress {
+  display: block;
+}
+#ldse-toolbar-container.front .ldse-link-count:before {
+  // position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 0px;
+  font-family: $iconFont;
+  font-size: 20px;
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+  border: 3px solid $white;
+
+  padding: 6px;
+  color: $white;
+  background: $charcoal;
+}
+#ldse-toolbar-container.front .ldse-link-count.ldse-unknown:before {
+  color: $buttonGreyText;
+  background: $buttonGreyDarker;
+}
+#ldse-toolbar-container.front .ldse-link-count.ldse-good:before {
+
+  background: $green;
+}
+#ldse-toolbar-container.front .ldse-link-count.ldse-broken-preview:before {
+  background: $orange;
+
+}
+#ldse-toolbar-container.front .ldse-link-count.ldse-broken-prod:before {
+
+  background: $red;
+}
+
+/* Styling of links on preview page */
+#ldse-show-ice .ldse-checked-link.ldse-unknown-link,
+#ldse-show-ice .ldse-checked-link.ldse-unknown-link * {
+  background-color: $buttonGrey;
+  color: $buttonGreyText;
+}
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-preview,
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-preview * {
+  background-color: $orange;
+  color: $white;
+}
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-prod,
+#ldse-show-ice .ldse-checked-link.ldse-broken-link-prod * {
+  background-color: $red;
+  color: $lightGrey;
+}
+#ldse-show-ice .ldse-image-link {
+  display: block;
+  position: absolute;
+  background-color: rgba(255,255,255,.6) !important;
+  border: 6px solid $buttonGrey;
+  @include boxSizing;
+}
+#ldse-show-ice .ldse-good-link .ldse-image-link {
+  display: none;
+}
+#ldse-show-ice .ldse-broken-link-preview .ldse-image-link {
+  border-color: $orange;
+}
+#ldse-show-ice .ldse-broken-link-prod .ldse-image-link {
+  border-color: $red;
+}
+#ldse-show-ice .ldse-image-link:after {
+  content: "\e051";
+  font-family: $iconFont;
+  position: absolute;
+  font-size: 20px;
+  line-height: 20px;
+  top: 50%;
+  margin-top: -17px;
+  left: 50%;
+  margin-left: -17px;
+  border-radius: 50%;
+  border: 3px solid $white;
+  box-shadow: inset 0px 0px 2px 1px $darkGrey, 0px 0px 5px $darkShadow;
+  padding: 6px;
+  color: $buttonGreyText;
+  background-color: $buttonGrey;
+}
+#ldse-show-ice .ldse-unknown-link .ldse-image-link:after {
+  // content: "\e04e";
+}
+#ldse-show-ice .ldse-broken-link-preview .ldse-image-link:after {
+  background-color: $orange;
+  color: $white;
+}
+#ldse-show-ice .ldse-broken-link-prod .ldse-image-link:after {
+  // box-shadow: inset 1px 1px 1px $lightRed, 0px 0px 5px $darkShadow;
+  background-color: $red;
+  color: $white;
+}

@@ -1,0 +1,58 @@
+/*
+  Color can be styled by accessing.
+  Sizing can be changed with font-size.
+
+  .class svg path {
+      fill: color;
+  }
+
+ */
+
+.icon svg {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
+
+.icon {
+  &[hidden] {
+    display: none;
+  }
+  display: inline-flex;
+  font-size: var(--icon-size-medium);
+  min-height: 1em; /* reserve space before the SVG loads */
+}
+
+.icon svg path {
+  overflow: hidden;
+}
+
+.button {
+  &.before {
+    & .icon {
+      margin-inline-end: var(--spacing-unite-2);
+    }
+  }
+  &.after {
+    & .icon {
+      margin-inline-start: var(--spacing-unite-2);
+    }
+  }
+  & .icon {
+    font-size: 1.4em;
+  }
+}
+
+.formTextBlock {
+  & .icon {
+    margin-inline-end: 9px;
+    padding-top: 1px;
+    font-size: 20px;
+  }
+}
+
+.downloadButton {
+  & .icon {
+    font-size: 7.3em;
+  }
+}

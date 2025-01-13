@@ -1,0 +1,94 @@
+<?php
+
+//JSON node service
+
+$number = $_GET['stories'];
+
+?>
+{
+	"published" : {
+		"title": "Published Overview",
+		"count": 3029,
+		"data": {
+			"values": [1,2,4,8,16],
+			"startDate": {
+				"day": 1,	
+				"month": 0,
+				"year": 2013
+			}
+		}
+	},
+
+	"translation" : {
+		"title": "Translation",
+		"sent": {
+			"count": 357,
+			"tgp": 889.66,
+			"wordcount": 254443
+		},
+		"returned": {
+			"count": 357,
+			"tgp": 889.66,
+			"wordcount": 254443
+		}
+	},
+
+	"ipeval" : {
+		"title": "Cor IP / Cor Eval",
+		"sent": 486,
+		"approved":{
+			"approved": 386,
+			"percent": 60,
+			"time": "6hr"
+		},
+		"declined":{
+			"declined":110,
+			"percent": 60
+		}
+	},
+
+	"top" : {
+		"title": "Top 5 Sites",
+		"subtitle": "Ranked by Content Published",
+		"sites": [
+			{
+				"title": "Lds.org",
+				"count": 603
+			},
+			{
+				"title": "Mormon.org",
+				"count": 590
+			},
+			{
+				"title": "Youth",
+				"count": 523
+			},
+			{
+				"title": "Church History",
+				"count": 513
+			},
+			{
+				"title": "Overcoming Pornography",
+				"count": 213
+			}
+		]
+	},
+
+	"stories" : [
+	<?for($i = 1; $i <= $number; $i++){?>
+		{
+			"site": "Mormon.org",
+			"description": "President Eyering talks about BYU students about their future",
+			"lang": "eng",
+			"status": "published",
+			"img": "../../placeholder/250/150?<?=$i?>",
+			"date":{
+				"day": "20",
+				"month": "MAY",
+				"year": "2013",
+				"time": "12:34 PM"
+			}
+		}
+		<? if($i < $number){?>,<?}}?>
+	]
+}

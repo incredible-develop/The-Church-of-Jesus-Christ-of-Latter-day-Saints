@@ -1,0 +1,177 @@
+#ldse-toolbar-container {
+  div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+}
+
+#ldse-toolbar-container.ldse-toolbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  height: 50px;
+  min-width: 310px;
+}
+#ldse-toolbar-container .ldse-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding-right: 40px;
+  font-family: $OpenSansStack;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  @include transition($property: top, $timing: linear);
+  /* Textured background with dots */
+  background-color: $lightGrey;
+  /*@include radialGradient(center center, circle contain, #292929 20%, #1F1F1F 25%, rgba(0,0,0,0) 40%);*/
+  /* background-size: 3px 3px; */
+
+  /* Textured background with diamonds */
+/*  background-color: #27272B;
+  background-image: -webkit-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -webkit-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+  background-image: -moz-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -moz-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+  background-image: -ms-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -ms-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+  background-image: -o-linear-gradient(135deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%), -o-linear-gradient(45deg, rgba(0,0,0,0) 24%, #333 24%, #333 26%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 49%, #333 49%, #333 51%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 74%, #333 74%, #333 76%, rgba(0,0,0,0) 76%, rgba(0,0,0,0) 100%);
+  background-size: 30px 30px;
+*/}
+#ldse-toolbar-container .ldse-dropdownMenu-trigger {
+  padding: 0 10px;
+  min-height: 50px;
+  margin: 0;
+}
+#ldse-toolbar-container .ldse-toolbar-item {
+  margin: 0;
+  font-size: 18px;
+  color: $lightCharcoal;
+  float: left;
+  height: 50px;
+  cursor: pointer;
+}
+#ldse-toolbar-container .ldse-toolbar-item:hover,
+#ldse-toolbar-container .ldse-toolbar-item.ldse-open {
+  /* Textured background with dots */
+  background-color: $menuBlueLight;
+  color: $lightGrey;
+  /*@include radialGradient(center center, circle contain, #333 20%, #2F2F2F 25%, rgba(0,0,0,0) 40%);*/
+  /* background-size: 3px 3px; */
+}
+#ldse-toolbar-container .with-submenu{
+  color: $darkGrey;
+}
+#ldse-toolbar-container #ldse-preview-button.ldse-preview-button.ldse-toolbar-item:hover {
+  background-color: transparent;
+    button:hover {
+      background-image: -webkit-linear-gradient(bottom, rgba(14, 15, 16, 0.25) 0%, rgba(14, 15, 16, 0));
+      background-image: -o-linear-gradient(bottom, rgba(14, 15, 16, 0.25) 0%, rgba(14, 15, 16, 0));
+      background-image: linear-gradient(to top, rgba(14, 15, 16, 0.25) 0%, rgba(14, 15, 16, 0));
+      text-shadow: 1px 1px 2px $lightCharcoal;
+    }
+}
+#ldse-toolbar-container .ldse-toolbar-item .ldse-icon {
+  font-size: 24px;
+}
+#ldse-toolbar-container .ldse-toolbar-item [class^="ldse-icon-"] {
+  margin-top: 4px;
+}
+#ldse-toolbar-container .ldse-toolbar-item [class^="ldse-icon-"]:before {
+  font-size: 24px;
+  margin-top: 6px;
+}
+#ldse-toolbar-container .ldse-menu-logo {
+  position: relative;
+}
+#ldse-toolbar-container .ldse-brand {
+  text-indent: -100em;
+  font-family: OpenSansRegular, Arial, Helvetica, 'Lucida Grande';
+  opacity: 0;
+  font-size: 10px;
+  line-height: 14px;
+  position: absolute;
+  top: 9px;
+  letter-spacing: 5px;
+  padding-left: 10px;
+  @include transition($duration:0s);
+  @include noSelect;
+  @media screen and (min-width: $mobile-small) {
+    text-indent: 0;
+    opacity: 1;
+    @include transitions(text-indent .3s ease-in-out, opacity .3s ease-in-out 1s);
+  }
+}
+#ldse-toolbar-container .ldse-site-name {
+  text-indent: -100em;
+  opacity: 0;
+  font-family: OpenSansRegular, Arial, Helvetica, 'Lucida Grande';
+  line-height: 24px;
+  font-size: 18px;
+  /*color: #F6D687;*/
+  padding-left: 9px;
+  position: absolute;
+  top: 19px;
+  width: 161px;
+  padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  @include transition($duration:0s);
+  @include noSelect;
+  @media screen and (min-width: $mobile-small) {
+    text-indent: 0;
+    opacity: 1;
+    @include transitions(text-indent .3s ease-in-out, opacity .3s ease-in-out 1s);
+  }
+}
+#ldse-toolbar-container .ldse-logo-text-first {
+  color: #B1B1B1;
+}
+#ldse-toolbar-container .ldse-logo-text-last {
+  color: #908f8f;
+}
+#ldse-toolbar-container .ldse-hidden {
+  display: none;
+}
+#ldse-toolbar-container.ldse-toolbar-container.ldse-collapsed {
+  top: -50px;
+}
+#ldse-toolbar-container.ldse-collapsed .ldse-toolbar{
+  top: -50px;
+  -webkit-transition: top .3s linear;
+  -moz-transition: top .3s linear;
+  -o-transition: top .3s linear;
+  -ms-transition: top .3s linear;
+  transition: top .3s linear;
+}
+#ldse-toolbar-container .ldse-toolbar-toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 40px;
+  padding: 0 6px;
+
+  border-right: none;
+  @include boxSizing();
+  /* Textured background with dots */
+  background-color: $lightGrey;
+  /* @include radialGradient(center center, circle contain, #292929 20%, #1F1F1F 25%, rgba(0,0,0,0) 40%); */
+  /* background-size: 3px 3px; */
+  box-shadow: none;
+  @include transitions(box-shadow 0s linear .3s, border-bottom-left-radius 0s linear .3s, border-left-color .3s linear);
+}
+#ldse-toolbar-container.ldse-collapsed .ldse-toolbar-toggle {
+  border-left-color: rgba(68,68,68,0);
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  @include transitions(border-bottom-left-radius 0s linear, border-left-color .3s linear);
+}
+
+#ldse-toolbar-container.ldse-collapsed .ldse-toolbar-toggle span:before {
+  content: '';
+}

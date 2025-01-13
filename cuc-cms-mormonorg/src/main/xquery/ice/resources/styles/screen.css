@@ -1,0 +1,422 @@
+
+/*.ixf-button.disabled:hover,
+.ixf-button.disabled:active,*/
+.ui-datepicker .ui-datepicker-buttonpane button {
+	display: inline-block;
+	vertical-align: baseline;
+/*	margin: 2px;*/
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font:13px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	padding: 4px 11px 4px;
+	-webkit-border-radius: .3em; 
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: #495569;
+	background: #dcdcdc;
+	background-image: 		-webkit-gradient( linear, left top, left bottom, from(#fff), to(#c0c0c0), color-stop(0.04, #f2f2f2) );
+	background-image: 	-moz-linear-gradient( top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+	background-image: -ms-linear-gradient( top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+	background-image: linear-gradient( top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#c0c0c0');
+	text-shadow: #fff 0 1px 0;
+	border-top: 1px solid #adadad;
+	border-left: 1px solid #989898;
+	border-right: 1px solid #989898;
+	border-bottom: 1px solid #818181;
+	vertical-align:top;
+/*	height:18px;*/
+	}
+/*.mozilla .ixf-button{
+	padding:4px 11px;
+	}*/
+	
+
+
+.iceForm .ixf-button:hover,
+.iceForm .ixf-button:focus,
+.ui-datepicker .ui-datepicker-buttonpane button:hover,
+.ui-datepicker .ui-datepicker-buttonpane button:focus {
+	color: #000;
+	background: #dcdcdc;
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#f2f2f2), to(#b9b9b9), color-stop(0.1, #eeeeee) );
+	background-image: -moz-linear-gradient( top, #f2f2f2 0pt, #eeeeee 10%, #b9b9b9 100% );
+	background-image: -ms-linear-gradient( top, #f2f2f2 0pt, #eeeeee 10%, #b9b9b9 100% );
+	background-image: linear-gradient( top, #f2f2f2 0pt, #eeeeee 10%, #b9b9b9 100% );
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#b9b9b9');
+	}
+
+.iceForm .ixf-button:focus,
+.ui-datepicker .ui-datepicker-buttonpane button:focus {
+	color: #000;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	}
+
+.iceForm .ui-button:focus,
+.iceForm .ixf-button:focus,
+.ui-datepicker .ui-datepicker-buttonpane button:focus {
+	color: #000;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	}
+
+.iceForm .ui-button:active,
+/*.ui-dialog .ui-button.ui-state-active,*/
+.iceForm .ixf-button:active,
+.ui-datepicker .ui-datepicker-buttonpane button:active {
+/*	position: relative;
+	top: 1px;*/
+	background: #d6d6d6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), to(#d8d8d8));
+	background: -moz-linear-gradient(top,  #b9b9b9,  #d8d8d8);
+	background: -ms-linear-gradient(top,  #b9b9b9,  #d8d8d8);
+	background: linear-gradient(top,  #b9b9b9,  #d8d8d8);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#b9b9b9', endColorstr='#d8d8d8');
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2);
+	-moz-box-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 0 #fff;
+	border-bottom: 1px solid #adadad;
+	border-top: 1px solid #818181;
+	}
+
+		
+.iceForm .secondary,
+.iceForm .secondary:link,
+.iceForm .secondary:visited,
+.iceForm .disabled.secondary:hover,
+.iceForm .disabled.secondary:active,
+.iceForm .disabled.secondary:focus,
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {
+	color: #fff !important;
+/*	padding: .42em .9em .5em;*/
+	background: #98A3B4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#bec6d2), to(#5c697e), color-stop(0.04, #9aa5b6) );
+	background: -moz-linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+	background: -ms-linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+	background: linear-gradient(top, #bec6d2 0pt, #9aa5b6 4%, #5c697e 100%);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#9aa5b6', endColorstr='#5c697e');
+	text-shadow: #303e53 0 -1px 0;
+	border-top: 1px solid #848d9b;
+	border-left: 1px solid #5c6779;
+	border-right: 1px solid #5c6779;
+	border-bottom: 1px solid #313f54;
+	}
+
+.iceForm .secondary:hover,
+.iceForm .secondary:focus,
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close:hover,
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close:focus {
+	background: #758195;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a8b1bf), to(#525e71), color-stop(0.04, #909bac) );
+	background: -moz-linear-gradient(top, #a8b1bf 0pt, #909bac 4%, #525e71 100%);
+	background: -ms-linear-gradient(top, #a8b1bf 0pt, #909bac 4%, #525e71 100%);
+	background: linear-gradient(top, #a8b1bf 0pt, #909bac 4%, #525e71 100%);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#909bac', endColorstr='#525e71');
+	border-top: 1px solid #79818f;
+	border-left: 1px solid #505a6b;
+	border-right: 1px solid #505a6b;
+	border-bottom: 1px solid #283446;
+	text-shadow: #303e53 0 -1px 0;
+	}
+
+.iceForm .secondary:active,
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close:active {
+	background: #5D6A7E;
+	background: -webkit-gradient(linear, left top, left bottom, from(#5f6a7d), to(#808b9c) );
+	background: -moz-linear-gradient(top, #5f6a7d, #808b9c);
+	background: -ms-linear-gradient(top, #5f6a7d, #808b9c);
+	background: linear-gradient(top, #5f6a7d, #808b9c);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f6a7d', endColorstr='#808b9c');
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.25);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.25);
+	box-shadow: 0 1px 0 rgba(255,255,255,.25);
+	border-top: 1px solid #313f54;
+	border-bottom: 1px solid #5c6779;
+	}
+
+/* @end */
+
+/* @group @print */
+/* Hide useless elements in print layouts... */
+
+@media print {
+	.iceForm { overflow:visible;}
+	.iceForm .ixf-header, .iceForm .ixf-subheader, .iceForm .ui-layout-resizer, .iceForm .ui-layout-north, .iceForm .ui-layout-south, .iceForm .ui-layout-east, .iceForm .ui-layout-west {
+		display:none !important;
+	}
+	.iceForm .ui-layout-center {
+		width:auto !important; /* override JS set inline style */
+		height:auto !important; /* override JS set inline style */
+		left:auto !important; /* override JS set inline style */
+		overflow:visible !important; /* override JS set inline style */
+		padding:0;
+	}
+	.iceForm .ixf-panels {
+		border:none;
+		height:auto !important; /* override JS set inline style */
+		overflow:visible !important; /* override JS set inline style */
+	}
+	.iceForm .print-hide {
+		display:none;
+	}
+	.iceForm .print-show {
+		display:block;
+	}
+	.iceForm .sunken { -moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+}
+
+
+/* @end */
+
+/* @group Jquery UI Styles */
+
+
+
+/* @group ui-datepicker */
+
+/* Datepicker
+----------------------------------*/
+#ui-datepicker-div {
+	display:none;
+}
+.ui-datepicker-trigger {
+	position: absolute;
+	left: -1000em;
+	top:  -1000em;
+	cursor: pointer;
+	}
+
+.text-sm .ui-datepicker-trigger {
+	top: 5px;
+	}
+
+.hasDatepicker {
+	background: #fff url(../images/datepicker.png) no-repeat 98% 3px !important;
+	}
+
+.ui-datepicker {
+	background: #dcdcdc;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#dfdfdf));
+	background: -moz-linear-gradient(top, #efefef, #dfdfdf);
+	background: -ms-linear-gradient(top, #efefef, #dfdfdf);
+	background: linear-gradient(top, #efefef, #dfdfdf);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#dfdfdf');
+	text-shadow: #fff 0 1px 0;
+	-webkit-box-shadow: 0 1px 5px #333;
+	-moz-box-shadow: 0 1px 5px #333;
+	box-shadow: 0 1px 5px #333;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 5px;
+
+	}
+.ui-datepicker-header {
+	position:relative;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	padding: 2px 0 1px 0;
+	color: #333;
+	background: #dcdcdc;
+	background-image: -webkit-gradient( linear, left top, left bottom, from(#fff), to(#c0c0c0), color-stop(0.04, #f2f2f2) );
+	background-image: -moz-linear-gradient( top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+	background-image: -ms-linear-gradient( top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+	background-image: linear-gradient( top, #fff 0pt, #f2f2f2 4%, #c0c0c0 100%);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#c0c0c0');
+	text-shadow: #fff 0 1px 0;
+	border-top: 1px solid #adadad;
+	border-left: 1px solid #989898;
+	border-right: 1px solid #989898;
+	border-bottom: 1px solid #818181;
+	}
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	top: 2px;
+	width: 20px;
+	height: 0;
+	padding-top: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	}
+.ui-datepicker-prev span {
+	background: transparent url(../images/ixf-sprite.png) no-repeat -585px -351px; /* datepicker-left +4 +4 */
+	left:2px;
+	}
+.ui-datepicker-prev span:hover {
+	background: transparent url(../images/ixf-sprite.png) no-repeat -585px -351px !important; /* datepicker-left +4 +4 */
+	}
+
+.ui-datepicker-next span {
+	background: transparent url(../images/ixf-sprite.png) no-repeat -564px -374px; /* datepicker-right +4 +4 */
+	right:2px;
+	}
+.ui-datepicker-next span:hover {
+	background: transparent url(../images/ixf-sprite.png) no-repeat -564px -374px !important; /* datepicker-right +4 +4 */
+	}
+	
+.ui-datepicker-prev-hover { left:1px; }
+.ui-datepicker-next-hover { right:1px; }
+
+.ui-datepicker-other-month {
+	background: #dcdcdc;
+	}
+.ui-datepicker-unselectable {
+	background: #dcdcdc;
+	}
+.ui-state-disabled {
+	opacity: .35; filter:Alpha(Opacity=35); background-image: none;
+	}
+
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+
+.ui-datepicker table {width: 100%; font-size: 11px; border-collapse: collapse; margin:0; border: 1px solid #a7a7a7; border-top: 0; }
+.ui-datepicker th {
+	padding: 4px 2px;
+	text-align: center;
+	font-weight: normal;
+	border: 0;
+	background: #dcdcdc;
+	}
+.ui-datepicker td {
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #a7a7a7;
+	}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: 4px;
+	text-decoration: none;
+	background: #ededeb;
+	color: #3b3b3b;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	}
+	
+.ui-datepicker td.ui-datepicker-today span,
+.ui-datepicker td.ui-datepicker-today a {
+	border-top: 1px solid #d6dce6 !important;
+	border-left: 1px solid #d6dce6 !important;
+	background: #c7d0de !important;
+	}
+
+.ui-datepicker td a.ui-state-active,
+.ui-datepicker td a.ui-state-hover,
+.ui-datepicker td.ui-datepicker-today a.ui-state-active {
+	background: #F6DBA5 !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fde4b1), to(#e4c587) ) !important;
+	background: -moz-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+	background: -ms-linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+	background: linear-gradient(top, #fde4b1 0pt, #e4c587 100%) !important;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fde4b1', endColorstr='#e4c587') !important;
+	text-shadow: #fff0d0 0 1px 0;
+	color: #000 !important;
+	text-shadow: #fff0d0 0 1px 0 !important;
+	border: 0 !important;
+	border-top: 1px solid #fef0cf !important;
+	border-left: 1px solid #fce0a1 !important;
+	}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+	padding-top: 6px;
+	padding-bottom: 1px;
+	}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+	font-size: 13px;
+	padding: 4px 6px;
+	float: right;
+	margin: 0;
+	}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float:left;
+	}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; }
+
+/* RTL support */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+
+/* @end */
+
+/*Fix window title bar from getting skinny...*/
+.iceForm .ui-dialog-titlebar{
+    height:14px;
+}
+
+
+/*! Modal plugin */
+#qtip-blanket{
+	position: absolute;
+	left: -10000em;
+	top: -10000em;
+	background-color: black;
+	cursor: pointer;
+	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	/* Set this to any below 15000 (default starting z-index for qTips) */
+	z-index: 14999;
+	}
+	
+/*Fix messed up tabs*/
+.iceForm .ixf-tabs-wrapper ul li a{
+    display:inline-block !important;
+}
+
+/* ResourceFrom styles*/
+#resourceFrom{
+	background-color: #fff;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+	

@@ -1,0 +1,319 @@
+/* Change size on tile icons */
+[class^="ldse-icon-"].above:before,
+[class*=" ldse-icon-"].above:before {
+  font-size: 42px;
+  padding-bottom: 6px;
+  width:100%;
+  @media screen and (min-width: $mobile) {
+    font-size: 52px;
+  }
+}
+@-moz-document url-prefix() {
+  [class^="ldse-icon-"].above:before,
+  [class*=" ldse-icon-"].above:before {
+    padding-top: 8px;
+  }
+}
+.ldse-button[class*="ldse-icon-"]:before {
+  vertical-align: -10%;
+  margin-left: -8px;
+}
+.ldse-button.ldse-icon {
+  width: 40px;
+}
+.ldse-button.ldse-icon[class*="ldse-icon-"] {
+  padding-right: 5px;
+  &:before {
+    padding-left: 1px;
+  }
+}
+
+.ldse-button,
+#ldse-toolbar-container .ldse-button {
+  font-size: 16px;
+  border-radius: 3px;
+  background: $buttonGrey;
+  border: 1px solid $buttonGreyBorder;
+  color: $buttonGreyText;
+  text-shadow: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: $ArialStack;
+  padding: 4px 18px 1px;
+  min-height: $height;
+  margin-right: $mobileSpace;
+  margin-bottom: $mobileSpace;
+  @include boxSizing();
+  &.depressed {
+    background: $buttonGreyDark;
+    box-shadow: inset 1px 1px 3px $darkShadow;
+  }
+  &:active {
+    background: $buttonGreyDarker;
+    box-shadow: inset 1px 1px 3px $darkShadow;
+  }
+}
+@-moz-document url-prefix() {
+  .ldse-button, #ldse-toolbar-container .ldse-button {
+    padding-top: 12px;
+    @media screen and (min-width: $mobile) {
+      padding-top: 10px;
+    }
+  }
+}
+a.ldse-button,
+#ldse-toolbar-container a.ldse-button {
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+#alert-ok,
+#alert-cancel {
+  width: inherit; }
+
+.ldse-button.primary, .ldse-button.primary:hover,
+#ldse-toolbar-container .ldse-button.primary, #ldse-toolbar-container .ldse-button.primary:hover,
+.ldse-button.ldse-primary, .ldse-button.ldse-primary:hover,
+#ldse-toolbar-container .ldse-button.ldse-primary, #ldse-toolbar-container .ldse-button.ldse-primary:hover {
+  color: $white;
+
+  border: 1px solid $greenBorder;
+  background: $green;
+
+  &.depressed {
+    background: $darkGreen;
+
+  }
+  &:active, &.depressed:active {
+    background: $darkerGreen;
+
+  }
+}
+.ldse-button.secondary, .ldse-button.secondary:hover,
+#ldse-toolbar-container .ldse-button.secondary, #ldse-toolbar-container .ldse-button.secondary:hover {
+  color: $white;
+
+
+  background: $menuBlueDark;
+
+  &.depressed {
+    background: $menuBlueLight;
+
+  }
+  &:active, &.depressed:active {
+    background: $menuBlueDark;
+
+  }
+}
+.ldse-button.destructive, .ldse-button.destructive:hover,
+#ldse-toolbar-container .ldse-button.destructive, #ldse-toolbar-container .ldse-button.destructive:hover {
+  color: $white;
+
+  border: 1px solid $redBorder;
+  background: $red;
+
+  &.depressed {
+    background: $darkRed;
+
+  }
+  &:active, &.depressed:active {
+    background: $darkerRed;
+
+  }
+}
+.ldse-button.special, .ldse-button.special:hover,
+#ldse-toolbar-container .ldse-button.special, #ldse-toolbar-container .ldse-button.special:hover {
+  color: $white;
+
+  border: 1px solid $orangeBorder;
+  background: $orange;
+
+  &.depressed {
+    background: $darkOrange;
+
+  }
+  &:active, &.depressed:active {
+    background: $darkerOrange;
+
+  }
+}
+.ldse-button.modified, .ldse-button.modified:hover,
+#ldse-toolbar-container .ldse-button.modified, #ldse-toolbar-container .ldse-button.modified:hover {
+  color: $white;
+
+  border: 1px solid $orangeBorder;
+  background: $orange;
+
+  &.depressed {
+    background: $darkOrange;
+  }
+  &:active, &.depressed:active {
+    background: $darkerOrange;
+
+  }
+}
+.ldse-button.tile {
+  padding: 5px 10px 25px;
+  border: 1px solid $buttonGreyBorderLight;
+  margin: 0px;
+  background: $lightGrey;
+  color: $menuBlueDark;
+  font-weight: bold;
+  width: 100%;
+  min-height: 110px;
+  @media screen and (min-width: $mobile) {
+    min-height: 130px;
+    padding-bottom: 24px;
+  }
+  &:before {
+    margin: 0px;
+  }
+  &.social {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+
+  .tile-image{
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 7px;
+
+    + span{
+      display: block;
+      margin: 10px 0 -98px 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+}
+.ldse-block.tile.depressed .ldse-button.tile {
+  background: $buttonGreyDark;
+}
+.ldse-block.tile {
+  padding: 0px;
+  min-width: 110px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: $mobile) {
+    min-width: 130px;
+    margin-right: $desktopSpace;
+    margin-bottom: $desktopSpace;
+  }
+}
+.ldse-block.tile:active .ldse-button.tile {
+  background: $buttonGreyDarker;
+}
+.ldse-information {
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  background: $menuBlueDark;
+
+  border-top: none;
+  color: white;
+
+  font-size: 11px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 100%;
+  min-height: 20px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  border-radius: 0 0 $borderRadius $borderRadius;
+  @include noSelect;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @media screen and (min-width: $mobile) {
+    font-size: 12px;
+    min-height: 24px;
+    padding-top: 5px;
+  }
+}
+.ldse-block.tile.depressed .ldse-information {
+  background: $menuBlueLight;
+
+}
+.ldse-information span {
+  vertical-align: middle;
+}
+
+.ldse-block.tile:active .ldse-information {
+  background: $menuBlueDark;
+}
+.ldse-button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+.ldse-block.tile.disabled {
+  .ldse-button.tile, .ldse-information {
+    opacity: 0.4;
+    cursor: default;
+  }
+  &:active .ldse-button.tile {
+    background: $buttonGreyLight;
+  }
+  &:active .ldse-information {
+    background: $menuBlueDark;
+  }
+  &:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    margin-right: 5px;
+    background: $orange;
+    opacity: 0;
+    color: $white;
+    padding: 5px 8px;
+    border-radius: 8px;
+  }
+  &:hover:after {
+    opacity: 1;
+  }
+}
+.ldse-buttons {
+  margin-bottom: 0;
+}
+.ldse-responsive-button,
+#ldse-toolbar-container .ldse-responsive-button {
+  text-indent: -99em;
+  width: 40px;
+  position: relative;
+  &:before {
+    @media screen and (min-width: $tablet) {
+      position:static;
+    }
+    text-indent: 0px;
+    position:absolute;
+    left: 19px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-indent: 0em;
+    width: auto;
+  }
+}
+
+#ldse-toolbar-container.front .ldse-responsive-button {
+  &:before {
+    @media screen and (max-width: $tablet) {
+      position: absolute;
+      left: 5px;
+      margin-left: 0px;
+    }
+
+  }
+}
+.between {
+  background: $blue;
+  color: $white;
+  border: 1px solid $lightCharcoal;
+}

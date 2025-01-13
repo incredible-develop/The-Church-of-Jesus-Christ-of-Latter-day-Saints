@@ -1,0 +1,71 @@
+.ldse-fancy-date {
+  height: 36px;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -18px;
+  @include noSelect;
+  cursor: default;
+  @media screen and (min-width: $mobile) {
+    height: 44px;
+    margin-top: -22px;
+  }
+}
+.ldse-fancy-date .ldse-fancy-date-weekday {
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  width: 28px;
+  text-align: center;
+  font-size: 11px;
+  left: -9px;
+  bottom: 11px;
+  @include transform(rotate(-90deg));
+  @media screen and (min-width: $mobile) {
+    width: 38px;
+    font-size: 14px;
+    bottom: 12px;
+  }
+}
+.ldse-fancy-date .ldse-fancy-date-day {
+  font-size: 30px;
+  margin-left: 13px;
+  margin-right: 0px;
+  top: -3px;
+  position: relative;
+  font-weight: bold;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 42px;
+    margin-left: 20px;
+    margin-right: 2px;
+    top: -7px;
+  }
+}
+.ldse-fancy-date .ldse-fancy-date-month {
+  text-transform: uppercase;
+  position: absolute;
+  top: 4px;
+  font-size: 11px;
+  width: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  @media screen and (min-width: $mobile) {
+    top: 3px;
+    font-size: 14px;
+    width: 43px;
+  }
+}
+.ldse-fancy-date .ldse-fancy-date-year {
+  padding-right: 2px;
+  position: relative;
+  bottom: 3px;
+  font-size: 11px;
+  @media screen and (min-width: $mobile) {
+    padding-right: 10px;
+    bottom: 8px;
+    font-size: 14px;
+  }
+}

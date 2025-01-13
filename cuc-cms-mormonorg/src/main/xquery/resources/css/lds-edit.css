@@ -1,0 +1,13 @@
+/* BREADCRUMB */
+.ixf-breadcrumb {
+	color: #aaa;
+	text-shadow: 0 1px 3px #000000;
+}
+.ixf-breadcrumb a  {
+	color: #aaa;
+	font-weight: bold;
+}
+.ixf-breadcrumb a:hover {color: #dfdfdf;}
+.ixf-breadcrumb .current {
+	color: #dfdfdf;
+	font-weight: bold;}

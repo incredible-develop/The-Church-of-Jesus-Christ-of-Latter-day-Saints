@@ -1,0 +1,232 @@
+#ldse-show-ice .ldse-menu ul [class^="ldse-icon-"],
+#ldse-toolbar-container .ldse-menu ul [class^="ldse-icon-"] {
+  margin: 0;
+}
+
+#ldse-show-ice .ldse-main-menu,
+#ldse-toolbar-container .ldse-main-menu {
+
+  @media screen and (min-width: $mobile-small) {
+      width: 200px;
+      @include transitions (width 1s ease-in-out, padding 1s ease-in-out)
+  }
+}
+
+#ldse-show-ice ul.ldse-menu,
+#ldse-toolbar-container ul.ldse-menu {
+  display: none;
+  padding: 8px;
+  margin: 0;
+  width: 200px;
+  position: absolute;
+  /* Positioning for ICE Menu */
+  top: 26px;
+  right: 0px;
+  /* Textured background with dots */
+  background-color: $lightGrey;
+  /* @include radialGradient(center center, circle contain, #333 20%, #2F2F2F 25%, rgba(0,0,0,0) 40%); */
+  /* background-size: 3px 3px; */
+  border-radius: $borderRadius 0px $borderRadius $borderRadius;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  list-style-image: none;
+  @include boxSizing();
+  z-index: 1000;
+}
+#ldse-show-ice .ldse-menu-left ul.ldse-menu,
+#ldse-toolbar-container .ldse-menu-left ul.ldse-menu {
+  left: -40px;
+  border-radius: 0px $borderRadius $borderRadius $borderRadius;
+}
+#ldse-show-ice .ldse-open ul.ldse-menu,
+#ldse-toolbar-container .ldse-open ul.ldse-menu,
+#ldse-show-ice ul.ldse-menu .ldse-open,
+#ldse-toolbar-container ul.ldse-menu .ldse-open {
+  display: block;
+}
+#ldse-show-ice ul.ldse-menu li,
+#ldse-toolbar-container ul.ldse-menu li {
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid $menuBorder;
+  display: block;
+  position: relative;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+#ldse-show-ice ul.ldse-menu [class^="ldse-icon-"],
+#ldse-toolbar-container ul.ldse-menu [class^="ldse-icon-"] {
+  margin-top: 0px;
+}
+#ldse-show-ice ul.ldse-menu a,
+#ldse-show-ice ul.ldse-menu span,
+#ldse-toolbar-container ul.ldse-menu a,
+#ldse-toolbar-container ul.ldse-menu span {
+  color: $darkGrey;
+  background-color: $lightGrey;
+  text-decoration: none;
+  width: 184px;
+  font-size: 14px;
+  line-height: normal;
+  height: 40px;
+  padding: 4px 8px 4px 10px;
+  @include boxSizing();
+  display: table-cell;
+  vertical-align: middle;
+}
+#ldse-show-ice ul.ldse-menu > li:first-child a,
+#ldse-show-ice ul.ldse-menu > li.ldse-first-menu-item a,
+#ldse-toolbar-container ul.ldse-menu > li:first-child a,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-first-menu-item a {
+  border-radius: $borderRadius $borderRadius 0px 0px;
+}
+#ldse-show-ice ul.ldse-menu > li:last-child a,
+#ldse-toolbar-container ul.ldse-menu > li:last-child a {
+  border-radius: 0px 0px $borderRadius $borderRadius;
+}
+#ldse-show-ice ul.ldse-menu a:hover,
+#ldse-toolbar-container ul.ldse-menu a:hover {
+  color: $menuBlueLight;
+}
+#ldse-show-ice ul.ldse-menu a:before,
+#ldse-show-ice ul.ldse-menu span:before,
+#ldse-toolbar-container ul.ldse-menu a:before,
+#ldse-toolbar-container ul.ldse-menu span:before {
+  font-size: 16px;
+  display: inline-flex;
+  white-space: nowrap;
+
+}
+#ldse-show-ice ul.ldse-menu > li.ldse-status-item,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-status-item {
+  border-bottom: none;
+  margin-bottom: 1px;
+}
+#ldse-show-ice ul.ldse-menu > li.ldse-status-item span,
+#ldse-toolbar-container ul.ldse-menu > li.ldse-status-item span {
+  padding-top: 0px;
+  height: 40px;
+  background-color: transparent;
+  cursor: default;
+  @include noSelect;
+  &:hover {
+    color: $menuText;
+  }
+  &:before {
+  font-family: $iconFont;
+  content: $ldse-icon-paper;
+  font-size: 16px;
+  line-height: 16px;
+
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px 0px 6px;
+  border-radius: $borderRadius;
+  color: $buttonGreyText;
+
+
+  background: $buttonGrey;
+  @include boxSizing();
+  }
+}
+ul.ldse-menu > li.ldse-status-item span:before{
+  margin: 0 .5em 0 0;
+}
+
+#ldse-show-ice [class*="ldse-status-"] ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container [class*="ldse-status-"] ul.ldse-menu > li.ldse-status-item span:before {
+  color: $white;
+
+}
+#ldse-show-ice .ldse-status-published ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-published ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-check2;
+  background: $green;
+}
+#ldse-show-ice .ldse-status-not-published ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-not-published ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-edit;
+  background: $red;
+}
+#ldse-show-ice .ldse-status-unpublished ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-unpublished ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-unpublish;
+  background: $red;
+}
+#ldse-show-ice .ldse-status-modified ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-modified ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-ko-warning;
+  background: $orange;
+}
+#ldse-show-ice .ldse-status-scheduled ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-scheduled ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-clock;
+  background: $menuBlueDark;
+}
+#ldse-show-ice .ldse-status-published-component ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-published-component ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-check2;
+  background: $green;
+}
+#ldse-show-ice .ldse-status-not-published-component ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-not-published-component ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-edit;
+  background: $red;
+}
+#ldse-show-ice .ldse-status-unpublished-component ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-unpublished-component ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-unpublish;
+  background: $red;
+}
+#ldse-show-ice .ldse-status-modified-component ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-modified-component ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-ko-warning;
+  background: $orange;
+}
+#ldse-show-ice .ldse-status-scheduled-component ul.ldse-menu > li.ldse-status-item span:before,
+#ldse-toolbar-container .ldse-status-scheduled-component ul.ldse-menu > li.ldse-status-item span:before {
+  content: $ldse-icon-clock;
+  background: $menuBlueDark;
+}
+/* Classes specific to main menu in toolbar */
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu {
+  top: 50px;
+  left: 0px;
+  width: 280px;
+  padding: 0px;
+  border-radius: 0px 0px $borderRadius $borderRadius;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu a,
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu span {
+  height: 50px;
+  font-size: 16px;
+  padding: 4px 24px 4px 24px;
+  width: 260px;
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu a:before,
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu span:before {
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: space-between;
+
+}
+@-moz-document url-prefix(){
+  #ldse-toolbar-container .ldse-main-menu ul.ldse-menu a:before,
+  #ldse-toolbar-container .ldse-main-menu ul.ldse-menu span:before {
+    top: 10px;
+    margin-top: 0px;
+  }
+}
+#ldse-toolbar-container .ldse-main-menu ul.ldse-menu > li.ldse-status-item span {
+  height: 50px;
+}
+ #ldse-toolbar-container .ldse-button:hover {
+  background: $blue;
+  color: $white;
+  cursor: pointer;
+  cursor: hand;
+  background-image: -webkit-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+  background-image: -o-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+  background-image: linear-gradient(to top, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+}

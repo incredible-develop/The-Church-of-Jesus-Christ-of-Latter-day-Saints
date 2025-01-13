@@ -1,0 +1,14 @@
+#versions-info {
+	.form-section {
+		.ldse-info-button,
+		.ldse-info-button,
+		.ldse-button,
+		.deleteListItem,
+		.addListItem{
+			display:none;
+		}
+		.ldse-button.modified {
+			display:block;
+		}
+	}
+}

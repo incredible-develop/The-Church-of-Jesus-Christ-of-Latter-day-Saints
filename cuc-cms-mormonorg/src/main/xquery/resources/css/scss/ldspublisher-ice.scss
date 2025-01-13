@@ -1,0 +1,172 @@
+/* Styles that are used on the preview sites and on the admin pages */
+@import "shared";
+
+/* Styles specific to the preview sites (ice menu, etc.) */
+@import "previewSite";
+
+@import "modal";
+
+body {
+    margin-top: 50px;
+}
+/* CHANGED BN */
+.ldse-form .select {
+  width: 80%;
+  color: #545454;
+  display: inline-block;
+  padding: 9px 40px 0px 17px;
+  text-decoration: none;
+  vertical-align: middle;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #DDD;
+  position: relative;
+  height: 27px;
+  background-color: #fff;
+  background-position: left, right;
+}
+.ldse-info-button {
+    color: #8ba7c7;
+    margin-left: 5px;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+}
+.ldse-info-text {
+    background: #8ba7c7;
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.ldse-form .select .text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* CHANGED BN */
+.ldse-form .select .arrow:after {
+  content: "\25be";
+  font-size: 16px;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.75);
+}
+#translationMarked .publishStatus {
+    float: left;
+    margin-bottom: 10px;
+}
+/* CHANGED BN */
+.ldse-form .select .arrow {
+  display: block;
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  background: #C5C5C5;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 1px solid #ddd;
+  box-shadow: inset 0px 1px 1px rgba(255,255,255,0.65);
+}
+.ldse-form .select select {
+  display: block;
+  font: 13px/15px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}
+.ldse-form .select option {
+  background: #fbf9f3;
+  color: #2f393a;
+}
+
+.ldse-modal .select select{
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.ldse-publish-dialog {
+  float: right;
+  margin-left: 10px;
+  &:before {
+    color: #669900;
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+  }
+  &.ldse-icon-ko-warning:before {
+    color: #e59941;
+  }
+}
+
+.ldse-seo-title {
+    color: #12c;
+    font-size: medium;
+    display: block;
+    text-decoration: underline;
+    padding-bottom: 2px;
+}
+
+.ldse-seo-url {
+    font-size: 14px;
+    color: #093;
+}
+
+.ldse-seo-description {
+    padding-top: 2px;
+    color: #444;
+    font-size: small;
+    display: block;
+}
+
+.ldse-seo-desc-message, .ldse-seo-title-message {
+    display: block;
+    padding-top: 5px;
+}
+
+.ldse-seo-title-number, .ldse-seo-desc-number {
+    font-weight: bold;
+}
+
+#ldse-toolbar-container.front #ldse-check-links-list a.no-link {
+  cursor: default;
+}
+
+#ldse-toolbar-container.front #ldse-check-links-list a.no-link:hover {
+  text-decoration: none;
+}
+
+
+.links__wrapper ice-div.ice-component:nth-child(1) div {
+    top: 40px;
+}
+
+.links__wrapper ice-div.ice-component:nth-child(3) div {
+    top: 80px;
+}
+
+.links__wrapper ice-div.ice-component:nth-child(5) div {
+    top: 120px;
+}
+li[data-gear]:hover{
+  box-shadow: 0 1px 3px 0 rgba(14,15,16,.4);
+    .node-vignet {
+        color: #fff;
+        background: linear-gradient(0deg,rgba(14,15,16,.25) 0,rgba(14,15,16,0));
+    }
+}
+#ldse-toolbar-buttons.ldse-toolbar-buttons .ldse-button:hover, .ldse-page .ldse-button:hover {
+
+  background-image: -webkit-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+  background-image: -o-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+  background-image: linear-gradient(to top, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+
+}

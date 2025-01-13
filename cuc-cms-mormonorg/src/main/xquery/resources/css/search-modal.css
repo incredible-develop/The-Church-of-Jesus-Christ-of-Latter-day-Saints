@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/* Font Variables */
+/* Media Query Sizes */
+/* Icons */
+/* Sizes */
+/* Colors */
+.ldse-collection-page {
+    /* Font Variables */
+    /* Media Query Sizes */
+    /* Icons */
+    /* Sizes */
+    /* Colors */
+}
+.ldse-collection-page .ldse-section--body {
+    margin-bottom: 0;
+}
+.ldse-collection-page .clear-search {
+    margin: 0 0 0 5px;
+}
+.ldse-collection-page .ldse-open a.ldse-icon-ko-tri-right:before {
+    content: "";
+}
+.ldse-collection-page .search-results a.ldse-icon-ko-tri-right {
+    content: "";
+}
+.ldse-collection-page #search {
+    padding-bottom: 20px;
+}
+.ldse-collection-page .search-results {
+    padding-left: 3px;
+}
+.ldse-collection-page .ldse-block {
+    width: 100%;
+    margin: 0;
+    background: #f9f9f9;
+    min-height: 52px;
+}
+.ldse-collection-page .ldse-block.ldse-open {
+    padding-bottom: 0;
+    height: 355px;
+}
+.ldse-collection-page #results-list .ldse-block.ldse-open {
+    height: 255px;
+}
+.ldse-collection-page #results-list .ldse-collection-status {
+    display: none;
+}
+.ldse-collection-page .ldse-block header {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: move;
+    padding-right: 10px;
+    min-height: 75px;
+    max-height: 75px;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+.ldse-collection-page .ldse-block header [class^="ldse-icon-"] {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    margin-top: -9px;
+}
+.ldse-collection-page .ldse-collection-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    margin: -8px;
+    width: 36px;
+    height: 36px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #aaa;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+.ldse-collection-page .ldse-collection-button:before {
+    font-size: 18px;
+}
+.ldse-collection-page .ldse-collection-button.add:hover {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334d00;
+    background: #669900;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+.ldse-collection-page .ldse-collection-button.add:active {
+    background: #446600;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.ldse-collection-page .ldse-collection-button.remove:hover {
+    color: white;
+    text-shadow: 1px 1px 1px #353535;
+    border: 1px solid #4a0000;
+    background: #910000;
+    box-shadow: inset 1px 1px 1px #c44d4d;
+}
+.ldse-collection-page .ldse-collection-button.remove:active {
+    background-color: #7d0000;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.ldse-collection-page
+    .ldse-block.ldse-open
+    header
+    .ldse-icon-ko-tri-down:before {
+    content: "\e006";
+}
+.ldse-collection-page .ldse-block header h3 {
+    padding-left: 25px;
+    padding-right: 35px;
+}
+.ldse-collection-page .ldse-block header h3:nth-child(1) {
+    font-weight: bold;
+}
+.ldse-collection-page .ldse-section--header .ldse-button.dropdown-right,
+.ldse-collection-page .ldse-section--header .ldse-button.dropdown-right:before {
+    font-size: 16px;
+}
+.ldse-collection-page .ldse-section--header .ldse-button-list ul ul {
+    top: 42px;
+    left: 2px;
+    border-radius: 0px 5px 5px 5px;
+    padding-top: 10px;
+}
+@media screen and (min-width: 500px) {
+    .ldse-collection-page .ldse-section--header .ldse-button-list ul ul {
+        left: 7px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .ldse-collection-page .ldse-section--header .ldse-button-list ul ul {
+        left: 12px;
+    }
+}
+.ldse-collection-page .ldse-section--header .ldse-button-subgroup button {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.ldse-collection-page .ldse-block img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    max-height: 150px;
+    min-height: 150px;
+}
+@media screen and (min-width: 500px) {
+    .ldse-collection-page .ldse-block img {
+        margin-bottom: 10px;
+    }
+}
+.ldse-collection-page .ldse-teaser-buttons {
+    margin-bottom: 2px;
+    text-align: left;
+}
+@media screen and (min-width: 500px) {
+    .ldse-collection-page .ldse-teaser-buttons {
+        margin-bottom: 10px;
+    }
+}
+.ldse-collection-page .sortable {
+    padding: 0;
+    margin: 0;
+}
+.ldse-collection-page .sortable li {
+    display: inline-block;
+    border: none;
+    margin-bottom: 0;
+    background: none;
+    min-width: 225px;
+    margin: 0 7px 7px 0;
+    vertical-align: top;
+}
+@media screen and (min-width: 500px) {
+    .ldse-collection-page .sortable li {
+        margin: 0 15px 15px 0;
+    }
+}
+.ldse-collection-page .sortable li.sortable-drop-zone {
+    background: #f9f9f9;
+    border: 5px dashed #dddddd;
+    height: 42px;
+    margin: 0 7px 7px 0;
+    position: relative;
+    border-radius: 5px;
+}
+@media screen and (min-width: 500px) {
+    .ldse-collection-page .sortable li.sortable-drop-zone {
+        margin: 0 15px 15px 0;
+    }
+}
+.ldse-collection-page .sortable li.sortable-drop-zone:before {
+    position: absolute;
+    font-family: ldsPublisherIcons;
+    content: "\e055";
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -16px;
+    color: #dddddd;
+    text-align: center;
+}
+.ldse-collection-page #results-list .collection-item .ldse-teaser-buttons {
+    display: none;
+}
+.ldse-collection-page .needCor {
+    color: #666;
+    font-weight: bold;
+}
+.ldse-collection-page .approval-flag {
+    font-size: 20px;
+    width: 35px;
+    padding: 5px;
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    vertical-align: top;
+}
+.ldse-collection-page .approval-flag:before {
+    color: #666;
+}
+.ldse-collection-page .approval-text {
+    display: inline-block;
+    width: 140px;
+    font-size: 12px;
+}
+.ldse-collection-page .collection-item.ldse-info-banner.warning {
+    border: 2px solid #782677;
+}
+.ldse-collection-page .ldse-collection-status {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: right;
+    padding: 0 10px;
+    background: #8ea3c7;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: inset 0 3px 17px -8px #000;
+}
+.ldse-collection-page .ldse-collection-status span[class^="ldse-icon-"] {
+    color: #fff;
+}
+.ldse-collection-page .ldse-collection-status span[class^="ldse-icon-"]:before {
+    position: relative;
+    top: -2px;
+}
+.ldse-collection-page .ldse-collection-status.collection-scheduled {
+    background: #8ea3c7;
+}
+.ldse-collection-page .ldse-collection-status.collection-modified {
+    background: #e89b35;
+}
+.ldse-collection-page .ldse-collection-status.collection-draft,
+.ldse-collection-page .ldse-collection-status.collection-unpublished {
+    background: #8c0000;
+}
+.ldse-collection-page .ldse-collection-status.collection-published {
+    background: #679f00;
+}
+.ldse-collection-page .ldse-collection-status.collection-created {
+    background: #0a72b2;
+}
+.ldse-collection-page .ldse-collection-status.collection-submitted {
+    background: #8c56a2;
+}
+.ldse-collection-page .ldse-collection-status.collection-new {
+    background: #8ba7c7;
+}
+.ldse-collection-page #collection .collection-item .ldse-block {
+    padding-bottom: 44px;
+}
+.ldse-collection-page .collection-item .ldse-block--body {
+    text-align: center;
+}
+.ldse-collection-page .collection-item .ldse-block--body .ldse-logo-image {
+    font-size: 155px;
+}
+.titan-item.selected {
+    opacity: 0.3;
+}
+.titan-item.selected section {
+    border: 5px solid green;
+}
+.page-link-active.selected {
+    background: linear-gradient(to bottom right, #9adbe8, #3eb1c8 80%);
+    color: #fff;
+    cursor: default;
+}
+.page-link-active {
+    padding: 0.1em 0.485em;
+    color: #888b8d;
+    cursor: pointer;
+}

@@ -1,0 +1,130 @@
+.ldse-modal {
+  // max-width: 500px;
+  position: fixed;
+  z-index: 10000;
+  box-shadow: 1px 1px 1px #3d3d3d, 1px 2px 12px 2px rgba(0,0,0,0.3);
+  margin: 0 auto;
+  background: #fff;
+}
+.ldse-modal.large {
+   position: absolute;
+   max-width: 3000px;
+   width: 90%;
+   margin-left: 5%;
+   top: 80px !important;
+   left: 0 !important;
+   overflow: auto;
+}
+.ldse-modal .ldse-icon-x.ldse-icon {
+  right: 14px;
+  top: 8px;
+  font-size: 26px;
+  color: #fff;
+  text-shadow: 0 -1px 1px #304240;
+}
+.ldse-modal .ldse-icon-x.ldse-icon:before {
+  left: 7px;
+  top: 4px;
+}
+.ldse-modal h1 {
+  color: #fff;
+  text-shadow: 0 -1px 1px #243534;
+  margin: 0 0 18px;
+}
+.ldse-modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9997;
+  background: rgba(0,0,0,0.3);
+}
+
+.ldse-modal .ldse-section.ldse-force--border {
+  border: 1px solid #dddddd;
+}
+
+#collection-modal-form {
+  margin-right: 130px;
+}
+#collection-search{
+  margin-bottom: 13px;
+}
+
+ul.collection-modal-list {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  list-style: none;
+  break-inside: avoid;
+  column-gap: 15px;
+  column-width: 25%;
+  @media screen and (max-width: $tablet-small) {
+    column-width: 50%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+      li {
+      break-inside: avoid;
+
+       margin: 10px;
+         & img {
+              width: 100%;
+              object-fit: cover;
+           @media screen and (max-width: $tablet) {
+               max-width: 300px;
+           }
+         }
+
+      }
+
+      a.ldse-block-toggle {
+        color: #999;
+      }
+
+}
+
+.ldse-modal.better {
+  border-radius: 5px;
+  top: 100px;
+}
+#collection-modal-form input[type="button"]:hover {
+  color: $white;
+  background-image: -webkit-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+  background-image: -o-linear-gradient(bottom, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+  background-image: linear-gradient(to top, rgba(14,15,16,.25) 0%, rgba(14,15,16,0));
+}
+.modal-pages {
+
+      a.page-link-active {
+      border-radius: 3px; /* replace with variable */
+      border: 1px solid transparent;
+      color: $darkerBlue;
+      display: inline-block;
+      font-size: 14px;
+      margin: 0 0.3em;
+      min-height: 1.5rem;
+      min-width: 1.5rem;
+      padding: 0.1em 0.485em;
+
+
+      &:hover {
+        border-color: $darkBackground;
+        text-decoration: none;
+      }
+
+      &.selected {
+        background: linear-gradient(to bottom right, $blue, $darkBlue 80% );
+        background-clip: padding-box;
+        color: $white;
+        cursor: default;
+
+        &:hover {
+          border-color: transparent;
+        }
+      }
+
+    }
+}

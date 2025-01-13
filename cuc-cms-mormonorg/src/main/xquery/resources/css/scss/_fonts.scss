@@ -1,0 +1,370 @@
+@font-face {
+  font-family: $iconFont;
+  src: url("../fonts/ldscms.eot");
+  src: url("../fonts/ldscms.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/ldscms.svg#ldsedit") format('svg'),
+       url("../fonts/ldscms.woff") format('woff'),
+       url("../fonts/ldscms.ttf") format('truetype');
+  /* This should make the font use the normal weight for bold as well */
+  font-weight: bold;
+  font-style: normal;
+}
+
+[class^="ldse-icon-"],
+[class*=" ldse-icon-"] {
+  display:inline-block;
+/*  line-height:100%;
+*/  position:relative;
+}
+[class^="ldse-icon-"]:before,
+[class*=" ldse-icon-"]:before,
+.ldse-table th.sort.desc a:before,
+.ldse-table th.sort.asc a:before {
+  font-family: $iconFont;
+  display: inline-block;
+  margin-right:.5em;
+  vertical-align:-19%;
+  line-height:100%;
+  /*border:1px solid red;*/
+}
+[class^="ldse-icon-"].above,
+[class*=" ldse-icon-"].above {
+  text-align: center
+}
+.ldse-icon {
+  /*indent can't be 100% thanks to IE*/
+  text-indent: -999em;
+  overflow: hidden;
+  width: 1em;
+  font-family: $iconFont;
+  @include boxSizing();
+  /*height:25px;*/
+}
+.ldse-icon.big {
+  font-size: 26px;
+}
+.ldse-icon:before {
+  position:static;
+  float:left;
+  text-indent: 0;
+  margin-right: 0;
+  padding:0;
+  margin:0;
+  left:auto !important;
+}
+/*target firefox only, the only one to have problems*/
+@-moz-document url-prefix(){
+  [class^="ldse-icon-"]:before,
+  [class*=" ldse-icon-"]:before {
+    vertical-align:-19%;
+  }
+  .ldse-icon {
+    vertical-align:middle;
+  }
+}
+.ldse-icon-ko-search:before {
+  content: "\e40a";
+}
+.ldse-icon-ko-tri-left:before {
+  content: "\e416";
+}
+.ldse-icon-ko-tri-up:before {
+  content: "\e419";
+}
+.ldse-icon-ko-tri-down:before {
+  content: "\e414";
+}
+.ldse-icon-ko-tri-right:before {
+  content: "\e418";
+}
+.ldse-icon-download:before {
+  content: "\e407";
+}
+.ldse-icon-zip:before {
+  content: "\e019";
+}
+.ldse-icon-calendar:before {
+  content: "\e400";
+}
+.ldse-icon-trash:before {
+  content: "\e405";
+}
+.ldse-icon-puzzle:before {
+  content: "\e02e";
+}
+.ldse-icon-list:before {
+  content: "\e424";
+}
+.ldse-icon-globe:before {
+  content: "\e439";
+}
+.ldse-icon-ko-warning:before {
+  content: "\e410";
+}
+.ldse-icon-ko-add:before {
+  content: "\e403";
+}
+.ldse-icon-ko-remove:before {
+  content: "\e03e";
+}
+.ldse-icon-ko-x:before {
+  content: "\e93c";
+}
+.ldse-icon-check1:before {
+  content: "\e406";
+}
+.ldse-icon-check2:before {
+  content: "\e406";
+}
+.ldse-icon-x:before {
+  content: "\e93c";
+}
+.ldse-icon-share:before {
+  content: "\e40c";
+}
+.ldse-icon-ko-gplus:before {
+  content: "\e43f1";
+}
+.ldse-icon-ko-facebook:before {
+  content: "\e3f2";
+}
+.ldse-icon-youtube:before {
+  content: "\e436";
+}
+.ldse-icon-home:before {
+  content: "\e422";
+}
+.ldse-icon-page:before {
+  content: "\e41d";
+}
+.ldse-icon-edit:before {
+  content: "\e409";
+}
+.ldse-icon-picture:before {
+  content: "\e012";
+}
+.ldse-icon-movie:before {
+  content: "\e426";
+}
+.ldse-icon-audio:before {
+  content: "\e942";
+}
+.ldse-icon-paper:before {
+  content: "\e428";
+}
+.ldse-icon-tag:before {
+  content: "\e4437";
+}
+.ldse-icon-tools:before {
+  content: "\e42c";
+}
+.ldse-icon-settings:before {
+  content: "\e42a";
+}
+.ldse-icon-chart:before {
+  content: "\e93b";
+}
+.ldse-icon-upload:before {
+  content: "\e93b";
+}
+.ldse-icon-ko-twitter:before {
+  content: "\e434";
+}
+.ldse-icon-dashboard:before {
+  content: "\e414";
+}
+.ldse-icon-open-menu:before {
+  content: "\e414";
+}
+.ldse-icon-close-menu:before {
+  content: "\e414";
+}
+.ldse-icon-tri-up:before {
+  content: "\e419";
+}
+.ldse-icon-tri-down:before {
+  content: "\e414";
+}
+.ldse-icon-map:before {
+  content: "\e022";
+}
+.ldse-icon-legal:before {
+  content: "\e023";
+}
+.ldse-icon-versions:before {
+  content: "\e024";
+}
+.ldse-icon-history:before {
+  content: "\e420";
+}
+.ldse-icon-linkedin:before {
+  content: "\e028";
+}
+.ldse-icon-pinterest:before {
+  content: "\e43";
+}
+.ldse-icon-pin:before {
+  content: "\e02c";
+}
+.ldse-icon-save:before {
+  content: "\e030";
+}
+.ldse-icon-preview:before {
+  content: "\e40e";
+}
+.ldse-icon-share2:before {
+  content: "\e40c";
+}
+.ldse-icon-quote:before {
+  content: "\e039";
+}
+.ldse-icon-quote2:before {
+  content: "\e033";
+}
+.ldse-icon-text:before {
+  content: "\e034";
+}
+.ldse-icon-folder:before {
+  content: "\e940";
+}
+.ldse-icon-cogs:before {
+  content: "\e42c";
+}
+.ldse-icon-grid-view:before {
+  content: "\e037";
+}
+.ldse-icon-list-2:before {
+  content: "\e900";
+}
+.ldse-icon-comments:before {
+  content: "\e03a";
+}
+.ldse-icon-comments-2:before {
+  content: "\e03b";
+}
+.ldse-icon-ko-info:before {
+  content: "\e03c";
+}
+.ldse-icon-plus:before {
+  content: "\e403";
+}
+.ldse-icon-minus:before {
+  content: "\e03e";
+}
+.ldse-icon-user:before {
+  content: "\e03f";
+}
+.ldse-icon-exit:before {
+  content: "\e040";
+}
+.ldse-icon-logo:before {
+  content: "\e041";
+}
+.ldse-icon-loop:before {
+  content: "\e042";
+}
+.ldse-icon-send:before {
+  content: "\e043";
+}
+.ldse-icon-clock:before {
+  content: "\e420";
+}
+.ldse-icon-search:before {
+  content: "\e40a";
+}
+.ldse-icon-graph:before {
+  content: "\e93b";
+}
+.ldse-icon-copy:before {
+  content: "\e047";
+}
+.ldse-icon-review:before {
+  content: "\e048";
+}
+.ldse-icon-unpublish:before {
+  content: "\e412";
+}
+.ldse-icon-ship:before {
+  content: "\e049";
+}
+.ldse-icon-happy:before {
+  content: "\e04b";
+}
+.ldse-icon-sad:before {
+  content: "\e04c";
+}
+.ldse-icon-wink:before {
+  content: "\e04d";
+}
+.ldse-icon-link:before {
+  content: "\e04e";
+}
+.ldse-icon-remove-user:before {
+  content: "\e04f";
+}
+.ldse-icon-add-user:before {
+  content: "\e050";
+}
+.ldse-icon-broken-link:before {
+  content: "\e051";
+}
+.ldse-icon-loading:before {
+  content: "\e052";
+}
+.ldse-icon-moon:before {
+  content: "\e053";
+}
+.ldse-icon-sun:before {
+  content: "\e054";
+}
+.ldse-icon-drop:before {
+  content: "\e055";
+}
+.ldse-icon-revert:before {
+  content: "\e056";
+}
+.ldse-icon-star:before {
+  content: "\e057";
+}
+.ldse-icon-star-2:before {
+  content: "\e058";
+}
+.ldse-icon-rev-tri-up:before {
+  content: "\e059";
+}
+.ldse-icon-rev-tri-down:before {
+  content: "\e05c";
+}
+.ldse-icon-rev-tri-right:before {
+  content: "\e05a";
+}
+.ldse-icon-rev-tri-left:before {
+  content: "\e05b";
+}
+.ldse-icon-binoculars:before {
+  content: "\e05d";
+}
+.ldse-icon-flag:before {
+  content: "\e05e";
+}
+.ldse-icon-target:before {
+  content: "\e05f";
+}
+.ldse-icon-alarm:before {
+  content: "\e060";
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.eot");
+  src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'), url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.woff") format('woff'), url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.ttf") format('truetype'), url("//ldscdn.org/fonts/opensans/2011/OpenSans-Regular-webfont.svg#OpenSansRegular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.eot");
+  src: url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.eot?#iefix") format('embedded-opentype'), url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.woff") format('woff'), url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.ttf") format('truetype'), url("//ldscdn.org/fonts/opensans/2011/OpenSans-Light-webfont.svg#OpenSansLight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

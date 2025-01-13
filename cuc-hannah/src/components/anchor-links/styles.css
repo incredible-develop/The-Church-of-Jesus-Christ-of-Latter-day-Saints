@@ -1,0 +1,2 @@
+/* Anchor tags that don't have a class will be styled with an underline. Giving the anchor links a class will prevent the links from being styled with the underline */ 
+.link {}

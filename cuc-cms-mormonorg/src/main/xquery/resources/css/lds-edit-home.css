@@ -1,0 +1,117 @@
+/* @group project specific classes */
+
+/* BREADCRUMB */
+.ixf-breadcrumb {
+	color: #aaa;
+	text-shadow: 0 1px 3px #000000;
+}
+.ixf-breadcrumb a  {
+	color: #aaa;
+	font-weight: bold;
+}
+.ixf-breadcrumb a:hover {color: #dfdfdf;}
+.ixf-breadcrumb .current {
+	color: #dfdfdf;
+	font-weight: bold;}
+	
+/* TABLE */
+.ixf-table tbody td, .ixf-table tfoot td {line-height: 15px;}
+.ixf-table .iconwidth {text-align: center;}
+.langs {
+	margin-bottom: 0;
+	padding-left:0;
+}
+.langs li {
+	display: inline;
+	list-style: none;
+	padding-right: 4px;		
+}
+.langs li + li {
+	border-left: 1px solid #999;
+	padding-left: 5px;		
+}
+.langs a {text-decoration: none;}
+.published {color: #6e7c33;}
+.preview {color: #a56d3c;}
+.review {color: #cf7600;}
+.trans {color: #68ace5;}
+.archive {color: #3c46a5;}
+.unpublished {color: #a62910;}
+.sprite.icon {cursor: default;}
+
+/* LAYOUT */
+.ui-layout-west h2 {background: #ddd;}
+/* @end */
+
+/* MODALS 
+.form-col-left {
+	float: left;
+	width: 225px;
+	margin-right: 25px;
+}
+.form-col-right {
+	float: right;
+	width: 175px;
+}
+*/
+.lookup input {width: 277px;}
+.lookup a {	
+    background: url("../../ixf/images/ico-sprite-16-v2.png") no-repeat scroll -286px -1249px transparent;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+.sequence input {
+	
+}
+/* ADD NEW PAGE */
+.new-page h2 {color: #3D495D;}
+.new-page h2 span {
+	color: #6E798A;
+    margin-left: 10px;
+}
+.new-page .ixf-form dl {margin: 0 0 15px;}
+.new-page .ixf-container {
+	background-color: #ebe4d9;
+	float: left;
+	margin: 0 25px 25px 0;
+	overflow: hidden;
+	padding: 15px 20px;
+	width: 465px;
+}
+/*
+.new-page .ixf-container + .ixf-container {margin-left: 25px;}
+*/
+.new-page p em {color: #778299;}
+.details {
+	float: left;
+	margin-left: 25px;
+	width: 290px;
+}
+.screenshot {
+	float: left;
+	width: 150px;	
+}
+.screenshot img {
+	display: block;
+	margin-bottom: 15px;
+	-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+	-webkit-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+.new-page li em, 
+.new-page p strong {color: #3b3535;}
+.ixf-container + h3  {clear: left;}
+/* @end */
+
+/* @group @print */
+/* Hide useless elements in print layouts... */
+
+@media print {
+.project-class {display: none;}
+}
+
+/* @end */
+
+
+

@@ -1,0 +1,332 @@
+@import "vars";
+//the number of shades to create
+$shade-number: 25;
+
+$keyword-color: #004665;
+$people-color: #A71AB9;
+$organizations-color: #A71AB9;
+$roles-color: #A71AB9;
+$locations-color: #A71AB9;
+
+$border-radius: 6px;
+$breakpoint: 860px;
+
+@for $i from 0 through ($shade-number - 1) {
+  .ldse-enrich-keyword-#{($i + 1)} {
+    color: lighten($keyword-color, ($i * 2 ));
+    font-weight:600;
+    // color: rgba($test-color, ((($shade-number - 1) - $i) / ($shade-number - 1)) )
+    &.ldse-enrich-bkg {
+      background: lighten($keyword-color, ($i * 2 ));
+    }
+  }
+
+  .ldse-enrich-person-#{($i + 1)} {
+    color: lighten($people-color, ($i * 2 ));
+    font-weight:600;
+    // color: rgba($test-color, ((($shade-number - 1) - $i) / ($shade-number - 1)) )
+    &.ldse-enrich-bkg {
+      background: lighten($people-color, ($i * 2 ));
+    }
+  }
+
+  .ldse-enrich-organization-#{($i + 1)} {
+    color: lighten($organizations-color, ($i * 2 ));
+    font-weight:600;
+    // color: rgba($test-color, ((($shade-number - 1) - $i) / ($shade-number - 1)) )
+    &.ldse-enrich-bkg {
+      background: lighten($organizations-color, ($i * 2 ));
+    }
+  }  
+
+  .ldse-enrich-role-#{($i + 1)} {
+    color: lighten($roles-color, ($i * 2 ));
+    font-weight:600;
+    // color: rgba($test-color, ((($shade-number - 1) - $i) / ($shade-number - 1)) )
+    &.ldse-enrich-bkg {
+      background: lighten($roles-color, ($i * 2 ));
+    }
+  }
+
+  .ldse-enrich-location-#{($i + 1)} {
+    color: lighten($locations-color, ($i * 2 ));
+    font-weight:600;
+    // color: rgba($test-color, ((($shade-number - 1) - $i) / ($shade-number - 1)) )
+    &.ldse-enrich-bkg {
+      background: lighten($locations-color, ($i * 2 ));
+    }
+  }
+}
+
+.ldse-enrich-text .no-keyword {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.ldse-enrich-text {
+	font-size: 15px;
+	color: #666;
+	line-height: 24px;
+	.highlight {
+		background-color: $yellow;
+	}
+}
+
+.ldse-enrich-form {
+  h3 {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0 6px;
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 15px 0 6px;
+  }
+
+  .ldse-enrich-section {
+    margin-top: 0px;
+  }
+
+  .ldse-enrich-text-container {
+    width: 100%;
+    float: none;
+    margin-right: 2%;
+
+    @media screen and (min-width: $breakpoint){
+      width: 68%;
+      float: left;
+    }
+  }
+
+  .ldse-enrich-sidebar {
+    width: 100%;
+    float: none;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+
+    @media screen and (min-width: $breakpoint){
+      width: 27%;
+      float: left;
+      border-left: 1px solid #ddd;
+      padding-left: 2%;
+      border-top: none;
+      margin-top:0;
+      padding-top: 0;
+    }
+  }
+
+  .ldse-enrich-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      margin: 5px 0;
+
+      .enrich-list-form {
+        background: rgb(244,244,244);
+        border: 1px solid #ddd;
+        border-radius: $border-radius;
+        position: relative;
+        padding-right: 40px;
+
+        &.enrich-disabled {
+          background: none;
+          border: 1px solid transparent;
+
+          .enrich-list-name {
+            opacity: .5;
+          }
+          
+          input[type="checkbox"]:before {
+          	content: "";
+            color: inherit;
+       	  }
+
+        }
+        
+        &:hover input[type="checkbox"] ~ label:before {
+            content: "\e00d";
+            color: #00A3F5;
+            font-size: 13px;
+        }
+          
+       & input[type="checkbox"] ~ label:before{
+            content: "\e00d";
+       }
+
+        .enrich-color {
+          display: inline-block;
+          height: 100%;
+          width: 30px;
+          padding: 5px 0;
+          border-radius: $border-radius 0 0 $border-radius;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          &.ldse-icon-link:before {
+            color: white;
+            position: absolute;
+            top: 7px;
+            left: 8px;
+            font-size: 15px;
+            opacity: .5;
+          }
+
+          &.enrich-color--spacer {
+            width: 10px;
+            background: none;
+          }
+        }
+
+        .enrich-list-name {
+          padding: 5px 0;
+          margin-left: 40px;
+          display: inline-block;
+          cursor: pointer;
+          text-transform:capitalize;
+        }
+		input[type="checkbox"] {
+			display: none;
+			& ~ label {
+				position: static;
+				padding: 0px;
+				&:after {
+					content: "" !important;
+					display:none;
+				}
+			}
+		 &:checked {
+            font-size: 12px;
+
+            & ~ label:before {
+              content: "\e00e";
+              color: #666 !important;
+            }
+          }
+		}
+        input[type="checkbox"] ~ label:before{
+          content:"";
+          font-family: $iconFont;
+          opacity: 1;
+          float: right;
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          left: auto;
+          height: 15px;
+          width: 15px;
+          padding: 2px;
+          display: inline-block;
+          min-height: 0;
+          font-size: 11px;
+          background: none;
+          border: none;
+          margin-top: -9px;
+		  cursor: pointer;
+
+
+          
+        }
+      }
+
+      .enrich-list-form-info {
+        background: rgb(244,244,244);
+        padding: 7px 17px;
+        display: none;
+        color: #666;
+
+        .enrich-number {
+          font-size: 34px;
+          line-height: 36px;
+        }
+
+        h6 {
+          margin: 15px 0 1px;
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 11px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .ldse-enrich-list--simple {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 3px 0;
+      font-size: 13px;
+    }
+  }
+
+} 
+
+/* R&D ENRICH */
+.ldse-enrich-term {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334d00;
+  background: #669900;
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.ldse-enrich-phrase {
+  color: white;
+  text-shadow: 1px 1px 1px #353535;
+  border: 1px solid #4a0000;
+  background: #910000;
+  box-shadow: inset 1px 1px 1px #c44d4d;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.ldse-enrich-concept {
+  color: white;
+  text-shadow: 1px 1px 1px #666666;
+  border: 1px solid #68819e;
+  background: #8ba7c7;
+  box-shadow: inset 1px 1px 1px rgba(194, 214, 241, 0.6);
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.ldse-enrich-entity {
+  color: white;
+  text-shadow: 1px 1px 1px #666666;
+  border: 1px solid #b47225;
+  background: #e59941;
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/*.ldse-enrich-text {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: #F3F3F3;
+  line-height: 25px;
+}*/
+/* R&D ENRICH */

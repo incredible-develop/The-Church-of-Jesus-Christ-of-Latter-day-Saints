@@ -1,0 +1,164 @@
+@mixin transition($property: all, $duration: .3s, $timing: ease-in-out, $delay: 0s) {
+	-webkit-transition: $property $duration $timing $delay;
+	-moz-transition: $property $duration $timing $delay;
+	-o-transition: $property $duration $timing $delay;
+	-ms-transition: $property $duration $timing $delay;
+	transition: $property $duration $timing $delay;  
+}
+
+@mixin transitions($values...) {
+	-webkit-transition: $values;
+	-moz-transition: $values;
+	-o-transition: $values;
+	-ms-transition: $values;
+	transition: $values;  
+}
+
+@mixin transform($property) {
+	-webkit-transform: $property;
+	-moz-transform: $property;
+	-o-transform: $property;
+	-ms-transform: $property;
+	transform: $property;  	
+}
+
+@mixin animate($name, $duration: 2.5s, $timing: linear, $delay: 0s, $iteration: infinite) {
+	-webkit-animation: $name $duration $timing $delay $iteration;
+	-moz-animation: $name $duration $timing $delay $iteration;
+	-o-animation: $name $duration $timing $delay $iteration;
+	-ms-animation: $name $duration $timing $delay $iteration;
+	animation: $name $duration $timing $delay $iteration;
+}
+
+@mixin noSelect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+@mixin boxSizing ($value: border-box) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	box-sizing: $value;
+}
+
+@mixin linearGradient($values...) {
+  background-image: -webkit-linear-gradient($values);
+  background-image: -moz-linear-gradient($values);
+  background-image: -ms-linear-gradient($values);
+  background-image: -o-linear-gradient($values);
+}
+
+@mixin twoLinearGradients($first, $second) {
+  background-image: -webkit-linear-gradient($first), -webkit-linear-gradient($second);
+  background-image: -moz-linear-gradient($first), -moz-linear-gradient($second);
+  background-image: -ms-linear-gradient($first), -ms-linear-gradient($second);
+  background-image: -o-linear-gradient($first), -o-linear-gradient($second);
+}
+
+@mixin radialGradient($values...) {
+  background-image: -webkit-radial-gradient($values);
+  background-image: -moz-radial-gradient($values);  
+  background-image: -ms-radial-gradient($values);  
+  background-image: -o-radial-gradient($values); 	
+}
+
+@mixin spin {
+	@-moz-keyframes spin /* Firefox */
+	{ 
+		from {
+			@include transform(rotate(0deg));
+		}
+		to {
+			@include transform(rotate(360deg));
+		}
+	}
+	@-webkit-keyframes spin /* Safari and Chrome */
+	{ 
+		from {
+			@include transform(rotate(0deg));
+		}
+		to {
+			@include transform(rotate(360deg));
+		}
+	}
+	@-ms-keyframes spin /* IE */
+	{ 
+		from {
+			@include transform(rotate(0deg));
+		}
+		to {
+			@include transform(rotate(360deg));
+		}
+	}
+	@-o-keyframes spin /* Opera */
+	{ 
+		from {
+			@include transform(rotate(0deg));
+		}
+		to {
+			@include transform(rotate(360deg));
+		}
+	}
+	@keyframes spin
+	{ 
+		from {
+			@include transform(rotate(0deg));
+		}
+		to {
+			@include transform(rotate(360deg));
+		}
+	}
+}
+
+@mixin progress {
+	@-moz-keyframes progress /* Firefox */
+	{ 
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 50px 50px;
+		}
+	}
+	@-webkit-keyframes progress /* Safari and Chrome */
+	{ 
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 50px 50px;
+		}
+	}
+	@-ms-keyframes progress /* IE */
+	{ 
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 50px 50px;
+		}
+	}
+	@-o-keyframes progress /* Opera */
+	{ 
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 50px 50px;
+		}
+	}
+	@keyframes progress
+	{ 
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 50px 50px;
+		}
+	}
+}

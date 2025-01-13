@@ -1,0 +1,152 @@
+.aspectRatio {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  &::before {
+    content: "";
+    float: left;
+    --aspectRatioDecimal: 1;
+    padding-bottom: calc(100% * var(--aspectRatioDecimal));
+  }
+  &::after {
+    clear: left;
+    content: " ";
+    display: table;
+  }
+  /* Only try to be extra smart with figuring the aspect ratio when the component has its own layout settings, otherwise the components inherits any parent vertical spacing and subtracts it when it doesn't exist on the component */
+  &[class*="layout_outer"]::before {
+    /*
+  When an aspect ratio is within a parent that has padding we need to account for that padding.
+  100% + paddingLeft + paddingRight gets the true width of the parent. The content width of the element plus the padding
+  times aspectRatioDecimal gets the aspect ratio of that combined width.
+  minus the top/bottom padding (if exists) to make sure the aspect:before element doesn't add to any vertical padding that might be set
+  */
+    padding-bottom: calc(
+      (100% + var(--layoutPaddingHorizontal) * 2) * var(--aspectRatioDecimal) -
+        var(--layoutPaddingTop) - var(--layoutPaddingBottom)
+    );
+  }
+}
+
+.is8x5::before {
+  --aspectRatioDecimal: 0.625;
+}
+
+.is16x9::before,
+.is16x9-full::before {
+  --aspectRatioDecimal: 0.5625;
+}
+
+.is6x5::before {
+  --aspectRatioDecimal: 0.8333;
+}
+
+.is8x3::before,
+.is8x3-full::before {
+  --aspectRatioDecimal: 0.375;
+}
+
+.is8x2::before,
+.is8x2-full::before {
+  --aspectRatioDecimal: 0.25;
+}
+
+.is8x1::before,
+.is8x1-full::before {
+  --aspectRatioDecimal: 0.125;
+}
+
+.is5x6::before {
+  --aspectRatioDecimal: 1.2;
+}
+
+.is5x8::before {
+  --aspectRatioDecimal: 1.6;
+}
+
+.is1x1::before {
+  --aspectRatioDecimal: 1;
+}
+
+/*mixed ratios*/
+
+.is16x9and1x1::before {
+  --aspectRatioDecimal: 0.5625;
+}
+
+.is8x5and16x5::before {
+  --aspectRatioDecimal: 0.625;
+}
+
+.is8x3and16x9::before {
+  --aspectRatioDecimal: 0.5625;
+}
+
+/*@media (min-width:700px) {*/
+.aspectRatio[min-width~="700px"] {
+  &.is16x9and1x1::before {
+    --aspectRatioDecimal: 1;
+  }
+
+  &.is8x5and16x5::before {
+    --aspectRatioDecimal: 0.3125;
+  }
+}
+
+.is8x5and16x5[min-width~="700px"] {
+  &::before {
+    --aspectRatioDecimal: 0.3125;
+  }
+}
+
+/* Desktop Aspect Ratios */
+@media (min-width: 481px) {
+  .is8x5Desktop::before {
+    --aspectRatioDecimal: 0.625;
+  }
+
+  .is8x3and16x9::before {
+    --aspectRatioDecimal: 0.375;
+  }
+
+  .is8x2and16x9::before {
+    --aspectRatioDecimal: 0.25;
+  }
+
+  .is8x1and16x9::before {
+    --aspectRatioDecimal: 0.125;
+  }
+
+  .is16x9Desktop::before {
+    --aspectRatioDecimal: 0.5626;
+  }
+
+  .is6x5Desktop::before {
+    --aspectRatioDecimal: 0.8333;
+  }
+
+  .is8x3Desktop::before {
+    --aspectRatioDecimal: 0.375;
+  }
+
+  .is8x2Desktop::before {
+    --aspectRatioDecimal: 0.25;
+  }
+
+  .is8x1Desktop::before {
+    --aspectRatioDecimal: 0.125;
+  }
+
+  .is5x6Desktop::before {
+    --aspectRatioDecimal: 1.2;
+  }
+
+  .is5x8Desktop::before {
+    --aspectRatioDecimal: 1.6;
+  }
+
+  .is1x1Desktop::before {
+    --aspectRatioDecimal: 1;
+  }
+}
+

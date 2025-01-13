@@ -1,0 +1,90 @@
+body {
+  font-family: $OpenSansStack;
+  color: $text;
+  font-size: 14px;
+  background: $darkBackground;
+}
+h1 {
+  text-transform: lowercase;
+  font-size: 35px;
+  color: $darkText;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 0 0 20px;
+  margin: 20px 0 0;
+  font-family: OpenSansLight;
+  line-height: 110%;
+  @media screen and (min-width: $mobile) {
+    font-size: 45px;
+  }
+}
+h2 {
+  font-weight: bold;
+}
+h1 + h2 {
+  margin-top: -20px;
+}
+a {
+  text-decoration: none;
+  color: $linkBlue;
+  cursor: pointer;
+}
+
+.ldse-page {
+  float: left;
+  padding: 50px 10px 0 10px;
+  width: 100%;
+  background-color: $pageBackground;
+  // this gradient causes problems in firefox when page is longer than 35000 px
+  // https://bugzilla.mozilla.org/show_bug.cgi?id=671302
+  // @include linearGradient(top, $darkBackground, $pageBackground 50px);
+  @media screen and (min-width: $mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.ldse-page [class^="ldse-icon-"] {
+  color: $lightCharcoal;
+}
+.ldse-footer {
+  padding: 60px 10px;
+  width: 100%;
+  float: left;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#D8D8D8));
+  background: -moz-linear-gradient(top,  #F9F9F9,  #D8D8D8);
+  background: -ms-linear-gradient(top,  #F9F9F9,  #D8D8D8);
+  background: linear-gradient(top,  #F9F9F9,  #D8D8D8);
+}
+.ldse-logo {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ldse-logo-image {
+  font-size: 10em;
+  color: #B1B1B1;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+.ldse-logo-text {
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+.ldse-logo-text-first {
+  color: #B1B1B1;
+}
+.ldse-logo-text-last {
+  color: #908f8f;
+}
+.xl .ldse-logo-image {
+  font-size: 20em;
+}
+.xl .ldse-logo-text {
+  font-size: 36px;
+}

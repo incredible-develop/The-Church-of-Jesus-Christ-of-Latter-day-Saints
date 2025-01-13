@@ -1,0 +1,10 @@
+
+.select{
+    border: 1px solid #ccc;
+}
+.date-picker{
+    border: 1px solid #ccc;
+}
+.node{
+  box-shadow:1px 1px 3px rgba(100,100,100,.70);
+}

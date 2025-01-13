@@ -1,0 +1,989 @@
+/* Font Variables */
+/* Media Query Sizes */
+/* Icons */
+/* Sizes */
+/* Colors */
+/* -red-ui-500 */
+/* -red-ui-600 */
+/* -red-ui-700 */
+/* -red-ui-400 */
+/* --green */
+/* --green-600 */
+/* --green-400 */
+/* --green-600 */
+/* orange-A700 */
+/* ORANGE-A800 */
+/* ORANGE-500 */
+/* ORANGE-A600 */
+/* ORANGE-500 */
+/* blue-A500 */
+/* blue-A600 */
+/* blue-A700 */
+/* blue-A400 */
+/* blue-A700 */
+/* orange-300 */
+/* onyx-text */
+/* gray-A800 */
+/* onyx */
+/* gray-A200 */
+/* gray-300 */
+/* gray-A100 */
+.ldse-enrich-keyword-1 {
+  color: #004665;
+  font-weight: 600; }
+  .ldse-enrich-keyword-1.ldse-enrich-bkg {
+    background: #004665; }
+
+.ldse-enrich-person-1 {
+  color: #a71ab9;
+  font-weight: 600; }
+  .ldse-enrich-person-1.ldse-enrich-bkg {
+    background: #a71ab9; }
+
+.ldse-enrich-organization-1 {
+  color: #a71ab9;
+  font-weight: 600; }
+  .ldse-enrich-organization-1.ldse-enrich-bkg {
+    background: #a71ab9; }
+
+.ldse-enrich-role-1 {
+  color: #a71ab9;
+  font-weight: 600; }
+  .ldse-enrich-role-1.ldse-enrich-bkg {
+    background: #a71ab9; }
+
+.ldse-enrich-location-1 {
+  color: #a71ab9;
+  font-weight: 600; }
+  .ldse-enrich-location-1.ldse-enrich-bkg {
+    background: #a71ab9; }
+
+.ldse-enrich-keyword-2 {
+  color: #004d6f;
+  font-weight: 600; }
+  .ldse-enrich-keyword-2.ldse-enrich-bkg {
+    background: #004d6f; }
+
+.ldse-enrich-person-2 {
+  color: #af1bc2;
+  font-weight: 600; }
+  .ldse-enrich-person-2.ldse-enrich-bkg {
+    background: #af1bc2; }
+
+.ldse-enrich-organization-2 {
+  color: #af1bc2;
+  font-weight: 600; }
+  .ldse-enrich-organization-2.ldse-enrich-bkg {
+    background: #af1bc2; }
+
+.ldse-enrich-role-2 {
+  color: #af1bc2;
+  font-weight: 600; }
+  .ldse-enrich-role-2.ldse-enrich-bkg {
+    background: #af1bc2; }
+
+.ldse-enrich-location-2 {
+  color: #af1bc2;
+  font-weight: 600; }
+  .ldse-enrich-location-2.ldse-enrich-bkg {
+    background: #af1bc2; }
+
+.ldse-enrich-keyword-3 {
+  color: #005479;
+  font-weight: 600; }
+  .ldse-enrich-keyword-3.ldse-enrich-bkg {
+    background: #005479; }
+
+.ldse-enrich-person-3 {
+  color: #b71dcb;
+  font-weight: 600; }
+  .ldse-enrich-person-3.ldse-enrich-bkg {
+    background: #b71dcb; }
+
+.ldse-enrich-organization-3 {
+  color: #b71dcb;
+  font-weight: 600; }
+  .ldse-enrich-organization-3.ldse-enrich-bkg {
+    background: #b71dcb; }
+
+.ldse-enrich-role-3 {
+  color: #b71dcb;
+  font-weight: 600; }
+  .ldse-enrich-role-3.ldse-enrich-bkg {
+    background: #b71dcb; }
+
+.ldse-enrich-location-3 {
+  color: #b71dcb;
+  font-weight: 600; }
+  .ldse-enrich-location-3.ldse-enrich-bkg {
+    background: #b71dcb; }
+
+.ldse-enrich-keyword-4 {
+  color: #005b84;
+  font-weight: 600; }
+  .ldse-enrich-keyword-4.ldse-enrich-bkg {
+    background: #005b84; }
+
+.ldse-enrich-person-4 {
+  color: #bf1ed4;
+  font-weight: 600; }
+  .ldse-enrich-person-4.ldse-enrich-bkg {
+    background: #bf1ed4; }
+
+.ldse-enrich-organization-4 {
+  color: #bf1ed4;
+  font-weight: 600; }
+  .ldse-enrich-organization-4.ldse-enrich-bkg {
+    background: #bf1ed4; }
+
+.ldse-enrich-role-4 {
+  color: #bf1ed4;
+  font-weight: 600; }
+  .ldse-enrich-role-4.ldse-enrich-bkg {
+    background: #bf1ed4; }
+
+.ldse-enrich-location-4 {
+  color: #bf1ed4;
+  font-weight: 600; }
+  .ldse-enrich-location-4.ldse-enrich-bkg {
+    background: #bf1ed4; }
+
+.ldse-enrich-keyword-5 {
+  color: #00628e;
+  font-weight: 600; }
+  .ldse-enrich-keyword-5.ldse-enrich-bkg {
+    background: #00628e; }
+
+.ldse-enrich-person-5 {
+  color: #c71fdd;
+  font-weight: 600; }
+  .ldse-enrich-person-5.ldse-enrich-bkg {
+    background: #c71fdd; }
+
+.ldse-enrich-organization-5 {
+  color: #c71fdd;
+  font-weight: 600; }
+  .ldse-enrich-organization-5.ldse-enrich-bkg {
+    background: #c71fdd; }
+
+.ldse-enrich-role-5 {
+  color: #c71fdd;
+  font-weight: 600; }
+  .ldse-enrich-role-5.ldse-enrich-bkg {
+    background: #c71fdd; }
+
+.ldse-enrich-location-5 {
+  color: #c71fdd;
+  font-weight: 600; }
+  .ldse-enrich-location-5.ldse-enrich-bkg {
+    background: #c71fdd; }
+
+.ldse-enrich-keyword-6 {
+  color: #006998;
+  font-weight: 600; }
+  .ldse-enrich-keyword-6.ldse-enrich-bkg {
+    background: #006998; }
+
+.ldse-enrich-person-6 {
+  color: #cb26e0;
+  font-weight: 600; }
+  .ldse-enrich-person-6.ldse-enrich-bkg {
+    background: #cb26e0; }
+
+.ldse-enrich-organization-6 {
+  color: #cb26e0;
+  font-weight: 600; }
+  .ldse-enrich-organization-6.ldse-enrich-bkg {
+    background: #cb26e0; }
+
+.ldse-enrich-role-6 {
+  color: #cb26e0;
+  font-weight: 600; }
+  .ldse-enrich-role-6.ldse-enrich-bkg {
+    background: #cb26e0; }
+
+.ldse-enrich-location-6 {
+  color: #cb26e0;
+  font-weight: 600; }
+  .ldse-enrich-location-6.ldse-enrich-bkg {
+    background: #cb26e0; }
+
+.ldse-enrich-keyword-7 {
+  color: #0070a2;
+  font-weight: 600; }
+  .ldse-enrich-keyword-7.ldse-enrich-bkg {
+    background: #0070a2; }
+
+.ldse-enrich-person-7 {
+  color: #cd2fe2;
+  font-weight: 600; }
+  .ldse-enrich-person-7.ldse-enrich-bkg {
+    background: #cd2fe2; }
+
+.ldse-enrich-organization-7 {
+  color: #cd2fe2;
+  font-weight: 600; }
+  .ldse-enrich-organization-7.ldse-enrich-bkg {
+    background: #cd2fe2; }
+
+.ldse-enrich-role-7 {
+  color: #cd2fe2;
+  font-weight: 600; }
+  .ldse-enrich-role-7.ldse-enrich-bkg {
+    background: #cd2fe2; }
+
+.ldse-enrich-location-7 {
+  color: #cd2fe2;
+  font-weight: 600; }
+  .ldse-enrich-location-7.ldse-enrich-bkg {
+    background: #cd2fe2; }
+
+.ldse-enrich-keyword-8 {
+  color: #0077ac;
+  font-weight: 600; }
+  .ldse-enrich-keyword-8.ldse-enrich-bkg {
+    background: #0077ac; }
+
+.ldse-enrich-person-8 {
+  color: #d037e3;
+  font-weight: 600; }
+  .ldse-enrich-person-8.ldse-enrich-bkg {
+    background: #d037e3; }
+
+.ldse-enrich-organization-8 {
+  color: #d037e3;
+  font-weight: 600; }
+  .ldse-enrich-organization-8.ldse-enrich-bkg {
+    background: #d037e3; }
+
+.ldse-enrich-role-8 {
+  color: #d037e3;
+  font-weight: 600; }
+  .ldse-enrich-role-8.ldse-enrich-bkg {
+    background: #d037e3; }
+
+.ldse-enrich-location-8 {
+  color: #d037e3;
+  font-weight: 600; }
+  .ldse-enrich-location-8.ldse-enrich-bkg {
+    background: #d037e3; }
+
+.ldse-enrich-keyword-9 {
+  color: #007fb7;
+  font-weight: 600; }
+  .ldse-enrich-keyword-9.ldse-enrich-bkg {
+    background: #007fb7; }
+
+.ldse-enrich-person-9 {
+  color: #d240e4;
+  font-weight: 600; }
+  .ldse-enrich-person-9.ldse-enrich-bkg {
+    background: #d240e4; }
+
+.ldse-enrich-organization-9 {
+  color: #d240e4;
+  font-weight: 600; }
+  .ldse-enrich-organization-9.ldse-enrich-bkg {
+    background: #d240e4; }
+
+.ldse-enrich-role-9 {
+  color: #d240e4;
+  font-weight: 600; }
+  .ldse-enrich-role-9.ldse-enrich-bkg {
+    background: #d240e4; }
+
+.ldse-enrich-location-9 {
+  color: #d240e4;
+  font-weight: 600; }
+  .ldse-enrich-location-9.ldse-enrich-bkg {
+    background: #d240e4; }
+
+.ldse-enrich-keyword-10 {
+  color: #0086c1;
+  font-weight: 600; }
+  .ldse-enrich-keyword-10.ldse-enrich-bkg {
+    background: #0086c1; }
+
+.ldse-enrich-person-10 {
+  color: #d449e5;
+  font-weight: 600; }
+  .ldse-enrich-person-10.ldse-enrich-bkg {
+    background: #d449e5; }
+
+.ldse-enrich-organization-10 {
+  color: #d449e5;
+  font-weight: 600; }
+  .ldse-enrich-organization-10.ldse-enrich-bkg {
+    background: #d449e5; }
+
+.ldse-enrich-role-10 {
+  color: #d449e5;
+  font-weight: 600; }
+  .ldse-enrich-role-10.ldse-enrich-bkg {
+    background: #d449e5; }
+
+.ldse-enrich-location-10 {
+  color: #d449e5;
+  font-weight: 600; }
+  .ldse-enrich-location-10.ldse-enrich-bkg {
+    background: #d449e5; }
+
+.ldse-enrich-keyword-11 {
+  color: #008dcb;
+  font-weight: 600; }
+  .ldse-enrich-keyword-11.ldse-enrich-bkg {
+    background: #008dcb; }
+
+.ldse-enrich-person-11 {
+  color: #d652e7;
+  font-weight: 600; }
+  .ldse-enrich-person-11.ldse-enrich-bkg {
+    background: #d652e7; }
+
+.ldse-enrich-organization-11 {
+  color: #d652e7;
+  font-weight: 600; }
+  .ldse-enrich-organization-11.ldse-enrich-bkg {
+    background: #d652e7; }
+
+.ldse-enrich-role-11 {
+  color: #d652e7;
+  font-weight: 600; }
+  .ldse-enrich-role-11.ldse-enrich-bkg {
+    background: #d652e7; }
+
+.ldse-enrich-location-11 {
+  color: #d652e7;
+  font-weight: 600; }
+  .ldse-enrich-location-11.ldse-enrich-bkg {
+    background: #d652e7; }
+
+.ldse-enrich-keyword-12 {
+  color: #0094d5;
+  font-weight: 600; }
+  .ldse-enrich-keyword-12.ldse-enrich-bkg {
+    background: #0094d5; }
+
+.ldse-enrich-person-12 {
+  color: #d85be8;
+  font-weight: 600; }
+  .ldse-enrich-person-12.ldse-enrich-bkg {
+    background: #d85be8; }
+
+.ldse-enrich-organization-12 {
+  color: #d85be8;
+  font-weight: 600; }
+  .ldse-enrich-organization-12.ldse-enrich-bkg {
+    background: #d85be8; }
+
+.ldse-enrich-role-12 {
+  color: #d85be8;
+  font-weight: 600; }
+  .ldse-enrich-role-12.ldse-enrich-bkg {
+    background: #d85be8; }
+
+.ldse-enrich-location-12 {
+  color: #d85be8;
+  font-weight: 600; }
+  .ldse-enrich-location-12.ldse-enrich-bkg {
+    background: #d85be8; }
+
+.ldse-enrich-keyword-13 {
+  color: #009bdf;
+  font-weight: 600; }
+  .ldse-enrich-keyword-13.ldse-enrich-bkg {
+    background: #009bdf; }
+
+.ldse-enrich-person-13 {
+  color: #da64e9;
+  font-weight: 600; }
+  .ldse-enrich-person-13.ldse-enrich-bkg {
+    background: #da64e9; }
+
+.ldse-enrich-organization-13 {
+  color: #da64e9;
+  font-weight: 600; }
+  .ldse-enrich-organization-13.ldse-enrich-bkg {
+    background: #da64e9; }
+
+.ldse-enrich-role-13 {
+  color: #da64e9;
+  font-weight: 600; }
+  .ldse-enrich-role-13.ldse-enrich-bkg {
+    background: #da64e9; }
+
+.ldse-enrich-location-13 {
+  color: #da64e9;
+  font-weight: 600; }
+  .ldse-enrich-location-13.ldse-enrich-bkg {
+    background: #da64e9; }
+
+.ldse-enrich-keyword-14 {
+  color: #00a2ea;
+  font-weight: 600; }
+  .ldse-enrich-keyword-14.ldse-enrich-bkg {
+    background: #00a2ea; }
+
+.ldse-enrich-person-14 {
+  color: #dc6dea;
+  font-weight: 600; }
+  .ldse-enrich-person-14.ldse-enrich-bkg {
+    background: #dc6dea; }
+
+.ldse-enrich-organization-14 {
+  color: #dc6dea;
+  font-weight: 600; }
+  .ldse-enrich-organization-14.ldse-enrich-bkg {
+    background: #dc6dea; }
+
+.ldse-enrich-role-14 {
+  color: #dc6dea;
+  font-weight: 600; }
+  .ldse-enrich-role-14.ldse-enrich-bkg {
+    background: #dc6dea; }
+
+.ldse-enrich-location-14 {
+  color: #dc6dea;
+  font-weight: 600; }
+  .ldse-enrich-location-14.ldse-enrich-bkg {
+    background: #dc6dea; }
+
+.ldse-enrich-keyword-15 {
+  color: #00a9f4;
+  font-weight: 600; }
+  .ldse-enrich-keyword-15.ldse-enrich-bkg {
+    background: #00a9f4; }
+
+.ldse-enrich-person-15 {
+  color: #de76ec;
+  font-weight: 600; }
+  .ldse-enrich-person-15.ldse-enrich-bkg {
+    background: #de76ec; }
+
+.ldse-enrich-organization-15 {
+  color: #de76ec;
+  font-weight: 600; }
+  .ldse-enrich-organization-15.ldse-enrich-bkg {
+    background: #de76ec; }
+
+.ldse-enrich-role-15 {
+  color: #de76ec;
+  font-weight: 600; }
+  .ldse-enrich-role-15.ldse-enrich-bkg {
+    background: #de76ec; }
+
+.ldse-enrich-location-15 {
+  color: #de76ec;
+  font-weight: 600; }
+  .ldse-enrich-location-15.ldse-enrich-bkg {
+    background: #de76ec; }
+
+.ldse-enrich-keyword-16 {
+  color: #00b0fe;
+  font-weight: 600; }
+  .ldse-enrich-keyword-16.ldse-enrich-bkg {
+    background: #00b0fe; }
+
+.ldse-enrich-person-16 {
+  color: #e17fed;
+  font-weight: 600; }
+  .ldse-enrich-person-16.ldse-enrich-bkg {
+    background: #e17fed; }
+
+.ldse-enrich-organization-16 {
+  color: #e17fed;
+  font-weight: 600; }
+  .ldse-enrich-organization-16.ldse-enrich-bkg {
+    background: #e17fed; }
+
+.ldse-enrich-role-16 {
+  color: #e17fed;
+  font-weight: 600; }
+  .ldse-enrich-role-16.ldse-enrich-bkg {
+    background: #e17fed; }
+
+.ldse-enrich-location-16 {
+  color: #e17fed;
+  font-weight: 600; }
+  .ldse-enrich-location-16.ldse-enrich-bkg {
+    background: #e17fed; }
+
+.ldse-enrich-keyword-17 {
+  color: #09b4ff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-17.ldse-enrich-bkg {
+    background: #09b4ff; }
+
+.ldse-enrich-person-17 {
+  color: #e388ee;
+  font-weight: 600; }
+  .ldse-enrich-person-17.ldse-enrich-bkg {
+    background: #e388ee; }
+
+.ldse-enrich-organization-17 {
+  color: #e388ee;
+  font-weight: 600; }
+  .ldse-enrich-organization-17.ldse-enrich-bkg {
+    background: #e388ee; }
+
+.ldse-enrich-role-17 {
+  color: #e388ee;
+  font-weight: 600; }
+  .ldse-enrich-role-17.ldse-enrich-bkg {
+    background: #e388ee; }
+
+.ldse-enrich-location-17 {
+  color: #e388ee;
+  font-weight: 600; }
+  .ldse-enrich-location-17.ldse-enrich-bkg {
+    background: #e388ee; }
+
+.ldse-enrich-keyword-18 {
+  color: #13b7ff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-18.ldse-enrich-bkg {
+    background: #13b7ff; }
+
+.ldse-enrich-person-18 {
+  color: #e591f0;
+  font-weight: 600; }
+  .ldse-enrich-person-18.ldse-enrich-bkg {
+    background: #e591f0; }
+
+.ldse-enrich-organization-18 {
+  color: #e591f0;
+  font-weight: 600; }
+  .ldse-enrich-organization-18.ldse-enrich-bkg {
+    background: #e591f0; }
+
+.ldse-enrich-role-18 {
+  color: #e591f0;
+  font-weight: 600; }
+  .ldse-enrich-role-18.ldse-enrich-bkg {
+    background: #e591f0; }
+
+.ldse-enrich-location-18 {
+  color: #e591f0;
+  font-weight: 600; }
+  .ldse-enrich-location-18.ldse-enrich-bkg {
+    background: #e591f0; }
+
+.ldse-enrich-keyword-19 {
+  color: #1ebaff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-19.ldse-enrich-bkg {
+    background: #1ebaff; }
+
+.ldse-enrich-person-19 {
+  color: #e79af1;
+  font-weight: 600; }
+  .ldse-enrich-person-19.ldse-enrich-bkg {
+    background: #e79af1; }
+
+.ldse-enrich-organization-19 {
+  color: #e79af1;
+  font-weight: 600; }
+  .ldse-enrich-organization-19.ldse-enrich-bkg {
+    background: #e79af1; }
+
+.ldse-enrich-role-19 {
+  color: #e79af1;
+  font-weight: 600; }
+  .ldse-enrich-role-19.ldse-enrich-bkg {
+    background: #e79af1; }
+
+.ldse-enrich-location-19 {
+  color: #e79af1;
+  font-weight: 600; }
+  .ldse-enrich-location-19.ldse-enrich-bkg {
+    background: #e79af1; }
+
+.ldse-enrich-keyword-20 {
+  color: #28bdff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-20.ldse-enrich-bkg {
+    background: #28bdff; }
+
+.ldse-enrich-person-20 {
+  color: #e9a3f2;
+  font-weight: 600; }
+  .ldse-enrich-person-20.ldse-enrich-bkg {
+    background: #e9a3f2; }
+
+.ldse-enrich-organization-20 {
+  color: #e9a3f2;
+  font-weight: 600; }
+  .ldse-enrich-organization-20.ldse-enrich-bkg {
+    background: #e9a3f2; }
+
+.ldse-enrich-role-20 {
+  color: #e9a3f2;
+  font-weight: 600; }
+  .ldse-enrich-role-20.ldse-enrich-bkg {
+    background: #e9a3f2; }
+
+.ldse-enrich-location-20 {
+  color: #e9a3f2;
+  font-weight: 600; }
+  .ldse-enrich-location-20.ldse-enrich-bkg {
+    background: #e9a3f2; }
+
+.ldse-enrich-keyword-21 {
+  color: #32c0ff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-21.ldse-enrich-bkg {
+    background: #32c0ff; }
+
+.ldse-enrich-person-21 {
+  color: #ebacf3;
+  font-weight: 600; }
+  .ldse-enrich-person-21.ldse-enrich-bkg {
+    background: #ebacf3; }
+
+.ldse-enrich-organization-21 {
+  color: #ebacf3;
+  font-weight: 600; }
+  .ldse-enrich-organization-21.ldse-enrich-bkg {
+    background: #ebacf3; }
+
+.ldse-enrich-role-21 {
+  color: #ebacf3;
+  font-weight: 600; }
+  .ldse-enrich-role-21.ldse-enrich-bkg {
+    background: #ebacf3; }
+
+.ldse-enrich-location-21 {
+  color: #ebacf3;
+  font-weight: 600; }
+  .ldse-enrich-location-21.ldse-enrich-bkg {
+    background: #ebacf3; }
+
+.ldse-enrich-keyword-22 {
+  color: #3cc3ff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-22.ldse-enrich-bkg {
+    background: #3cc3ff; }
+
+.ldse-enrich-person-22 {
+  color: #edb5f5;
+  font-weight: 600; }
+  .ldse-enrich-person-22.ldse-enrich-bkg {
+    background: #edb5f5; }
+
+.ldse-enrich-organization-22 {
+  color: #edb5f5;
+  font-weight: 600; }
+  .ldse-enrich-organization-22.ldse-enrich-bkg {
+    background: #edb5f5; }
+
+.ldse-enrich-role-22 {
+  color: #edb5f5;
+  font-weight: 600; }
+  .ldse-enrich-role-22.ldse-enrich-bkg {
+    background: #edb5f5; }
+
+.ldse-enrich-location-22 {
+  color: #edb5f5;
+  font-weight: 600; }
+  .ldse-enrich-location-22.ldse-enrich-bkg {
+    background: #edb5f5; }
+
+.ldse-enrich-keyword-23 {
+  color: #46c6ff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-23.ldse-enrich-bkg {
+    background: #46c6ff; }
+
+.ldse-enrich-person-23 {
+  color: #efbef6;
+  font-weight: 600; }
+  .ldse-enrich-person-23.ldse-enrich-bkg {
+    background: #efbef6; }
+
+.ldse-enrich-organization-23 {
+  color: #efbef6;
+  font-weight: 600; }
+  .ldse-enrich-organization-23.ldse-enrich-bkg {
+    background: #efbef6; }
+
+.ldse-enrich-role-23 {
+  color: #efbef6;
+  font-weight: 600; }
+  .ldse-enrich-role-23.ldse-enrich-bkg {
+    background: #efbef6; }
+
+.ldse-enrich-location-23 {
+  color: #efbef6;
+  font-weight: 600; }
+  .ldse-enrich-location-23.ldse-enrich-bkg {
+    background: #efbef6; }
+
+.ldse-enrich-keyword-24 {
+  color: #51c9ff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-24.ldse-enrich-bkg {
+    background: #51c9ff; }
+
+.ldse-enrich-person-24 {
+  color: #f2c7f7;
+  font-weight: 600; }
+  .ldse-enrich-person-24.ldse-enrich-bkg {
+    background: #f2c7f7; }
+
+.ldse-enrich-organization-24 {
+  color: #f2c7f7;
+  font-weight: 600; }
+  .ldse-enrich-organization-24.ldse-enrich-bkg {
+    background: #f2c7f7; }
+
+.ldse-enrich-role-24 {
+  color: #f2c7f7;
+  font-weight: 600; }
+  .ldse-enrich-role-24.ldse-enrich-bkg {
+    background: #f2c7f7; }
+
+.ldse-enrich-location-24 {
+  color: #f2c7f7;
+  font-weight: 600; }
+  .ldse-enrich-location-24.ldse-enrich-bkg {
+    background: #f2c7f7; }
+
+.ldse-enrich-keyword-25 {
+  color: #5bcdff;
+  font-weight: 600; }
+  .ldse-enrich-keyword-25.ldse-enrich-bkg {
+    background: #5bcdff; }
+
+.ldse-enrich-person-25 {
+  color: #f4cff8;
+  font-weight: 600; }
+  .ldse-enrich-person-25.ldse-enrich-bkg {
+    background: #f4cff8; }
+
+.ldse-enrich-organization-25 {
+  color: #f4cff8;
+  font-weight: 600; }
+  .ldse-enrich-organization-25.ldse-enrich-bkg {
+    background: #f4cff8; }
+
+.ldse-enrich-role-25 {
+  color: #f4cff8;
+  font-weight: 600; }
+  .ldse-enrich-role-25.ldse-enrich-bkg {
+    background: #f4cff8; }
+
+.ldse-enrich-location-25 {
+  color: #f4cff8;
+  font-weight: 600; }
+  .ldse-enrich-location-25.ldse-enrich-bkg {
+    background: #f4cff8; }
+
+.ldse-enrich-text .no-keyword {
+  color: inherit;
+  font-weight: inherit; }
+
+.ldse-enrich-text {
+  font-size: 15px;
+  color: #666;
+  line-height: 24px; }
+  .ldse-enrich-text .highlight {
+    background-color: #FFBF1C; }
+
+.ldse-enrich-form h3 {
+  margin: 20px 0;
+  font-size: 18px; }
+
+.ldse-enrich-form h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 15px 0 6px; }
+
+.ldse-enrich-form h5 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 15px 0 6px; }
+
+.ldse-enrich-form .ldse-enrich-section {
+  margin-top: 0px; }
+
+.ldse-enrich-form .ldse-enrich-text-container {
+  width: 100%;
+  float: none;
+  margin-right: 2%; }
+  @media screen and (min-width: 860px) {
+    .ldse-enrich-form .ldse-enrich-text-container {
+      width: 68%;
+      float: left; } }
+
+.ldse-enrich-form .ldse-enrich-sidebar {
+  width: 100%;
+  float: none;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #ddd; }
+  @media screen and (min-width: 860px) {
+    .ldse-enrich-form .ldse-enrich-sidebar {
+      width: 27%;
+      float: left;
+      border-left: 1px solid #ddd;
+      padding-left: 2%;
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0; } }
+
+.ldse-enrich-form .ldse-enrich-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .ldse-enrich-form .ldse-enrich-list li {
+    position: relative;
+    margin: 5px 0; }
+    .ldse-enrich-form .ldse-enrich-list li .enrich-list-form {
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      position: relative;
+      padding-right: 40px; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form.enrich-disabled {
+        background: none;
+        border: 1px solid transparent; }
+        .ldse-enrich-form .ldse-enrich-list li .enrich-list-form.enrich-disabled .enrich-list-name {
+          opacity: .5; }
+        .ldse-enrich-form .ldse-enrich-list li .enrich-list-form.enrich-disabled input[type="checkbox"]:before {
+          content: "";
+          color: inherit; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form:hover input[type="checkbox"] ~ label:before {
+        content: "\e00d";
+        color: #00A3F5;
+        font-size: 13px; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form input[type="checkbox"] ~ label:before {
+        content: "\e00d"; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form .enrich-color {
+        display: inline-block;
+        height: 100%;
+        width: 30px;
+        padding: 5px 0;
+        border-radius: 6px 0 0 6px;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .ldse-enrich-form .ldse-enrich-list li .enrich-list-form .enrich-color.ldse-icon-link:before {
+          color: white;
+          position: absolute;
+          top: 7px;
+          left: 8px;
+          font-size: 15px;
+          opacity: .5; }
+        .ldse-enrich-form .ldse-enrich-list li .enrich-list-form .enrich-color.enrich-color--spacer {
+          width: 10px;
+          background: none; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form .enrich-list-name {
+        padding: 5px 0;
+        margin-left: 40px;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: capitalize; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form input[type="checkbox"] {
+        display: none; }
+        .ldse-enrich-form .ldse-enrich-list li .enrich-list-form input[type="checkbox"] ~ label {
+          position: static;
+          padding: 0px; }
+          .ldse-enrich-form .ldse-enrich-list li .enrich-list-form input[type="checkbox"] ~ label:after {
+            content: "" !important;
+            display: none; }
+        .ldse-enrich-form .ldse-enrich-list li .enrich-list-form input[type="checkbox"]:checked {
+          font-size: 12px; }
+          .ldse-enrich-form .ldse-enrich-list li .enrich-list-form input[type="checkbox"]:checked ~ label:before {
+            content: "\e00e";
+            color: #666 !important; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form input[type="checkbox"] ~ label:before {
+        content: "";
+        font-family: ldsPublisherIcons;
+        opacity: 1;
+        float: right;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        left: auto;
+        height: 15px;
+        width: 15px;
+        padding: 2px;
+        display: inline-block;
+        min-height: 0;
+        font-size: 11px;
+        background: none;
+        border: none;
+        margin-top: -9px;
+        cursor: pointer; }
+    .ldse-enrich-form .ldse-enrich-list li .enrich-list-form-info {
+      background: #f4f4f4;
+      padding: 7px 17px;
+      display: none;
+      color: #666; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form-info .enrich-number {
+        font-size: 34px;
+        line-height: 36px; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form-info h6 {
+        margin: 15px 0 1px;
+        font-size: 12px; }
+      .ldse-enrich-form .ldse-enrich-list li .enrich-list-form-info p {
+        font-size: 11px;
+        margin: 0;
+        padding: 0; }
+
+.ldse-enrich-form .ldse-enrich-list--simple {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .ldse-enrich-form .ldse-enrich-list--simple li {
+    margin: 3px 0;
+    font-size: 13px; }
+
+/* R&D ENRICH */
+.ldse-enrich-term {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334d00;
+  background: #669900;
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px; }
+
+.ldse-enrich-phrase {
+  color: white;
+  text-shadow: 1px 1px 1px #353535;
+  border: 1px solid #4a0000;
+  background: #910000;
+  box-shadow: inset 1px 1px 1px #c44d4d;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px; }
+
+.ldse-enrich-concept {
+  color: white;
+  text-shadow: 1px 1px 1px #666666;
+  border: 1px solid #68819e;
+  background: #8ba7c7;
+  box-shadow: inset 1px 1px 1px rgba(194, 214, 241, 0.6);
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px; }
+
+.ldse-enrich-entity {
+  color: white;
+  text-shadow: 1px 1px 1px #666666;
+  border: 1px solid #b47225;
+  background: #e59941;
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px; }
+
+/*.ldse-enrich-text {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: #F3F3F3;
+  line-height: 25px;
+}*/
+/* R&D ENRICH */

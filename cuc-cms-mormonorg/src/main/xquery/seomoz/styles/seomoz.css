@@ -1,0 +1,11 @@
+table.highlight-rows tbody tr:hover{
+    background-color:#ddeeff;
+}
+
+#displayDescription{
+    color:#496591;
+    font-weight:bold;
+    margin-left:10px;
+    margin-top:5px;
+    min-height: 60px;
+}

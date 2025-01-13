@@ -1,0 +1,150 @@
+.cropperLoading{
+    cursor:progress; 
+    width:100%;
+    height:100%;
+    background-color:#777;
+    opacity:.5;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10000;
+}
+
+#cropPositionLinks{
+    padding-top:10px;
+    padding-bottom:15px;
+}
+
+#deepZoomCheckBox label.unclickable{
+    pointer-events:none;
+    opacity:.5;
+}
+
+#deepZoomCheckBox label{
+    opacity: 1;
+    top: -10px;
+    left: 7px;
+}
+
+.ixf-panels #deepZoomCheckBox input.unclickable {
+	pointer-events:none;
+	opacity:.5;
+}
+
+.ixf-panels #deepZoomCheckBox input{
+    opacity: 1;
+	float: none;
+	margin-left: 16px;
+	width: auto;
+}
+
+.bc-details ul li{
+    padding-top:10px;
+    padding-bottom:3px;
+}
+
+.imageCropper .link {
+	color: #6699FF;
+	text-decoration: underline;
+}
+
+#saveCropBtn.disabled{
+    pointer-events:none;
+}
+
+.dimensionList{
+    margin-bottom:20px;
+}
+
+.dimensionList ul{
+    padding-left:0px;
+}
+
+.dimensionList ul li{
+    font-size:14px;
+    list-style-type:none;
+    color:#777;
+    line-height:1.3;
+}
+
+.binary-wrapper .thumbnail,
+.bc-wrapper .thumbnail{
+    position:relative;
+}
+
+
+.binary-wrapper.imageCropperOpen,
+.bc-wrapper.imageCropperOpen{
+    background-color:#fff;
+}
+
+.binary-wrapper.imageCropperOpen > *,
+.bc-wrapper.imageCropperOpen > *{
+    display:none;
+}
+ div#imageOptions
+ {
+     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+.binary-wrapper.imageCropperOpen div.imageCropper,
+.bc-wrapper.imageCropperOpen div.imageCropper{
+    display:block;
+}
+
+.binary-wrapper .thumbnail div.hover-icon,
+.bc-wrapper .thumbnail .hover-icon{
+    position:absolute;
+    pointer-events:none;
+    left:7px;
+    top:30px;
+    background: url("/binary/resources/images/edit-crop-icon.png") no-repeat center center;
+}
+
+
+#imageCropperForm{
+    margin-left:35px;
+    margin-top:12px;    
+}
+
+
+.imageCropper .link:hover {
+	color: #3375FF;
+	cursor: pointer;
+}
+
+.imageCropper .thumbnail{
+    margin-left:40px;
+}
+
+.imageCropper .thumbnail canvas {	
+	border: 8px solid #E5E5E5;
+	margin-top:5px;
+	cursor: pointer;
+}
+
+.imageCropper .thumbnail canvas.selected {
+	border: 8px solid #4098C6;
+}
+
+#cropImageTitle{
+    margin-top:25px;
+}
+
+.dimensionList ul li.tooLarge, #dimensionLegend{
+    padding-left:20px;
+    background-image:url(http://dev.ldscdn.org/ixf/1.1/images/ico-sprite-16-v2.png);
+    background-position: -50px 1621px;
+}
+
+#dimensionLegend{
+    margin-top:10px;
+    margin-bottom:10px;
+    width:400px;
+}
+
+#cropperBtnHolder{
+    margin-bottom:40px;
+}

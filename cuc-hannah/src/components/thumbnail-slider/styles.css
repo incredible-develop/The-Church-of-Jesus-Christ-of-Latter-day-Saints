@@ -1,0 +1,252 @@
+/* Mobile first */
+.thumbnailSlider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.scrollable {
+  /* this padding/negative margin accounts for accessibility highlight border */
+  padding-bottom: var(--spacing-unite-2);
+  margin-bottom: calc(var(--spacing-unite-2) * -1);
+
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  &[data-child-selected] {
+    & .galleryItem:not([data-gallery-item-selected]) .thumbnail {
+      border-color: transparent;
+    }
+  }
+  &.numbered {
+    & .thumbnail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:after {
+        content: normal; /* Gets rid of gradiant that the thumbnail has by default */
+      }
+    }
+  }
+  &::-moz-scrollbar {
+    /* Older FireFox */
+    display: none;
+  }
+  &::-webkit-scrollbar {
+    /* Chrome, Safari */
+    display: none;
+  }
+  /* the last child of the thumbnail won't get a margin unless there is another child after it... or something. So use :after to give it another child */
+  &:after {
+    display: block;
+    content: "";
+    border: 1px solid transparent; /* also won't work without something that has width, so give it a border. regular "width" doesn't work for some reason. */
+  }
+}
+
+.arrow {
+  display: none;
+}
+
+.galleryItem {
+  all: unset;
+  cursor: pointer;
+  width: var(--gallery-item-width-sm);
+  & + .mediaItem {
+    margin: 0 var(--spacing-unite-1);
+  }
+  &:focus {
+    outline: none;
+    &[focus-visible] {
+      & .thumbnail {
+        box-shadow: var(--focus-under-shadow);
+        & img {
+          transition: transform 0.5s;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  /* TODO: give some extra space for mobile devices. Temp fix that needs to be updated after conference */
+  @media (max-width: 480px) {
+    &:first-child {
+      margin-inline-start: 16px;
+    }
+    &:last-child {
+      margin-inline-end: 16px;
+    }
+  }
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  border: var(--border-1-width) var(--border-1-style);
+  /* Zoom on hover */
+  & img {
+    transition: transform 0.5s;
+    transform: scale(1);
+  }
+  &:hover {
+    & img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.overlay::before {
+    height: 48px;
+}
+
+.circle {
+  & + .caption {
+    text-align: center;
+  }
+  clip-path: circle(100px at center);
+  border-radius: 100%;
+}
+
+.square {
+  /* Currently no styling here, but depending on the thumbnail shape they will get circle or square styling */
+  /* Could add styling in the future if the square needs to look more different */
+}
+
+.icon {
+  position: absolute;
+  fill: white;
+  line-height: 0;
+  inset-inline-start: calc(var(--spacing-unite-1) / 2);
+  bottom: calc(var(--spacing-unite-1) / 2);
+  z-index: var(--overlay-z-index-above);
+  font-size: var(--font-size-13);
+}
+
+.caption {
+  display: none;
+  font: var(--typography-citation);
+  font-weight: 600;
+  margin-block-start: var(--spacing-unite-2);
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.invertTextColor {
+  & .arrow {
+    &:hover,
+    &:focus {
+      background-color: var(--grey-60);
+    }
+    &:active {
+      background-color: var(--grey-40);
+    }
+  }
+  & .caption {
+    color: var(--white);
+    -webkit-text-fill-color: white; /* for Safari */
+  }
+  & .thumbnailNumbers {
+    color: var(--white);
+  }
+}
+
+/* Desktop overrides */
+@media (min-width: 600px) {
+  .thumbnailSlider {
+    &.large {
+      max-width: none;
+    }
+    &.medium {
+      max-width: 60%;
+    }
+    &.small {
+      max-width: 40%;
+    }
+  }
+
+  .scrollable {
+    max-width: calc(100% - var(--spacing-separate-2));
+  }
+
+  .arrow {
+    display: block;
+  }
+
+  .arrow {
+    all: unset;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: calc(
+      (var(--gallery-item-width-lg) / 2) + var(--border-1-width)
+    ); /* Represents half the height of .thumbnail */
+    transform: translateY(-50%);
+    padding: var(--spacing-unite-2);
+    border-radius: 50%;
+    font: normal var(--font-size-20) / 0 var(--font-families--sans-serif);
+    fill: var(--grey-20);
+    cursor: pointer;
+
+    &:last-of-type {
+      left: inherit;
+      right: 0;
+      transform: rotate(180deg) translateY(50%);
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--grey-5);
+    }
+    &:active {
+      background-color: var(--grey-20);
+    }
+  }
+
+  .galleryItem,
+  .thumbnail,
+  .caption {
+    width: var(--gallery-item-width-lg);
+  }
+
+  .galleryItem {
+    margin-inline-end: var(--spacing-unite-3);
+    & + .mediaItem {
+      margin: 0 var(--spacing-unite-3);
+    }
+  }
+
+  .thumbnail {
+    height: var(--gallery-item-width-lg);
+  }
+
+  .icon {
+    position: absolute;
+    left: var(--spacing-unite-1);
+    bottom: var(--spacing-unite-1);
+    font-size: inherit;
+  }
+
+  .caption {
+    display: block;
+  }
+
+  /* TODO: find  a way to make this width dynamic or something like that */
+  .outsetArrows {
+    & .arrow {
+      left: calc(var(--spacing-relate) * -1);
+      transform: translate(-100%, -50%);
+      &:last-of-type {
+        left: inherit;
+        right: calc(var(--spacing-relate) * -1);
+        transform: rotate(180deg) translate(-100%, 50%);
+      }
+    }
+    & .scrollable {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/*
+var(--fontSize) * var(--lineHeight) * var(--maxLines)
+This is used several times below. This is a quick way to determine the height of each line based upon the font-size and the line-height * number of lines. This may not be perfect for every font, but you get the idea.
+*/
+:root {
+}
+
+[max-lines-wrapper] {
+  --maxLines: var(--maxLinesMobile, 4);
+  --mlMaxHeight: calc(var(--fontSize) * var(--lineHeight) * var(--maxLines));
+  /* max-height needs to be on the parent to allow the content of the child to get cut off, but to also be as tall as it needs to do some of the math in .fader */
+  max-height: var(--mlMaxHeight);
+  overflow: hidden;
+}
+
+.fader,
+[max-lines-fader] {
+  display: block; /* fade needs to be a block, so ensure that */
+  --actualLineHeight: var(--fontSize) * var(--lineHeight);
+  --mlMaxHeight: var(--actualLineHeight) * var(--maxLines);
+  font-size: var(--fontSize);
+  line-height: var(--lineHeight);
+  /* change "mask" in the next line to "background" to see a visual of what is happening */
+  mask: 
+    /* one mask that does the gradient on the 4th line */ linear-gradient(
+      to bottom,
+      /* solid (visible) starts at 0px */ rgba(0, 255, 0, 1) 0,
+      /* solid ends at 1.75 less than the max lines. 1 because we want to fade out the final visible line, .75 because the fade takes a bit to start being visible so we need to start it sooner */
+        rgba(0, 255, 0, 1)
+        calc(var(--actualLineHeight) * (var(--maxLines) - 1.75)),
+      /* fade ends a little more than the bottom of the last line just to have the fade end go throughout the last line. This can be adjusted to your preference */
+        rgba(0, 0, 255, 0)
+        calc(var(--actualLineHeight) * (var(--maxLines) + 0.25))
+    ),
+    /* another mask that is stacked on top of the above to create a solid to continue the mask over the line that is faded in the above. */
+      linear-gradient(
+        to bottom,
+        /* start solid
+		rgba(0, 0, 0, 1), 
+		
+		end solid at a place that will get shorter as the content gets longer. 
+		Say the height of the max lines is 80px (20px * 4). We subtract from that 100% the height of the content - that max line height
+		At 3 lines (60px), the calculation becomes 80px (20px * 4) - (60px - 80px) = 100px (since 60-80 is a negative it becomes a positive when subtracted from 80px)
+		At 4 lines it is 80px - (80px - 80px) = 80px. Combined makes everything solid
+		At 5 lines it is 80px - (100px - 80px) = 60px. Now that the second gradient is shorter than the first, the fade is exposed
+		At 6 lines it is 80px - (120px - 80px) = 40px. Starting on the previous line the second gradient gets shorter and shorter as content gets taller, so the fade remains visible no matter how many lines of content there are.
+		*/
+          rgba(0, 0, 0, 1)
+          calc(var(--mlMaxHeight) - (100% - var(--mlMaxHeight))),
+        rgba(0, 0, 0, 0) calc(var(--mlMaxHeight) - (100% - var(--mlMaxHeight))),
+        rgba(0, 0, 0, 0)
+      );
+}
+
+@media (min-width: 480px) {
+  [max-lines-wrapper] {
+    --maxLines: var(--maxLinesDesktop, 4);
+  }
+}

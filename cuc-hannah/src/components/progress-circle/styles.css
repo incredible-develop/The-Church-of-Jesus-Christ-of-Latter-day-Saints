@@ -1,0 +1,53 @@
+.progressCircle {
+  --size: var(--spacing-relate);
+  --progress-width: var(--spacing-unite-1);
+  --progress-color: var(--confirmation40);
+  --progress-percentage: 0;
+  --border-width: 2px;
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background-image: conic-gradient(
+    var(--progress-color) 0%,
+    var(--progress-color) var(--progress-percentage),
+    white var(--progress-percentage),
+    white 100%
+  );
+  &[style*=":0%"] {
+    display: none;
+  }
+
+  border: var(--border-width) solid var(--white);
+  &:not([complete]):after {
+    content: "";
+    display: block;
+    background: var(--white);
+    height: calc(
+      var(--size) - (var(--progress-width) * 2) - (var(--border-width) * 2)
+    );
+    width: calc(
+      var(--size) - (var(--progress-width) * 2) - (var(--border-width) * 2)
+    );
+    border-radius: 50%;
+    z-index: 1;
+  }
+  & svg {
+    display: none;
+  }
+  &[complete] {
+    & svg {
+      fill: var(--white);
+      display: block;
+      height: var(--spacing-unite-3);
+      width: var(--spacing-unite-3);
+    }
+  }
+  & [iconinitialized] {
+    align-items: center;
+  }
+}

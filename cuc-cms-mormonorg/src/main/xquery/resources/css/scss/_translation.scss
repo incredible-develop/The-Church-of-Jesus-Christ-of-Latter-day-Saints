@@ -1,0 +1,30 @@
+/* Styles words and tgp in details table */
+.ldse-tab-down {
+  border-top: 0;
+  float: left;
+  clear: both;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border-radius: 0 0 4px 4px;
+  padding: 1px 5px;
+}
+.ldse-tab-down dl {
+  font-size: 11px;
+  margin: 0;
+  text-align: right;
+}
+.ldse-tab-down dt {
+  width: 40px;
+  float: left;
+  margin: 0 5px 0 0 !important;
+  color: #999;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.ldse-tab-down dd {
+  float: left;
+  margin: 0 5px 0 0 !important;
+  color: #333;
+}

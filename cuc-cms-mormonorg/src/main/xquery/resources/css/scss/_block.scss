@@ -1,0 +1,308 @@
+.ldse-block {
+  border: 1px solid $border;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px 10px;
+
+}
+.ldse-block header {
+  position: relative;
+  background: #f1f1f1;
+  font-size: 14px;
+  min-height: 50px;
+  padding: 10px 7px;
+  margin: -7px;
+  @media screen and (min-width: $mobile) {
+    margin: -15px;
+  }
+}
+.ldse-block header [class^="ldse-icon-"] {
+  float: right;
+  font-size: 18px;
+}
+.ldse-block h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 100%;
+  display: inline-block;
+}
+.ldse-block dl {
+  font-size: 14px;
+  margin: 0;
+}
+.ldse-block dt {
+  width: 50px;
+  clear: left;
+  float: left;
+  margin: 0;
+  color: #999;
+}
+.ldse-block dd {
+  float: left;
+  margin: 0;
+  color: #333;
+}
+.ldse-block--body {
+  margin-top: 12px;
+  display: none;
+  position: relative;
+  @media screen and (min-width: $mobile) {
+    margin-top: 30px;
+  }
+}
+.ldse-block--body:before,
+.ldse-block--body:after {
+  content: "";
+  display: table;
+}
+.ldse-block--body:after {
+  clear: both;
+}
+.ldse-block.ldse-open header .ldse-icon-ko-add:before {
+  content: $ldse-icon-ko-x;
+}
+.adder {
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.ldse-block .adder span:hover {
+  text-decoration: underline;
+}
+.ldse-block.filters {
+  min-width: 250px;
+  padding: 20px;
+  .ldse-icon-ko-add, .ldse-icon-ko-close {
+      font-size: 14px;
+  }
+}
+
+.ldse-block.workflow {
+  text-align: center;
+  min-width: 100px;
+  min-height: 101px;
+  @media screen and (min-width: $mobile) {
+    min-height: 131px;
+  }
+}
+.ldse-block--body.workflow {
+  margin-top: 14px;
+  font-size: 2em;
+  @media screen and (min-width: $mobile) {
+    font-size: 2.4em;
+    margin-top: 30px;
+  }
+}
+.ldse-block.workflow header {
+  min-height: 42px;
+}
+.ldse-block.workflow.stacked {
+  min-height: 0;
+  margin-right: 0;
+  width: 100%;
+  padding: 3px;
+  @media screen and (min-width: $mobile) {
+    padding: 5px 5px 3px;
+  }
+}
+.ldse-block--body.workflow.stacked {
+  margin-top: 6px;
+  font-size: 1em;
+  @media screen and (min-width: $mobile) {
+    font-size: 1.5em;
+  }
+}
+.ldse-block.workflow.stacked header {
+  min-height: 0;
+  margin: -3px;
+  font-size: .8em;
+  padding: 2px 3px 3px;
+  @media screen and (min-width: $mobile) {
+    margin: -5px;
+    font-size: 1em;
+  }
+}
+.ldse-block.workflow.stacked h3 {
+  font-size: 1em;
+}
+.ldse-block.workflow.stacker {
+  padding: 0;
+  border: none;
+  margin-bottom: 0;
+}
+.ldse-block.workflow.details {
+
+}
+.ldse-block--body.workflow.details {
+  font-size: 1em;
+}
+.ldse-block--body.workflow.stacked.details {
+  font-size: 1em;
+}
+@media screen and (min-width: $mobile) {
+  .ldse-block.workflow.details.stacked {
+    padding-bottom: 6px;
+  }
+  .ldse-block--body.workflow.details.stacked {
+    margin-top: 12px;
+  }
+}
+.ldse-summary .ldse-block--body,
+.ldse-block.ldse-open .ldse-block--body {
+  display: block;
+}
+#siteFilterBox .ldse-block {
+  float: left;
+  border: 1px solid $border;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  padding: 7px;
+
+}
+#siteFilterBox .ldse-block header {
+  position: relative;
+  background: #f1f1f1;
+  font-size: 14px;
+  min-height: 50px;
+  padding: 15px;
+  margin: 0 10px;
+
+}
+.ldse-block header [class^="ldse-icon-"] {
+  float: right;
+  font-size: 18px;
+}
+.ldse-block h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 100%;
+  display: inline-block;
+}
+.ldse-block dl {
+  font-size: 14px;
+  margin: 0;
+}
+.ldse-block dt {
+  width: 50px;
+  clear: left;
+  float: left;
+  margin: 0;
+  color: #999;
+}
+.ldse-block dd {
+  float: left;
+  margin: 0;
+  color: #333;
+}
+.ldse-angular-block--body {
+  margin-top: 12px;
+  display: none;
+  position: relative;
+  display: block;
+  margin-top: 30px;
+  @media screen and (min-width: $mobile) {
+    margin-top: 30px;
+  }
+}
+.ldse-angular-block--body:before,
+.ldse-angular-block--body:after {
+  content: "";
+  display: table;
+}
+.ldse-angular-block--body:after {
+  clear: both;
+}
+.ldse-block.ldse-open header .ldse-icon-ko-add:before {
+  content: $ldse-icon-ko-x;
+}
+.adder {
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.ldse-block .adder span:hover {
+  text-decoration: underline;
+}
+.ldse-block.filters {
+  min-width: 250px;
+}
+.ldse-block.workflow {
+  text-align: center;
+  min-width: 100px;
+  min-height: 101px;
+  @media screen and (min-width: $mobile) {
+    min-height: 131px;
+  }
+}
+.ldse-angular-block--body.workflow {
+  margin-top: 14px;
+  font-size: 2em;
+  @media screen and (min-width: $mobile) {
+    font-size: 2.4em;
+    margin-top: 30px;
+  }
+}
+.ldse-block.workflow header {
+  min-height: 42px;
+}
+.ldse-block.workflow.stacked {
+  min-height: 0;
+  margin-right: 0;
+  width: 100%;
+  padding: 3px;
+  @media screen and (min-width: $mobile) {
+    padding: 5px 5px 3px;
+  }
+}
+.ldse-angular-block--body.workflow.stacked {
+  margin-top: 6px;
+  font-size: 1em;
+  @media screen and (min-width: $mobile) {
+    font-size: 1.5em;
+  }
+}
+.ldse-block.workflow.stacked header {
+  min-height: 0;
+  margin: -3px;
+  font-size: .8em;
+  padding: 2px 3px 3px;
+  @media screen and (min-width: $mobile) {
+    margin: -5px;
+    font-size: 1em;
+  }
+}
+.ldse-block.workflow.stacked h3 {
+  font-size: 1em;
+}
+.ldse-block.workflow.stacker {
+  padding: 0;
+  border: none;
+  margin-bottom: 0;
+}
+.ldse-block.workflow.details {
+
+}
+.ldse-angular-block--body.workflow.details {
+  font-size: 1em;
+}
+.ldse-angular-block--body.workflow.stacked.details {
+  font-size: 1em;
+}
+@media screen and (min-width: $mobile) {
+  .ldse-angular-block.workflow.details.stacked {
+    padding-bottom: 6px;
+  }
+  .ldse-angular-block--body.workflow.details.stacked {
+    margin-top: 12px;
+  }
+}
+.ldse-summary .ldse-angular-block--body,
+.ldse-block.ldse-open .ldse-angular-block--body {
+  display: block;
+}

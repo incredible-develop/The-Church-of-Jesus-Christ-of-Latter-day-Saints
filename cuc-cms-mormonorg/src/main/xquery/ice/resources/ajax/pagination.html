@@ -1,0 +1,6 @@
+<div class="modal-pages" id="modal-pages">
+    <a href="" ng-show="$ctrl.pages.previous" ng-click="$ctrl.previousPage();">&lt;</a>
+<!--    <a ng-repeat="page in $ctrl.pages.pages">{{page}}</a>-->
+    <a ng-repeat="page in $ctrl.pages.pages" ng-click="$ctrl.setPage(page.page)" class="page-link-active" ng-class="$ctrl.pages.selected == page.page ? 'selected' : ''">{{page.page}}</a>
+    <a href="" ng-show="$ctrl.pages.next" ng-click="$ctrl.nextPage();">&gt;</a>
+</div>

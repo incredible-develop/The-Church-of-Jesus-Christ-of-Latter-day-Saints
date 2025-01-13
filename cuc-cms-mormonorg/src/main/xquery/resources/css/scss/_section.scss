@@ -1,0 +1,179 @@
+.ldse-section {
+  border: 1px solid $border;
+  margin-bottom: 10px;
+  border-radius: $borderRadius;
+  position: relative;
+  min-width: 248px;
+  box-shadow: 0 1px 3px 0 rgba(14, 15, 16, 0.2);
+  &:hover {
+        box-shadow: 0 1px 3px 0 rgba(14, 15, 16, 0.4);
+  }
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+.ldse-section--header {
+  background-color: $lightGrey;
+  border-bottom: 1px solid $border;
+  border-radius: $borderRadius $borderRadius 0 0;
+  padding: $mobileSpace;
+  min-height: 34px;
+  @media screen and (min-width: $mobile) {
+    padding: $desktopSpace 10px;
+    min-height: 48px;
+  }
+}
+.ldse-section--header .ldse-icon {
+  font-size: 22px;
+  height: 22px;
+  vertical-align: -18%;
+  margin-right: 10px;
+}
+.ldse-section--header .ldse-icon.remove {
+  float: right;
+  margin-right: 0;
+  color: $red;
+}
+.ldse-section--body .ldse-section--header {
+  border-top: 1px solid $border;
+  border-radius: 0px;
+}
+.closed .ldse-section--header {
+  border-bottom: 0;
+  border-radius: $borderRadius;
+}
+.ldse-section--header h2 {
+  margin: 0;
+  display: inline-block;
+  float: left;
+  line-height: 100%;
+  font-size: 1.15em;
+  @media screen and (min-width: $mobile) {
+    margin: 0.3em 0 0.2em 0.4em;
+  }
+}
+.ldse-section--header h2 a {
+  padding-right: 7px;
+  color: $white;
+  text-decoration: none;
+  @media screen and (min-width: $mobile) {
+    margin: -4px 0px;
+  }
+}
+.ldse-section--header.with-button {
+  padding-top: 12px;
+  min-height: 48px;
+}
+.ldse-section--header.with-button h2 {
+  margin-top: 0.3em;
+}
+.ldse-section--header button {
+  margin-top: -9px;
+  margin-bottom: -12px;
+  &.header-right {
+    float: right;
+    margin-right: -2px;
+  }
+  &.header-left {
+    float: left;
+    margin-left: -3px;
+  }
+}
+.ldse-section--header button:before {
+  text-indent: 0;
+  float: left;
+}
+.ldse-section--header [class^="ldse-icon-"]:before {
+  font-size: 22px;
+}
+.ldse-section--header .subtext {
+  font-style: italic;
+  font-size: 14px;
+  color: #666;
+}
+.ldse-section--header dl {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+.ldse-section--header .ldse-icon:before {
+  font-size: 22px;
+}
+.ldse-section--body {
+  margin: $mobileSpace;
+  clear: both;
+  @media screen and (min-width: $mobile) {
+      margin: $desktopSpace;
+  }
+}
+.ldse-section--body h3 {
+  line-height: 100%;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.closed .ldse-section--body {
+  display: none;
+}
+.closed .ldse-section--header a.ldse-icon-ko-tri-down:before {
+  content: $ldse-icon-ko-tri-right;
+}
+.closed .ldse-section--header a.ldse-icon-ko-tri-right:before {
+  content: $ldse-icon-ko-tri-down;
+}
+.closed .dynamic-xml-header a.ldse-icon-rev-tri-down:before {
+  content: $ldse-icon-rev-tri-right;
+}
+.closed hr {
+  display: none;
+}
+.ldse-section.no-border {
+  border: none;
+}
+.ldse-section .grid {
+  @media screen and (min-width: $mobile) {
+    margin-bottom: $desktopSpace;
+  }
+}
+.ldse-section--body .grid-info {
+  font-size: .8em;
+}
+.ldse-section--body .grid h3 {
+  margin: .5em 0 .2em;
+  font-size: 1.17em;
+}
+.ldse-section--body .grid button {
+  margin-bottom: 0;
+}
+.ldse-section--body .grid img {
+
+}
+.ldse-section--body .grid a {
+  margin-top: 1em;
+}
+.ldse-section--body .grid-thumbnail {
+  float: right;
+  width: 130px;
+  height: 130px;
+  margin-left: $mobileSpace;
+  margin-bottom: $mobileSpace;
+  @media screen and (min-width: $mobile) {
+    margin-left: $desktopSpace;
+    margin-top: -49px;
+    margin-bottom: $desktopSpace;
+  }
+}
+.ldse-section--body .grid-description {
+  height: 9.5em;
+  overflow: hidden;
+  @media screen and (min-width: $mobile) {
+    height: 7em;
+  }
+}
+
+.ldse-section--body .modified-button-group{
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  min-height: 45px;
+  height: auto;
+  margin-bottom: 5px;
+}
